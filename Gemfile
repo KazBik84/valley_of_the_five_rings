@@ -21,6 +21,7 @@ group :development, :test do
   gem 'faker'
   gem 'rubocop', require: false
   gem 'factory_girl'
+  gem 'rspec-rails', '~> 3.0'  
 end
 
 group :development do
