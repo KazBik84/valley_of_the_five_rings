@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'gretel'
 gem 'cancancan', '~> 1.10'
 gem 'kaminari'
+gem 'devise'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
