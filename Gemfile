@@ -15,6 +15,7 @@ gem 'kaminari'
 gem 'devise'
 gem 'haml'
 gem 'jquery-turbolinks'
+gem 'figaro'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
