@@ -78,13 +78,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.delivery_method = :smtp
-  # SMTP setings for gmail
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    user_name:            ENV['gmail_login'],
-    password:             ENV['gmail_pass'],
-    authentication:       'plain',
-    enable_starttls_auto: true
+  # ENV ms_username and ms_pass are set in config/applicaion.yml
+  ActionMailer::Base.smtp_settings = {
+    port:           587,
+    address:        'smtp.mailgun.org',
+    domain:         'herokuapp.com',
+    user_name:      ENV["ms_username"],
+    password:       ENV["ms_pass"],
+    authentication: :plain
   }
 end
