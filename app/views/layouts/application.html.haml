@@ -1,10 +1,20 @@
 !!!
 %html
   %head
-  %title
-    Vofr
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tag
-  %body
-    = yield
+    %title
+      = title_function(yield(:title))
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tag
+    %script
+      src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"
+    %script
+      CookieAlert.init();    
+  %body.full
+    = render 'layouts/header'
+    .middle_box
+      = flash_messages
+      = render 'layouts/gretel'
+      = yield
+    = render 'layouts/footer'
+
