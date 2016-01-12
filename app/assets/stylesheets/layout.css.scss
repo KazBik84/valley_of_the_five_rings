@@ -1,0 +1,37 @@
+body {
+  background-image: asset-url('background.jpg');
+  background-attachment: fixed;
+  background-position: 100% 100%;
+}
+
+/* White space in which page content will be yielded */
+.middle_box{
+  margin: 0px;
+  padding: 10px;
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 50em;
+}
+
+img.logo{
+  padding: 0px;
+  margin: 0px;
+  display: block; 
+  width:100%;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+/* navbar*/
+nav {
+/* discard default border radius */
+border-radius: 0px  !important;
+}
