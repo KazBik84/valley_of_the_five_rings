@@ -1,0 +1,15 @@
+%header
+  = link_to image_tag('logo.jpg', class: 'logo'), root_path
+  %nav.navbar.navbar-inverse
+    .container
+      %ul.nav.navbar-nav
+        %li{ class: active_check(yield(:header_active), 'Root') }
+          = link_to 'Strona Główna', root_path
+        - if current_user
+          %li
+            = link_to "Wyloguj", destroy_user_session_path, method: :delete
+        - else
+          %li
+            = link_to "Zarejestruj się", new_user_registration_path
+          %li
+            = link_to "Zalogu się", new_user_session_path

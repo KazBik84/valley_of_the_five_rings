@@ -1,10 +1,4 @@
+- provide(:header_active, "Root")
+- breadcrumb :root
 %h1 
   hello
-- if current_user
-  .devise_links
-    = link_to "Wyloguj", destroy_user_session_path, method: :delete
-- else
-  .devise_links
-    = link_to "Zarejestruj się", new_user_registration_path
-  .devise_links
-    = link_to "Zalogu się", new_user_session_path
