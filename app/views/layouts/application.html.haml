@@ -13,7 +13,7 @@
   %body.full
     = render 'layouts/header'
     .middle_box
-      = flash_messages
+      - flash_messages
       = render 'layouts/gretel'
       = yield
     = render 'layouts/footer'
