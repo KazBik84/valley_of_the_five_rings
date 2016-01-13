@@ -22,7 +22,7 @@ group :development, :test do
   gem 'byebug'
   gem 'faker'
   gem 'rubocop', require: false
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.0'
 end
 
