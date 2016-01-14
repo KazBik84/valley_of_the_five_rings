@@ -1,7 +1,12 @@
 crumb :root do
-  link "Home", root_path
+  link 'Home', root_path
 end
 
+# Announcements -----------------------------------
+crumb :add_announcement do
+  link 'Dodaj Post', new_announcement_path
+  parent :root
+end
 # crumb :projects do
 #   link "Projects", projects_path
 # end
