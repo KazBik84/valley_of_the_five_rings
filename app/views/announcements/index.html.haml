@@ -1,4 +1,10 @@
 - provide(:header_active, "Root")
 - breadcrumb :root
 %h1 
-  hello
+  Witaj na stronie o 4 edycji systemu Legenda Pięciu Kręgów.
+
+- @announcements.each do |announcement|
+  %h3
+    announcement.title
+  %p
+    announcement.message

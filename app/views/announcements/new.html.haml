@@ -1,0 +1,7 @@
+- provide(:header_active, 'Root')
+- provide(:title, 'Nowy Post')
+- breadcrumb :add_anouncement
+= form_for @anouncement do |f|
+  f.text_field :title, placeholder: 'Tytuł posta'
+  f.text_area :message, size: '64x12', placeholder: 'Treść Posta'
+  f.subbmit 'Dodaj post', class: 'btn btn-primary'
