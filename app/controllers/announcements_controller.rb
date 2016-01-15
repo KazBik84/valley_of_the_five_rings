@@ -9,4 +9,25 @@ class AnnouncementsController < ApplicationController
   def new
     @announcement = Announcement.new
   end
+
+  def create
+    @announcement = Announcement.new(announcement_params)
+    if @announcement.save
+      flash[:success] = 'Post został dodany'
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
+  def edit
+    @announcement = Announcement.find(params[:id])
+  end
+
+
+  private
+
+    def announcement_params
+      params.require(:announcement).permit(:title, :message)
+    end
 end

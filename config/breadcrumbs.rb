@@ -7,6 +7,11 @@ crumb :add_announcement do
   link 'Dodaj Post', new_announcement_path
   parent :root
 end
+
+crumb :edit_announcement do
+  link 'Edytuj Post', edit_announcement_path
+  parent :root
+end
 # crumb :projects do
 #   link "Projects", projects_path
 # end
