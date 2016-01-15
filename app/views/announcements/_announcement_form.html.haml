@@ -1,4 +1,11 @@
-= form_for anouncement do |f|
-  f.text_field :title, placeholder: 'Tytuł posta'
-  f.text_area :message, size: '64x12', placeholder: 'Treść Posta'
-  f.subbmit 'Dodaj post', class: 'btn btn-primary'
+%ul.no_dot
+  %li
+    = f.label 'Tytuł' 
+  %li
+    = f.text_field :title, placeholder: 'Tytuł posta'
+  %li
+    = f.label 'Treść' 
+  %li
+    = f.text_area :message, size: '64x12', placeholder: 'Treść Posta'
+  %li 
+    = f.submit 'Dodaj post', class: 'btn btn-primary'

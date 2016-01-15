@@ -1,4 +1,5 @@
 - provide(:header_active, 'Root')
 - provide(:title, 'Nowy Post')
-- breadcrumb :add_anouncement
-= render partial: 'announcement_form', locals: {announcement: @announcement} 
+- breadcrumb :add_announcement
+= form_for @announcement do |f| 
+  = render partial: 'announcement_form', locals: {f: f} 
