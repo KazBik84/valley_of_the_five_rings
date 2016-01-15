@@ -12,6 +12,11 @@ crumb :edit_announcement do
   link 'Edytuj Post', edit_announcement_path
   parent :root
 end
+
+crumb :announcement do |announcement|
+  link announcement.title, announcement_path
+  parent :root
+end
 # crumb :projects do
 #   link "Projects", projects_path
 # end

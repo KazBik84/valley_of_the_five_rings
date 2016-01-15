@@ -1,0 +1,8 @@
+- provide(:header_active, 'Root')
+- provide(:title, @announcement.title)
+- breadcrumb :announcement
+
+%h2
+  = @announcement.title
+%p 
+  = @announcement.message

@@ -24,10 +24,30 @@ class AnnouncementsController < ApplicationController
     @announcement = Announcement.find(params[:id])
   end
 
+  def update
+    @announcement = Announcement.find(params[:id])
+    if @announcement.update_attributes(announcement_params)
+      flash[:success] = 'Post został zaktualizowany'
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    announcement = Announcement.find(params[:id])
+    announcement.destroy
+    flash[:success] = 'Post został usunięty'
+    redirect_to root_path
+  end
+
+  def show
+    @announcement = Announcement.find(params[:id])
+  end
 
   private
 
-    def announcement_params
-      params.require(:announcement).permit(:title, :message)
-    end
+  def announcement_params
+    params.require(:announcement).permit(:title, :message)
+  end
 end
