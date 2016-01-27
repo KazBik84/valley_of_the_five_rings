@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :comments, as: :comment_owner
+  
   # Include default devise modules. Others available are:
   # , :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
