@@ -1,21 +1,23 @@
-- @announcements.each do |announcement|
-  .announcement{ id: announcement.title }
-    .announcement_header
-      = render partial: 'announcement_header', locals: { announcement: announcement}
-    .announcement_message
-      = render partial: 'announcement_message', locals: { announcement: announcement }
-    .show_comment
-      %ul.show_comment_list.no_dot{ id: "show_comment_list_<%= annuncement.id %>" }
-        - announcement.comments.reverse_order.each do |comment|
-          = render partial: 'announcement_show_comment', locals: { announcement: announcement, comment: comment }
+.announcement{ id: announcement.title }
+  .announcement_header
+    = render partial: 'announcement_header', locals: { announcement: announcement}
+  .announcement_message
+    = render partial: 'announcement_message', locals: { announcement: announcement }
+  .show_comment
+    %ul.show_comment_list.no_dot{ id: "show_comment_list_<%= annuncement.id %>" }
+      - announcement.comments.reverse_order.each do |comment|
+        = render partial: 'announcement_show_comment', locals: { announcement: announcement, comment: comment }
+  - if current_user
+    .create_comment
+      = render partial: 'shared/create_comments_form', locals: { announcement: announcement }
     .create_comment_button.announcement_button.float_right.left_border
       %p
         %strong
-          Dodaj Komentarz
-    .create_comment
-      = render partial: 'shared/create_comments_form', locals: { announcement: announcement }
-    .show_comment_button.announcement_button.float_left.right_border
-      %p
-        %strong{ id: "comments_counter_<%= announcement.id %>"}
-          Komentarze: 
-          = announcement.comments.count
+          Dodaj Komentarz        
+  .show_comment_button.announcement_button.float_left.right_border
+    %p
+      %strong{ id: "comments_counter_<%= announcement.id %>"}
+        Komentarze: 
+        = announcement.comments.count
+
+
