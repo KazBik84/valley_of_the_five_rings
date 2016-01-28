@@ -14,9 +14,10 @@ crumb :edit_announcement do
 end
 
 crumb :announcement do |announcement|
-  link announcement.title, announcement_path
+  link announcement.title, announcement_path(announcement)
   parent :root
 end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end
