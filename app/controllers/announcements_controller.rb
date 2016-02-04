@@ -2,6 +2,9 @@
 # and are main way to announce changes and events on the page.
 class AnnouncementsController < ApplicationController
   before_filter :authenticate_user!, except: [:index]
+  # 'authorize_resource' is a cancancan before filter that will check
+  #  if action can be done by the user.
+  authorize_resource except: [:index, :show]
   def index
     @announcements = Announcement.all
   end
