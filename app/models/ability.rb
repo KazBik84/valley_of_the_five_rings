@@ -28,5 +28,20 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
+
+    user ||= User.new(role: 3)
+
+    if user.admin?
+      can :manage, :all
+    elsif user.moderator?
+      can :manage, Comment
+    elsif user.author?
+      can :destroy, Comment do |comment|
+        comment.try(:user_id) == user.id
+      end
+      can :create, Comment
+    else
+      can :read, :all
+    end
   end
 end
