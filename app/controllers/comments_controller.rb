@@ -4,7 +4,6 @@ class CommentsController < ApplicationController
   authorize_resource through: :comment_owner
 
   def create
-    @comment_user = find_comment_owner_user
     @comment_owner = find_comment_owner_object
     @comment = @comment_owner.comments.new(comment_params)
     if @comment.save
@@ -40,9 +39,5 @@ class CommentsController < ApplicationController
         return klass.classify.constantize.find(value)
       end
     end
-  end
-
-  def find_comment_owner_user
-    User.find(params[:comment][:user_id])
   end
 end
