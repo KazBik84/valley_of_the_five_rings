@@ -1,0 +1,53 @@
+.side_button {
+  height: 150px;
+  width: 50px;
+  border: 3px solid blue;
+  /* it has to have negative margin-top value because it is under nav,
+   which is in the middle of load page */
+  margin-top: -20%;
+  background-color: #3DB1CB;
+  -webkit-border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed;
+}
+
+.css-vertical-text {
+  color:#333;
+  writing-mode:tb-rl;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform: rotate(90deg);
+  margin-top: 80%;
+
+  font-size:24px;
+  font-weight:normal;
+  text-shadow: 0px 0px 1px #333;
+}
+
+.side_panel {
+  background-color: #949899;
+  border: 3px solid black;
+  height: 350px;
+  width: 400px;
+  -webkit-border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: -20%;  
+  position: fixed;
+  display: none;
+}
+
+.side_panel_li {
+  margin-top: 5px;
+  border-bottom: 1px solid black;
+  &:hover {
+    background-color: red;
+  }  
+}
