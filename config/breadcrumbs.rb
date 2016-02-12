@@ -18,6 +18,20 @@ crumb :announcement do |announcement|
   parent :root
 end
 
+# Legendopedia ---------------------------------------------
+
+crumb :legendopedia_main do
+  link 'Legendopedia', legendopedia_main_path
+  parent :root
+end
+
+# Static Pages ------------------------------------------
+
+crumb :web_scrolls do
+  link 'Zwoje z Sieci', web_scrolls_path
+  parent :root
+end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end

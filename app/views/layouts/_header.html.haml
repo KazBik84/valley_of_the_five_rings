@@ -5,6 +5,10 @@
       %ul.nav.navbar-nav
         %li{ class: active_check(yield(:header_active), 'Root') }
           = link_to 'Strona Główna', root_path
+        %li{ class: active_check(yield(:header_active), 'Zwoje_z_Sieci') }
+          = link_to 'Zwoje z Sieci', web_scrolls_path
+        %li{ class: active_check(yield(:header_active), 'Legendopedia') }
+          = link_to 'Legendopedia', legendopedia_main_path
         - if current_user
           %li
             = link_to "Wyloguj", destroy_user_session_path, method: :delete

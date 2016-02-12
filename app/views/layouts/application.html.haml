@@ -10,8 +10,9 @@
       src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"
     %script
       CookieAlert.init();    
-  %body.full
+  %body
     = render 'layouts/header'
+    = render 'legendopedia/side_panel' if @show_legendopedia_panel
     .middle_box
       - flash_messages
       = render 'layouts/gretel'

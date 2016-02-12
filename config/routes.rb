@@ -4,5 +4,12 @@ Rails.application.routes.draw do
   resources :announcements do
     resources :comments
   end
+  
+  namespace :legendopedia do
+    get 'main'
+    post 'show_clan'
+  end
+
   get 'contact', to: 'static_pages#contact'
+  get 'web_scrolls', to: 'static_pages#web_scrolls'
 end

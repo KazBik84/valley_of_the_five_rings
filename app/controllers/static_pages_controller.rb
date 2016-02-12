@@ -3,4 +3,7 @@
 class StaticPagesController < ApplicationController
   def contact
   end
+
+  def web_scrolls
+  end
 end
