@@ -1,9 +1,9 @@
 #------------------- Constans related to Clan model -------------------------------------------
 
-CLAN_NAMES = %w( Feniks Krab Smok 
-                Jednorozec Lew Modliszka 
-                Pajak Rody_Cesarskie Pomniejsze 
-                Zuraw Skorpion Ronin )
+CLAN_NAMES = %w( phoenix crab dragon 
+                unicron lion mantis 
+                spider imperial minor 
+                crane scorpion ronin )
 
 CLAN_NAMES_PL = [ "Feniks", "Krab", "Smok", 
                 "Jednorożec", "Lew", "Modliszka", 
