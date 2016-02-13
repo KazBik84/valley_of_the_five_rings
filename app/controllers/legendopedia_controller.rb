@@ -6,5 +6,7 @@ class LegendopediaController < ApplicationController
   end
 
   def show_clan
+    @show_legendopedia_panel = true   
+    @clan = Clan.find_by(name: params[:clan_name])    
   end
 end

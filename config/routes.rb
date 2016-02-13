@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   namespace :legendopedia do
     get 'main'
-    post 'show_clan'
+    get 'show_clan'
   end
 
   get 'contact', to: 'static_pages#contact'

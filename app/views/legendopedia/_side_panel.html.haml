@@ -1,6 +1,5 @@
 .side_button
-  %p.css-vertical-text
-    Działy
+  %i{ class: "fa fa-book fa-2x" }
 .side_panel{ id: 'root_panel' }
   %ul.no_dot
     %li.side_panel_li{ id: 'close_panel' }
@@ -8,7 +7,7 @@
 
   %ul.no_dot
     %li.side_panel_li{ id: 'clans_panel_button' }
-      Klan
+      Klany
     %li.side_panel_li{ id: 'spells_panel_button' }
       Czary
     %li.side_panel_li
@@ -19,7 +18,52 @@
   %ul.no_dot
     %li.side_panel_li{ id: 'close_clans_panel'}
       Zamknij klany
-  To jest clan_panel
+  %ul.no_dot
+    = link_to legendopedia_show_clan_path( clan_name: 'imperial') do
+      %li.side_panel_li{ id: 'imperial' }
+        %span
+          Rody Cesarskie
+    = link_to legendopedia_show_clan_path( clan_name: 'phoenix') do
+      %li.side_panel_li{ id: 'phoenix' }
+        %span
+          Klan Feniksa
+    = link_to legendopedia_show_clan_path( clan_name: 'unicorn') do
+      %li.side_panel_li{ id: 'unicorn' }
+        %span
+          Klan Jednorożca
+    =link_to legendopedia_show_clan_path( clan_name: 'crab') do
+      %li.side_panel_li{ id: 'crab' }
+        %span
+          Klan Kraba
+    =link_to legendopedia_show_clan_path( clan_name: 'lion') do
+      %li.side_panel_li{ id: 'lion' }
+        %span
+          Klan Lewa
+    =link_to legendopedia_show_clan_path( clan_name: 'mantis') do
+      %li.side_panel_li{ id: 'mantis' }
+        %span
+          Klan Modliszki
+    =link_to legendopedia_show_clan_path( clan_name: 'spider') do
+      %li.side_panel_li{ id: 'spider' }
+        %span
+          Klan Pająka
+    =link_to legendopedia_show_clan_path( clan_name: 'scorpion') do
+      %li.side_panel_li{ id: 'scorpion' }
+        %span
+          Klan Skorpiona
+    =link_to legendopedia_show_clan_path( clan_name: 'dragon') do
+      %li.side_panel_li{ id: 'dragon' }
+        %span
+          Klan Smoka
+    =link_to legendopedia_show_clan_path( clan_name: 'crane') do
+      %li.side_panel_li{ id: 'crane' }
+        %span
+          Klan Żurawia
+    =link_to legendopedia_show_clan_path( clan_name: 'ronin') do
+      %li.side_panel_li{ id: 'ronin' }
+        %span
+          Ronini
+
 .side_panel{ id: 'spells_panel'}
   %ul.no_dot
     %li.side_panel_li{ id: 'close_spells_panel'}

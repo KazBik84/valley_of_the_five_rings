@@ -16,6 +16,7 @@ gem 'devise'
 gem 'haml'
 gem 'jquery-turbolinks'
 gem 'figaro'
+gem 'font-awesome-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do

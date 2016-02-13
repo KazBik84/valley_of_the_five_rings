@@ -1,18 +1,26 @@
 .side_button {
-  height: 150px;
-  width: 50px;
-  border: 3px solid blue;
+  display: table;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid blue;
   /* it has to have negative margin-top value because it is under nav,
    which is in the middle of load page */
   margin-top: -20%;
   background-color: #3DB1CB;
-  -webkit-border-top-right-radius: 25px;
-  -webkit-border-bottom-right-radius: 25px;
-  -moz-border-radius-topright: 25px;
-  -moz-border-radius-bottomright: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: fixed;
+}
+i {
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  font-size: 30px;
 }
 
 .css-vertical-text {
@@ -29,7 +37,7 @@
 }
 
 .side_panel {
-  background-color: #949899;
+  background-color: white;
   border: 3px solid black;
   height: 350px;
   width: 400px;
@@ -45,9 +53,162 @@
 }
 
 .side_panel_li {
-  margin-top: 5px;
+  margin: 5px;
   border-bottom: 1px solid black;
-  &:hover {
-    background-color: red;
-  }  
+  border-radius: 15px;
+  cursor: pointer;
+}
+li span {
+    margin-left: 25px;
+  }
+ul a li span{
+  color: black;
+  text-decoration: none;
+}
+
+.legendopedia_object {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* ------------------- Clans Colors --------------------------- */
+#imperial:hover {
+  background-color: #187562;
+}
+#phoenix:hover {
+  background-color: #F4821F;  
+} 
+#unicorn:hover {
+  background-color: #6A1AE1;
+}
+#crab:hover {
+  background-color: #2F41B5;
+}
+#lion:hover {
+  background-color: #D2B337;
+}
+#mantis:hover {
+  background-color: #447724;
+}
+#spider:hover {
+  background-color: #818181;
+}
+#minor:hover {
+  background-color: #522D19;
+}
+#scorpion:hover {
+  background-color: #850A23;
+}
+#dragon:hover {
+  background-color: #A3C326;
+}
+#crane:hover {
+  background-color: #47A0EE;
+}
+#ronin:hover {
+  background-color: #522D19;
+}
+
+.imperial_wrapper {
+  box-shadow:5px 5px 5px #187562; 
+  border: 1px solid #187562;  
+}
+
+.phoenix_wrapper {
+  box-shadow:5px 5px 5px #F4821F; 
+  border: 1px solid #F4821F;  
+}
+
+.unicorn_wrapper {
+  box-shadow:5px 5px 5px #6A1AE1;
+  border: 1px solid #6A1AE1;  
+}
+
+.crab_wrapper {
+  box-shadow:5px 5px 5px #2F41B5;
+  border: 1px solid #2F41B5;
+}
+
+.lion_wrapper {
+  box-shadow:5px 5px 5px #D2B337;
+  border: 1px solid #D2B337;
+}
+
+.mantis_wrapper {
+  box-shadow:5px 5px 5px #447724;
+  border: 1px solid #447724; 
+}
+
+.spider_wrapper {
+  box-shadow:5px 5px 5px #818181;
+  border: 1px solid #818181; 
+}
+
+.minor_wrapper {
+  box-shadow:5px 5px 5px #522D19;
+  border: 1px solid #522D19; 
+}
+
+.scorpion_wrapper {
+  box-shadow:5px 5px 5px #850A23;
+  border: 1px solid #850A23;
+}
+.dragon_wrapper {
+  box-shadow:5px 5px 5px #A3C326;
+  border: 1px solid #A3C326;
+}
+
+.crane_wrapper {
+  box-shadow:5px 5px 5px #47A0EE;
+  border: 1px solid #47A0EE;
+}
+
+.fire_spell_wrapper {
+  box-shadow:5px 5px 5px #F80101;
+  border: 1px solid #F80101;
+}
+
+.water_spell_wrapper {
+  box-shadow:5px 5px 5px #0109F8;
+  border: 1px solid #0109F8;
+}
+
+.air_spell_wrapper {
+  box-shadow:5px 5px 5px #7BA3FA;
+  border: 1px solid #7BA3FA;
+}
+
+.earth_spell_wrapper {
+  box-shadow:5px 5px 5px #063501;
+  border: 1px solid #063501;
+}
+
+.void_spell_wrapper {
+  box-shadow:5px 5px 5px #A7A2A2;
+  border: 1px solid #A7A2A2;
+}
+
+.maho_spell_wrapper {
+  box-shadow:5px 5px 5px #97001E;
+  border: 1px solid #97001E;
+}
+
+.adventage_wrapper {
+  box-shadow:5px 5px 5px #11F943;
+  border: 1px solid #11F943;
+}
+
+.disadventage_wrapper {
+  box-shadow:5px 5px 5px #97001E;
+  border: 1px solid #97001E;
+}
+
+.skill_wrapper {
+  box-shadow:5px 5px 5px #818181;
+  border: 1px solid #818181;   
+} 
+.ronin_wrapper {
+  box-shadow:5px 5px 5px #522D19;
+  border: 1px solid #522D19; 
 }
