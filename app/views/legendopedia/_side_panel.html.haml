@@ -1,6 +1,5 @@
 .side_button
-  %p.css-vertical-text
-    Działy
+  %i{ class: "fa fa-book fa-2x" }
 .side_panel{ id: 'root_panel' }
   %ul.no_dot
     %li.side_panel_li{ id: 'close_panel' }
@@ -8,7 +7,7 @@
 
   %ul.no_dot
     %li.side_panel_li{ id: 'clans_panel_button' }
-      Klan
+      Klany
     %li.side_panel_li{ id: 'spells_panel_button' }
       Czary
     %li.side_panel_li
@@ -19,7 +18,6 @@
   %ul.no_dot
     %li.side_panel_li{ id: 'close_clans_panel'}
       Zamknij klany
-  To jest clan_panel
   %ul.no_dot
     = link_to legendopedia_show_clan_path( clan_name: 'imperial') do
       %li.side_panel_li{ id: 'imperial' }
