@@ -1,18 +1,26 @@
 .side_button {
-  height: 150px;
-  width: 50px;
-  border: 3px solid blue;
+  display: table;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid blue;
   /* it has to have negative margin-top value because it is under nav,
    which is in the middle of load page */
   margin-top: -20%;
   background-color: #3DB1CB;
-  -webkit-border-top-right-radius: 25px;
-  -webkit-border-bottom-right-radius: 25px;
-  -moz-border-radius-topright: 25px;
-  -moz-border-radius-bottomright: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: fixed;
+}
+i {
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  font-size: 30px;
 }
 
 .css-vertical-text {
