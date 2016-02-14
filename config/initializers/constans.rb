@@ -1,7 +1,7 @@
 #------------------- Constans related to Clan model -------------------------------------------
 
 CLAN_NAMES = %w( phoenix crab dragon 
-                unicron lion mantis 
+                unicorn lion mantis 
                 spider imperial minor 
                 crane scorpion ronin )
 
