@@ -3,21 +3,27 @@
 .side_panel{ id: 'root_panel' }
   %ul.no_dot
     %li.side_panel_li{ id: 'close_panel' }
-      Zamknij mnie
+      %span
+        Zamknij mnie
 
   %ul.no_dot
     %li.side_panel_li{ id: 'clans_panel_button' }
-      Klany
+      %span
+        Klany
     %li.side_panel_li{ id: 'spells_panel_button' }
-      Czary
+      %span
+        Czary
     %li.side_panel_li
-      Umiejętności
+      %span
+        Umiejętności
     %li.side_panel_li
-      Zalety/Wady
+      %span
+        Zalety/Wady
 .side_panel{ id: 'clans_panel' }
   %ul.no_dot
     %li.side_panel_li{ id: 'close_clans_panel'}
-      Zamknij klany
+      %span
+        Zamknij klany
   %ul.no_dot
     = link_to legendopedia_show_clan_path( clan_name: 'imperial') do
       %li.side_panel_li{ id: 'imperial' }
