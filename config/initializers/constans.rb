@@ -16,6 +16,6 @@ ATTRIBUTES = %w(  stamina willpower strength
                   perception agility intelligence
                   reflexes awareness void)
 
-ATTRIBUTES_PL = [ "Wytrzynałość", "Siła Woli", "Siła",
+ATTRIBUTES_PL = [ "Wytrzymałość", "Siła Woli", "Siła",
                   "Spostrzegawczość", "Zręczność", "Inteligencja",
                   "Refleks", "Intuicja", "Pustka"]

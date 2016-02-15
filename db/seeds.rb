@@ -67,7 +67,7 @@ families = [
     clan_name: 'phoenix',
     desc: 'Ród Asako, swoją organizacją zbliżony jest do zakonu mnichów, prowadząc ascetyczne życie, jak inne zakony Shinsei. Z tego rodu wywodzą się dworzanie klanu Feniksa oraz tajemniczy mnisi Henshin. Zamyśleni i powściągliwi, nie posiadają własnych ambicji, poza tą by służyć klanowi.',
     bonus_attr: 'awareness',
-    bonus_attr_pl: 'Intuicja ',  
+    bonus_attr_pl: 'Intuicja',  
     mon_img: ''},
 
   { name: 'Isawa', 
