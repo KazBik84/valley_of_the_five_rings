@@ -20,7 +20,7 @@ RSpec.describe Family, type: :model do
   not_empty_attr = [:name, :clan_name, :desc, :bonus_attr, :bonus_attr_pl]
 
   not_empty_attr.each do |attribute|
-    it 'should not be valid with #{attr} nil' do
+    it "should not be valid with #{attribute} nil" do
       expect(build(:family, attribute => nil)).to_not be_valid
     end
   end

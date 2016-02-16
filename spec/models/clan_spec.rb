@@ -8,6 +8,10 @@ RSpec.describe Clan, type: :model do
     should have_many(:families)
   end
 
+  it 'should have many basic_primary_schools' do
+    should have_many(:basic_primary_schools)
+  end
+
   it 'name should be one of the CLAN NAMES' do
     expect(build(:clan, name: 'Alibaba')).to_not be_valid 
   end

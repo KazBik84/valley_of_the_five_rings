@@ -4,4 +4,5 @@ class Clan < ActiveRecord::Base
   validates_inclusion_of :name, in: CLAN_NAMES
 
   has_many :families, dependent: :destroy
+  has_many :basic_primary_schools, dependent: :destroy
 end
