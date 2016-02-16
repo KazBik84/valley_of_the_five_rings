@@ -5,6 +5,7 @@ class CreateBasicPrimarySchools < ActiveRecord::Migration
       t.string :img_name
       t.string :clan_name
       t.string :clan_name_pl
+      t.string :minor_clan_name
       t.string :bonus_attr
       t.string :bonus_attr_pl
       t.string :desc

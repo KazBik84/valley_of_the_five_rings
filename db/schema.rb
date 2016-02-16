@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160215200645) do
     t.string   "img_name"
     t.string   "clan_name"
     t.string   "clan_name_pl"
+    t.string   "minor_clan_name"
     t.string   "bonus_attr"
     t.string   "bonus_attr_pl"
     t.string   "desc"
@@ -45,8 +46,8 @@ ActiveRecord::Schema.define(version: 20160215200645) do
     t.string   "rank5_desc"
     t.string   "special"
     t.integer  "clan_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   add_index "basic_primary_schools", ["clan_id"], name: "index_basic_primary_schools_on_clan_id", using: :btree
