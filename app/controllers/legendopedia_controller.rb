@@ -9,5 +9,6 @@ class LegendopediaController < ApplicationController
     @show_legendopedia_panel = true   
     @clan = Clan.find_by(name: params[:clan_name])   
     @families = @clan.families 
+    @schools = @clan.basic_primary_schools
   end
 end
