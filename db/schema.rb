@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209044558) do
+ActiveRecord::Schema.define(version: 20160215200645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,35 @@ ActiveRecord::Schema.define(version: 20160209044558) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "basic_primary_schools", force: :cascade do |t|
+    t.string   "name"
+    t.string   "img_name"
+    t.string   "clan_name"
+    t.string   "clan_name_pl"
+    t.string   "minor_clan_name"
+    t.string   "bonus_attr"
+    t.string   "bonus_attr_pl"
+    t.string   "desc"
+    t.string   "honor"
+    t.string   "outfit"
+    t.string   "rank1_name"
+    t.string   "rank1_desc"
+    t.string   "rank2_name"
+    t.string   "rank2_desc"
+    t.string   "rank3_name"
+    t.string   "rank3_desc"
+    t.string   "rank4_name"
+    t.string   "rank4_desc"
+    t.string   "rank5_name"
+    t.string   "rank5_desc"
+    t.string   "special"
+    t.integer  "clan_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "basic_primary_schools", ["clan_id"], name: "index_basic_primary_schools_on_clan_id", using: :btree
 
   create_table "clans", force: :cascade do |t|
     t.string   "desc"
@@ -41,6 +70,21 @@ ActiveRecord::Schema.define(version: 20160209044558) do
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
+
+  create_table "families", force: :cascade do |t|
+    t.string   "name"
+    t.string   "clan_name"
+    t.string   "small_clan_name"
+    t.string   "desc"
+    t.string   "bonus_attr"
+    t.string   "bonus_attr_pl"
+    t.string   "mon_img"
+    t.integer  "clan_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "families", ["clan_id"], name: "index_families_on_clan_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -72,4 +116,6 @@ ActiveRecord::Schema.define(version: 20160209044558) do
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
+  add_foreign_key "basic_primary_schools", "clans"
+  add_foreign_key "families", "clans"
 end

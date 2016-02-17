@@ -4,3 +4,19 @@
       = @clan.clan_name
   %p.justify.indent
     = @clan.desc
+  %h4
+    %strong
+      Główne rody to:
+  - @families.each do |family| 
+    %h3.middle_text
+      %strong
+        = family.name 
+      ( +1 
+      = family.bonus_attr_pl 
+      )
+    %p.justify.indent
+      = family.desc
+  - @schools.each do |school|
+    %h2.middle_text
+      %strong
+        = school.name
