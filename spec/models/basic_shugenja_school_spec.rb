@@ -19,18 +19,18 @@ RSpec.describe BasicShugenjaSchool, type: :model do
   end
 
   it 'should not accept clan_name outside the CLAN_NAMES array' do
-    expect(build(:basic_primary_school, clan_name: 'Kot')).to_not be_valid
+    expect(build(:basic_shugenja_school, clan_name: 'Kot')).to_not be_valid
   end
 
   it 'should not accept clan_name_pl outside the CLAN_NAMES_PL array' do
-    expect(build(:basic_primary_school, clan_name_pl: 'Kot')).to_not be_valid
+    expect(build(:basic_shugenja_school, clan_name_pl: 'Kot')).to_not be_valid
   end 
 
   it 'should not accept bonus_attr outside the ATTRIBUTE array' do
-    expect(build(:basic_primary_school, bonus_attr: 'Alibaba')).to_not be_valid
+    expect(build(:basic_shugenja_school, bonus_attr: 'Alibaba')).to_not be_valid
   end
 
   it 'should not accept bonus_attr_pl outside the ATTRIBUTE_PL array' do
-    expect(build(:basic_primary_school, bonus_attr_pl: 'Alibaba')).to_not be_valid
+    expect(build(:basic_shugenja_school, bonus_attr_pl: 'Alibaba')).to_not be_valid
   end  
 end

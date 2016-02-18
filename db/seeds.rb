@@ -1924,6 +1924,22 @@ basic_shugenja_schools = [
   shugenja_tech_name: 'W Obornie Tronu: ',
   shugenja_tech_desc: 'Ukryta Straż, istnieje tylko by chronić Cesarza, i stanowi poważne wyzwanie dla każdego kto, zechce zagrozić Synowi Niebios. Postać zystkuje dodatkowe podbicie, do każdego czaru który ma chronić życie, własność, rodzinę ilub reputację Cesarza, póki czar nie przyniesie shugenji, utraty honoru. Technika ta tyczy się także członków rodzin Cesarskich(poza postacią). Postać zyskuje dodatkowe podbicie do czarów znanych tylko rodzinom Cesarskim',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Oginia, 2 Ziemii, 1 Powietrza'}]
+
+basic_monk_schools = [
+  {name: 'Zakon Mnichów Tsurumi Zumi',
+  img_name: 'Tsurumi_monk_by_Edwin_David.jpg',
+  clan_name: 'dragon',
+  clan_name_pl: 'Smok',
+  minor_clan_name: '',
+  bonus_attr: 'void',
+  bonus_attr_pl: 'Pustka',
+  desc: 'Mnisi z zakonu stanowią pomniejszy zakon działający w ramach Zakonu Togashi, a został on założony podczas Wieku Ukrytego Cesarza, gdy Togashi Hoshi zbuntował się przeciw Hitomi i zaczął samemu tatuować swoich podopiecznych. W odróżnieniu od Togashi Ise Zumi i Hitomi Kikage Zumi, zakon Tsurui Zumi nie skupia się tak mocno na kształtowaniu ciała i sprawności fizycznej, uznając w to miejsce poznanie własnej duszy. Choć sztuki walki nadal wykorzystywane są w zakonie, to główny nacisk kładziony jest na użycie własnego Chi i innych mistycznych technikach walk. Wielu z mnichów zakonu Hoshi całkowicie porzuciło drogę walki, na rzecz medytacji, kontemplacji, czy innych czynności które mają doprowadzić ich do oświecenia. Jednakże w chwili próby, gdy dobro zakonu lub klanu Smoka, jest zagrożone, zakon staje do walki.',
+  honor: '4,5',
+  outfit: 'Szaty, Bo, Zestaw podróżny, 2 koku.',
+  monk_tech_name: 'Zwinne Pięści, Delikatne Serce: ',
+  monk_tech_desc: 'Tsurui Zuni szukają oświecenia, na wielu różnych ścieżkach, lecz nie wstydzą się fizycznej agresji gdy zajdzie taka potrzeba. Postać może wydać punkt Pustki by uaktywnić tę technikę, na liczbę rund równą randze w szkole. Gdy ta technika jest aktywna, postać dodaje +1z1 do swoich ataków oraz +1z0 do obrażeń, gdy walczy wręcz. Postać dokonuje wyboru na początku swojej rundy. Dodatkowo postać zaczyna grę posiadając jeden wybrany tatuaż oraz zna dwa wybrane Kiho, by użyć Kiho postać musi spełniać wszystkie wymagania. Gdy postać osiągnie czwartą rangę, otrzyma dodatkowy tatuaż.',
+  special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'}
+]
 # ---------------------------- Support functions --------------------------
 
 def not_valid_names(model_name, objects)
@@ -1958,12 +1974,16 @@ puts 'Schools Generation'
 BasicPrimarySchool.destroy_all
 not_valid_names(BasicPrimarySchool, basic_primary_schools)
 not_valid_names(BasicShugenjaSchool, basic_shugenja_schools)
+not_valid_names(BasicMonkSchool, basic_monk_schools)
 clans.each do |clan|
   basic_primary_schools.each do |school|
     clan.basic_primary_schools.create(school) if school[:clan_name] == clan.name
   end
   basic_shugenja_schools.each do |school|
     clan.basic_shugenja_schools.create(school) if school[:clan_name] == clan.name    
+  end
+  basic_monk_schools.each do |school|
+    clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
   end
 end
 
