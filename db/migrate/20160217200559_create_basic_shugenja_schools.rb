@@ -15,6 +15,7 @@ class CreateBasicShugenjaSchools < ActiveRecord::Migration
       t.string :spells
       t.string :shugenja_tech_name
       t.string :shugenja_tech_desc
+      t.string :special
       t.references :clan, index: true, foreign_key: true
 
       t.timestamps null: false

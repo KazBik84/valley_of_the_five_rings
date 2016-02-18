@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20160217200559) do
     t.string   "spells"
     t.string   "shugenja_tech_name"
     t.string   "shugenja_tech_desc"
+    t.string   "special"
     t.integer  "clan_id"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
