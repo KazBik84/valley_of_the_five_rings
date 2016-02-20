@@ -1,5 +1,7 @@
 class BasicMonkSchool < ActiveRecord::Base
   belongs_to :clan
+  has_many :school_classes, through: :primary_school_class
+
   validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl, 
                         :desc, :honor, :outfit, :monk_tech_name, :monk_tech_desc
                         

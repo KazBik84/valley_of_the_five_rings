@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160218193028) do
+ActiveRecord::Schema.define(version: 20160220191757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -130,6 +130,22 @@ ActiveRecord::Schema.define(version: 20160218193028) do
 
   add_index "families", ["clan_id"], name: "index_families_on_clan_id", using: :btree
 
+  create_table "primary_school_classes", force: :cascade do |t|
+    t.integer  "school_class_id"
+    t.integer  "basic_primary_school_id"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "primary_school_classes", ["basic_primary_school_id"], name: "index_primary_school_classes_on_basic_primary_school_id", using: :btree
+  add_index "primary_school_classes", ["school_class_id"], name: "index_primary_school_classes_on_school_class_id", using: :btree
+
+  create_table "school_classes", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -164,4 +180,6 @@ ActiveRecord::Schema.define(version: 20160218193028) do
   add_foreign_key "basic_primary_schools", "clans"
   add_foreign_key "basic_shugenja_schools", "clans"
   add_foreign_key "families", "clans"
+  add_foreign_key "primary_school_classes", "basic_primary_schools"
+  add_foreign_key "primary_school_classes", "school_classes"
 end
