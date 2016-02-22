@@ -11,4 +11,8 @@ class LegendopediaController < ApplicationController
     @families = @clan.families 
     @schools = @clan.basic_primary_schools + @clan.basic_shugenja_schools + @clan.basic_monk_schools
   end
+
+  def list_school_classes(obj)
+    obj.school_classes.map { |x| x[:name]}.join(', ')
+  end
 end

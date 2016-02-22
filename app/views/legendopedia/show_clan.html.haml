@@ -23,4 +23,6 @@
     %h3
       %strong
         Klasa szkoły:
-      = school.school_classes
+      = school.school_classes.map { |x| x[:name]}.join(', ')
+
+
