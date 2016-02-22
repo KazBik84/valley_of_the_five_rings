@@ -653,7 +653,7 @@ basic_primary_schools = [
   rank5_name: 'Góra Nie Upadnie: ',
   rank5_desc: 'Nic nie jest w stanie zatrzymać wojownika Hidy od wypełnienia swoich powinności, nawet widmo bliskiej śmierci. Postać może wydawać punkt pustki pod koniec każdej rundy. Podczas następnej rundy, postać nie otrzymuje modyfikatorów wynikających z poziomu ran. Dodatkowo niweluje statusy otumaniony, ogłuszony, wyczerpany.'},
   #2(16)-----------------------------------------------------------------------------------------
-  {name: 'Szkoła Pragmatyków Hida: ',
+  {name: 'Szkoła Pragmatyków Hida',
   img_name: 'Hida_Pragmatyk_by_Edwin_David.jpg',
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
@@ -673,7 +673,7 @@ basic_primary_schools = [
   rank5_name: 'Walcz do Końca: ',
   rank5_desc: 'Ostatnią lekcją, jaką poznaje Pragmatyk Hidy jest przetrwać bez względu na obrażenia. Na początku tury postać może wydać punkt pustki żeby wykonać atak jako akcję kompleksową, ignoruje modyfikatory wynikające z ran (wliczając powalony i wyłączony) oraz wszelkich innych modyfikatorów. Dodatkowo otrzymuje +3z1 do rzutu na obrażenia podczas tego ataku.'},
   #3(17)------------------------------------------------------------------------------------------
-  {name: 'Szkoła Bushi Hiruma: ',
+  {name: 'Szkoła Bushi Hiruma',
   img_name: 'Bushi_Hiruma_by_Scott_Neil.jpg',
   clan_name: 'crab',
   clan_name_pl: 'Krab',
@@ -1940,6 +1940,52 @@ basic_monk_schools = [
   monk_tech_desc: 'Tsurui Zuni szukają oświecenia, na wielu różnych ścieżkach, lecz nie wstydzą się fizycznej agresji gdy zajdzie taka potrzeba. Postać może wydać punkt Pustki by uaktywnić tę technikę, na liczbę rund równą randze w szkole. Gdy ta technika jest aktywna, postać dodaje +1z1 do swoich ataków oraz +1z0 do obrażeń, gdy walczy wręcz. Postać dokonuje wyboru na początku swojej rundy. Dodatkowo postać zaczyna grę posiadając jeden wybrany tatuaż oraz zna dwa wybrane Kiho, by użyć Kiho postać musi spełniać wszystkie wymagania. Gdy postać osiągnie czwartą rangę, otrzyma dodatkowy tatuaż.',
   special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'}
 ]
+
+SchoolClass.destroy_all
+school_class_bushi = SchoolClass.create( name: 'Bushi' )
+school_class_shugenja = SchoolClass.create( name: 'Shugenja' )
+school_class_courtier = SchoolClass.create( name: 'Dworzanin' )
+school_class_monk = SchoolClass.create( name: 'Mnich' )
+school_class_ninja = SchoolClass.create( name: 'Ninja' )
+school_class_artisan = SchoolClass.create( name: 'Artysta' )
+
+# list of all basic_primary_school_names
+basic_primary_names = {'Szkoła Bushi Shiba' => ['Bushi'], 'Szkoła Artystów Shiba' => ['Artysta'], 
+                 'Szkoła Mędrców Asako' => ['Dworzanin'], 'Szkoła Henshin Asako' => ['Mnich'],
+                 'Szkoła Bushi Moto' => ['Bushi'], 'Szkoła Obrońców Moto' => ['Bushi'],
+                 'Szkoła Emisariuszy Ide' => ['Dworzanin'], 'Szkoła Bushi Shinjo' => ['Bushi'],
+                 'Szkoła Dziewic Wojny Utaku' => ['Bushi'], 'Akademia Bushi Akodo' => ['Bushi'],
+                 'Szkoła Bardów Ikoma' => ['Dworzanin'], 'Szkoła "Cieni" Ikoma' => ['Bushi'],
+                 'Szkoła Berserkerów Matsu' => ['Bushi'], 'Szkoła Władców Bestii Matsu' => ['Bushi'],
+                 'Szkoła Bushi Yoritomo' => ['Bushi'], 'Szkoła Dworzan Yoritomo' => ['Dworzanin'],
+                 'Szkoła Łuczników Tsuruchi' => ['Bushi'], 'Szkoła Łowców Tsuruchi' => ['Bushi'],
+                 'Zakon Mnichów Togashi' => ['Mnich'], 'Pięściarz Modliszki' => ['Bushi'],
+                 'Szkoła Bushi Daigotsu' => ['Bushi'], 'Szkoła Dworzan Daigotsu' => ['Dworzanin'],
+                 'Szkoła Mnichów Pająka' => ['Mnich'], 'Szkoła Bushi Bayushi' => ['Bushi'],
+                 'Szkoła Dworzan Bayushi' => ['Dworzanin'], 'Szkoła Zarządców Soshi' => ['Bushi'], 
+                 'Szkoła Szpiegów Shosuro' => ['Ninja'], 'Akademia Aktorów Shosuro' => ['Ninja'],
+                 'Szkoła Bushi Mirumoto' => ['Bushi'], 'Szkoła Szermierzy Tao Mirumoto' => ['Bushi'],
+                 'Szkoła Śledczych Kitsuki' => ['Dworzanin'], 'Zakon Mnichów Kikage Zumi' => ['Mnich'],
+                 'Akademia Pojedynku Kakita' => ['Bushi'], 'Akademia Artystów Kakita' => ['Artysta'],
+                 'Szkoła Dworzan Doji' => ['Dworzanin'], 'Szkoła Zarządców Doji' => ['Bushi'],
+                 'Szkoła Żelaznych Wojowników Daidoji' => ['Bushi'], 'Szkoła Zwiadowców Daidoji' => ['Bushi'],
+                 'Szkoła Wojowników Hida' => ['Bushi'], 'Szkoła Pragmatyków Hida' => ['Bushi'],
+                 'Szkoła Bushi Hiruma' => ['Bushi'], 'Szkoła Zwiadowców Hiruma' => ['Bushi'],
+                 'Szkoła Inżyierów Kaiu' => ['Bushi', 'Artysta'], 'Szkoła Łowców Czarowic Kuni' => ['Mnich'],
+                 'Szkoła Bushi Toritaka' => ['Bushi'], 'Szkoła Dworzan Yasuki' => ['Dworzanin'],
+                 'Szkoła Gwardzistów Seppun' => ['Bushi'], 'Szkoła Dworzan Otomo' => ['Dworzanin'],
+                 'Szkoła Heraldów Miya' => ['Dworzanin']}
+
+basic_shugenja_names = { 'Szkoła Shugenja Isawa' => ['Shugenja'], 'Szkoła Shugenja Agasha' => ['Shugenja'],
+                         'Szkoła Kapłanów Śmierci Moto' => ['Shugenja'], 'Szkoła Shugenja Horiuchi' => ['Shugenja'],
+                         'Szkoła Shugenja Iuchi' => ['Shugenja'], 'Szkoła Shugenja Kitsu' => ['Shugenja'],
+                         'Szkoła Shugenja Yoritomo' => ['Shugenja'], 'Szkoła Shugenja Moshi' => ['Shugenja'],
+                         'Szkoła Shugenja Kitsune' => ['Shugenja'], 'Szkoła Shugenja Chuda' => ['Shugenja'],
+                         'Szkoła Shugenja Soshi' => ['Shugenja'], 'Szkoła Shugenja Yogo' => ['Shugenja'],
+                         'Szkoła Shugenja Tamori' => ['Shugenja'], 'Szkoła Shugenja Asahina' => ['Shugenja'],
+                         'Szkoła Shugenja Kuni' => ['Shugenja'], 'Szkoła Shugenja Seppun' => ['Shugenja']}
+
+basic_monk_names = { 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'] }
 # ---------------------------- Support functions --------------------------
 
 def not_valid_names(model_name, objects)
@@ -1984,6 +2030,41 @@ clans.each do |clan|
   end
   basic_monk_schools.each do |school|
     clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
+  end
+end
+puts 'School Classes generation'
+BasicPrimarySchool.all.each do |school|
+  school_classes = basic_primary_names[school.name]
+  if school_classes
+    school_classes.each do |class_name|
+      school_class = SchoolClass.find_by(name: class_name)
+      school.primary_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
+  end
+end
+BasicShugenjaSchool.all.each do |school|
+  school_classes = basic_shugenja_names[school.name]
+  if school_classes
+    school_classes.each do |class_name|
+      school_class = SchoolClass.find_by(name: class_name)
+      school.shugenja_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
+  end
+end
+
+BasicMonkSchool.all.each do |school|
+  school_classes = basic_monk_names[school.name]
+  if school_classes
+    school_classes.each do |class_name|
+      school_class = SchoolClass.find_by(name: class_name)
+      school.monk_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
   end
 end
 
