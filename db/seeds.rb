@@ -653,7 +653,7 @@ basic_primary_schools = [
   rank5_name: 'Góra Nie Upadnie: ',
   rank5_desc: 'Nic nie jest w stanie zatrzymać wojownika Hidy od wypełnienia swoich powinności, nawet widmo bliskiej śmierci. Postać może wydawać punkt pustki pod koniec każdej rundy. Podczas następnej rundy, postać nie otrzymuje modyfikatorów wynikających z poziomu ran. Dodatkowo niweluje statusy otumaniony, ogłuszony, wyczerpany.'},
   #2(16)-----------------------------------------------------------------------------------------
-  {name: 'Szkoła Pragmatyków Hida: ',
+  {name: 'Szkoła Pragmatyków Hida',
   img_name: 'Hida_Pragmatyk_by_Edwin_David.jpg',
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
@@ -673,7 +673,7 @@ basic_primary_schools = [
   rank5_name: 'Walcz do Końca: ',
   rank5_desc: 'Ostatnią lekcją, jaką poznaje Pragmatyk Hidy jest przetrwać bez względu na obrażenia. Na początku tury postać może wydać punkt pustki żeby wykonać atak jako akcję kompleksową, ignoruje modyfikatory wynikające z ran (wliczając powalony i wyłączony) oraz wszelkich innych modyfikatorów. Dodatkowo otrzymuje +3z1 do rzutu na obrażenia podczas tego ataku.'},
   #3(17)------------------------------------------------------------------------------------------
-  {name: 'Szkoła Bushi Hiruma: ',
+  {name: 'Szkoła Bushi Hiruma',
   img_name: 'Bushi_Hiruma_by_Scott_Neil.jpg',
   clan_name: 'crab',
   clan_name_pl: 'Krab',
@@ -1652,6 +1652,340 @@ basic_primary_schools = [
   rank5_name: 'Chwała Cesarza: ',
   rank5_desc: 'Herald na tej randze, jest ostoją spokoju i dyplomacji. Wykonując test umiejętności Dworski lub Etykieta, przeciw postaci o poziomie honoru conajmniej 1.0,  może dodać premię +5z0 do rzutu.'}]
 
+basic_shugenja_schools = [
+  {name: 'Szkoła Shugenja Isawa',
+  img_name: 'Isawa_Shugenja_by_Jason_Engle.jpg',
+  clan_name: 'phoenix',
+  clan_name_pl: 'Feniks',
+  bonus_attr: 'intelligence',
+  bonus_attr_pl: 'Inteligencja',
+  desc: 'Shugenja szkoły Isawa są najpotężniejsi w całym Rokuganie i choć ród ten nigdy nie przyzna tego otwarcie, uczniowie tej szkoły udowadniają to na każdym kroku. Ród Isawa jest prawie dwa razy większy od następnej w kolejności rodziny shugenja. Jest ich w zasadzie tyle, ile liczy sobie przeciętny ród bushi. Dzięki swojej liczebności w obrębie szkoły powstało wiele podgrup które specjalizują się w czarach różnych żywiołów. Możliwość wybrania dowolnej specjalizacji, dodatkowe darmowe podbicie do tych czarów oraz brak ułomności innego żywiołu sprawiają że szkoła ta niema sobie równych w całym Rokuganie.',
+  honor: '4.5',
+  outfit: 'Szaty, wakizashi, dowolna broń, tuba na zwoje, zestaw podróżny, 5 koku.',
+  affinity_deficiency: 'Shugenja ze szkoły Isawa mogą wybrać dowolny żywioł (wliczając pustkę) jako swoją specjalizację. Postać nie posiada ułomności w żadnym żywiole.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 czary dowolnego żywiołu, 2 czary innego żywiołu, 1 czar z trzeciego żywiołu i 1 czar czwartego żywiołu.',
+  shugenja_tech_name: 'Dar Isawy: ',
+  shugenja_tech_desc: 'Postać uzyskuje darmowe podbicie do wszystkich czarów ze swojej specjalizacji.'},
+  {name: 'Szkoła Shugenja Agasha',
+  img_name: 'Agasha_shugenja_by_Eric_Williams.jpg',
+  clan_name: 'phoenix',
+  clan_name_pl: 'Feniks',
+  bonus_attr: 'intelligence',
+  bonus_attr_pl: 'Inteligencja',
+  desc:  'Podczas wieków w służbie klanu Smoka, ród Agasha podążał wieloma niekonwencjonalnymi ścieżekami magii, które rozpoczeła Agasha i które były kontynuowane od tamtego czasu. Oprócz swoich alchemicznych zainteresowań, Agasha zawsze miała dar do tworzenia czarów, które odnosiły się do różnych kami jednocześnie. W klanie Feniksa, ród Agasha został dopuszczony do poszerzania tego obszaru badań i od tego czasu poczynił ogromne postępy w dziedzinie zaklęć wielu żwyiołów. Technika Szkoły Shugenja Agasha skupia się na łączeniu żywiołów i rzucaniu czarów multi-żywiołowych. Chociaż technika ta jest ciągle w fazie studiów, już teraz pozwala adeptom tej szkoły na rzucanie czarów z wykorzystaniem gniazd z innych żywiołów, dając niezwykłą swobodę w wykorzystywaniu potencjału magicznego.',
+  honor: '4,5',
+  outfit: 'Szaty, Wakizashi, dowolna broń, Sakwa na zwoje, Zestaw Podróżny, 5 koku.',
+  affinity_deficiency: 'Ogień/Woda',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ognia, 2 Ziemi i 1 Powietrza',
+  shugenja_tech_name: 'Żywioły wszechrzeczy: ',
+  shugenja_tech_desc: 'Ród Agasha rozumie interakcje elementów bardziej niż inne rodziny shugenja w Rokuganie. Podczas rzucania czaru, postać z tej szkoły może wydać Punkt Pustki, by użyć gniazda czaru z innego kręgu żywiołu, zamiast tego z którego pochodzi czar. Postać otrzymuje darmowe podbicie do wszystkich czarów Rzemiosła.'},
+  {name: 'Szkoła Kapłanów Śmierci Moto',
+  img_name: 'Moto_Shugenja_by_Jason_Behnke.jpg',
+  clan_name: 'unicorn',
+  clan_name_pl: 'Jednorożec',
+  bonus_attr: 'willpower',
+  bonus_attr_pl: 'Siła Woli',
+  desc: 'Shugenja zwani Kapłanami Śmierci, są posłannikami Shi-Tien Yen-Wang, panteonu gniewnych bogów śmierci i sądu, których czcili przodkowie rodziny Moto, zanim spotkali panią Shinjo i przyłączyli się do klanu Jednorożca. Czyn ten przez wieki wprowadzał w gniew, dawnych bogów rodziny Moto, którzy szukali swoich dawnych wyznawców, by odnaleźć ich w Rokuganie i ukarać ich straszliwą klątwą, która przyniosła całemu rodowi, zły los i smutek, co później zostało nazwane klątwą Moto. Dopiero Moto Gaheris, skontaktował się bezpośrednio z dawnymi bogami, by dobić targu który ma trwać póki istnieje ród Moto. Bogowie Śmierci oddalą swoją klątwę i gniew, w zamian za powrót rodu Moto, do właściwej wiary. Po dobiciu targu, dawna wiara szybko rozprzestrzeniła się po całej rodzinie, a także poza nią w obrębie klanu Jednorożca. Niedługo później bogowie śmierci, zostali wyniesieni do godności pomniejszych fortun. Zakorzenieni w Świecie Oczekiwania, osądzają tych którzy czekają na reinkarnacje, a ich pozycja przyciągała od tego czasu nawet niewielkie grupy wyznawców, spoza klanu Jednorożca. Kapłani Shi-Tien Yen-wang, potrafią zachwiać karmiczną więź śmiertelników, a także specjalizują się w czarach Podróży.',
+  honor: '3,5',
+  outfit: 'Tradycyjne ubranie podróżne, Wakizashi, dowolna inna broń, Zestaw podróżny, Koń Jednorożców, 5 koku.',
+  affinity_deficiency: 'Ziemia/Powietrze',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody',
+  shugenja_tech_name: 'Błogosławieństwo Shi-Tien Yen-wang: ',
+  shugenja_tech_desc: 'Kapłani Śmierci niosą ze sobą błogosławieństwo swoich dawnych bogów i potrafią uwolnić ich gniew na swoich wrogów. Wykorzystując akcję prostą, postać może wykorzystać gniazdo czarów i wybrać cel, znajdujący się nie dalej niż 30m x ranga shugenjy. Kapłan i ofiara wykonują, porównawczy test Siły Woli, jeśli wygra ofiara nic się nie dzieje. Jeśli sukces odniesie Kapłan Śmierci, kości użyte podczas rzutów ofiara tej techniki, nie "eksplodują", a postać nie może korzystać z żadnych Zalet które pozwalają na przerzut rzutów. Efekt trwa liczbę rund równą randze w szkole Kapłana Śmierci. Dodatkowo postać zyskuje darmowe podbicie do czarów Podróży.'},
+  {name: 'Szkoła Shugenja Horiuchi',
+  img_name: 'Horiuchi_shugenja_by_Joachim_Gmoser.jpg',
+  clan_name: 'unicorn',
+  clan_name_pl: 'Jednorożec',
+  bonus_attr: 'stamina',
+  bonus_attr_pl: 'Wytrzymałość',
+  desc: 'Rodzina Horiuchi, została założona w późnym okresie, klanu Jednorożca, ale korzenie tego rodu, sięgają głęboko, w czasy przed powstaniem Wielkich Klanów. Podczas podróży poza Szmaragdowe Cesarstwo, klan Jednorożca odkrył wiele dziwnych stylów rzucania czarów, zarówno od przyjaciół, jak i wrogów. Każdy nowy sposób rozmowy z kami, był badany i wplatany w jedną metodę. Gdy utworzono ród Horiuch, stał się on głównym kultywatorem, stylu Meishodo. Pradawni szamani, którzy stworzyli podwaliny tej techniki, nie potrafili rozmawiać z kami, ani nie mieli bezpośredniego dostępu do fortun. Zamiast tego tworzyli amulety, z zawartą mocą, którą w chwili potrzeby uwalniali z amuletu, poprzez nazwanie prawdziwym imieniem przyzywanych żywiołów. Gdy shugenja klanu Jednorożca przyjrzeli się tym amuletom, odkrył że zawierają oni zamknięte kami żywiołów. Klan Jednorożca zmienił i zaadaptował tę technikę, tak by był zgodny z ich wierzeniami. Obecnie amulety nie więzią już kami, ale odwołują się do żywiołów zawartych w pobliżu amuletu, w chwili aktywacji. Jednak podobnie jak w przypadku danych szamanów, amulety zawierają tylko jeden czar. Meishodo, jest sekretem zazdrośnie strzeżonym przez klan. Meishodo, przedkłada szybkość nad moc, a szybkość zawsze była ważnym aspektem klanu Jednorożca.',
+  honor: '4,5',
+  outfit: 'Szata, Wakizashi, Tuba na zwoje i amulety, Zestaw podróżny, 4 koku.',
+  affinity_deficiency: 'Ziemia/Powietrze',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemia, 2 Woda, 1 Ogień',
+  shugenja_tech_name: 'Tajemnice Meisedo: ',
+  shugenja_tech_desc: 'Meisedo jest połączeniem gajińskiej magii z Rokugańską, w rezultacie powstała szybka i potężna technika, przyzywania kami. Shugenja który opanuje tę metodę, uczy się tworzyć magiczne amulety. Postać tworzy amulety, wykonując test Rzemiosło: Meisedo/Kręg z którego pochodzi czar. PT tego rzutu wynosi 15 plus 5xPoziom mistrzostwa czaru. Tworzenie amuletów Meisedo, wymaga pracy przez liczbę godzin równą poziomowi mistrzostwa czaru. Jeżeli rzut się powiedzie, postać tworzy mały amulet, w którym zawarty jest czar. Każdy amulet, zawiera jeden czar i jest używany zamiast zwoju podczas rzucania czaru. Rzucanie czaru wymaga zawsze tylko jednej pełnej akcji, bez względu na poziom mistrzostwa czaru. Postać nie musi wykonywać żadnych testów, czy czar się powiedzie, lecz nie może on korzystać z żadnych podbić (nawet darmowych). Po rzuceniu czaru postać normalnie traci gniazdo czaru danego żywiołu. Postać może wykonać amuletów, o poziomie mistrzostwa równym lub niższym swojej randze w szkole, dodatkowo nie można tworzyć Meishedo czarów o poziomie mistrzostwa 4 lub wyższym. Inni shugenja mogą używać amuletów postaci, jeśli są biegli w technice Meishedo.'},
+  {name: 'Szkoła Shugenja Iuchi',
+  img_name: 'Iuchi_Shugenja_by_Matt_Zeilinger.jpg',
+  clan_name: 'unicorn',
+  clan_name_pl: 'Jednorożec',
+  bonus_attr: 'perception',
+  bonus_attr_pl: 'Spostrzegawczość',
+  desc: 'Pomijając może rodzinę Tamori, Iuchi są najmniej konwencjonalną i konserwatywną rodziną shugenja w Rokuganie. Z natury dzicy i beztroscy, tak jak nauki przekazywane im przez nauczycieli na otwartych równinach, w pobliżu świątyni w której znajduje się szkoła. Natura ta wypływa z historii klanu, który długo wędrował, przez odlegle ziemie. Ten okres historii ma także wpływ na różnorodne style uprawiania magii, wliczając w to Meishodo, czyli sztukę tworzenia talizmanów które pozwalają kierować kami. Będąc główną szkołą shugenja w klanie Jednorożca, techniki których uczą w szkole, pozwalają zwiększyć mobilność i szybkość. A wzmocnienie czarów Podróży dodatkowo usprawnia ich na tym polu.',
+  honor: '5,5',
+  outfit: 'Ekstrawagandzkie ubranie, Wakizashi, Dowolna inna broń, Zestaw do kaligrafii, Zestaw podróżny, Koń juczny jednorożca, 10 koku.',
+  affinity_deficiency: 'Woda/Ogień',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Ziemii, 1 Powietrza',
+  shugenja_tech_name: 'Duch Wiatru: ',
+  shugenja_tech_desc: 'Iuchi, poprzez moc żywiołów, by udzielić innym daru szybkości. Jako akcja pełna, postać może poświęcić gniazdo czaru z dowolnego żywiołu, by dać innej dodatkową akcję Prostą ruchu. Ta dodatkowa akcje musi zostać wydana, w następnej rundzie postaci lub zostanie stracona. Postać dostaje darmowe podbicie, do czarów Podróży.'},
+  {name: 'Szkoła Shugenja Kuni',
+  img_name: 'Shugenja_Kuni_by_HRF.jpg',
+  bonus_attr: 'willpower',
+  bonus_attr_pl: 'Siła Woli',
+  clan_name: 'crab',
+  clan_name_pl: 'Krab',
+  desc: 'Zazwyczaj niezrozumiana, szkoła shugenja Kuni często jest kreślona jako zbiór pomalowanych szaleńców, którzy zaszli za daleko w badaniu tego czego nie powinni. Pomijając metkę szaleńców Kuni w pełni zgadzają się z tym stwierdzeniem. Kuni rozumieją że muszą poświecić pewne przekonania i obawy by służyć klanowi kraba najlepiej jak potrafią i czynią to bez wahania.',
+  honor: '2.5',
+  outfit: 'Dzienne kimono, wakizashi, tanto, tuba na zwoje, zestaw podróżny, 3 koku.',
+  affinity_deficiency: 'Ziemia/Powietrze.',
+  shugenja_tech_name: 'Spoglądając w cień.',
+  shugenja_tech_desc: 'Kuni ostrożnie badali wiele spośród najokropniejszych przeciwników jakich można sobie wyobrazić, ucząc się jak z nimi walczyć i je pokonać. Łowca Kuni otrzymuje bonus +1z0 do testów czartostwa, kiedy celem jest stwór. Dodatkowo postać otrzymuje premię +1z1 do obrażeń, przeciwko istotom posiadającym skazę cienia.',
+  spells: 'Wyczucie, przywołanie, zespolenie, 3 ziemi, 2 ognia, 1 wody.'},
+  {name: 'Szkoła Shugenja Kitsu',
+  img_name: 'Kitsu_shugenja_by_Edwin_David.jpg',
+  clan_name: 'lion',
+  clan_name_pl: 'Lew',
+  bonus_attr: 'perception',
+  bonus_attr_pl: 'Spostrzegawczość',
+  desc: 'Pradawne rytuały obowiązujące, w Szkole Shugenja Kitsu pozostały praktycznie niezmienione od stworzenia rodziny, a sama myśl o zmianie ich, nigdy nie pojawiła się u najbardziej otwartego członka tej rodziny. Z powodu swoich niezwykłych korzeni, ród ten zawsze posiadał wgląd, w zależności między światem śmiertelników, a tym co jest poza nim. Ich zdolność do postrzegania więzi, łączących żyjących z ich przodkami, została doprowadzona do takiej perfekcji, że shugenja Kitsu potrafią manipulować, więziami łączącymi ludzi z innymi światami. Choć pokojowo nastawieni, shugenja Kitsu szkoleni są jako shugenja, którzy w razie wojny wspomogą całe armie, co może mieć kluczowe znaczenie w chwili próby.',
+  honor: '6,5',
+  outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, 5 koku.',
+  affinity_deficiency: 'Woda/Ogień',
+  shugenja_tech_name: 'Oczy Przodka: ',
+  shugenja_tech_desc: 'Kitsu są spadkobiercami mistycznych istot i potrafią sięgnąć poprzez granice światów by porozmawiać ze swoimi przodkami. Wykonując test czaru wody, o PT Siły Woli x5 celu. Jeśli czar odniesie skutek, postać może dowiedzieć się wszystkich Duchowych Zalet i Wad wybranej postaci. Jeśli postać wyda punkt Pustki może zanegować jedną zaletę na rundę minut, równą swojej randze w szkole. Dodatkowo postać otrzymuje darmowe podbicie do wszystkich czarów typu Bitwa.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Powietrza, 1 Ziemi'},
+  {name: 'Szkoła Shugenja Yoritomo',
+  img_name: 'Yoritomo_Shugenja_by_Veronica_V_Jones.jpg',
+  clan_name: 'mantis',
+  clan_name_pl: 'Modliszka',
+  bonus_attr: 'perception',
+  bonus_attr_pl: 'Spostrzegawczość',
+  desc: 'W Cesarstwie istnieje kilka rodzin tak zróżnicowanych i ambitnych jak Yoritomo, więc nie jest zaskoczeniem że rodzina wspiera małą liczbę shugenja jaka rodzi się w tym rodzie. Tradycja szkoły wywodzi się z najwcześniejszych dni Klanu Modliszki. Kaimetsu-Uo, założyciel klanu, nie miał daru rozmowy z kami, ale jedna z jego córek tak i poślubiła ronina, który posiadał taką samą zdolność. Tak rozpoczęła gałąź rodziny Yoritomo, która posiada niespotykaną zdolność obcowania z duchami morza i burzy. Przez wieki mała liczba shugenja Yoritomo utrzymywała niewytłumaczalną silną więź z do duchami morza oraz w mniejszym stopniu z duchami wiatru i burzy. Z przyjęciem rodu Moshi do klanu Modliszki, okazał się on bieglejszy w rozmowi z duchami wiatrów i burzy, jednak nikt nie czuje się lepiej na pełnym morzu jak shugenja z rodziny Yoritomo. Szkoła prowadzi szereg małych świątyń na wszystkich wyspach Modliszki, a najsłynniejsza z nich jest Wyspa Nawałnic, która opiera się największym sztormom. Tam właśnie najpotężniejsi shugenja Yoritomo doskonalą swoje umiejętności i moc, by stać się siłą, z którą należy się liczyć w całym Rokguanie.',
+  honor: '4,5',
+  outfit: 'Szaty, Wakizashi, dowolna inna broń, Tuba na zwoje, Zestaw podróżny, 10 koku.',
+  affinity_deficiency: 'Woda/Ziemia',
+  shugenja_tech_name: 'Dzieci Morza: ',
+  shugenja_tech_desc: 'Linia rodzina Yoritomo, posiadająca talent do magii, ma silną więź z morzem i pogodą. Shugenja wydać jedno gniazdo zaklęcia, by zmienić siłę wiatru o jeden stopień. Jeśli shugenja również wyda punkt Pustki, może zmienić stanu pogody jeden stopień. Postać może wydać maksymalnie liczbę gniazd zaklęć lub punktów Pustki równą swojej randze w szkole, na rundę by wpłynąć na duchy. Zmiany te wpływają na obszarze mil wokół shugenjy, równą jego randze w szkole. Dodatkowo postać otrzymuje dodatkowe podbicie do wszystkich czarów Gromu.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Ognia, 1 Powietrza'},
+  {name: 'Szkoła Shugenja Moshi',
+  img_name: 'Moshi_Shugenja_by_Sergio_Camarena.jpg',
+  clan_name: 'mantis',
+  clan_name_pl: 'Modliszka',
+  bonus_attr: 'awareness',
+  bonus_attr_pl: 'Intuicja',
+  desc: 'Praktyki shugenja Moshi opracowywane były przez wiele lat, spędzonych w niezachwianej wierze Bogini Słońca. Mimo niebiańskich przewrotów, który wystąpiły w Niebiańskim Porządku, podczas burzliwej historii Rokuganu, rodowi Moshi udało się zachować ich oddanie, nawet jeśli charakter ich magicznych badań zmieniała się. Od momentu przystąpienia do klanu Modliszki, ich nacisk przesunął się z czystej teologii, na bardziej praktyczne problemy, specjalizując się w wywoływanie kami pogody. Moshi, będący znacznie liczniejsi, niż skromna gałąź rodu Yoritomo, która posiada dar rozmowy z kami, często stacjonują na pokładach statków Yoritomo w celu uspokojenia morza, na najważniejszych szlakach kupieckich. Podobnie jak Yoritomo, Moshi są bardzo elastyczni. Ich zdolność do uzyskania dodatkowego Przychylności w ciągu dnia, pozwala im na ogromną wszechstronność w ich wyborze czarów, którą mogą rywalizować nawet z rodem Isawa z klanu Feniksa.',
+  honor: '4,5',
+  outfit: 'Szaty, Wakizashi, Nóż, Tuba na zwoje, Zestaw podróżny, 10 koku.',
+  affinity_deficiency: 'Powietrze/Ziemia',
+  shugenja_tech_name: 'Błogosławieństwo Słońca: ',
+  shugenja_tech_desc: 'Żaden ród nie był tak gorliwie oddany słońcu, w całym Rokuganie, w całej jego historii. Dzięki temu szczeremu oddaniu Moshi otrzymują stałą przychylność Niebios. Podczas dnia, postać otrzymuje przychylność Ognia, która znika na czas nocy. Dodatkowo shugenja otrzymuje dodatkowe podbicie dla czarów Gromu.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 3 Ognia'},
+  {name: 'Szkoła Shugenja Kitsune',
+  img_name: 'Kitsune_shugenja_by_Veronica_V_Jones.jpg',
+  clan_name: 'mantis',
+  clan_name_pl: 'Modliszka',
+  bonus_attr: 'stamina',
+  bonus_attr_pl: 'Wytrzymałość',
+  desc: 'Klan Lisa zamieszkuje obok jednego z największych lasów w Rokuganie, co ukształtowało kierunek rozwoju tej szkoły. Każdy shugenja Kitsune, kocha duchy lasu i spokój w głębokim lesie, po niezliczonych godzinach medytacji w jego granicach. Ten związek między człowiekiem a zwierzęciem, dzięki wzajemnemu wsparciu i zrozumieniu cały czas się umacnia. Uwielbienie Kitsune do natury jest widoczne w technice jakiej uczą Kitsune w swojej szkole. Kitsune może połączyć się z dziczą oraz zwierząt, które ją zamieszkują. Jest to wszechstronna technika, która może być istotne dla obowiązków shugenja Kitsune i tylko nieliczni uczniowie z innych szkół potrafi ją powtórzyć.',
+  honor: '4,5',
+  outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, 3 koku.',
+  affinity_deficiency: 'Ziemia/Powietrze',
+  shugenja_tech_name: 'Esencja Chikushudo: ',
+  shugenja_tech_desc: 'Nikt w Cesarstwie nie zbliżył się tak do świata natury jak Kitsune, która z puszczy uczynili swój dom. Postać może użyć czarów Wyczucia, Połączenia i Przyzwania, na duchach Chikushudo tak jak inni shugenja na kami żywiołów (Przyzwanie sprawia że przyzwany zostaje duch, zamiast fragmentu żywiołu). Duchy zwierząt, często są bardziej bezpośrednie niż duchy żywiołów, choć postrzegają świat inaczej, rozumieją dlaczego ludzie robią to co robią. Postać otrzymuje darmowe podbicie, do wszystkich nie ofensywnych czarów rzucanych na zwierzęta.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Wody, 1 Ognia'},
+  {name: 'Szkoła Shugenja Chuda',
+  img_name: 'Chuda_shugenja_by_Jaime_Jones.jpg',
+  clan_name: 'spider',
+  clan_name_pl: 'Pająk',
+  bonus_attr: 'willpower',
+  bonus_attr_pl: 'Siła Woli',
+  desc: 'Ród Chuda od wieków praktykuje Maho, a widza i techniki są przekazywane w sekrecie, od momentu jak ród zostal wyniszczony przez klan Feniksa. Po przyłączeniu do klanu Pająka, spadkobiercy klanu Węża wypełnili lukę jaka powstała w nowo powstałym klani Pająka. Chuda to najbardziej żarliwi badacze Maho, szukający granic tej mocy, tylko po to by móc je potem pokonać. Wieki specjalizacji w czarach Maho, sprawiły że choć formalnie członkowie tego rodu to shugenja, to jednak wieki spędzone nad czarami Maho, sprawiły że czary oparte na kami żywiołów są dla nich trudniejsze.',
+  honor: '0,5',
+  outfit: 'Szaty, Nóż, Tuba na zwoje, Zestaw podróżny, 3 koku.',
+  affinity_deficiency: 'Shugenja Chuda posiadają przychylność rzucając wszystkie czary Maho nie opierające się na Pustce, jako ułomność gracz wybiera jeden żywioł nie będący Pustką i w nim ma ułomność, rzucając czary nie będące maho.',
+  shugenja_tech_name: 'Krew jak Woda: ',
+  shugenja_tech_desc: 'Chuda od wieków starali się ukryć prawdziwą naturę swojej mocy. Gdy postać rzuca czar oparty na maho, może wykonać dodatkowe podbicie by ukryć plugawą naturę czaru. Postać może wykonać dodatkowe podbicie by zmniejszyć libę otrzymywanych punktów Skazy Cienia do 1, alternatywnie może wydać Punkt Honoru, by osiągnąć ten sam efekt.',
+  spells: '3 czary Maho z wybranego żywioło , 2 czary Maho żywiołu w którym postać nie posiada ułomności, 1 czar Maho żywiołu w którym postać nie posiada ułomności.'},
+  {name: 'Szkoła Shugenja Soshi',
+  img_name: 'Soshi_shugenja_by_Matt_Zeilinger.jpg',
+  clan_name: 'scorpion',
+  clan_name_pl: 'Skorpion',
+  bonus_attr: 'awareness',
+  bonus_attr_pl: 'Intuicja',
+  desc: 'Choć rzadko, są chwile, kiedy olbrzymie zdolności fizyczne rodów Bayushi i Shosuro są niewystarczające do wykonania zadania wymagające skradania i subtelności. Kiedy to nastąpi, student Szkoły Shugenja Soshi pojawia się by doprowadzić zadanie do końca. Soshi lepiej niż większość rodzin shugenja, rozumie że kami to nie honorowe istoty jak wielu sobie wyobraża, ale raczej zupełnie obce istoty nie rozumiejące tego czym jest dobro czy zło. Kami mogą i zrobią niemal wszystko, czego się od nich żąda, jeśli właściwie się poprosi, dopóki prośba nie jest pogwałceniem naturalnego porządku, takich jak magii krwi. Soshi rozwinęli tę myśl, tak by nakłonić kami by pomogły im w sztuce skradania, ułudy i zwodzenia. Choć wszyscy shugenja potrafią rzucać czary dyskretnie, nikt nie potrafi tego robić tak jak shugenja Soshi. Dzięki praktycznie nie widocznemu rzucaniu czarów, które nie czynią innym ran, sprawia że są idealnymi wywiadowcami oraz pozwala na subtelne manipulacje na dworach.',
+  honor: '2,5',
+  outfit: 'Szaty, Wakizashi, Nóż, Tuba na zwoje, Zestaw podróżny, 5 koku.',
+  affinity_deficiency: 'Powietrze/Ziemia',
+  shugenja_tech_name: 'Szept Kami: ',
+  shugenja_tech_desc: 'Soshi potrafią mówić do kami, tak cicho jak tylko kami potrafią. Postać poświęcając dodatkowe gniazdo czaru tego samego żywiołu, może ukryć jego widoczne efekty rzucania, technikę można użyć tylko do czarów które nie mają możliwości zadania obrażeń. Rzucanie czaru przeprowadza się normalnie, nie ma tylko wizualnych efektów, jego rzucania. Dodatkowo postać zyskuje darmowe podbicie do wszystkich Iluzji.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 2 Ognia, 1 Wody'},
+  {name: 'Szkoła Shugenja Yogo',
+  img_name: 'Yogo_shugenja_by_Jorge_Matar.jpg',
+  clan_name: 'scorpion',
+  clan_name_pl: 'Skorpion',
+  bonus_attr: 'intelligence',
+  bonus_attr_pl: 'Inteligencja',
+  desc: 'Szkoła założona przez Yogo znana jest z niezwykłego stylu magii rozmowy z kami, która koncentruje się na ochronnych symbolach zwanych pieczęciami. Są one podobne do egzorcyzmów wykorzystywanych przez ród Toritaka, ale są znacznie bardziej elastycznego w użyciu. Yogo strzeż swych technik zazdrośnie i rzadko dopuszcza kogoś z innej rodziny do nauk w swoim dojo, przez co nawet shugenja z rodu Soshi wiedzą mało na temat technik szkoły Yogo.',
+  honor: '1,5',
+  outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, Paczka dwudziestu papierowych pieczęci, 3 koku.',
+  affinity_deficiency: 'W odróżnieniu od innych szkół, shugenja Yogo nie zyskują przychylności żadnego żywiołu, w zamian za to otrzymują dodatkowe podbicie do wszystkich czarów Pieczęci, nie pochodzących z żywiołu Pustki. Shugenja z tej szkoły posiadają ułomność w czarach typu Podróż i Rzemiosło.',
+  shugenja_tech_name: 'Ścieżka Mistrza Pieczęci: ',
+  shugenja_tech_desc: 'Shugenja Yogo, opanowali technikę która pozwala im wykonać czar na papierze by wykorzystać go później. Shugenja rzucający czar może wykonać tyle podbić ile wynosi poziom Mistrzostwa czaru, by zespolić go z papierową kartką. Gdy czar zostanie wykonany shugenja może uwolnić czar poprzez przyłożenie kartki do wybranego celu. Tylko shugenja który wykonał pieczęć na papierze może go uaktywnić, gdy to uczyni i w tym momencie liczy się czas trwania zaklęcia. W przypadku czarów obszarowych gdy zostaną uwolnione na żywą istotę, tylko ona zostanie objęta czarem. Przyłożenie kartki papieru do celu który tego nie chce wymaga udanego testu ataku, używają Czarostwa/Zręczności. Papierowa pieczęć może być podarta lub w inny sposób zniszczona, co zakończy czas działania czaru.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 czary Pieczęci, 3 inne czary (nie Pustki)',
+  special: 'Shugenja Yogo przez lata studiów zmienili sekwencje niektórych czarów tak by móc je wykorzystać jako Pieczęcie:
+          Powietrze: W Poszukiwanie Prawdy, Dzięki Światłu Księżyca, Dotyk Benten, Przyzwanie Mgły
+          Ziemia: Pancerz Ziemi, Odwaga Siedmiu Gromów, Siła Duszy, Całość Świata
+          Ogień: Zgaszenie, Ogień Czystości, Bitewny Zgiełk, Sfera Wiecznego Słońca
+          Woda: Odwrócenie Fortuny, Oczyszczające Opary, Mądrość i Jasność, Kojący Chłód'},
+  {name: 'Szkoła Shugenja Tamori',
+  img_name: 'Tamori_shugenja_by_Isuardi_Therianto.jpg',
+  clan_name: 'dragon',
+  clan_name_pl: 'Smok',
+  bonus_attr: 'stamina',
+  bonus_attr_pl: 'Wytrzymałość',
+  desc: 'Utworzona z resztek rodziny Agasha po ich ucieczce do klanu Feniksa, rodzina Tamori odziedziczyła wieki badań i doświadczeń prowadzonych przez ich poprzedników, czyniąc kierunki badań poprzedników, swoimi priorytetami. Najbardziej znaną dyscypliną, jaką szczególnie upodobał sobie ród Tamori jest badanie alchemii. Tamori opanowali do mistrzostwa, jeden z sekretów Agashy, który pozwala zawrzeć esencję zaklęcia, jako rytualnie przygotowany płyn, dzięki czemu mogą wykorzystać go w późniejszym czasie. W połączeniu z technikami walki, których uczy się każdy shugenja Tamori, wystarczy to by szkoła była unikatowa w skali całego Rokuganu. Technika Tamori pozwalają w dużą wszechstronność w stosowaniu zaklęć, dając możliwość dramatycznego skrócenia czasu rzucenia zaklęcia, jeśli shugenja będzie miał czas wcześniej się przygotować.',
+  honor: '4,5',
+  outfit: 'Szaty, Wakizashi, Dowolna inna broń, Tuba na zwoje, Zestaw podróżny, 5 koku.',
+  affinity_deficiency: 'Ziemia/Powietrze',
+  shugenja_tech_name: 'Esencja Żywiołu: ',
+  shugenja_tech_desc: 'Tamori nauczyli się destylować esencję żywiołów i zawierać ją w miksturach lub przedmiotach, w celu późniejszego wykorzystania. Postać może wydać jedno gniazdo zaklęć by przechować zaklęcie które zna i które posiada obszar czaru "1 cel", "1 postać" lub "1 stwór", w miksturze. Czar może być uwolniony przez dowolny sposób, jako akcja prosta (wypicie) lub jako akcja pełna jako atak, wykonuje się wtedy test Atletyka(Rzucanie)/Zręczność. Czary przechowywane w ten sposób, wliczają się do limitu czarów jakie shugenja może rzucić i zajmują gniazdo czarów do momentu uaktywnienia. Tworzenie eliksirów w ten sposób, wymaga liczby godzin równą poziomowi mistrzostwa przechowywanego zaklęcia. Dodatkowo postać zyskuje dodatkowe podbicie do wszystkich czarów Rzemiosła.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody.'},
+  {name: 'Szkoła Shugenja Asahina',
+  img_name: 'Asahina_Michiru_by_Jorge_Matar.jpg',
+  clan_name: 'crane',
+  clan_name_pl: 'Żuraw',
+  bonus_attr: 'awareness',
+  bonus_attr_pl: 'Intuicja',
+  desc: 'Podobnie jak rodzina jako całości, Szkoła Shugenja Asahina, uczą przewagi cnoty ochrony życia, nad bezmyślną destrukcją. Szkoła Asahina koncentruje się na duchowych celach oraz medytacji, jako sposobowi do odnalezienia drogi w świecie. Shugenja Asahina pełnią tę samą funkcję dla klanu Żurawia, jaką pełnią inne rodziny shugenja dla swoich klanów, ale korzystają z okazji do szukania pytań, u uczestników lub obserwatorów ich rytuałów. Dla shugenjy Asahina wszystko co dzieje się wokół niego, jest możliwością do zadawania pytań. Podobnie szkoła kładzie duży nacisk na tworzenie dzieł sztuki, akt uważany za istotny dla poprawy świata wokół nich Przede wszystkim, Szkoła Asahina skupia się na obronie i ochronie, techniki nauczane w szkole zachęcają do poznawania zaklęć, które zmniejszają uszkodzenia i chronią innych przed atakiem. Inne czary posiadane przez shugenja Asahina skupiają się na tworzeniu i czarach Rzemieślniczych.',
+  honor: '6,5',
+  outfit: 'Szaty, Bo, Wakizashi, Tuba na zwoje, Zestaw podróżny, 10 koku.',
+  affinity_deficiency: 'Wiatr/Ogień',
+  shugenja_tech_name: 'Gracja Duszy: ',
+  shugenja_tech_desc: 'Asahina wykorzystują potęgę kami dla sztuki, a nie wojny. Postać może wydać punkt Pustki, by zmniejszyć liczbę zadawanych obrażeń wszystkich przeciwników w 6m od siebie o 0z1, na czas równy swojej randze w szkole (Użycie ponowne tej techniki nie zwiększa liczby zatrzymywanych obrażeń, lecz resetuje czas trwania techniki). Dodatkowo postać zyskuje darmowe podbicie, do czarów Obrony.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 2 Wody, 1 Ziemi.'},
+  {name: 'Szkoła Shugenja Tonbo',
+  img_name: 'Tonbo_Jairyu_by_David_Horne.jpg',
+  clan_name: 'minor',
+  clan_name_pl: 'Pomniejsze',
+  minor_clan_name: 'Ważka',
+  bonus_attr: 'perception',
+  bonus_attr_pl: 'Spostrzegawczość',
+  desc: 'Tonbo są głęboko związani ze światem duchowym. Stworzyli bardzo silną więź z górami i pozostaną na swych ziemiach choćby nawet problem za problemem spadał na nich niczym lawina. Chociaż Shugenja Tonbo są takimi samymi kapłanami jak ci z innych klanów to świetnie zdają sobie sprawę z politycznych obowiązków spoczywających na ich barkach. Jako pośrednicy między Klanem Smoka a resztą Rokuganu Tonbo muszą być gotowi na wyzwania dworów Rokuganu.',
+  honor: '4,5',
+  outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
+  affinity_deficiency: 'Woda/Ogień',
+  shugenja_tech_name: 'Prowadzeni przez los: ',
+  shugenja_tech_desc: 'Tonbo zgłębiają arkana sztuki dyplomatycznej tak samo, jak magicznej, służą jako pośrednicy z klanem Smokia od samego zarania Klanu. Wsparcie Kami może okazać się potężnym narzędziem na dworze. Możesz wydać gniazdo zaklęcia by otrzymać bonus +1z0 do dowolnego testu umiejętności społecznej. Na pojedynczy rzut nie możesz wydać więcej gniazd niż twoja aktualna ranga, ponadto dostajesz darmowe podbicie do każdego rzutu na zaklęcia będącego wróżbą.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Powietrza, 1 Ziemi.'},
+  {name: 'Szkoła Shugenja Kitsune',
+  img_name: 'Kitsune_Gina_by_Veronica_V_Jones.jpg',
+  clan_name: 'minor',
+  clan_name_pl: 'Pomniejsze',
+  minor_clan_name: 'Lis',
+  bonus_attr: 'stamina',
+  bonus_attr_pl: 'Wytrzymałość',
+  desc: 'Ziemie Klanu Lisa leżą tuż obok jednej z największych puszczy Cesarstwa, ten fakt ukształtował kierunek ich lekcji. Każdy Shugenja Kitsune nabywa miłość do Duchów i tradycyjnie do głębin lasów, i tradycyjnie do głębin lasów, dzięki niekończącym się godzinom medytacji wewnątrz nich. Więź między ludźmi i zwierzętami jest ciągle odnawiana i wzmacniana dzięki wyczerpującym zajęciom. Miłość Kitsune do natury jest ewidentna i niepodważalnie to ona kształtuje umiejętności adeptów tej szkoły. Kitsune mogą połączyć się z dziczą i zamieszkującymi ją zwierzętami. Jest to uniwersalna technika która może okazać się niezwykle istotna i obowiązkach Shugenja Kitsune. Są też grupki członków innych klanów próbujących skopiować zdolności Kitsune.',
+  honor: '4,5',
+  outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
+  special: 'W roku 1169 w skutek ataków na Kitsune Mori, poprosił Ród Tsuruchi o pomoc. Tsuruchi którzy w tym czasie byli już członkami klanu Modliszki, pozytywnie odpowiedzieli na wezwanie i wspólnymi siłami odparli ataki na Kitsune Mori. Później okazało się że stał za nimi Smok Cieni, który dzięki mocy lasu chciał komunikować się z wszystimi zwierzętami Rokuganu i pozyskiwać dzięki nim informacje. Ataki poważnie osłabiły tyn niewielki klan, co skłoniło ówczesnego Czempion klanu Kitsune Ryukena do przystąpienia do klanu Modliszki.',   
+  affinity_deficiency: 'Ziemia/Powietrze',
+  shugenja_tech_name: 'Esencja Chikushudo: ',
+  shugenja_tech_desc: 'Nikt w Cesarstwie nie jest bliżej natury niż prości Kitsune którzy uczynili dzicz swoim domem. Możesz używać Wyczucia, Zespolenia i Przywołania do kontaktowania się ze zwierzętami tak samo jak z Kami. (Dzięki przywołaniu możesz sprowadzić pojedyncze zwierzę zamiast kawałka materii). Zwierzęta zwykle są bardziej bezpośrednie i rozumują inaczej niż Kami, mają więcej wyczucia co do ludzkich intencji. Dostajesz dodatkowe podbicie do wszystkich czarów rzucanych na zwierzęta o ile nie zadają im obrażeń.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Wody, 1 Ognia'},
+  {name: 'Szkoła Shugenja Chuda',
+  img_name: 'Chuda_Jinsei_by_Anthony_Francisco.jpg',
+  clan_name: 'minor',
+  minor_clan_name: 'Wąż',
+  clan_name_pl: 'Pomniejsze',
+  bonus_attr: 'willpower',
+  bonus_attr_pl: 'Siła Woli',
+  desc: 'Szkoła Shugenja Chuda powstała w oparciu o te same techniki, których Inkwizytorzy Feniksa używają każdego dnia. Jej założyciel, Isawa Chuda był Cesarskim Namiestnikiem, zaprzysiągł, że zniszczy kulty maho-tsukai. Niestety potomkowie szlachetnego samuraja stali się tym, co on przysiągł wyplenić. Pierwsza Szkoła Shugenja Chuda powstała do jednego, do eksterminacji sił Krain Cienia. Chuda będą polować na skażonych maho-tsukai i zrzucać na nich siłę gniewu żywiołów. Chuda uczą się jak penetrowac obronę każdej zasłony jaką maho-tsukaj mogą przyzwać, dodatkowo dzięki skupieniu na magii ziemi stali się doskonałymi użytkownikami jadeitowych zaklęć mogących poważnie ranić grzeszników.',
+  honor: '4,5',
+  outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
+  special: 'Klan stał się ofiarą własnej ofiary i oficjalnie został zniszczony, przez klan Feniksa. Jednak wiele szczątków zodbytej wiedzy przetrwało i obecnie ród Chuda, potajemnie powstaje na nowo, w ramach klanu Pająka.',
+  affinity_deficiency: 'Ziemia/Powietrze',
+  shugenja_tech_name: 'By Uderzyć Grzesznika: ',
+  shugenja_tech_desc: 'Chuda był bezwzględnym prześladowcą Krain Cienia a jego techniki żyją do dziś w ludziach, którzy noszą jego imię. Jako akcję darmowa możesz wydać punkt pustki by zanegować ilość punktów redukcji równą twojej randze przeciw jednemu przeciwnikowi. Możesz także dodać swoją rangę w szkole do obrażeń zadanych przy pomocy zaklęć każdemu przeciwnikowi który nosi skazę Krain Cienia.',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody'},
+  {name: 'Szkoła Shugenja Komori',
+  img_name: 'Komori_Taruko_by_Drew_Baker.jpg',
+  clan_name: 'minor',
+  minor_clan_name: 'Nietoperz',
+  clan_name_pl: 'Pomniejsze',
+  bonus_attr: 'awareness',
+  bonus_attr_pl: 'Intuicja',
+  desc: 'Kiedy Yoritomo Komori został nagrodzony prawem do założenia własnego pomniejszego klanu natychmiast zebrał przy sobie najlepszych shugenja. Zdecydował się uhonorować swoje nietoperze dziedzictwo, które pozwalał mu na szybką komunikację i podzielić się nim, z resztę Rokuganu. Komori rozpoznał, że musi zachować balans między teorią, a praktyką i dążyć do udoskonalenia swoich umiejętności tak, by miały zastosowanie na polu bitwy. Szkoła Shugenja Komori jest unikalna w Cesarstwie. Koumori to życzliwe duchy nietoperzy, istot przybyłych z Chikushudo które pomogły ludziom wiele razy. Ich potężna magia nigdy nie została zrozumiana z powodu ich duchowej natury samotników. Shugenja Komori skorzystali z ich mocy, co pozwoliło, im opracować zaklęcia nieznane nigdy wcześniej w Rokuganie.',
+  honor: '4,5',
+  outfit: 'ubrania, Wakizashi, dowolna broń, torba na zwoje, plecak podróżny, 3 koku',
+  affinity_deficiency: 'Powietrze/Ziemia',
+  shugenja_tech_name: 'Szepty Kami: ',
+  shugenja_tech_desc: 'Komori praktykują nie tylko rytuały duchów koumori, których potomkiem był założyciel klanu, lecz także sztukę przekazywania wiadomości przy pomocy kami. Możesz wydać jedno gniazdo zaklęcia, by wysłać magiczną wiadomość do dowolnej znanej ci osoby. Nie może być dłuższa, niż pół minuty na rangę, ponadto może przebyć dystans, równy twojej randze razy 161 km. (100 mil)',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 powietrza, 2 wody, 1 ognia'},
+  {name: 'Szkoła Shugenja Seppun',
+  img_name: 'Seppun_Shugenja_by_Hai_An.jpg',
+  clan_name: 'imperial',
+  clan_name_pl: 'Rody Cesarskie',
+  desc: 'Najlepsi Bushi, Rokuganu mają zaszczyt chronić osobę Cesarza, jednak istnieją zagrożenia których niemożna, rozwiązać przy pomocą stali. Jako członkowie "Ukrytej Gwardii", shugenja Seppun są w ciągłej gotowości, dniem i nocą, szukając najmniejszych śladów zagrożenia. Iche pieczęcie ochronne, są najpotężniejsze w Rokuganie, a ród Seppun nieprzerwania je poprawia. Shugenja Seppun są ostatnią magiczną linią ochrony Cesarza i nigdy nie zawiodą. Technika shugenja ze szkoły Seppun, pozwala im na wykorzystywanie kami, w sposób przekraczający możliwości śmiertelników, ta technika jest bardzo uniwersalna, jednak działa tylko gdy shugenja, chroni życie i zdrowie Syna Niebios.',
+  bonus_attr: 'intelligence',
+  bonus_attr_pl: 'Inteligencja',
+  honor: '6,5',
+  outfit: 'Szaty, Wakizashi, bo, tuba na zwoje, zestaw podróżne 10 koku.',
+  affinity_deficiency: 'Ogień/Woda',
+  shugenja_tech_name: 'W Obornie Tronu: ',
+  shugenja_tech_desc: 'Ukryta Straż, istnieje tylko by chronić Cesarza, i stanowi poważne wyzwanie dla każdego kto, zechce zagrozić Synowi Niebios. Postać zystkuje dodatkowe podbicie, do każdego czaru który ma chronić życie, własność, rodzinę ilub reputację Cesarza, póki czar nie przyniesie shugenji, utraty honoru. Technika ta tyczy się także członków rodzin Cesarskich(poza postacią). Postać zyskuje dodatkowe podbicie do czarów znanych tylko rodzinom Cesarskim',
+  spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Oginia, 2 Ziemii, 1 Powietrza'}]
+
+basic_monk_schools = [
+  {name: 'Zakon Mnichów Tsurumi Zumi',
+  img_name: 'Tsurumi_monk_by_Edwin_David.jpg',
+  clan_name: 'dragon',
+  clan_name_pl: 'Smok',
+  minor_clan_name: '',
+  bonus_attr: 'void',
+  bonus_attr_pl: 'Pustka',
+  desc: 'Mnisi z zakonu stanowią pomniejszy zakon działający w ramach Zakonu Togashi, a został on założony podczas Wieku Ukrytego Cesarza, gdy Togashi Hoshi zbuntował się przeciw Hitomi i zaczął samemu tatuować swoich podopiecznych. W odróżnieniu od Togashi Ise Zumi i Hitomi Kikage Zumi, zakon Tsurui Zumi nie skupia się tak mocno na kształtowaniu ciała i sprawności fizycznej, uznając w to miejsce poznanie własnej duszy. Choć sztuki walki nadal wykorzystywane są w zakonie, to główny nacisk kładziony jest na użycie własnego Chi i innych mistycznych technikach walk. Wielu z mnichów zakonu Hoshi całkowicie porzuciło drogę walki, na rzecz medytacji, kontemplacji, czy innych czynności które mają doprowadzić ich do oświecenia. Jednakże w chwili próby, gdy dobro zakonu lub klanu Smoka, jest zagrożone, zakon staje do walki.',
+  honor: '4,5',
+  outfit: 'Szaty, Bo, Zestaw podróżny, 2 koku.',
+  monk_tech_name: 'Zwinne Pięści, Delikatne Serce: ',
+  monk_tech_desc: 'Tsurui Zuni szukają oświecenia, na wielu różnych ścieżkach, lecz nie wstydzą się fizycznej agresji gdy zajdzie taka potrzeba. Postać może wydać punkt Pustki by uaktywnić tę technikę, na liczbę rund równą randze w szkole. Gdy ta technika jest aktywna, postać dodaje +1z1 do swoich ataków oraz +1z0 do obrażeń, gdy walczy wręcz. Postać dokonuje wyboru na początku swojej rundy. Dodatkowo postać zaczyna grę posiadając jeden wybrany tatuaż oraz zna dwa wybrane Kiho, by użyć Kiho postać musi spełniać wszystkie wymagania. Gdy postać osiągnie czwartą rangę, otrzyma dodatkowy tatuaż.',
+  special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'}
+]
+
+SchoolClass.destroy_all
+school_class_bushi = SchoolClass.create( name: 'Bushi' )
+school_class_shugenja = SchoolClass.create( name: 'Shugenja' )
+school_class_courtier = SchoolClass.create( name: 'Dworzanin' )
+school_class_monk = SchoolClass.create( name: 'Mnich' )
+school_class_ninja = SchoolClass.create( name: 'Ninja' )
+school_class_artisan = SchoolClass.create( name: 'Artysta' )
+
+# list of all basic_primary_school_names
+basic_primary_names = {'Szkoła Bushi Shiba' => ['Bushi'], 'Szkoła Artystów Shiba' => ['Artysta'], 
+                 'Szkoła Mędrców Asako' => ['Dworzanin'], 'Szkoła Henshin Asako' => ['Mnich'],
+                 'Szkoła Bushi Moto' => ['Bushi'], 'Szkoła Obrońców Moto' => ['Bushi'],
+                 'Szkoła Emisariuszy Ide' => ['Dworzanin'], 'Szkoła Bushi Shinjo' => ['Bushi'],
+                 'Szkoła Dziewic Wojny Utaku' => ['Bushi'], 'Akademia Bushi Akodo' => ['Bushi'],
+                 'Szkoła Bardów Ikoma' => ['Dworzanin'], 'Szkoła "Cieni" Ikoma' => ['Bushi'],
+                 'Szkoła Berserkerów Matsu' => ['Bushi'], 'Szkoła Władców Bestii Matsu' => ['Bushi'],
+                 'Szkoła Bushi Yoritomo' => ['Bushi'], 'Szkoła Dworzan Yoritomo' => ['Dworzanin'],
+                 'Szkoła Łuczników Tsuruchi' => ['Bushi'], 'Szkoła Łowców Tsuruchi' => ['Bushi'],
+                 'Zakon Mnichów Togashi' => ['Mnich'], 'Pięściarz Modliszki' => ['Bushi'],
+                 'Szkoła Bushi Daigotsu' => ['Bushi'], 'Szkoła Dworzan Daigotsu' => ['Dworzanin'],
+                 'Szkoła Mnichów Pająka' => ['Mnich'], 'Szkoła Bushi Bayushi' => ['Bushi'],
+                 'Szkoła Dworzan Bayushi' => ['Dworzanin'], 'Szkoła Zarządców Soshi' => ['Bushi'], 
+                 'Szkoła Szpiegów Shosuro' => ['Ninja'], 'Akademia Aktorów Shosuro' => ['Ninja'],
+                 'Szkoła Bushi Mirumoto' => ['Bushi'], 'Szkoła Szermierzy Tao Mirumoto' => ['Bushi'],
+                 'Szkoła Śledczych Kitsuki' => ['Dworzanin'], 'Zakon Mnichów Kikage Zumi' => ['Mnich'],
+                 'Akademia Pojedynku Kakita' => ['Bushi'], 'Akademia Artystów Kakita' => ['Artysta'],
+                 'Szkoła Dworzan Doji' => ['Dworzanin'], 'Szkoła Zarządców Doji' => ['Bushi'],
+                 'Szkoła Żelaznych Wojowników Daidoji' => ['Bushi'], 'Szkoła Zwiadowców Daidoji' => ['Bushi'],
+                 'Szkoła Wojowników Hida' => ['Bushi'], 'Szkoła Pragmatyków Hida' => ['Bushi'],
+                 'Szkoła Bushi Hiruma' => ['Bushi'], 'Szkoła Zwiadowców Hiruma' => ['Bushi'],
+                 'Szkoła Inżyierów Kaiu' => ['Bushi', 'Artysta'], 'Szkoła Łowców Czarowic Kuni' => ['Mnich'],
+                 'Szkoła Bushi Toritaka' => ['Bushi'], 'Szkoła Dworzan Yasuki' => ['Dworzanin'],
+                 'Szkoła Gwardzistów Seppun' => ['Bushi'], 'Szkoła Dworzan Otomo' => ['Dworzanin'],
+                 'Szkoła Heraldów Miya' => ['Dworzanin']}
+
+basic_shugenja_names = { 'Szkoła Shugenja Isawa' => ['Shugenja'], 'Szkoła Shugenja Agasha' => ['Shugenja'],
+                         'Szkoła Kapłanów Śmierci Moto' => ['Shugenja'], 'Szkoła Shugenja Horiuchi' => ['Shugenja'],
+                         'Szkoła Shugenja Iuchi' => ['Shugenja'], 'Szkoła Shugenja Kitsu' => ['Shugenja'],
+                         'Szkoła Shugenja Yoritomo' => ['Shugenja'], 'Szkoła Shugenja Moshi' => ['Shugenja'],
+                         'Szkoła Shugenja Kitsune' => ['Shugenja'], 'Szkoła Shugenja Chuda' => ['Shugenja'],
+                         'Szkoła Shugenja Soshi' => ['Shugenja'], 'Szkoła Shugenja Yogo' => ['Shugenja'],
+                         'Szkoła Shugenja Tamori' => ['Shugenja'], 'Szkoła Shugenja Asahina' => ['Shugenja'],
+                         'Szkoła Shugenja Kuni' => ['Shugenja'], 'Szkoła Shugenja Seppun' => ['Shugenja']}
+
+basic_monk_names = { 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'] }
 # ---------------------------- Support functions --------------------------
 
 def not_valid_names(model_name, objects)
@@ -1682,12 +2016,55 @@ clans.each do |clan|
   end
 end
 
-puts 'Basic Primary Schools Generation'
+puts 'Schools Generation'
 BasicPrimarySchool.destroy_all
 not_valid_names(BasicPrimarySchool, basic_primary_schools)
+not_valid_names(BasicShugenjaSchool, basic_shugenja_schools)
+not_valid_names(BasicMonkSchool, basic_monk_schools)
 clans.each do |clan|
   basic_primary_schools.each do |school|
     clan.basic_primary_schools.create(school) if school[:clan_name] == clan.name
+  end
+  basic_shugenja_schools.each do |school|
+    clan.basic_shugenja_schools.create(school) if school[:clan_name] == clan.name    
+  end
+  basic_monk_schools.each do |school|
+    clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
+  end
+end
+puts 'School Classes generation'
+BasicPrimarySchool.all.each do |school|
+  school_classes = basic_primary_names[school.name]
+  if school_classes
+    school_classes.each do |class_name|
+      school_class = SchoolClass.find_by(name: class_name)
+      school.primary_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
+  end
+end
+BasicShugenjaSchool.all.each do |school|
+  school_classes = basic_shugenja_names[school.name]
+  if school_classes
+    school_classes.each do |class_name|
+      school_class = SchoolClass.find_by(name: class_name)
+      school.shugenja_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
+  end
+end
+
+BasicMonkSchool.all.each do |school|
+  school_classes = basic_monk_names[school.name]
+  if school_classes
+    school_classes.each do |class_name|
+      school_class = SchoolClass.find_by(name: class_name)
+      school.monk_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
   end
 end
 

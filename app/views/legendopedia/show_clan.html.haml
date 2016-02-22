@@ -20,3 +20,9 @@
     %h2.middle_text
       %strong
         = school.name
+    %h3
+      %strong
+        Klasa szkoły:
+      = school.school_classes.map { |x| x[:name]}.join(', ')
+
+

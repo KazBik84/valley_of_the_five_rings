@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160215200645) do
+ActiveRecord::Schema.define(version: 20160222095449) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,27 @@ ActiveRecord::Schema.define(version: 20160215200645) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "basic_monk_schools", force: :cascade do |t|
+    t.string   "name"
+    t.string   "img_name"
+    t.string   "clan_name"
+    t.string   "clan_name_pl"
+    t.string   "minor_clan_name"
+    t.string   "bonus_attr"
+    t.string   "bonus_attr_pl"
+    t.string   "desc"
+    t.string   "honor"
+    t.string   "outfit"
+    t.string   "monk_tech_name"
+    t.string   "monk_tech_desc"
+    t.string   "special"
+    t.integer  "clan_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "basic_monk_schools", ["clan_id"], name: "index_basic_monk_schools_on_clan_id", using: :btree
 
   create_table "basic_primary_schools", force: :cascade do |t|
     t.string   "name"
@@ -51,6 +72,29 @@ ActiveRecord::Schema.define(version: 20160215200645) do
   end
 
   add_index "basic_primary_schools", ["clan_id"], name: "index_basic_primary_schools_on_clan_id", using: :btree
+
+  create_table "basic_shugenja_schools", force: :cascade do |t|
+    t.string   "name"
+    t.string   "img_name"
+    t.string   "clan_name"
+    t.string   "clan_name_pl"
+    t.string   "minor_clan_name"
+    t.string   "bonus_attr"
+    t.string   "bonus_attr_pl"
+    t.string   "desc"
+    t.string   "honor"
+    t.string   "outfit"
+    t.string   "affinity_deficiency"
+    t.string   "spells"
+    t.string   "shugenja_tech_name"
+    t.string   "shugenja_tech_desc"
+    t.string   "special"
+    t.integer  "clan_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "basic_shugenja_schools", ["clan_id"], name: "index_basic_shugenja_schools_on_clan_id", using: :btree
 
   create_table "clans", force: :cascade do |t|
     t.string   "desc"
@@ -86,6 +130,42 @@ ActiveRecord::Schema.define(version: 20160215200645) do
 
   add_index "families", ["clan_id"], name: "index_families_on_clan_id", using: :btree
 
+  create_table "monk_school_classes", force: :cascade do |t|
+    t.integer  "school_class_id"
+    t.integer  "basic_monk_school_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  add_index "monk_school_classes", ["basic_monk_school_id"], name: "index_monk_school_classes_on_basic_monk_school_id", using: :btree
+  add_index "monk_school_classes", ["school_class_id"], name: "index_monk_school_classes_on_school_class_id", using: :btree
+
+  create_table "primary_school_classes", force: :cascade do |t|
+    t.integer  "school_class_id"
+    t.integer  "basic_primary_school_id"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "primary_school_classes", ["basic_primary_school_id"], name: "index_primary_school_classes_on_basic_primary_school_id", using: :btree
+  add_index "primary_school_classes", ["school_class_id"], name: "index_primary_school_classes_on_school_class_id", using: :btree
+
+  create_table "school_classes", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shugenja_school_classes", force: :cascade do |t|
+    t.integer  "school_class_id"
+    t.integer  "basic_shugenja_school_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "shugenja_school_classes", ["basic_shugenja_school_id"], name: "index_shugenja_school_classes_on_basic_shugenja_school_id", using: :btree
+  add_index "shugenja_school_classes", ["school_class_id"], name: "index_shugenja_school_classes_on_school_class_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -116,6 +196,14 @@ ActiveRecord::Schema.define(version: 20160215200645) do
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
+  add_foreign_key "basic_monk_schools", "clans"
   add_foreign_key "basic_primary_schools", "clans"
+  add_foreign_key "basic_shugenja_schools", "clans"
   add_foreign_key "families", "clans"
+  add_foreign_key "monk_school_classes", "basic_monk_schools"
+  add_foreign_key "monk_school_classes", "school_classes"
+  add_foreign_key "primary_school_classes", "basic_primary_schools"
+  add_foreign_key "primary_school_classes", "school_classes"
+  add_foreign_key "shugenja_school_classes", "basic_shugenja_schools"
+  add_foreign_key "shugenja_school_classes", "school_classes"
 end
