@@ -4,6 +4,9 @@ class BasicPrimarySchool < ActiveRecord::Base
   has_many :primary_school_classes, dependent: :destroy
   has_many :school_classes, through: :primary_school_classes
 
+  has_many :primary_school_skills, dependent: :destroy
+  has_many :skills, through: :primary_school_skills
+
   validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl, 
                         :desc, :honor, :outfit, :rank1_name, :rank1_desc,
                         :rank2_name, :rank2_desc, :rank3_name, :rank3_desc, :rank4_name,
