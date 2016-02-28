@@ -753,25 +753,6 @@ basic_primary_schools = [
   rank5_name: 'Rozedrzeć Ciemność: ',
   rank5_desc: 'Na tym poziomie wtajemniczenia łowca czarownic staje się nemezisem sił Jigoku. Postać otrzymuje modyfikator +4z1 do ataków i obrażeń przeciw stworom cienia lub osobom o których wie, że są naznaczone skazą cienia. Bonus łączy się z modyfikatorem rangi pierwszej.'},
   #8(22)----------------------------------------------------------------------------------------------------
-  {name: 'Szkoła Bushi Toritaka',
-  img_name: 'Bushi_Toritaka_by_Ben_Peck.jpg',
-  clan_name: 'crab',
-  clan_name_pl: 'Krab',
-  bonus_attr: 'strength',
-  bonus_attr_pl: 'Siła',
-  desc: 'Szkoła rodu Toritaka skupia się na niszczeniu stworów które wyszły ze świata duchów. Ich styl walki jest płynny by zaadoptować się do każdej sztuczki, jaką mogą napotkać walcząc z duchami. Niestety skupienie się na przeciwnikach nie z tego świata czyni z wojowników Toritaka mniej efektywnymi w walce przeciwko zwykłym przeciwnika.',
-  honor: '5.5',
-  outfit: 'Lekki pancerz, znoszone ubranie, daisho, dowolna broń, zestaw podróżny, 3 koku.',
-  rank1_name: 'Oko Sokoła: ',
-  rank1_desc: 'Uczeń szkoły Toritaka musi być świadomy tego, co się w koło niego dzieje, bo przeciwnik może pojawić się dosłownie wszędzie. Postać dodaje +1z0 do wszystkich umiejętności i testów opartych na spostrzegawczości. Dodatkowo przeciwko stworom z innych światów (wliczając oni z Jigoku i Gaki), dodaje +1z0 do obrażeń.',
-  rank2_name: 'Sokół Wzbija się do Lotu: ',
-  rank2_desc: 'Dzięki treningowi postać może wyczuć stwory z innych światów, wykonując test percepcji o PT kręgowi powietrza istoty razy pięć.',
-  rank3_name: 'Skrzydła Sokoła: ',
-  rank3_desc: 'Toritaka uderza z precyzją, trzymając przeciwnika na dystans. Postać może wykonywać ataki włócznią lub bronią samurajską jako akcja prosta zamiast kompleksowa.',
-  rank4_name: 'Odważny i Silny: ',
-  rank4_desc: 'Stwory mogą używać sztuczek by zmylić przeciwnika, ale Toritaka uczy się patrzenia przez ich zasłonę. Postać może wydać punkt pustki by zanegować dowolne modyfikatory wynikające z ciemności lub oślepienia, efekt tej techniki trwa do zakończenia tury następnej po tej w której została użyta ta technika.',
-  rank5_name: 'Szpony Sokoła: ',
-  rank5_desc: 'Nic nie powstrzyma bushi Toritaka przed trafieniem przeciwnika. Ataki postaci ignorują pięć punktów wyparowań przeciwnika. Przeciw potworom z innych światów, postać może wydać punkt pustki jako akcję darmową by obniżyć redukcję potwora o dziesięć punktów na jedną turę.'},
   #9(23)------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Dworzan Yasuki',
   img_name: 'Dworzanin_Yasuki_by_Veronica_V_Jones.jpg',
@@ -1311,6 +1292,7 @@ basic_primary_schools = [
   desc: 'W przeciwieństwie do swoich adwersarzy z rodu Shiba, artyści Kakita, nie ograniczają się jedynie do tworzenia fizycznej sztuki, takiej jak, malarstwo i poematy. Akademia Artystów Kakita poświęca się badaniom każdego rodzaju sztuki, czy to opartej na występie czy na pracy rąk, tak by jak najlepiej mogła się ona przysłużyć klanowi Żurawia.',
   honor: '5,5',
   outfit: 'Szaty dworskie, Piękne ubranie, Wakizashi, Rzeczy potrzebne do uprawiania sztuki, Wachlarz, Rokugański kucyk, Zestaw podróżny, 10 koku.',
+  special: 'Umiejętności artystyczne których uczą w Akademii Kakita: Aktorstwo, Artysta( Ogrodnik, Ikebana, Origami, Malarstwo, Poezja lub Rzeźbiarstwo',
   rank1_name: 'Dusza Artysty: ',
   rank1_desc: 'Akademia Artystów Kakita naucza od wczesnej młodości, aby skupić się na jednej konkretnej formie sztuki, powyżej wszystkich innych, poświęcając się jej serce, duszę i dążeniu do absolutnej perfekcji. Oczywiście, zgodnie z tradycją Żurawia, Artysta również uczy się być bezwzględnym krytykiem wszelkich artystycznych rywali. Postać wybiera jedną z trzech umiejętności artystycznych wybranych podczas tworzenia postaci (Aktorstwo, Umiejętność Artystyczna, lub Przedstawianie) jako centrum swojego artystycznego szkolenia. Umiejętność ta staje się "wybraną sztuką", podczas używania danej umiejętności, postać zyskuje +2z0 do rzutu oraz liczba podbić nie jest ograniczana przez wartość kręgu Pustki. Używając umiejętności Gry: Sadane, by skrytykować czyjś występ lub dzieło, postać zyskuje darmowe podbicie do testu.',
   rank2_name: 'Sen Duszy: ',
@@ -1938,18 +1920,483 @@ basic_monk_schools = [
   outfit: 'Szaty, Bo, Zestaw podróżny, 2 koku.',
   monk_tech_name: 'Zwinne Pięści, Delikatne Serce: ',
   monk_tech_desc: 'Tsurui Zuni szukają oświecenia, na wielu różnych ścieżkach, lecz nie wstydzą się fizycznej agresji gdy zajdzie taka potrzeba. Postać może wydać punkt Pustki by uaktywnić tę technikę, na liczbę rund równą randze w szkole. Gdy ta technika jest aktywna, postać dodaje +1z1 do swoich ataków oraz +1z0 do obrażeń, gdy walczy wręcz. Postać dokonuje wyboru na początku swojej rundy. Dodatkowo postać zaczyna grę posiadając jeden wybrany tatuaż oraz zna dwa wybrane Kiho, by użyć Kiho postać musi spełniać wszystkie wymagania. Gdy postać osiągnie czwartą rangę, otrzyma dodatkowy tatuaż.',
-  special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'}
-]
+  special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'}]
 
-SchoolClass.destroy_all
-school_class_bushi = SchoolClass.create( name: 'Bushi' )
-school_class_shugenja = SchoolClass.create( name: 'Shugenja' )
-school_class_courtier = SchoolClass.create( name: 'Dworzanin' )
-school_class_monk = SchoolClass.create( name: 'Mnich' )
-school_class_ninja = SchoolClass.create( name: 'Ninja' )
-school_class_artisan = SchoolClass.create( name: 'Artysta' )
+skills = [
+  {name: 'Acting',
+  name_pl: 'Aktorstwo',
+  sub_typ: 'Społeczne, Sceniczne',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Klan, Płeć, Profesja',
+  desc: 'Poziom tej umiejętności, odzwierciedla to na ile postać potrafi, przezwyciężyć własne ja, by móc przybrać maskę kogoś innego. Nie ma znaczenia czy umiejętność jest wykorzystywana by zadowolić gości, czy też by przedostać się do twierdzy wroga. Umiejętność ta odzwierciedla również wiedzę postaci o różnych stylach odgrywania postaci w Rokuganie. By skutecznie wczuć się w rolę, kogoś nieznaczącego, tej samej płci klanu i profesji, wymagany jest test o PT 15. Za każdą cechę jaką chce zmienić postać PT testu, rośnie o 5. Skuteczne odgrywanie konkretnej osoby, jest znacznie trudniejsze i podnosi PT testu o 15. Dodatkowo postać może utrudnić zdemaskowanie swojej roli i wykonać dowolną liczbę podbić. Za każde podbicie PT zdemaskowania rośnie o 5. Postać która chce zdemaskować grającą postać musi wykonać test Śledztwo / Percepcja o PT 15 +5 za każde podbicie.',
+  master3: 'PT zagrania roli zmniejsza się o 5',
+  master5: 'PT zagrania roli zmniejsza się o 10',
+  master7: 'PT zagrania roli zmniejsza się o 15'},
 
-# list of all basic_primary_school_names
+  {name: 'Artisan',
+  name_pl: 'Artysta',
+  sub_typ: 'Makro',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Różne w zależności od specjalizacji',
+  desc: 'Umiejętność ta łączy w sobie wszelkie cenione gałęzie sztuki, jakie są uprawiane w Rokuganie. Choć przede wszystkim Samurajowie pełnią funkcję jako Wojownicy, Dworzanie lub Kapłani, często oddają się sztuce, dla wyciszenia lub dla osiągnięcia wyższego stopnia samodoskonałości. Poza tym oddanie sztuce jest uznawane za wysoce honorowe i przez to cenione przez wiele klanów w Rokuganie. Tworzenie sztuki może mieć różny poziom PT i zazwyczaj jest on określany przez MG.',
+  master3:'',
+  master5: '',
+  master7: ''},
+
+  {name: 'Calligraphy',
+  name_pl: 'Kaligrafia',
+  sub_typ: 'Sceniczne',
+  skill_attr: 'intelligence`',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Szyfry, Stary Rokugański',
+  desc: 'Przez wielu Rokugańczyków kaligrafia uważana jest za sztukę i jest powszechnie używana przez wielu Rokugańczyków. Głównie korzystają z niej shugenja którzy szyfrują na zwojach swoją tajemną wiedzę, ale także artyści i dworzanie, którzy używają jej, by wpłynąć na innych. Nauka kaligrafii nie jest nauką pisania, jako takiego, gdyż wszyscy samurajowi umieją pisać i czytać. Nauka kaligrafii to nauka zawiłych praw tradycyjnej pisowni Rokugańskiej. Jeżeli postać posiada specjalizację "Szyfry", uznaje się że zna jeden typ kodowania, który jest powszechnie używany w danym klanie. Szyfry klanów są wyjątkowo trudne do złamania. PT złamania szyfru różni się w zależności od tego na ile szyfr jest pospolicie używany, ale zazwyczaj wynosi wynik rzutu Kaligrafia(Szyfry)/Inteligencja, osoby która go stworzyła. Specjalizacja "Stary Rokugański", pozwala postaci biegle tworzyć kaligrafię w tym często już zapomnianym i bardzo wyrafinowanym języku, który po dziś dzień jest używany na Cesarskim Dworze.',
+  master3: '',
+  master5: 'Postać, zyskuje +10 do wyniku rzutu, gdy stara się złamać kod lub samemu go stworzyć.',
+  master7: ''},
+
+  {name: 'Courtier',
+  name_pl: 'Dyplomacja',
+  sub_typ: 'Społeczne',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Plotki, Manipulacje, Retoryka',
+  desc: 'Umiejętność ta jest kluczowa dla każdego dworzanina w Rokuganie. Jej poziom odzwierciedla umiejętność postaci, do brania udziału w zawiłych grach dworskich, gdzie każdy szczegół ma znaczenie. Podobnie jak bushi, dworzanie, mają swoje sposoby prowadzenia starć tak by pokonać przeciwnika, potyczki takie nie żadko kończą się podobnie jak starcia wojowników. Umiejętność Dyplomacja można przedstawić jako ofensywną część profesji dworzanina. Dzięki manipulacji i retoryce, dworzanin może przedstawić dane wydarzenie w całkowicie innym świetle, zmieniając jego znaczenie. Umiejętność Dyplomacja, może być również wykorzystane do rozprzestrzenienia lub pozyskania plotek, używając specjalizacji Plotki. PT danego testu równe jest, 10 plus, poziomo Chwały celu x5, minus 5 za każdy poziom Chwały postaci. Istnieje możliwość wykonania podbicia, by zatrzeć ślad po sobie jako autora plotki. Należy jednak zaznaczyć że rozpowiadanie nieprawdziwych plotek o postaci o znacznie większym poziomie Chwały, łatwo może skończyć się śmiercią. ',
+  master3: 'Postać zyskuje 3 punkty Prestiżu.',
+  master5: 'Postać zyskuje +1z0 do wszelkich przeciwstawnych testów z użyciem umiejętności Dworskie.',
+  master7: 'Postać zyskuje dodatkowo 7 punktów Prestiżu.'},
+
+  {name: 'Divination',
+  name_pl: 'Przepowiednie',
+  sub_typ: 'Brak',
+  skill_attr: 'intelligence',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Astrologia, Kawaru',
+  desc: 'Niektóre osoby posiadają umiejętność dostrzegania przebłysków przyszłości. Wiedzę tę czasem zyskuje się, bacznie obserwując niebo, ale częściej dzięki kawaru, czyli małym kamykom, kijom lub monetom, posiadającym wygrawerowane znaki heksagonalne. Żetony wrzucane są do misy lub podobnego naczynia, a następnie na podstawie ułożenia fantów, odczytywana jest przyszłość. Postać może użyć przepowiedni raz dziennie i wykonać test o PT 15, choć MG może dowolnie zwiększyć poziom trudności. W razie porażki, postać może wydać Punkt Pustki by wykonać kolejny test, tym razem z PT +10. W przypadku sukcesu, MG powinien opisać w dowolnie zawiły sposób, najbliższą przyszłość postaci. Np. "nadchodzą trudne czasy", "stary wróg powrócił", czy "cień wisi nad Twoim domem rodzinny,".',
+  master3: '',
+  master5: 'Postać może wykonać drugi rzut, bez wydawania Punktu Pustki, dodatkowy modyfikator, pozostaje bez zmian.',
+  master7: ''},
+
+  {name: 'Etiquette',
+  name_pl: 'Etykieta',
+  sub_typ: 'Społeczne',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Biurokracja, Konwersacja, Grzeczność',
+  desc: 'W mocno hierarchizowanym społeczeństwie, jakim jest Szmaragdowe Cesarstwo, wiedza jak się zachować, potrzebna jest, najbardziej honorowym samurajom, jak i najbardziej nieokrzesanym gburom. Wiedza o zawiłych rytuałach dworskich, może uchronić samuraja przed utratą honoru, a w niektórych sytuacjach nawet życia. Etykieta przydatna jest również w konfrontacji z rokugańską biurokracją. Kiedy potrzebne jest szybkie załatwienie czegoś, wiedza gdzie się udać może zaoszczędzić wiele kłopotów. Etykieta jest społeczną tarczą samuraja. Gdy inna postać próbuje zmanipulować lub w inny sposób wpłynąć na zachowanie postaci, zazwyczaj wykonuje się przeciwstawny test, w którym postać najpewniej będzie się bronić właśnie Etykietą. Etykieta pomaga również w wyrażaniu opinii, które nie odpowiednio wypowiedziane, mogłyby zostać uznane za niestosowane. Lub gdy postać popełni błąd w kodeksie etykiety, to właśnie rzut na etykietę może postać wywabić od jego konsekwencji.',
+  master3: 'Postać zyskuje 3 pt Prestiżu.',
+  master5: 'Postać zyskuje +1z0 do przeciwstawnych testów kiedy używa Etykiety.',
+  master7: 'Postać zyskuje dodatkowo 7 punktów Prestiżu.'},
+
+  {name: 'Games',
+  name_pl: 'Gry',
+  sub_typ: 'Makro',
+  skill_attr: 'vary',
+  skill_attr_pl: 'Różny',
+  emphases: 'Różne',
+  desc: 'Gry stanowią istotną odskocznię, od poważnej codzienności samurajów Rokuganu. Choć niektóre klany jako zabawę, preferują potyczki fizyczne, jak zapasy czy inne formy pokazania swojej sprawności, jednak nawet przedstawiciele tych klanów, od czasu do czasu zasiadają do niezobowiązującej partii w Go dla czystego relaksu. Do popularnych gier należą; Kemari, czyli kopanie małej piłeczki tak by jak najdłużej pozostawała nad ziemią; Go gra planszowa z użyciem kolorowych kamieni, Listy, czyli zawoalowana korespondencja między dwoma osobami; Shogi gra planszowa podobna do szachów; czy Sadane, czyli wymiana argumentów na zmyślony temat. Testy gier są zazwyczaj testami przeciwstawnymi, w których wygrywa postać o wyższym wyniku testu.',
+  master3:'',
+  master5: '',
+  master7: ''},
+
+  {name: 'Investigation',
+  name_pl: 'Śledztwo',
+  sub_typ: '',
+  skill_attr: 'perception',
+  skill_attr_pl: 'Spostrzegawczość',
+  emphases: 'Przesłuchiwanie, Zauważanie, Przeszukiwanie',
+  desc: 'Jedną z najbardziej prestiżowych pozycji, jakie może uzyskać samuraj, jest pozycja Zarządcy. Pozycja ta, nakłada na samuraja obowiązek pilnowania przestrzegania prawa, w obrębie włości jego Pana. Zarządcy często muszą działać na podstawie śladów i przesłanek, samemu dochodząc do prawdy drogą dedukcji. We wszystkich tych czynnościach przydaje się umiejętność Śledztwo, które odzwierciedla, umiejętność łączenia faktów, jak bystry wzrok posiada samuraj. Śledztwo można też wykorzystywać do pozyskiwania informacji w dłuższym okresie czasu (godzin lub dni). W odróżnieniu do innych testów Inteligencji czy Percepcji, testy Śledztwa można przerzucać, po upływie godziny od poprzedniego testu, ale z modyfikatorem +15 do PT. Śledztwo można też użyć do dostrzeżenia kogoś, wtedy należy wykonać przeciwstawny test, przeciw umiejętności Skradanie się celu. Specjalizacja Przesłuchiwanie może być wykorzystywana przy próbie określenia czy ktoś kłamie, również jako test przeciwstawny, przeciw Szczerości celu.',
+  master3: 'Druga próba przeszukiwania, może być wykonana bez modyfikatora do test.',
+  master5: 'Postać zyskuje +5 do wszystkich przeciwstawnych testów Śledztwa.',
+  master7: 'Postać może spróbować przeszukiwać, po raz trzeci, nawet jeśli druga próba się nie powiedzie.'},
+
+  {name: 'Lore',
+  name_pl: 'Wiedza',
+  sub_typ: 'Makro',
+  skill_attr: 'intelligence',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Różne',
+  desc: 'Wielu samurajów dostaje zadanie poznania określonej dziedziny wiedzy, by w razie potrzeby służyć swojemu Panu swoją wiedzą. Choć funkcja najczęściej powierzana jest shugenjom, nie jest niczym nadzwyczajnym by dworzanie lub bushi studiowali określoną gałąź wiedzy. Do najpopularniejszych zagadnień należy Heraldyka i Historia, ale postać może nabyć dowolną widzę. Testy wiedzy przeprowadzane są by sprawdzić czy postać posiada informacje z danej dziedziny wiedzy. ',
+  master3:'',
+  master5: '',
+  master7: ''},
+
+  {name: 'Medicine',
+  name_pl: 'Medycyna',
+  sub_typ: 'Brak',
+  skill_attr: 'intelligence',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Antidotum, Choroby, Zielarstwo, Nieludzie, Opatrywanie ran',
+  desc: 'Wojna jest rzemiosłem samuraja, a jej efektem są rany i zabici. Ranny samuraj jest ciężarem dla swojego pana, nie mogąc pełnić swojej funkcji, a jednocześnie pochłaniającym jego zasoby. Dlatego sztuka Medycyny, jest szczególnie ceniona. Medycyna może być użyta by opatrzyć rany, zarówno ciała, jak i niektóre rany duszy. Choroby mogą być leczone dzięki testom Medycyny, a PT test zależeć będzie od rodzaju choroby, podobnie będzie w przypadku prób znalezienia antidotum lub sporządzenia trucizny. Specjalizacja Nieludzie, pozwala skuteczniej leczyć istoty nie będące ludźmi. Udany test Medycyny( Opatrywanie ran) z inteligencji o PT 15, pozwala na odzyskanie u leczonej postaci 1z1 punktów ran. Do testu można dodać podbicia by zwiększyć liczbę leczonych ran o +1z0 za każde podbicie. Dana postać może korzystać z opatrywania ran raz dziennie. Do testów medycyny potrzebny jest zestaw medyczny, który pozwala wykonać 10 testów zanim zapasy medykamentów całkiem się zużyją.',
+  master3: '',
+  master5: 'Opatrywanie ran leczy dodatkowe +1z0.',
+  master7: ''},
+
+  {name: 'Meditation',
+  name_pl: 'Medytacja',
+  sub_typ: 'Brak',
+  skill_attr: 'void',
+  skill_attr_pl: 'Pustka',
+  emphases: 'Post, Odzyskiwanie pustki',
+  desc: 'Przyzwoity samurai jest uduchowioną osobą. By w pełni podążać ścieżką Bushido, wszyscy samurajowi zobowiązani są poznawać Tao Shinsei oraz medytować nad wiedzą w niej zawartą. Oczywiście wymogi te dotyczą głównie tradycyjnych rodów, bardziej pragmatyczne rodziny podchodzą do tego zagadnienia, w mniej rygorystyczny sposób. Nie zmienia to jednak faktu że przed bitwą w świątyniach, na medytacji i modlitwie spotykają się jedni i drudzy. Test medytacji jest drugim sposobem na odzyskani Punktów Pustki, jeśli postać wykona udany test Medytacja( Odzyskiwanie pustki) / Pustka o PT 20, może odzyskać jeden Punkt Pustki, po pół godziny medytacji. Specjalizacja Post, pozwala wykonać test Medytacji / Wytrzymałość o PT 15 + 5 za każdy dzień postu, by oprzeć się konsekwencją wynikającym z głodu i pragnienia. ',
+  master3: 'Postać po udanym teście Medytacji, odzyskuje 2 punkty Pustki.',
+  master5: 'PT testów Medytacji ( Post ), są zmniejszone o 5.',
+  master7: 'Udany test Medytacji odzyskuje 3 Punkty Pustki.'},
+
+  {name: 'Perform',
+  name_pl: 'Pokaz',
+  sub_typ: 'Makro',
+  skill_attr: 'vary',
+  skill_attr_pl: 'Różny',
+  emphases: 'Różne',
+  desc: 'Choć publiczne pokazywanie sztuki, nie jest tak popularne jak oddawanie się jej w samotności. Przedstawienia, wciąż są uznawane przez wiele klanów, jako ważny aspekt podtrzymywania kultury Rokuganu. Muzycy, poeci, a nawet aktorzy, zapraszani są na dwory, by zapewnić uczestnikom, rozrywkę na najwyższym poziomie. Przedstawienia to nie tylko rozrywka, ale sposób na podtrzymanie historii i tradycji wciąż żywej w pamięci samurajów. By przedstawienie się powiodło, postać musi zdać test Przedstawienia o PT zależnym od ilości widzów i ich nastroju.',
+  master3:'',
+  master5: '',
+  master7: ''},
+
+  {name: 'Sincerity',
+  name_pl: 'Szczerość',
+  sub_typ: 'Społeczne',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Prawdomówność, Zwodzenie',
+  desc: 'Samuraj, by chronić swojego pana lub interesy klanu, musi często naginać prawdę lub wprost kłamać. Jednak na wielu dworach, kłamanie nie jest uważane za niehonorowe, dopóki samuraj sprawia wrażenie przekonanego że to co mówi jest prawdą. Umiejętność ta jest szczególnie przydatna, podczas spotkań dworskich, kiedy samuraj może łatwo zostać wplątany w niewygodną sytuację. Nawet Bushi pełniący funkcję Yojimbo, często uczą się tej sztuki by nie stać się łatwym celem dla innych dworzan. Umiejętności można także użyć by przedstawić prawdę tak by osoba do której mówimy nie czuła się obrażona, słowami postaci. Test Szczerości najczęściej wykonywane są jako testy przeciwstawne, do testów Śledztwa osoby która powątpiewa w prawdomówność postaci, ale również jako zwykły test o PT wyznaczonym przez MG, w przypadku gdy chodzi o przekonanie większej grupy.',
+  master3: '',
+  master5: '',
+  master7: ''},
+
+  {name: 'Spellcraft',
+  name_pl: 'Czaroznastwo',
+  sub_typ: 'Społeczne',
+  skill_attr: 'intelligence',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Nakłanianie, Badanie czarów',
+  desc: 'Ścieżka każdego shugeny, zaczyna się wraz z możliwością komunikowania się z kami i pozostaje z nim do końca życia. Choć umiejętność tę, może nabyć postać dowolnego typu, jej zagadnienia pozostają głównie w sferze zainteresowań shugeny. Studia nad tą umiejętnością, pozwalają nie tylko lepiej zrozumieć, na czym polega inwokacja czarów, ale także pozwala na tworzenie własnych modlitw, jak i na nakłanianiu kami by wypełniały różne zadania, dla shugenjy. Specjalizacja Badanie Czarów, pozwala postaci na tworzenie nowych czarów. By stworzyć nowy czar, postać musi zdać test Czaroznastwo (Badanie Czarów) / Inteligencja, o PT równym kręgowi tworzonego czaru x 10 + 10. Dodatkowo postać musi poświęcić się nieprzerwanym badaniom, przez liczbę tygodni równą kręgowi tworzonego czaru. Nowe zaklęcie powinno zostać przedyskutowane i zaakceptowane przez MG, przed jego wykorzystaniem. Specjalizacja Nakłanianie, wykorzystywana jest razem z czarem Zespolenie(Commune) i pomaga w nakłonieniu danej kami, by była przychylna shugenjy. ',
+  master3: '',
+  master5: 'Postać zyskuje +1z0 do testów Czaroznastwa.',
+  master7: ''},
+
+  {name: 'Tea Ceremony',
+  name_pl: 'Ceremonia Parzenia Herbaty',
+  sub_typ: '',
+  skill_attr: 'void',
+  skill_attr_pl: 'Pustka',
+  emphases: 'Brak',
+  desc: 'Ceremonia parzenia herbaty, to starożytna i święta tradycja, która została stworzona u zarania Cesarstwa, przez samą panią Doji. Rytuał ten przekazywany jest z rodziców na dzieci, z dokładnością i czcią, dorównującą tej z jaką przekazuje się miecz z pokolenia na pokolenie. Choć rytuał różni się nieznacznie, w zależności od klanu, podana herbata zawsze spożywana jest w absolutnej ciszy. Ceremonia ta ma za zadanie przynieść spokój i wyciszenie, jej uczestnikom, tak by mogli odzyskać wewnętrzną harmonię. Gdy postać prowadzi ceremonię, musi wykonać test Ceremonia Parzenia Herbaty / Pustka o PT równym 15 + 5 za każdego uczestnika powyżej dwóch. Ceremonia przewidziana jest dla dwóch osób, ale można przeprowadzić ją dla samego siebie, lub do pięciu uczestników. Ceremonia trwa pół godziny i wymaga cichego ustronnego miejsca by zostać przeprowadzona. ',
+  master3: '',
+  master5: 'Wszyscy uczestnicy odzyskują 2 punty Pustki.',
+  master7: ''},
+
+  {name: 'Athletics',
+  name_pl: 'Atletyka',
+  sub_typ: 'Brak',
+  skill_attr: 'strength',
+  skill_attr_pl: 'Siła',
+  emphases: 'Wspinanie, Bieganie, Pływanie, Rzucanie',
+  desc: 'Podczas nauk, każdy bushi, przechodzi szereg szkoleń związanych z rozwojem swojego ciała. Nauka ta często przeradza się w nawyk i formę rozrywki, wielu samurajów uprawia ćwiczy po służbie lub bierze udział w spontanicznie organizowanych zawodach, by udowodnić kto jest najsprawniejszy. Umiejętność Atletyka, obejmuje wszelkie formy aktywności fizycznej i wpływa na postać w bardzo różny sposób. Dzięki Atletyce postać może poruszać się łatwiej w trudnym terenie, zmniejszyć ograniczenia wynikające z noszenia ciężkiej zbroi i tym podobne. Specjalizacja Rzucanie, pozwala na celne miotanie różnego rodzaju przedmiotami, takimi jak noże lub nawet wakizashi.',
+  master3: 'Trudny teren nie ogranicza kręgu wody postaci. A bardzo trudny teren ogranicza krąg Wody postaci o 1, a nie o 2 poziomy.',
+  master5: 'Bardzo trudny teren nie ogranicza ruchów Postaci.',
+  master7: 'Postać może dodać 1,5m do jednej akcji ruchu ma rundę.(Nie zwiększa to jednak maksymalnej ilości metrów jaką postać może przebyć w ciągu rundy.)'},
+
+  {name: 'Battle',
+  name_pl: 'Taktyka',
+  sub_typ: 'Brak',
+  skill_attr: 'perception',
+  skill_attr_pl: 'Spostrzegawczość',
+  emphases: 'Duże Bitwy, Potyczki',
+  desc: 'Samuraj zawsze gotowy jest do wojny, czy to z bronią w ręku, na wrogich dworach, czy z za linii sojuszników wzywając potęgę kami. Studiowanie praw wojny, jest wysoce cenione pośród wszystkich kast samurajów, a nie kończące się debaty o taktyce, strategii i manewrach, toczą się zarówno na dworach jak i zaciszach świątyń. Umiejętność Taktyka pozwala na prowadzenie walnych bitew, lecz przydaje się także podczas małych potyczek.',
+  master3: '',
+  master5: 'Podczas potyczki postać dodaje wielkość swojej wartości Taktyki do swojego wyniku Inicjatywy.',
+  master7: ''},
+
+  {name: 'Defense',
+  name_pl: 'Obrona',
+  sub_typ: 'Brak',
+  skill_attr: 'reflexes',
+  skill_attr_pl: 'Refleks',
+  emphases: 'Brak',
+  desc: 'Wojownik, który nie potrafi się bronić, nie jest długo przydatny swojemu panu. gdyż po pierwszej bitwie musiał by być zastąpiony. Rokugańska sztuka walki, nie dopuszcza manewrów takich jak riposty, czy parady, promują za to, postawy ciała i broni, tak by w połączeniu stawały się tarczą, która odbije cios przeciwnika. Umiejętność Obrona, jest konieczna do przyjęcia manewru Obrony lub Pełnej obrony podczas walki, co może znaczniej zwiększyć PT trafienia postaci. ',
+  master3: 'Postać może podtrzymać wynik test Obrony z poprzedniej rundy, w kolejnych rundach.',
+  master5: 'PT postaci jest uznawane o wyższe o 3, podczas wykonywania manewru Obrony i Pełnej Obrony.',
+  master7: 'Podczas manewru, Pełnej Obrony postać może wykonać jedną akcję prostą, nie może być to atak.'},
+
+  {name: 'Horsemanship',
+  name_pl: 'Jazda Konna',
+  sub_typ: 'Brak',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Konie Gajińskie, Rokugańskie kuce, Rumaki Utaku',
+  desc: 'Umiejętność jazdy konnej, jest konieczna dla samurajów walczących w kawalerii oraz dla samurajów którzy muszą szybko przemieszczać się po terenie Cesarstwa. Umiejętność ta uczona jest w większości szkół Rokuganu, choć jej brak, nie stanowi ujmy na honorze samuraja (choć samurajowie klanu Jednorożca myślą inaczej). W rzeczywistości każdy samuraj może jeździć konno z normalną prędkością, po płaskim terenie. Test jeździectwa wymagane są dopiero w momencie stresujących sytuacji lub w trudnym terenie.',
+  master3: 'Postać może wykonać Pełny Atak, jadąc konno.',
+  master5: 'Dosiadanie konia jest akcją prostą, a zsiadanie z niego jest akcją darmową.',
+  master7: 'Dosiadanie konia jest akcją darmową.'},
+
+  {name: 'Hunting',
+  name_pl: 'Polowanie',
+  sub_typ: 'Brak',
+  skill_attr: 'perception',
+  skill_attr_pl: 'Spostrzegawczość',
+  emphases: 'Przetrwanie, Śledzenie, Pozostawianie śladów',
+  desc: 'Polowanie to sport, uprawiany przez wielu samurajów, choć zdobycz rzadko konsumowana jest przez członków kasty Samurajskiej. Choć sama gra może być bardzo niebezpieczna, wiedza jaką zdobywa samuraj, jest wyjątkowo cenna. Podczas polowań dla sportu, samuraj nigdy nie korzysta ze swojego daisho, zazwyczaj używa się łuku i strzał, lub w przypadku dłuższych gier, również włóczni. Specjalizacja Przetrwanie, pozwala postaci na poszukiwanie pożywienia i schronienia w dziczy, o PT testu wyznaczonym przez MG. Śledzenie jak sama nazwa wskazuje, pozwala na tropienie śladów ofiary, choć w przypadku dłuższego okresu śledzenia, postać może być zmuszona wykonać test kilka razy. Specjalizacja Pozostawianie śladów, pozwala postaci na oznaczanie swojej ścieżki tak by ona sama mogła wrócić po niej lub inni mogli łatwiej podążać za postacią.',
+  master3: '',
+  master5: 'Postać uzyskuje +1z0 do testów Skradania wykonywanych w dziczy.',
+  master7: ''},
+
+  {name: 'Iaijutsu',
+  name_pl: 'Iaijutsu',
+  sub_typ: 'Brak',
+  skill_attr: 'reflexes',
+  skill_attr_pl: 'Refleks',
+  emphases: 'Przygotowanie, Skupienie',
+  desc: 'Pojedynki Iaijutsu, to tradycyjna forma, rozwiązywania sporów między samurajami. Ta starożytna technika. jest tak mocno zakorzeniona w kulturze, że nawet najbardziej postępowi z samurajów, nie potrafią wyobrazić sobie, porzucenia tego zwyczaju. Gdy dochodzi, do sytuacji że członkowie kasty samurajów nie mogą dojść do porozumienia, zazwyczaj kończy się to pojedynkiem i prawie zawsze jest to pojedynek iaijutsu. Poglądy zwycięzcy zostają uznane za obowiązujące, a wynik pojedynku zawsze musi być jednoznaczny dla wszystkich.',
+  master3: 'Postać może przygotować katanę, jako akcję darmową.',
+  master5: 'Podczas pojedynku Iaijutsu, postać zyskuje darmowe podbicie podczas testu Iaijutsu(Skupienie) / Pustka, podczas fazy Skupienia.',
+  master7: 'Jeśli podczas fazy przygotowania, samuraj przebije test przeciwnika, o 10 lub więcej punktów, w następnym teście uzyskuje premię +2z2 zamiast +1z1.'},
+
+  {name: 'Jiujutsu',
+  name_pl: 'Jiujutsu',
+  sub_typ: 'Brak',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Chwyty, Broń improwizowana, Sztuki Walki',
+  desc: 'Walka bez broni jest, czymś naturalnym dla bushi, choć nie wszystkie dojo w Rokuganie uczą jej w równym stopniu. Wiele dojo które uczą głównie technik walki bronią, naucza technik pozwalających na obronę, przeciwko przeciwnikom którzy walczą bez broni i choć umiejętności te rzadko się przydają, nauka walki bez broni w pewnych sytuacjach może być różnicą, między życiem a śmiercią dla samuraja. ',
+  master3: 'Postać walcząc jedynie pięściami, zadaje dodatkowe +1z0 obrażeń.',
+  master5: 'Postać zyskuje darmowe podbicie by zainicjować chwyt.',
+  master7: 'Postać walcząc jedynie pięściami, zadaje dodatkowe +0z1 obrażeń.'},
+
+  {name: 'Chain Weapons',
+  name_pl: 'Bronie łańcuchowe',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Kusarigama,Kuoketsu-shogi, Manrikikusari',
+  desc: 'Bronie łańcuchowe, przez wielu samurajów uznawane są, za co najmniej nietypowe, jednak dzięki swojej efektywności i złożoności, zostały zaakceptowane. Największą popularnością cieszą się w klanie Modliszki, który często faworyzuje egzotyczne rozwiązania. W odróżnieniu od reszty rokugańczyków którzy używają tego typu broni rzadko, a jeśli już to przez wysoce wyspecjalizowane grupy.',
+  master3: 'Bronie łańcuchowe mogą służyć do zainicjowania zapasy.',
+  master5: 'Postać walcząca bronią łąńcuchową, przeciw przeciwnikom zaplątanym lub walczących w zapasach przeciw postaci używającej tego typu broni.',
+  master7: 'Postać może użyć broni łańcuchowej, by zyskać darmowe podbicie, do manewrów Powalenia i Rozbrojenia.'},
+
+  {name: 'Heavy Weapons',
+  name_pl: 'Bronie ciężkie',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Dai Tsuhi, Masakari, Ono, Tetsubo',
+  desc: 'Szkolenie w broniach ciężkich, a w szczególności Tetsubo, to znak firmowy klanu  Kraba. Choć wiele innych klanów uczy walki bronią ciężką, rzadko móżnamożna spotkać jednostki walczące nimi na polu walki. Jednak dla synów Hida, brutalna siła jaką oferuje ten typ broni, stanowi podstawę do obrony Rokuganu przed Krainami Cienia.',
+  master3: 'Wyparowanie przeciwnika jest zmniejszane o 2, podczas ataku bronią ciężką.',
+  master5: 'Walcząc bronią ciężką, postać zyskuje darmowe podbicie do manewru powalenia.',
+  master7: 'Kości obrażeń eksplodują na wynikach 9 i 10, walcząc bronią ciężką.'},
+
+  {name: 'Kenjutsu',
+  name_pl: 'Kenjutsu',
+  sub_typ: 'Umiejętność Walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Katana, ninja-to, No-dachi, Parangu, Scimitar, Wakizashi',
+  desc: 'Kenjutsu to ścieżka miecza, najważniejsza umiejętność walki, jakiej uczy się samuraj w Rokuganie. Trening kenjutsu, w prawie każdej szkole, skupia się wokół walki kataną, bronią która jest jednocześnie symbole statusu samuraja. Wiele dojo zapewnia naukę walki innymi broniami, ale to walka kataną jest uznawana za podstawową, może poza paroma dziedzinami, gdzie wykorzystuje się łuk.',
+  master3: 'Obrażenia zadawane mieczami, są zwiększane o +1z0.',
+  master5: 'Wydobycie miecza, jest uznawane za akcję darmową.',
+  master7: 'Kości obrażeń eksplodują na wynikach 9 i 10, walcząc mieczem.'},
+
+  {name: 'Knives',
+  name_pl: 'Noże',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Aiguchi, Jitte, Kama, Tanto',
+  desc: 'Walka nożami lub  tantojutsu, nie jest uznawana za bardzo potrzebną, przez większość dojo bushi. Nawet jeśli samuraj, chce uczyć się walki inną bronią, rzadko wybiera tę sztukę walki. Lecz pomimo tak niskiej pozycji, nauka władania nożem, przewija się w treningu większości samurajów, gdyż praktycznie każdy samuraj posiada przy sobie nóż, a pragmatyzm podpowiada że nigdy nie wiadomo kiedy nóż będzie ostatnią deską ratunku.',
+  master3: 'Korzystając z noża w drugiej ręce nie powodują, ujemnych konsekwencji dla postaci.',
+  master5: 'Jeśli postać używa sai lub jitte, zyskuje darmowe podbicie do testów rozbrajania.',
+  master7: 'Postać walcząca nożami, uzyskuje darmowe podbicie do manewru dodatkowego ataku.'},
+
+  {name: 'Kyujutsu',
+  name_pl: 'Kyujutsu',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'reflexes',
+  skill_attr_pl: 'Refleks',
+  emphases: 'Dai-kyu, Han-kyu, Yumi',
+  desc: 'Sztuka strzelania z łuku jest szanowaną, częścią treningu bushi wielu szkół w Rokuganie, z wyjątkiem dojo które przedkładają tradycję, ponad praktyczność. Możliwość ranienia przeciwnika zanim on zdąży dotrzeć do samuraja, jest bardzo ceniona w Cesarstwie. Rokugańska sztuka strzelania z łuku, nie polega na uczeniu celowania, a zamiast tego skupia się na śledzeniu celu, wybraniu odpowiedniego momentu i połączeniu linii lotu z celem w jednym płynnym ruchu, jak mówi powiedzenie "Strzała sama zna drogę". Postać strzelająca do przeciwnika w zwarciu, otrzymuje modyfikator -10 do testów ataku.',
+  master3: 'Naciągnięcie cięciwy łuku, jest akcją prostą, zamiast akcję pełną.',
+  master5: 'Maksymalny zasięg łuku jest zwiększany o 50%.',
+  master7: 'Siła łuku jest zwiększana o 1.'},
+
+  {name: 'Ninjutsu',
+  name_pl: 'Ninjutsu',
+  sub_typ: 'Umiejętność Walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność lub Refleks',
+  emphases: 'Dmuchawka, Shuriken, Tsubune',
+  desc: 'Haniebna sztuka ninjutsu, to ścieżka która specjalizuje się w walce bronią przeznaczoną dla zabójców i innych wojowników skrywających się w cieniu. Żaden honorowy samuraj nie zniżył by się do poziomu zabójcy by poznać tę sztukę walki, a tym bardziej, nie skazał swoich przodków na taką hańbę. Dlatego gdy samurajowie stają do walki, z ninja, mają dużą trudność w określeniu prawdziwego potencjału przeciwnika, co często źle się dla nich kończy.',
+  master3: 'Obrażenia wszystkich broni typu ninjutsu, są większe o +1z0.',
+  master5: 'Kości obrażeń eksplodują normalnie, jak w przypadku innych typów broni.',
+  master7: 'Obrażenia wszystkich broni ninjutsu, są zwiększane o +0z1 (dając łącznie +1z1).'},
+
+  {name: 'Polearms',
+  name_pl: 'Broń drzewcowa',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Bisento, Nagamaki, Naginata, Sasumata, Sodegarami',
+  desc: 'Bronie drzewcowe, które charakteryzują się, dalekim zasięgiem i znaczną siłą uderzenia, stanowią rozwiązanie pomiędzy broniami ciężkimi i kataną. Wszystkie bronie drzewcowe, mają podobną budowę i składają się z ostrza, osadzonego na sztylu wykonanym z drewna lub metalu. Dzięki takiej budowie, samuraj może trzymać przeciwnika na dystans, jednocześnie korzystając ze zwiększonej siły uderzenia. Ta sztuka walki bywa nazywana umayarijutsu.',
+  master3: 'Postać walcząca tą bronią, zyskuje premię +5 do inicjatywy w pierwszej rundzie potyczki.',
+  master5: 'Obrażenia zadawane przeciwnikom na koniu lub znacznie większym od postaci, są zwiększane o +1z0.',
+  master7: 'Przygotowanie broni drzewcowej, jest akcją darmową.'},
+
+  {name: 'Spears',
+  name_pl: 'Yarijutsu',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Mai Chong, Kumade, Lanca, Nage-yari, Yari',
+  desc: 'Yarijutsu, czyli ścieżka włóczni, to sztuka która towarzyszy samurajom, praktycznie od początku. W niektórych szkołach, jak na przykład szkole Daidoji, umiejętność władania tym typem broni, jest obowiązkowa. W przeciwieństwie do broni drzewcowych, włócznie, służą głównie do przebijania przeciwników, niż zadawania ran ciętych. Dzięki czemu włócznie są często używane do walki z kawalerią, jak i przez kawalerię.',
+  master3: 'Podczas ataku wręcz, w pierwszej rundzie starcia, postać zyskuje Przebicie Pancerza 3.',
+  master5: 'Postać może rzucać włóczniami o 1,5m dalej niż podaje zasięg broni.',
+  master7: 'Postać może przygotować włócznie do walki, jako akcję darmową.'},
+
+  {name: 'Staves',
+  name_pl: 'Kije',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Bo, Jo, Machi-kanshiha, Nunchaku, Sang Kauw, Tonfa',
+  desc: 'Rzadko uczona pośród rodzin samurajskich, umiejętność władania kijami jako bronią, znalazła swoje miejsce w zakonach mnichów i pośród chłopów. Dzięki swojej budowie, kijem można łatwo ogłuszyć przeciwnika, ale bez odpowiedniego treningu ciężko jest wykorzystać tego typu broń do zabijania. Dodatkowo wszelkiego typu pancerze są wyjątkowo trudne do przebicia, dlatego gdy postać walczy przeciwko przeciwnikowi w zbroi, premia do PT zbroi jest podwajana.',
+  master3: 'Premia do PT pancerza przeciwnika, nie jest podwajana.',
+  master5: 'Postać walcząca kijem otrzymuje darmowe podbicie do testów powalenia.',
+  master7: 'Kije które są duże, mogą być przygotowane do walki jak akcja, prosta. Kije które są małe zyskują +1z0 do obrażeń.'},
+
+  {name: 'War Fans',
+  name_pl: 'Wachlarze bojowe',
+  sub_typ: 'Umiejętność walki',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Brak',
+  desc: 'Wachlarze bojowe, znane głównie jako tesseny, to urządzenia o wielu funkcjach i rzadko wykorzystywane są jako broń. Ich podstawową funkcją, jest sygnalizowanie rozkazów jednostką na polu bitwy, dlatego są wykonane z metalu, gdyż papierowe wachlarze, nie sprawdzały się w nieprzewidywalnych warunkach panujących na polach bitew. I choć nadal spełniają tę funkcję, służą również do podobnych celów jak papierowe wachlarze. Istnieją jednak w Rokuganie grupy które wykorzystują Tesseny jako broń, głównie w klanie Lwa, ale również pośród grupy roninów, którzy nazwali się "Wachlarz" i ochraniają obecne Toshi Ranbo.',
+  master3: 'Walka tessenem, jako bronią dodatkową nie powoduje ujemnych modyfikatorów.',
+  master5: 'PT postaci walczącej tessenem, wzrasta o 1.',
+  master7: 'PT postaci walczącej tessenem, wzrasta o 3.'},
+
+  {name: 'Animal Handling',
+  name_pl: 'Opieka nad zwierzętami',
+  sub_typ: 'Brak',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Typy zwierząt (Pies, Koń, Sokół), to najpopularniejsze.',
+  desc: 'Zwierzęta odgrywają, ważną rolę w wielu dziedzinach życia samuraja. Służą one do rozrywki, transportu lub są wykorzystywane podczas walk. Konie i Sokoły, to najczęściej tresowane zwierzęta, lecz wiele klanów ma swoje tradycje w szkoleniu zwierząt. Klan Lwa, szkoli lwy i używa ich jako broni, klan Jednorożca tresuje psy bojowe, wiele rodzin szkoli gołębie by wykorzystać je do przenoszenia informacji. Poziom trudności oswojenia i wytresowania zwierzęcia zależny jest, od samego gatunku zwierzęcia. W Bestiariuszu, opisanych jest wiele zwierząt które można udomowić, razem ze wskazówkami do czego można je wykorzystać po wytresowaniu.',
+  master3: 'Postać potrafi tresować, zwierzęta udomowione. Takie jak psy, konie lub sokoły, tak by służyły komuś innemu.',
+  master5: 'Zwierzęta tresowane przez postać, jeśli które należą do postaci, mogą zaatakować na rozkaz postaci. Jeśli zwierzę zostanie ciężko ranne, ucieknie bez względu na rozkaz postaci.',
+  master7: 'Zwierzęta szkolone przez postać będą słuchać poleceń nie werbalnych.'},
+
+  {name: 'Commerce',
+  name_pl: 'Handel',
+  sub_typ: 'Brak',
+  skill_attr: 'intelligence',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Wycena, Matematyka',
+  desc: 'Stanowisk związane z zarządzaniem pieniędzmi, są niegodne dla większości samurajów. Nie są uznawane za niehonorowe, gdyż takie stanowiska muszą istnieć, by ród, klan, czy w końcu Cesarstwo, mogło funkcjonować prawidłowo, ale nadanie takiej funkcji dla wielu samurajów jest uznawane za rodzaj stygmatu społecznego, by codziennie zajmować się pieniędzmi. Codzienne zajmowanie się pieniędzmi to domena kupców i handlarzy, którzy są poniżej kasty samurajów. Jednak nie jest niczym niezwykłym by samuraj szkolił się w tym zakresie. Tacy samurajowie często określani są "Patronami kupców". Specjalizacja w wycenie, pozwala szybko określić przybliżoną wartość, jakość wykonania, stopień egzotyczności danego przedmiotu, podobnie jakie może być jego praktyczne zastosowanie. Przedmioty rzadkie i egzotyczne, są oczywiście o wiele trudniejsze do określenia. Matematyka jako specjalizacja, używana jest do obliczania takich rzeczy, jak podatki lub cła, ale oczywiście może być wykorzystana do obliczania wielu innych rzeczy.',
+  master3: '',
+  master5: 'Postać może zwiększyć lub zmniejszyć cenę, kupowanego lub sprzedawanego przedmiotu o maksymalnie 20% wartości.',
+  master7: ''},
+
+  {name: 'Craft',
+  name_pl: 'Rzemiosło',
+  sub_typ: 'Makro: Wytwarzanie pancerzy(#), Kowalstwo, Wytwarzanie łuków(#), Piwowarstwo, Rolnictwo, Rybactwo, Murarstwo, Górnictwo, Kartografia, Brukarstwo, Trucizny(*), Garncarstwo, Gotowanie, Szkutnictwo, Krawiectwo, Wytwarzanie broni(#). Umiejętności z #, są uznawane z a Godne, natomiast umiejętności z *, to umiejętności Niegodne  ',
+  skill_attr: 'vary',
+  skill_attr_pl: 'Różny',
+  emphases: 'Różne',
+  desc: 'W odróżnieniu od artystów którzy tworzą rzeczy piękne i abstrakcyjne, rzemieślnicy tworzą rzezy praktyczne. I choć praca rzemieślników, nie jest uznawana za tak szlachetną i honorową, to często postrzegana jest jako wyjątkowo cenna i takie zajęcie, nie jest postrzegane jako ujma dla samuraja.',
+  master3: '',
+  master5: '',
+  master7: ''},
+
+  {name: 'Engineering',
+  name_pl: 'Inżynieria',
+  sub_typ: 'Rzemiosło',
+  skill_attr: 'intelligence',
+  skill_attr_pl: 'Inteligencja',
+  emphases: 'Budowanie, Oblężenia',
+  desc: 'Znacznie trudniejsza i bardziej skomplikowana, niż budownictwo, inżynieria, jest wiedzą cenną i rzadką zarazem. Inżynieria zawiera w sobie zarówno wiedzę jak coś jest zbudowane, ale i jak najlepiej można je zniszczyć. Inżynierowie Kaiu, są bez niekwestionowanymi mistrzami tej sztuki, choć i w innych klanach istnieją uzdolnione jednostki. Specjalizacja w Budownictwo, oznacza umiejętność tworzenia dokładnych planów budowlanych i zarządzania robotnikami. Specjalizacja Oblężenia, działa odwrotnie do budownictwa i pozwala dokładnie określić najlepszy sposób by zniszczyć dany budynek.',
+  master3: '',
+  master5: 'Postać zyskuje +5 do testów inżynierii, wykonywanych jako test współpracy lub test łączony.',
+  master7: ''},
+
+  {name: 'Sailing',
+  name_pl: 'Żeglarstwo',
+  sub_typ: 'Rzemiosło',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność lub Inteligencja',
+  emphases: 'Węzły, Nawigacja',
+  desc: 'Rokugan ma rozbudowaną linię brzegową, i przez większą część roku, panuje tam duży ruch. Wiosna, lato i jesień, to czas wzmożonego handlu, ale statki klanu Modliszki pływają nawet i w okresie ostrej zimy, dostarczając towary do i z kolonii. Specjalizacja Nawigacja, używana jest by określić pozycję względem gwiazd, tak by wytyczyć kierunek do celu. Nawigacji można w ten sam sposób używać podczas przebywania na lądzie, ale PT testu jest wtedy większe o 10. Specjalizacja Węzły, jest użyteczna podczas pracy z linami i żaglami.',
+  master3: '',
+  master5: 'Postać zyskuje bonus +5 do testów Żeglarstwa, wykonywanych jako testy łączone lub wspólne.',
+  master7: ''},
+
+  {name: 'Forgery',
+  name_pl: 'Fałszerstwo',
+  sub_typ: 'Rzemiesło',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Rodzaje podrabianych przedmiotów (Dzieła sztuki, Dokumenty, Pieczęcie',
+  desc: 'Dokumenty są bardzo istotną częścią Rokugańskiej biurokracji, począwszy od dokumentów przynależności do wspaniałego rodu, przez papiery pozwalające na podróżowanie pod Rokuganie, na dekretach Cesarza kończąc. Osoby z okiem do szczegółów, pewną ręką i znacznymi brakami w kwestii honoru, mogą spróbować sfałszować, różne dokumenty, z korzyścią dla siebie lub dla innych. Gdy tworzone jest podrabiane dzieło, postać wykonuje test Fałszerstwa, który powinien być zapisany. Wynik testu stanowi PT, testu Śledztwa / Percepcji, w celu rozpoznania oszustwa.',
+  master3: 'Postać zyskuje premię +1z0, do testów Podrabiania, celem ustalenia PT przejrzenia oszustwa.',
+  master5: 'Postać zyskuje +1z0 do testów przejrzenia Fałszerstwa.',
+  master7: 'Postać zyskuje +0z1 do testów Podrabiania, celem ustalenia PT przejrzenia oszustwa. (Razem z premią za 3 rangę, daje to premię +1z1)'},
+
+  {name: 'Intimidation',
+  name_pl: 'Przymuszanie',
+  sub_typ: 'Społeczny',
+  skill_attr: 'awareness',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Napastowanie, Kontrola, Tortury',
+  desc: 'Manipulacja innymi, poprzez zastosowanie gróźb, zarówno bezpośrednich i jak i pośrednich, jest częstą praktyką samurajów, którzy zostawili swój honor, daleko za sobą. Nawet bushi, którzy zazwyczaj mają mocne poczucie honoru, czasem porzucają go, by przymusić tych którzy nie chcą współpracować. Choć przesłuchiwanie, to czyn haniebny, samurajowie czasami decydują się, przymusić innych, by osiągnąć swój cel (oczywiście szybko zapominają potem o tym że coś takiego miało miejsce). Napastowanie, to najprostsza forma Przymuszania i opiera się na bezpośrednich groźbach, by zmusić ofiarę do podporządkowania się. Kontrola, to przeciwieństwo Napastowania i ma na celu kontrolowanie postaci przez dłuższy czas, zazwyczaj używana jest przez dworzan, celem kontrolowania niższych rangą lub statusem osób. Tortury, są wykonywane przez hininów, pod okiem zarządców, celem wyciągnięcia zeznań i informacji, zazwyczaj od przestępców. Żaden samuraj nie skala swojej duszy samodzielnym torturowaniem innego człowieka. Przymuszanie to zazwyczaj test przeciwstawny, przeciwko Etykiecie(Grzeczność) / Siła Woli. MG może jednak wyznaczyć inną umiejętność lub cechę, w zależności od sytuacji. Do testów Przymuszania ofiara zawsze dodaje swój honor.',
+  master3: '',
+  master5: 'Postać dodaje +5 do przeciwstawnych testów z użyciem Przymuszania.',
+  master7: ''},
+
+  {name: 'Sleight of Hand',
+  name_pl: 'Zwinne Palce',
+  sub_typ: 'Brak',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Ukrywanie, Ucieczka, Kradzież Kieszonkowa, Sztuczki',
+  desc: 'Zwinna manipulacja małymi obiektami, w celu oszukania lub ukrycia, przez większość samurajów, nie jest postrzegana jako szczególnie honorowa. Kodeks bushido, nakazuje szczerość w każdej formie, mowie, czynie i myśli, nie zostawiając miejsca na takie działania, dla samuraja który podążą w pełni jego ścieżką. Specjalizacja w ukrywaniu, pozwala na ukryciu małych przedmiotów, które mieszczą się w dłoni, w razie kontroli, wykonuje się przeciwstawny test, Zwinne Palce/Zręczność, przeciw Śledztwo/Percepcji. Specjalizacja Ucieczka, pozwala łatwiej wyplątywać się z więzów, PT testu jest ustalane przez MG i powinno zawierać się między 15 (proste więzy), a 25-30(łańcuchom, silnym więzom) lub jako test przeciwstawny przeciw Żeglarstwo(Węzły)/Zręczność. Jeśli postać specjalizuje się w sztuczkach, to potrafi poprzez proste sztuczki, zabawić lub odwrócić uwagę innych. ', 
+  master3: '',
+  master5: 'Postać może używać specjalizacji Ukrycie, w celu ukrycia małej broni.',
+  master7: ''},
+
+
+  {name: 'Stealth',
+  name_pl: 'Skradanie',
+  sub_typ: 'Brak',
+  skill_attr: 'agility',
+  skill_attr_pl: 'Zręczność',
+  emphases: 'Zasadzka, Zakradanie, Rzucanie Czarów, Ukrywanie',
+  desc: 'Choć, skradanie jest uznawane za niehonorowe, skradanie ma swoje zastosowanie, nawet dla honorowych samurajów, podczas polowań lub podczas zwiadu podczas działań wojennych. Wielu samurajów widzi to jako zło konieczne, lecz poza tymi wybranymi sytuacjami, żaden samuraj nie zhańbiłby swoich przodków, zakradaniem się do wroga, niczym zwykły oprych. Postać podczas Skradania, może poruszać się tylko przy pomocy prostej akcji ruchu, czyli liczbę stóp równą kręgowi wody. Specjalizacja w Zasadzkach, pozwala na wykonanie testu Skradanie (zasadzka) / Zręczność, przeciw Śledztwo(Zauważanie) / Percepcja celu, by zyskać przewagę podczas pierwszej rundy walki. Specjalizacja w Rzucaniu Czarów, pozawala shugenjy ukryć swoją pozycję podczas rzucania czarów, jeśli powiedzie się mu test przeciwstawny Skradanie(Rzucanie Czarów) / Zręczność, przeciw Śledztwo(Zauważanie) / Percepcji. Postać nie traci honoru za używanie Skradanie(Zakradanie), choć pozostałe specjalizacje, zazwyczaj kończą się utratą honoru.',
+  master3: 'Postać wykorzystując Skradanie, w ramach akcji prostej, może poruszać się liczbę stóp równą kręgowi Wody x 5.',
+  master5: 'Postać wykorzystując Skradanie, w ramach akcji prostej, może poruszać się liczbę stóp równą kręgowi Wody x 10.',
+  master7: 'Postać wykorzystując Skradanie, może wykonać darmową akcję prostą Ruch.'},
+
+  {name: 'Temptation',
+  name_pl: 'Przekonywanie',
+  sub_typ: 'Społeczna',
+  skill_attr: '',
+  skill_attr_pl: 'Intuicja',
+  emphases: 'Łapówki, Uwodzenie',
+  desc: 'Sztuka oferowania innym tego,czego pragną, by osiągnąć własne korzyści, jest tak stara jak stary jest rodzaj ludzki, a od tamtego czasu niewiele w tej kwestii się zmieniło. Dwa największe, pragnienia czyli pieniądze i przyjemność fizyczna, często są częścią umów zawieranych na dworach, celem osiągnięcia celów Wielkich klanów. Najłatwiej nakłonić osoby o określonych wadach, takich jak Chciwość, czy Lubieżność. Zazwyczaj wykonuje się test  Przekonywanie / Intuicja przeciw Etykieta(Grzeczność) / Siła Woli. W przypadku, mniej znaczących postaci, MG może określi po prostu PT test Przekonywania.',
+  master3: '',
+  master5: 'Postać otrzymuje premię +5 do przeciwstawnych testów Przekonywania.',
+  master7: ''},
+
+  {name: 'any one',
+  name_pl: 'Dowolna',
+  sub_typ: 'Brak',
+  skill_attr: 'vary',
+  skill_attr_pl: 'Różny',
+  emphases: 'Brak',
+  desc: 'Umiejętność do wybrou zgodnie ze specjalizacją, jeśli brak w tedy do wolna umiejętność',}]
+
+school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
+
+# list of all basic_primary_school_names and theirs school classes
 basic_primary_names = {'Szkoła Bushi Shiba' => ['Bushi'], 'Szkoła Artystów Shiba' => ['Artysta'], 
                  'Szkoła Mędrców Asako' => ['Dworzanin'], 'Szkoła Henshin Asako' => ['Mnich'],
                  'Szkoła Bushi Moto' => ['Bushi'], 'Szkoła Obrońców Moto' => ['Bushi'],
@@ -1986,6 +2433,341 @@ basic_shugenja_names = { 'Szkoła Shugenja Isawa' => ['Shugenja'], 'Szkoła Shug
                          'Szkoła Shugenja Kuni' => ['Shugenja'], 'Szkoła Shugenja Seppun' => ['Shugenja']}
 
 basic_monk_names = { 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'] }
+
+basic_primary_school_skill_lists = {
+  'Szkoła Bushi Shiba' => [ {name: 'Defense'}, {name: 'Kenjutsu'}, {name: 'Kyujutsu'}, 
+                            {name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki'}, 
+                            {name:'Spears'}, { name: 'Lore', school_emphasis: 'Teologia' },
+                            {name: 'any one', school_emphasis: 'Bugei lub Godna'} ], 
+
+  'Szkoła Artystów Shiba' => [ { name: 'Artisan'}, { name: 'Artisan'},  { name: 'Calligraphy'} ,
+                               { name: 'Etiquette' }, { name: 'Lore', school_emphasis: 'Dowolna' },
+                               { name: 'Sincerity' }, 
+                               { name: 'any one', school_emphasis: 'Godna lub Bugei' } ],
+
+  'Szkoła Mędrców Asako' => [ { name: 'Courtier'}, {name: 'Etiquette', school_emphasis:' Courtesy'},
+                              { name: 'Lore', school_emphasis: 'Historia'}, 
+                              { name: 'Lore', school_emphasis: 'Teologia (Fortuny)'},
+                              { name: 'Meditation'}, { name: 'Sincerity'},
+                               { name: 'any one', school_emphasis: 'Wiedza'} ],
+
+  'Szkoła Henshin Asako' => [ { name: 'Calligraphy' }, { name: 'Jiujutsu'},
+                              { name: 'Lore', school_emphasis: 'Żywioły (wybierz żywioł'},
+                              { name: 'Lore', school_emphasis: 'Teologia'}, 
+                              { name: 'Meditation', value: 2 }, 
+                              { name: 'any one', school_emphasis: 'inna jak niegodna'} ],
+
+  'Szkoła Bushi Moto' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Horsemanship'},
+                           {name: 'Hunting'}, { name:'Kenjutsu', school_emphasis: 'Sejmitar'}, 
+                           { name: 'any one', school_emphasis: 'Bugei'}, { name: 'any one'} ], 
+
+  'Szkoła Obrońców Moto' => [ { name: 'Horsemanship'}, { name: 'Hunting'},
+                              { name: 'Investigation', school_emphasis: 'Zauważanie'},
+                              { name: 'Kenjutsu'}, { name: 'Kyujutsu'}, 
+                              { name: 'Lore', school_emphasis: 'Krainy Cienia'},
+                              { name: 'any one', school_emphasis: 'Bugei'} ],
+
+  'Szkoła Emisariuszy Ide' => [ { name: 'Calligraphy'}, { name: 'Commerce'}, {name: 'Courtier'},
+                                { name: 'Etiquette', school_emphasis: 'Konwersacja'},
+                                { name: 'Horsemanship'}, 
+                                { name: 'Sincerity', school_emphasis: 'Szczerość'},
+                                { name: 'any one', school_emphasis: 'Godna lub Pokaz'} ],
+
+  'Szkoła Bushi Shinjo' => [ { name: 'Athletics'}, { name: 'Defense'},
+                             { name: 'Horsemanship', value: 2}, { name: 'Kenjutsu'},
+                             { name: 'Kyujutsu'}, { name: 'any one'} ],
+
+  'Szkoła Dziewic Wojny Utaku' => [ { name: 'Battle'}, { name: 'Defense'},
+                                    {name: 'Horsemanship', value: 2}, { name: 'Kenjutsu'},
+                                    { name: 'Sincerity'}, 
+                                    { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Akademia Bushi Akodo' => [ { name: 'Battle', school_emphasis: 'Wielkie Bitwy' }, 
+                              { name: 'Defense'}, { name: 'Kenjutsu'}, { name: 'Kyujutsu'},
+                              { name: 'Lore', school_emphasis: 'Historia'} ,{ name: 'Sincerity'},
+                              { name: 'any one', school_emphasis: 'Bugei lub Godna'} ],
+
+  'Szkoła Bardów Ikoma' => [ { name: 'Courtier'}, { name: 'Etiquette'}, 
+                             { name: 'Lore', school_emphasis: 'Historia (Klan Lwa)'},
+                             { name: 'Perform', school_emphasis: 'Opowieści' },
+                             { name: 'Sincerity', school_emphasis: 'Prawdomówność'},
+                             { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła "Cieni" Ikoma' => [ { name: 'Courtier'}, { name: 'Etiquette'}, { name: 'Kenjutsu'},
+                              { name:'Investigation', school_emphasis: 'Zauważanie'},
+                              { name: 'Sincerity'}, { name: 'Stealth'},
+                              { name: 'any one', school_emphasis: 'Godna lub Niegodna'} ],
+
+  'Szkoła Berserkerów Matsu' => [ { name: 'Battle'}, { name: 'Jiujutsu'},
+                                  { name: 'Kenjutsu', school_emphasis: 'Katana'}, { name: 'Kyujutsu'},
+                                  { name: 'Lore', school_emphasis: 'Historia'},
+                                  { name: 'any one', school_emphasis: 'Bugei'}, 
+                                  { name: 'any one', school_emphasis: 'Bugei'} ],
+
+  'Szkoła Władców Bestii Matsu' => [ { name: 'Animal Handling', value: 2}, {name: 'Battle'},
+                                     { name: 'Defense'}, { name: 'Iaijutsu'}, { name: 'Kenjutsu'},
+                                     { name: 'any one', school_emphasis: 'Bugei'} ],
+
+  'Szkoła Bushi Yoritomo' => [ {name: 'Commerce'}, { name: 'Defense'},
+                               {name: 'Jiujutsu', school_emphasis: 'Broń improwizowana'},
+                               {name: 'Kenjutsu'}, { name: 'Knives', school_emphasis: 'Kama'},
+                               { name: 'Sailing'}, { name: 'any one'} ],
+
+  'Szkoła Dworzan Yoritomo' => [ { name: 'Commerce',school_emphasis: 'Wycena'}, { name: 'Courtier'},
+                                 { name: 'Defense'}, { name: 'Etiquette'},
+                                 { name:'Intimidation', school_emphasis: 'Kontrola' },
+                                 { name: 'Sincerity'},
+                                 { name: 'any one', school_emphasis: 'Kupiecka lub Wiedza'} ],
+
+  'Szkoła Łuczników Tsuruchi' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Hunting'},
+                                   { name: 'Investigation'},
+                                   { name: 'Kyujutsu', school_emphasis: 'Yumi', value: 2 },
+                                   { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła Łowców Tsuruchi' => [ { name: 'Athletics'}, { name: 'Hunting', school_emphasis: 'Śledzenie' },
+                                { name: 'Intimidation'}, { name: 'Investigation'},
+                                { name: 'Kenjutsu'},
+                                { name: 'Kyujutsu'}, { name: 'Lore', school_emphasis: 'Półświatek'} ],
+
+  'Zakon Mnichów Togashi' => [ { name: 'Artisan', school_emphasis: 'Tatuowanie' }, { name: 'Defense'},
+                               { name: 'Jiujutsu' }, { name: 'Meditation'},
+                               { name: 'any one', school_emphasis: 'Wiedza'},
+                               { name: 'any one', school_emphasis: 'Inna jak niegodna'} ],
+
+  'Pięściarz Modliszki' => [ { name: 'Athletics'}, { name: 'Commerce'}, { name: 'Intimidation'},
+                             { name: 'Jiujutsu' }, { name: 'Knives'}, { name: 'Sailing'},
+                             { name: 'any one', school_emphasis: 'Umiejętność władania bronią' } ],
+
+  'Szkoła Bushi Daigotsu' => [ { name: 'Hunting'}, { name: 'Intimidation'}, { name: 'Jiujutsu'},
+                               { name: 'Kenjutsu', school_emphasis: 'Katana'}, { name: 'Kyujutsu'},
+                               { name: 'Lore', school_emphasis: 'Krainy Cienia'},
+                               { name: 'any one', school_emphasis: 'Bugei lub Niegodna'} ],
+
+  'Szkoła Dworzan Daigotsu' => [ { name: 'Acting'}, { name: 'Courtier', school_emphasis: 'Manipulacja'},
+                                 { name: 'Etiquette'}, { name: 'Meditation'},
+                                 { name: 'Sincerity', school_emphasis: 'Zwodzenie' },
+                                 { name: 'Temptation'}, { name: 'any one', school_emphasis: 'Godna'} ],
+
+  'Szkoła Mnichów Pająka' => [ { name: 'Athletics'}, { name: 'Jiujutsu', value: 2}, 
+                               { name: 'Lore', school_emphasis: 'Teologia'}, { name: 'Meditation'},
+                               { name:'Polearms'}, { name: 'any one'} ],
+
+  'Szkoła Bushi Bayushi' => [ { name: 'Courtier', school_emphasis: 'Manipulacja' }, { name: 'Defense'},
+                              { name: 'Etiquette'}, { name: 'Iaijutsu'}, { name: 'Kenjutsu'},
+                              { name: 'Sincerity'}, { name: 'any one'} ],
+
+  'Szkoła Dworzan Bayushi' => [ { name: 'Calligraphy'}, { name: 'Courtier', school_emphasis: 'Plotki'},
+                                { name: 'Etiquette'}, { name: 'Investigation'},
+                                { name: 'Sincerity', school_emphasis: 'Zwodzenie' }, { name: 'Temptation'},
+                                { name: 'any one', school_emphasis: 'Godna'} ], 
+
+  'Szkoła Zarządców Soshi' => [ { name: 'Athletics'}, { name: 'Defense'},
+                                { name: 'Intimidation', school_emphasis: 'Kontrola' },
+                                { name: 'Jiujutsu'}, { name: 'Kenjutsu'}, 
+                                { name: 'Lore', school_emphasis: 'Półświatek' },
+                                { name: 'any one', school_emphasis: 'Bugei'} ], 
+  
+  'Szkoła Szpiegów Shosuro' => [ { name: 'Acting'}, { name: 'Athletics'}, { name: 'Ninjutsu'},
+                                 { name: 'Sincerity'},
+                                 { name: 'Stealth', school_emphasis: 'Skradanie', value: 2}, 
+                                 { name: 'any one'} ],
+
+  'Akademia Aktorów Shosuro' => [ { name: 'Acting'}, { name: 'Etiquette'}, { name: 'Knives'},
+                                  { name: 'Meditation'}, {name: 'Sincerity', school_emphasis: 'Zwodzenie'},
+                                  {name: 'Stealth'}, { name: 'any one', school_emphasis: 'Godna lub Niegodna'} ],
+
+  'Szkoła Bushi Mirumoto' => [ { name: 'Defense'}, { name: 'Iaijutsu'},
+                               { name: 'Kenjutsu', school_emphasis: 'Katana'},
+                               { name: 'Lore', school_emphasis: 'Shugenja'}, { name: 'Meditation'},
+                               { name: 'Lore', school_emphasis: 'Teologia'},
+                               { name: 'any one', school_emphasis: 'Bugei lub Godna'} ],
+
+  'Szkoła Szermierzy Tao Mirumoto' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Iaijutsu'},
+                                        { name: 'Kenjutsu', school_emphasis: 'Katana'}, 
+                                        { name: 'Lore', school_emphasis: 'Teologia'}, 
+                                        { name: 'Meditation'},
+                                        { name: 'any one', school_emphasis: 'Bugei lub Godna'} ],
+
+  'Szkoła Śledczych Kitsuki' => [ { name: 'Courtier'}, { name: 'Etiquette', school_emphasis: 'Grzeczność'},
+                                  { name: 'Investigation', school_emphasis: 'Przesłuchiwanie'},
+                                  { name: 'Kenjutsu'}, { name: 'Meditation'}, { name: 'Sincerity'},
+                                  { name: 'any one', school_emphasis: 'Wiedza'} ],
+
+  'Zakon Mnichów Kikage Zumi' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Jiujutsu'},
+                                   { name: 'Lore', school_emphasis: 'Dowilna'}, { name: 'Meditation'},
+                                   { name: 'any one', school_emphasis: 'Inna jak Niegodna'},
+                                   { name: 'any one', school_emphasis: 'Inna jak Niegodna'} ],
+
+  'Akademia Pojedynku Kakita' => [ { name: 'Iaijutsu', school_emphasis: 'Skupienie'}, { name: 'Kenjutsu'},
+                                   { name: 'Kyujutsu'}, { name: 'Sincerity'}, { name: 'Tea Ceremony'},
+                                   { name: 'any one', school_emphasis: 'Bugei lub Godna'} ], 
+
+  'Akademia Artystów Kakita' => [ { name: 'Courtier'}, { name: 'Games', school_emphasis: 'Sadane'},
+                                  { name: 'Etiquette'}, { name: 'Sincerity'},
+                                  { name: 'any one', school_emphasis: 'Wybierz z listy w opisie szkoły'},
+                                  { name: 'any one', school_emphasis: 'Wybierz z listy w opisie szkoły'},
+                                  { name: 'any one', school_emphasis: 'Wybierz z listy w opisie szkoły'},
+                                  { name: 'Perform', school_emphasis: 'Taniec, Oratoryka, Kukiełki, Piosenki, Gawędziarstwo lub gra na instrumencie'} ],
+
+  'Szkoła Dworzan Doji' => [ { name: 'Calligraphy'}, { name: 'Courtier', school_emphasis: 'Manipulacja'},
+                             { name: 'Etiquette', school_emphasis: 'Grzeczność'},
+                             { name: 'Perform', school_emphasis: 'Gawędziarstwo'}, { name: 'Sincerity'},
+                             { name: 'Tea Ceremony'}, { name: 'any one', school_emphasis: 'Artysta lub Występ'} ],
+
+  'Szkoła Zarządców Doji' => [ { name: 'Defense'}, { name: 'Horsemanship'}, { name: 'Jiujutsu'},
+                               { name: 'Kenjutsu'}, { name: 'Knives', school_emphasis: 'Jitte'},
+                               { name: 'Polearms'}, { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła Żelaznych Wojowników Daidoji' => [ { name: 'Battle'}, { name: 'Defense', value: 2},
+                                             { name: 'Iaijutsu'},
+                                             { name: 'Kenjutsu', school_emphasis: 'Katana'},
+                                             { name: 'Kyujutsu'}, { name: 'any one'} ],
+
+  'Szkoła Zwiadowców Daidoji' => [ { name: 'Athletics'}, { name: 'Hunting', school_emphasis: 'Pułapki'},
+                                   { name: 'Kenjutsu'}, { name: 'Knives'},
+                                   { name: 'Kyujutsu', school_emphasis: 'Yumi'},
+                                   { name: 'Stealth', school_emphasis: 'Zakradanie'},
+                                   { name: 'any one', school_emphasis: 'Bugei lub Niegodna'} ],
+
+  'Szkoła Wojowników Hida' => [ { name: 'Athletics'}, { name: 'Defense'},
+                                { name: 'Heavy Weapons', school_emphasis: 'Tetsubo'},
+                                { name: 'Intimidation'}, { name: 'Kenjutsu'},
+                                { name: 'Lore', school_emphasis: 'Krainy Cienia'}, 
+                                { name: 'any one', school_emphasis: 'Bugei'} ],
+
+  'Szkoła Pragmatyków Hida' => [ { name: 'Athletics'}, { name: 'Defense'},
+                                 { name: 'Jiujutsu', school_emphasis: 'Broń improwizowana', value: 2},
+                                 { name: 'Kenjutsu'},
+                                 { name: 'Lore', school_emphasis: 'Krainy Cienia'}, 
+                                 { name: 'any one', school_emphasis: 'Bugei'} ],
+
+  'Szkoła Bushi Hiruma' => [ { name: 'Athletics'}, { name: 'Hunting'}, 
+                             { name: 'Kenjutsu', school_emphasis: 'Katana'}, { name: 'Kyujutsu'},
+                             { name: 'Lore', school_emphasis: 'Krainy Cienia'}, { name: 'Stealth'},
+                             { name: 'any one'} ],
+
+  'Szkoła Zwiadowców Hiruma' => [ { name: 'Athletics'}, { name: 'Hunting'}, { name: 'Kenjutsu'},
+                                  { name: 'Kyujutsu'}, { name: 'Lore', school_emphasis: 'Krainy Cienia'},
+                                  { name: 'Stealth', school_emphasis: 'Zakradanie'},
+                                  { name: 'any one', school_emphasis: 'Bugei'} ],
+
+  'Szkoła Inżyierów Kaiu' =>  [ { name: 'Battle'}, { name: 'Craft', school_emphasis: 'Płatnerz'},
+                                { name: 'Craft', school_emphasis: 'Kowal'}, { name: 'Defense'},
+                                { name: 'Engineering', school_emphasis: 'Dowolna specjalizacja'},
+                                { name: 'Lore', school_emphasis: 'Architektura'}, { name: 'War Fans'} ],
+
+  'Szkoła Łowców Czarowic Kuni' => [ { name: 'Investigation'}, { name: 'Jiujutsu'}, { name: 'Kenjutsu'},
+                                     { name: 'Lore', school_emphasis: 'Krainy Cienia'},
+                                     { name: 'Lore', school_emphasis: 'Maho'}, { name: 'Meditation'},
+                                     { name: 'any one'} ],
+
+  'Szkoła Dworzan Yasuki' => [ { name: 'Commerce', school_emphasis: 'Wycena'}, { name: 'Courtier'},
+                               { name: 'Defense'}, { name: 'Etiquette'}, { name: 'Intimidation'},
+                               { name: 'Sincerity', school_emphasis: 'Zwodzenie'},
+                               { name: 'any one', school_emphasis: 'Kupiecla'} ],
+
+  'Szkoła Gwardzistów Seppun' => [ { name: 'Battle'}, { name: 'Defense'}, { name: 'Etiquette'},
+                                   { name: 'Iaijutsu'}, { name: 'Kenjutsu', school_emphasis: 'Katana'},
+                                   { name: 'Kyujutsu'}, { name: 'any one', school_emphasis: 'Godna'} ],
+
+  'Szkoła Dworzan Otomo' => [ { name: 'Courtier', school_emphasis: 'Manipulacja'}, { name: 'Defense'}, { name: 'Etiquette'},
+                              { name: 'Intimidation', school_emphasis: 'Kontrola'},
+                              { name: 'Investigation'}, { name: 'Sincerity'},
+                              {name: 'any one', school_emphasis: 'Godna'} ],
+
+  'Szkoła Heraldów Miya' => [ { name: 'Courtier', school_emphasis: 'Retoryka'}, { name: 'Defense'},
+                              { name: 'Etiquette', school_emphasis: 'Grzeczność'}, { name: 'Horsemanship'}, 
+                              { name: 'Lore', school_emphasis: 'Heraldyka'}, { name: 'Sincerity'},
+                              { name: 'any one', school_emphasis: 'Bugei lub Godna'} ] }
+
+basic_shugenja_school_skill_lists = {
+
+  'Szkoła Shugenja Isawa' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                               { name: 'Lore', school_emphasis: 'Teologia'}, 
+                               { name: 'any one', school_emphasis: 'Dowolna Wiedza'},
+                               { name: 'Medicine'}, { name: 'Meditation'}, { name: 'Spellcraft'},
+                               { name: 'any one', school_emphasis: 'Godna'} ],
+
+  'Szkoła Shugenja Agasha' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                                { name: 'any one', school_emphasis: 'Rzemiosło'}, { name: 'Defense'},
+                                { name: 'Etiquette'}, { name: 'Lore', school_emphasis: 'Teologia'}, 
+                                { name: 'Spellcraft'}, { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła Kapłanów Śmierci Moto' => [ { name: 'Athletics'}, { name: 'Horsemanship'}, { name: 'Hunting'},
+                                      { name: 'Lore', school_emphasis: 'Teologia'},
+                                      { name: 'Meditation'}, { name: 'Spellcraft'}, { name: 'any one'} ],
+
+  'Szkoła Shugenja Horiuchi' => [ { name: 'Calligraphy'}, { name: 'Craft', school_emphasis: 'Meishodo'},
+                                  { name: 'Defense'}, { name: 'Lore', school_emphasis: 'Teologia'},
+                                  { name: 'Mediation'}, { name: 'Spellcraft', school_emphasis: 'Odkrywanie Czarów'}, 
+                                  { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła Shugenja Iuchi' => [ { name: 'Battle'}, { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                               { name: 'Horsemanship'}, { name: 'Lore', school_emphasis: 'Teologia'},
+                               { name: 'Meditation'}, { name: 'Spellcraft'},
+                               { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  "Szkoła Shugenja Kitsu" => [ { name: 'Battle'}, { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                               { name: 'Etiquette'}, { name: 'Lore', school_emphasis: 'Historia'},
+                               { name: 'Lore', school_emphasis: 'Teologia'}, { name: 'Spellcraft'},
+                               { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła Shugenja Yoritomo' => [ { name: 'Athletics'}, { name: 'Calligraphy'}, { name: 'Knives'},
+                                  { name: 'Lore', school_emphasis: 'Teologia'}, { name: 'Meditation'},
+                                  { name: 'Sailing', school_emphasis: 'Nawigacja'}, { name: 'any one'} ],
+
+  'Szkoła Shugenja Moshi' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'}, { name: 'Divination'},
+                               { name: 'Lore', school_emphasis: 'Teologia'}, { name: 'Meditation'}, { name: 'Spellcraft'},
+                               { name: 'any one', school_emphasis: 'Godna lub Bugei'},
+                               { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+                                
+
+  'Szkoła Shugenja Kitsune' => [ { name: 'Calligraphy'}, {name: 'Defense'}, {name: 'Hunting'},
+                                 { name: 'Medicine', school_emphasis: 'Zioła'}, {name: 'Meditation'},
+                                 {name: 'Spellcraft'}, 
+                                 { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+
+  'Szkoła Shugenja Chuda' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'}, { name: 'Hunting'},
+                               { name: 'Lore', school_emphasis: 'Krainy Cienia'},
+                               { name: 'Spellcraft'}, { name: 'Stealth'}, { name: 'any one'} ],
+
+  'Szkoła Shugenja Soshi' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'}, { name: 'Courtier'},
+                               { name: 'Etiquette'}, { name: 'Lore', school_emphasis: 'Teologia'},
+                               { name: 'Spellcraft'}, { name: 'Stealth'}, { name: 'any one'} ],
+
+  'Szkoła Shugenja Yogo' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'}, {name: 'Etiquette'},
+                              { name: 'Investigation'}, { name: 'Lore', school_emphasis: 'Teologia'},
+                              { name: 'Spellcraft'}, { name: 'Stealth'},
+                              { name: 'any one', school_emphasis: 'Godna lub Niegodna'} ],
+
+  'Szkoła Shugenja Tamori' => [ { name: 'Athletics'}, { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                                { name: 'Defense'}, { name: 'Divination'},
+                                { name: 'Lore', school_emphasis: 'Teologia'},
+                                { name: 'Medicine'}, { name: 'Spellcraft'} ],
+
+  'Szkoła Shugenja Asahina' => [ { name: 'any one', school_emphasis: 'Artysta'}, 
+                                 { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                                 { name: 'Etiquette'}, { name: 'Lore', school_emphasis: 'Teologia'},
+                                 { name: 'Meditation'}, { name: 'Spellcraft'},
+                                 { name: 'any one', school_emphasis: 'Godna'} ],
+
+  'Szkoła Shugenja Kuni' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'},
+                              { name: 'Defense'},
+                              { name: 'Lore', school_emphasis: 'Krainy Cienia', value: 2},
+                              { name: 'Lore', school_emphasis: 'Teologia'}, { name: 'Spellcraft'},
+                              { name: 'any one', school_emphasis: 'Walka Bronią'} ],
+
+  'Szkoła Shugenja Seppun' => [ { name: 'Calligraphy'}, { name: 'Defense'}, { name: 'Etiquette'}, 
+                                { name: 'Investigation', school_emphasis: 'Zauważanie' },
+                                { name: 'Meditation'}, { name: 'Lore', school_emphasis: 'Teologia'},
+                                { name: 'any one', school_emphasis: 'Godna lub Bugei'} ] }
+
+basic_monk_school_skill_lists = { 
+
+  'Zakon Mnichów Tsurumi Zumi' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Etiquette'},
+                                    { name: 'Jiujutsu'},
+                                    { name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki' },
+                                    { name: 'any one'}, { name: 'any one'} ] }
 # ---------------------------- Support functions --------------------------
 
 def not_valid_names(model_name, objects)
@@ -2016,6 +2798,19 @@ clans.each do |clan|
   end
 end
 
+puts 'Skills Generation'
+Skill.destroy_all
+not_valid_names(Skill, skills)
+skills.each do |skill|
+  Skill.create(skill)
+end
+
+puts 'School Classes generation'
+SchoolClass.destroy_all
+school_classes.each do |class_name|
+  SchoolClass.create(name: class_name )
+end
+
 puts 'Schools Generation'
 BasicPrimarySchool.destroy_all
 not_valid_names(BasicPrimarySchool, basic_primary_schools)
@@ -2032,7 +2827,8 @@ clans.each do |clan|
     clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
   end
 end
-puts 'School Classes generation'
+
+puts 'Joining School Classes with Schools'
 BasicPrimarySchool.all.each do |school|
   school_classes = basic_primary_names[school.name]
   if school_classes
@@ -2055,13 +2851,31 @@ BasicShugenjaSchool.all.each do |school|
     puts school.name
   end
 end
-
 BasicMonkSchool.all.each do |school|
   school_classes = basic_monk_names[school.name]
   if school_classes
     school_classes.each do |class_name|
       school_class = SchoolClass.find_by(name: class_name)
       school.monk_school_classes.create( school_class_id: school_class.id )
+    end
+  else
+    puts school.name
+  end
+end
+
+puts 'Joining Schools with skills'
+BasicPrimarySchool.all.each do |school|
+  school_skills = basic_primary_school_skill_lists[school.name]
+  if school_skills
+    school_skills.each do |skill|
+      skill_object = Skill.find_by(name: skill[:name])
+      if skill_object
+        school.primary_school_skills.create( skill_id: skill_object.id, 
+                                             school_emphasis: skill[:school_emphasis],
+                                             value: skill[:value] )
+      else
+        p skill
+      end
     end
   else
     puts school.name
