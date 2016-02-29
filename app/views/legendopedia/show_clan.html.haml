@@ -24,5 +24,17 @@
       %strong
         Klasa szkoły:
       = school.school_classes.map { |x| x[:name]}.join(', ')
-
+    %h3
+      %strong
+        Umiejętności:
+      - school.primary_school_skills.each do |school_skill|
+        %p 
+          Nazwa:
+          = school_skill.skill.name_pl
+        %p 
+          Specjalizacja:
+          = school_skill.school_emphasis
+        %p 
+          Wartość:
+          = school_skill.value
 

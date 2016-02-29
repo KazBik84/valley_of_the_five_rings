@@ -4,6 +4,9 @@ class BasicShugenjaSchool < ActiveRecord::Base
   has_many :shugenja_school_classes, dependent: :destroy
   has_many :school_classes, through: :shugenja_school_classes
 
+  has_many :shugenja_school_skills
+  has_many :skills, through: :shugenja_school_skills
+
   validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl, 
                         :desc, :honor, :outfit, :spells, :shugenja_tech_name,
                         :shugenja_tech_desc, :affinity_deficiency

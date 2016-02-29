@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227044209) do
+ActiveRecord::Schema.define(version: 20160229201637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -166,9 +166,9 @@ ActiveRecord::Schema.define(version: 20160227044209) do
     t.integer  "skill_id"
     t.integer  "basic_primary_school_id"
     t.string   "school_emphasis"
-    t.string   "value",                   default: "1"
-    t.datetime "created_at",                            null: false
-    t.datetime "updated_at",                            null: false
+    t.integer  "value",                   default: 1
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   add_index "primary_school_skills", ["basic_primary_school_id"], name: "index_primary_school_skills_on_basic_primary_school_id", using: :btree
@@ -189,6 +189,18 @@ ActiveRecord::Schema.define(version: 20160227044209) do
 
   add_index "shugenja_school_classes", ["basic_shugenja_school_id"], name: "index_shugenja_school_classes_on_basic_shugenja_school_id", using: :btree
   add_index "shugenja_school_classes", ["school_class_id"], name: "index_shugenja_school_classes_on_school_class_id", using: :btree
+
+  create_table "shugenja_school_skills", force: :cascade do |t|
+    t.integer  "skill_id"
+    t.integer  "basic_shugenja_school_id"
+    t.string   "school_emphasis"
+    t.integer  "value",                    default: 1
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+  end
+
+  add_index "shugenja_school_skills", ["basic_shugenja_school_id"], name: "index_shugenja_school_skills_on_basic_shugenja_school_id", using: :btree
+  add_index "shugenja_school_skills", ["skill_id"], name: "index_shugenja_school_skills_on_skill_id", using: :btree
 
   create_table "skills", force: :cascade do |t|
     t.string   "name"
@@ -249,4 +261,6 @@ ActiveRecord::Schema.define(version: 20160227044209) do
   add_foreign_key "primary_school_skills", "skills"
   add_foreign_key "shugenja_school_classes", "basic_shugenja_schools"
   add_foreign_key "shugenja_school_classes", "school_classes"
+  add_foreign_key "shugenja_school_skills", "basic_shugenja_schools"
+  add_foreign_key "shugenja_school_skills", "skills"
 end
