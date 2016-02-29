@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160229201637) do
+ActiveRecord::Schema.define(version: 20160229205640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -140,6 +140,18 @@ ActiveRecord::Schema.define(version: 20160229201637) do
   add_index "monk_school_classes", ["basic_monk_school_id"], name: "index_monk_school_classes_on_basic_monk_school_id", using: :btree
   add_index "monk_school_classes", ["school_class_id"], name: "index_monk_school_classes_on_school_class_id", using: :btree
 
+  create_table "monk_school_skills", force: :cascade do |t|
+    t.integer  "skill_id"
+    t.integer  "basic_monk_school_id"
+    t.string   "school_emphasis"
+    t.integer  "value",                default: 1
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
+
+  add_index "monk_school_skills", ["basic_monk_school_id"], name: "index_monk_school_skills_on_basic_monk_school_id", using: :btree
+  add_index "monk_school_skills", ["skill_id"], name: "index_monk_school_skills_on_skill_id", using: :btree
+
   create_table "priary_school_skills", force: :cascade do |t|
     t.integer  "basic_primary_school_id"
     t.integer  "skill_id"
@@ -253,6 +265,8 @@ ActiveRecord::Schema.define(version: 20160229201637) do
   add_foreign_key "families", "clans"
   add_foreign_key "monk_school_classes", "basic_monk_schools"
   add_foreign_key "monk_school_classes", "school_classes"
+  add_foreign_key "monk_school_skills", "basic_monk_schools"
+  add_foreign_key "monk_school_skills", "skills"
   add_foreign_key "priary_school_skills", "basic_primary_schools"
   add_foreign_key "priary_school_skills", "skills"
   add_foreign_key "primary_school_classes", "basic_primary_schools"

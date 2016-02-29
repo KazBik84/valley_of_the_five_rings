@@ -4,6 +4,9 @@ class BasicMonkSchool < ActiveRecord::Base
   has_many :monk_school_classes, dependent: :destroy
   has_many :school_classes, through: :monk_school_classes
 
+  has_many :monk_school_skills, dependent: :destroy
+  has_many :skills, through: :monk_school_skills
+
   validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl, 
                         :desc, :honor, :outfit, :monk_tech_name, :monk_tech_desc
                         
