@@ -2699,7 +2699,7 @@ basic_shugenja_school_skill_lists = {
 
   'Szkoła Shugenja Horiuchi' => [ { name: 'Calligraphy'}, { name: 'Craft', school_emphasis: 'Meishodo'},
                                   { name: 'Defense'}, { name: 'Lore', school_emphasis: 'Teologia'},
-                                  { name: 'Mediation'}, { name: 'Spellcraft', school_emphasis: 'Odkrywanie Czarów'}, 
+                                  { name: 'Meditation'}, { name: 'Spellcraft', school_emphasis: 'Odkrywanie Czarów'}, 
                                   { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
 
   'Szkoła Shugenja Iuchi' => [ { name: 'Battle'}, { name: 'Calligraphy', school_emphasis: 'Szyfry'},
@@ -2881,5 +2881,21 @@ BasicPrimarySchool.all.each do |school|
     puts school.name
   end
 end
-
+BasicShugenjaSchool.all.each do |school|
+  school_skills = basic_shugenja_school_skill_lists[school.name]
+  if school_skills
+    school_skills.each do |skill|
+      skill_object = Skill.find_by(name: skill[:name])
+      if skill_object
+        school.shugenja_school_skills.create( skill_id: skill_object.id, 
+                                             school_emphasis: skill[:school_emphasis],
+                                             value: skill[:value] )
+      else
+        p skill
+      end
+    end
+  else
+    puts school.name
+  end
+end
 puts 'Data Base Seeded'
