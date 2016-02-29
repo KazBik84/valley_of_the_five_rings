@@ -2898,4 +2898,21 @@ BasicShugenjaSchool.all.each do |school|
     puts school.name
   end
 end
+BasicMonkSchool.all.each do |school|
+  school_skills = basic_monk_school_skill_lists[school.name]
+  if school_skills
+    school_skills.each do |skill|
+      skill_object = Skill.find_by(name: skill[:name])
+      if skill_object
+        school.monk_school_skills.create( skill_id: skill_object.id, 
+                                             school_emphasis: skill[:school_emphasis],
+                                             value: skill[:value] )
+      else
+        p skill
+      end
+    end
+  else
+    puts school.name
+  end
+end
 puts 'Data Base Seeded'
