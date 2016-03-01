@@ -28,42 +28,40 @@
         %h3
           %strong
             Umiejętności:
-          - school.primary_school_skills.each do |primary_school_skill|
-            %p 
-              Nazwa:
-              = primary_school_skill.skill.name_pl
-            %p 
-              Specjalizacja:
-              = primary_school_skill.school_emphasis
-            %p 
-              Wartość:
-              = primary_school_skill.value
+        - school.primary_school_skills.each do |primary_school_skill|
+          %p 
+            Nazwa:
+            = primary_school_skill.skill.name_pl 
+            Specjalizacja:
+            = primary_school_skill.school_emphasis 
+            Wartość:
+            = primary_school_skill.value
       -  elsif school.class == BasicShugenjaSchool
         %h3
           %strong
             Umiejętności:
-          - school.shugenja_school_skills.each do |shugenja_school_skill|
-            %p 
-              Nazwa:
-              = shugenja_school_skill.skill.name_pl
-            %p 
-              Specjalizacja:
-              = shugenja_school_skill.school_emphasis
-            %p 
-              Wartość:
-              = shugenja_school_skill.value 
+        - school.shugenja_school_skills.each do |shugenja_school_skill|
+          %p 
+            Nazwa:
+            = shugenja_school_skill.skill.name_pl
+          %p 
+            Specjalizacja:
+            = shugenja_school_skill.school_emphasis
+          %p 
+            Wartość:
+            = shugenja_school_skill.value 
       -  elsif school.class == BasicMonkSchool
         %h3
           %strong
             Umiejętności:
-          - school.monk_school_skills.each do |monk_school_skill|
-            %p 
-              Nazwa:
-              = monk_school_skill.skill.name_pl
-            %p 
-              Specjalizacja:
-              = monk_school_skill.school_emphasis
-            %p 
-              Wartość:
-              = monk_school_skill.value                    
+        - school.monk_school_skills.each do |monk_school_skill|
+          %p 
+            Nazwa:
+            = monk_school_skill.skill.name_pl
+          %p 
+            Specjalizacja:
+            = monk_school_skill.school_emphasis
+          %p 
+            Wartość:
+            = monk_school_skill.value                    
 
