@@ -35,7 +35,7 @@
             Specjalizacja:
             = primary_school_skill.school_emphasis 
             Wartość:
-            = primary_school_skill.value
+            = primary_school_skill.value.to_s
       -  elsif school.class == BasicShugenjaSchool
         %h3
           %strong
@@ -63,5 +63,5 @@
             = monk_school_skill.school_emphasis
           %p 
             Wartość:
-            = monk_school_skill.value                    
+            = monk_school_skill.value.to_s
 
