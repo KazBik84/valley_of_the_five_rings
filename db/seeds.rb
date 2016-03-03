@@ -2394,12 +2394,13 @@ skills = [
   emphases: 'Brak',
   desc: 'Umiejętność do wybrou zgodnie ze specjalizacją, jeśli brak w tedy do wolna umiejętność',}]
 
-traits =   { name: 'Absolute Direction', 
+traits = [
+  { name: 'Absolute Direction', 
   name_pl: 'Wyczucie kierunku' ,
   value: '1',
   desc: 'Postać posiada niesamowity zmysł pozwalający zawsze wskazać północ. Zaleta nie działa jeśli postać podróżuje ponad dzień w krainach cienia.' },
 
-  name: 'Allies', 
+  { name: 'Allies', 
   name_pl: 'Sojusznik' ,
   value: 'Różna',
   desc: 'Każdy na swej drodze spotyka różnych ludzi. Jedni mogą zapewnić ochronę inni natomiast różne przysługi, najcenniejsi jedno i drugie. Wartość sojusznika jest sumą jego pozycji i oddania postaci. Żurawie płacą za tę zaletę 1 punkt mniej.
@@ -2464,7 +2465,7 @@ traits =   { name: 'Absolute Direction',
   { name: 'Dangerous Beauty', 
   name_pl: 'Niebezpieczne Piękno' ,
   value: '3',
-  desc: 'Postać posiada to 'coś' co sprawia że postacie przeciwnej płci nie potrafią jej się oprzeć, przez co łatwiej poddają się jej manipulacją. Postać dostaje +1z0 do rzutów na kuszenie, jeśli celem jest postać przeciwnej płci. Postacie z klanu Skorpiona mogą wykupić tę zaletę za 2 punkty.' },
+  desc: 'Postać posiada to "coś" co sprawia że postacie przeciwnej płci nie potrafią jej się oprzeć, przez co łatwiej poddają się jej manipulacją. Postać dostaje +1z0 do rzutów na kuszenie, jeśli celem jest postać przeciwnej płci. Postacie z klanu Skorpiona mogą wykupić tę zaletę za 2 punkty.' },
         
   { name: 'Daredevil', 
   name_pl: 'Linoskoczek' ,
@@ -2480,7 +2481,7 @@ traits =   { name: 'Absolute Direction',
           <li>Determinacja: Postać neguje wszelkie modyfikatory do jednego rzutu. (Nie otrzymuje też +5 z tej zalety)</li>
           <li>Przeczucie: Postać może przerzucić test intuicji.</li>
           <li>Wiedza: Postać może przerzucić dowolny test oparty na wiedzy (wliczając testy umiejętności)</li>
-          <li>Doskonałość: Postać aktywująca tę zdolność może przerzucić dowolną jedną kość tak jakby wynik na niej był '10' (Nie dodaje się premii +5 do rzutu wynikającej z tej zalety)</li>
+          <li>Doskonałość: Postać aktywująca tę zdolność może przerzucić dowolną jedną kość tak jakby wynik na niej był "10" (Nie dodaje się premii +5 do rzutu wynikającej z tej zalety)</li>
           <li>Siła: Postać może przerzucić wynik rzutu na obrażenia.</li>
           <li>Wola:  Aktywując tę zdolność postać może zanegować 10 pt obrażeń.</li>
       </ul>' },
@@ -2510,7 +2511,7 @@ traits =   { name: 'Absolute Direction',
   value: '3',
   desc: 'Postać dzięki swym czynom stała się sławna, dzięki czemu zyskała dodatkowy poziom chwały.' },
       
-  name: 'Forbidden Knowlage', 
+  { name: 'Forbidden Knowlage', 
   name_pl: 'Zakazana Wiedza' ,
   value: '5',
   desc: 'Twoja postać posiada wiedzę oraz wgląd w pewną dziedzinę wiedzy. Problem  w tym że to wiedza zakazana, jeśli nie przez prawo to po prostu nie warto chwalić się akurat tą zaletą. Jeśli ktokolwiek odkryje że posiadasz taką wiedzę, może zacząć zastanawiać się w jaki sposób wszedłeś w jej posiadanie. Ta zaleta może dotyczyć w zasadzie wszystkiego, poniżej podane są najpopularniejsze przykłady, za każdym razem zaleta ta powinna być wcześniej omówiona z MG.</p>
@@ -2542,7 +2543,7 @@ traits =   { name: 'Absolute Direction',
   value: '5',
   desc: 'Postać posiada coś pochodzenia gajińskiego. Może to być dowolny przedmiot, może to być np. kompas, szkoło powiększające lub nożyczki. W wypadku broni należy określić jej statystyki oraz musi ona posiadać własną umiejętność do posługiwania się nią.' },
       
-  name: 'Gentry', 
+  { name: 'Gentry', 
   name_pl: 'Włości' ,
   value: 'Różna',
   desc: 'Każdy samuraj nadzoruję jakąś część własności Cesarzowej, Twoja postać ma zaszczyt nadzorowania włościami o większym znaczeniu. Na zaletę tę może złożyć się kilka postaci, należy pamiętać że poza oczywistymi korzyściami, z zaletą tą wiąże się również odpowiedzialność za dany region, czyli ochrona, administracja oraz wysokość podatków.</p>
@@ -2600,8 +2601,8 @@ traits =   { name: 'Absolute Direction',
   value: '5',
   desc: 'Dzięki wielkim staraniom, rodzina postaci udało się zaaranżować małżeństwo z członkiem imperialnego rodu. Choć status Twojego partnera/ki nie był dość wysoki by postać została wcielona do imperialnego rodu i tak płyną z tego duże korzyści. Postać zyskuje status na poziomie +0,5 oraz otrzymuje +1z1 do testów społecznych przeciw członkom rodzin Cesarskich.' },
       
-  name: 'Inari`s Blessing', 
-  { name_pl: 'Błogosławieństwo Inari' ,
+  { name: 'Inari`s Blessing', 
+  name_pl: 'Błogosławieństwo Inari' ,
   value: '3',
   desc: 'Choć Fortuna Ryżu należy do pomniejszych fortun, jest jedną z najpopularniejszych osobowości w całym Rokuganie. Kiedy postać cierpi z powodu braku wody lub jedzenia, może w normalny sposób odzyskiwać punkty pustki. Inne ograniczenia się nie zmieniają.
   ' },
@@ -2611,14 +2612,14 @@ traits =   { name: 'Absolute Direction',
   value: '5',
   desc: 'Podczas gempukku postać otrzymała spadek po przodku, jest to bardzo wartościowy przedmiot i postać nie powinna pozwolić w jakikolwiek sposób zniszczyć lub zhańbić ten przedmiot. Przedmiot pozwala dodać +1z1 do umiejętności do której zwyczajowo używa się tego przedmiotu, jak np. do testu muzyki grając na odziedziczonej biwie lub gry w go gdy gra się na odziedziczonej planszy do go. Przedmiot może być dowolny jednak bonus nigdy nie może odnosić się do rzutów w walce.' },
       
-  name: 'Inner Gift', 
+  { name: 'Inner Gift', 
   name_pl: 'Wewnętrzny Dar' ,
   value: '7',
   desc: 'Postać posiada dar którego nawet shugenja nie potrafią wyjaśnić, mnisi nazywają to unikatowym stanem harmonii, ale oni tak zawsze mówią. Twój dar może być darem od Kami lub innych nadnaturalnych stworzeń lub po prostu wynikiem dziwnego zbiegu okoliczności.</p>
       <ul >
           <li >Przyjaciel zwierząt: Postać natychmiast wyczuwa nastawienie zwierząt, dodatkowo zwierzęta traktują postać jak przyjaciela.</li>
           <li >Empatia: Postać dostaje modyfikator +1z1 do testów Dworskich by odczytać emocje/uczucia innych</li>
-  {         <li >Przewidywanie przyszłości: Postać jest ciężko zaskoczyć, dostaje ona +1z0 di testów inicjatywy</li>
+          <li >Przewidywanie przyszłości: Postać jest ciężko zaskoczyć, dostaje ona +1z0 di testów inicjatywy</li>
           <li >Pomniejsze przepowiednie: Postać miewa czasem prorocze sny, jak np. zakrwawiony nóż, w przeddzień morderstwa</li>
           <li >Duchowy dotyk: postać może wykonać test Intuicji o PT 15 by zobaczyć ostatnią postać która dotykała danego przedmiotu</li>
       </ul>' },
@@ -2668,7 +2669,7 @@ traits =   { name: 'Absolute Direction',
   value: '10',
   desc: 'Postać dostąpiła niezwykłego zaszczytu uczenia się w różnych dojo. Jest to bardzo rzadka sytuacja, która wymaga specjalnych okoliczności. Zaletę tę można nabyć tylko w trakcie gry, od momentu przystąpienia do nowej szkoły postać traci możliwość awansowania w starej szkole. Zanim postać osiągnie rangę pierwszą w nowej szkole, musi znać wszystkie umiejętności startowe jakich uczy dana szkoła. Pod żadnym pozorem nie można łączyć szkół bushi i shugenja.' },
       
-  name: 'Paragon', 
+  { name: 'Paragon', 
   name_pl: 'Paragon' ,
   value: '7',
   desc: 'Postać jest przykładem stosowania kodeksu bushido, a w szczególności jednego z jego aspektów. Dodatkowo do premii podanych poniżej postać otrzymuje 1 punkt honoru za każdym razem gdy zdobywa punkty  honoru za czyny związane z wybranym aspektem. Postacie z klanu Lwa mogą wykupić tę zaletę za 5 punktów.</p>
@@ -2712,7 +2713,7 @@ traits =   { name: 'Absolute Direction',
   value: '4',
   desc: 'Dzięki wrodzonym umiejętnością lub długim treningom, postać potrafi rozumieć wypowiadane słowa nawet gdy ich nie słyszy. Wykonując test o PT 15+5 za każde 3m odległości od postaci, postać może rozumieć wypowiadane słowa. Postacie klasy Dworzanin mogą nabyć tę umiejętność za 3 punkty.' },
       
-  name: 'Sacred Weapon', 
+  { name: 'Sacred Weapon', 
   name_pl: 'Święta Broń' ,
   value: 'Różna',
   desc: 'Postać posiada w swoim ekwipunku broń wykonywaną tylko przez swój klan. Jest to dużym wyróżnieniem i taka broń powinna być traktowana z należytym szacunkiem.
@@ -2722,14 +2723,14 @@ traits =   { name: 'Absolute Direction',
         <li>  <strong>Krab</strong> - <em>Ostrze Kaiu 6 Punktów  </em> - Katana 3z3, niezniszczalna, -2 wyparowania celu.</li>
         <li>  <strong>Lew </strong> - <em>Ostrze Akodo 6 Punktów  </em> - Katana 4z2, poziom honoru postaci jest liczony o 1 wyższy kiedy postać trzyma te ostrze w ręku.</li>
         <li>  <strong>Modliszka </strong> - <em>Kama Burzy 6 Punktów </em> - Para Kama 2z2, +1z0 do ataków kiedy postać trzyma obie kamy jednocześnie.</li>
-        <li>  <strong>Pająk </strong> - <em>Ostrze z Czarnej Stali 6 Punktów  </em> - Katana 4z2, podczas wykonywania rzutu na obrażenia, za każdym razem kiedy kość 'eksploduje' ofiara musi wykonać test Kręgu Ziemi o PT 15 lub dostanie 1 punkt Skazy Cienia.</li>
+        <li>  <strong>Pająk </strong> - <em>Ostrze z Czarnej Stali 6 Punktów  </em> - Katana 4z2, podczas wykonywania rzutu na obrażenia, za każdym razem kiedy kość "eksploduje" ofiara musi wykonać test Kręgu Ziemi o PT 15 lub dostanie 1 punkt Skazy Cienia.</li>
         <li>  <strong>Skorpion </strong> - <em>Ostrze Shosuro 5 Punktów </em> - Katana 4z2, +5 do PT oparcia się truciźnie nałożonej na tę broń. </li>
         <li>  <strong>Smok </strong> - <em>Bliźniacze Siostry 3 Punkty  </em> - Daisho, +5 do testów rozbrojenia posiadacza.</li>
         <li>  <strong>Żuraw</strong> - <em>Ostrze Kakita 5 Punktów  </em> - Katana 4z2, pozwala przerzucić obrażenia raz na pojedynek Iaijutsu</li>
       </ul>' },
       
-  name: 'Sancrosanct', 
-  { name_pl: 'Nienaruszalny' ,
+  { name: 'Sancrosanct', 
+  name_pl: 'Nienaruszalny' ,
   value: '4',
   desc: 'Dzięki swej wiernej służbie Cesarzowej, postać została objęta jej ochroną. Zaleta ta może zostać nabyta tylko przez postaci o poziomie honoru co najmniej 6. Póki honor postaci nie spadnie poniżej poziomu 6.0, postać nie zostanie zaatakowana przez żadną inną postać o poziomie honoru 5.0 lub wyżej. Zaleta przestaje działać kiedy postać zaatakuje pierwsza lub gdy dobrowolnie zgodzi się na pojedynek. Postacie z rodzin Cesarskich mogą nabyć tę zaletę za 3 punkty.' },
 
@@ -2744,7 +2745,7 @@ traits =   { name: 'Absolute Direction',
   value: '3',
   desc: 'Wrodzony talent postaci sprawia że potrafi ona zdobywać przychylność publiczności. Jeśli postać chce wykonać test Przedstawienia którego nie posiada, uznaje się że posiada tę umiejętność na poziomie 1.' },
       
-  name: 'Servant', 
+  { name: 'Servant', 
   name_pl: 'Sługa' ,
   value: '5',
   desc: 'Rodzina postaci przydzieliła jej sługę do pomocy. Typowy sługa ma wszystkie kręgi na 2 i wybraną umiejętność na 3 poziomie. Płacąc dodatkowe 3 punkty można wykupić dodatkowy poziom umiejętności lub specjalizację. Słudzy postaci z danego klanu są tańsi o 2 punkty.</p>
@@ -2760,7 +2761,7 @@ traits =   { name: 'Absolute Direction',
         <li> <strong>Żuraw</strong>  - <em>Artysta </em>  - Dowolna umiejętność artystyczna 3</li>
       </ul>' },
       
-  name: 'Seven Fortunes Blessing', 
+  { name: 'Seven Fortunes Blessing', 
   name_pl: 'Błogosławieństwo Siedmiu Fortun' ,
   value: '4',
   desc: 'Jedna z siedmiu fortun zwróciła swoją uwagę na tę postać. Błogosławieństwo zgodne z klanem postaci może być kupione za 1 punkt taniej.</p> 
@@ -2804,7 +2805,7 @@ traits =   { name: 'Absolute Direction',
   value: '4',
   desc: 'Postać posiada umysł przystosowany do podejmowania słusznych decyzji podczas bitew. Wykonując rzut na tabelę Bitew, może dodać lub odjąć 5 od wyniku rzutu. Postacie z klanu Lwa lub klasy Bushi mogą nabyć tę zaletę za 3 punkty.' },
       
-  name: 'Touch of the Spirit Realms', 
+  { name: 'Touch of the Spirit Realms', 
   name_pl: 'Dotknięty przez Zaświaty' ,
   value: '5',
   desc: 'Niewiadomo jak, ale część któregoś z zaświatów jest obecna w duszy postaci. Postacie klasy Shugenja mogą nabyć tę zaletę za 4 punkty.
@@ -2866,7 +2867,7 @@ traits =   { name: 'Absolute Direction',
   value: '3',
   desc: 'Poprzez odniesiony rany, przebyte choroby lub dzięki innym czynnikom, wzrok postaci jest niezwykle słaby. Otrzymuje ona modyfikator -1z1 do testów strzeleckich oraz spostrzegawczości opartych na wzroku.' }, 
       
-  name: 'Bad Fortune', 
+  { name: 'Bad Fortune', 
   name_pl: 'Zły Los' ,
   value: '3',
   desc: 'Karma to potężna siła. Coś złego dzieje się wokół postaci, a ona może nawet nie wiedzieć co to póki nie będzie za późno. Zły Los może przybrać różne postacie, wszystkie są warte tyle samo punktów, przed tworzeniem postaci wada ta powinna zostać przedyskutowana z MG.</p>
@@ -2899,7 +2900,7 @@ traits =   { name: 'Absolute Direction',
   { name: 'Black Sheep', 
   name_pl: 'Czarna Owca' ,
   value: '3',
-  desc: 'Z jakiegoś powodu, rodzina postaci gardzi nią. Choć postać nie została wyrzucona z klanu, nie jest już mile widziana w swoich rodzinnych stronach. Postać może utrzymywać dobre relacje z członkami najbliższej rodziny tylko przez zaletę Sojusznik, jeśli postać należy do swojej 'rodzinnej' szkoły, nie może zyskiwać nowych rang w tej szkole, chyba że znajdzie chętnego nauczyciela.' }, 
+  desc: 'Z jakiegoś powodu, rodzina postaci gardzi nią. Choć postać nie została wyrzucona z klanu, nie jest już mile widziana w swoich rodzinnych stronach. Postać może utrzymywać dobre relacje z członkami najbliższej rodziny tylko przez zaletę Sojusznik, jeśli postać należy do swojej "rodzinnej" szkoły, nie może zyskiwać nowych rang w tej szkole, chyba że znajdzie chętnego nauczyciela.' }, 
       
   { name: 'Blind', 
   name_pl: 'Ślepy' ,
@@ -2926,7 +2927,7 @@ traits =   { name: 'Absolute Direction',
   value: '2, 4',
   desc: 'Pewna czynność jest postaci niezwykle bliska i nieomieszka żadnej okazji by się jej poświęcić bez reszty. Nawyk może być zarówno do używek, takich jak (sake, czy opium), ale i rzeczy bardziej ulotnych jak np. zwyczaj odwiedzania każdej napotkanej świątyni. Przymusowi można się oprzeć dzięki udanemu testowi siły woli o PT 15 lub 25 w przypadku wykupienia tej wady za 4 punkty.' },
     
-  name: 'Consumed', 
+  { name: 'Consumed', 
   name_pl: 'Pochłonięty' ,
   value: 'Różna',
   desc: 'Postać kroczy ścieżką Shourido, która pochłonęła postać bez reszty. Wybrana ścieżka staje się esencją życia postaci. Wada ta jest warta jeden punkt więcej dla postaci z klanu Pająka.</p> 
@@ -2945,7 +2946,7 @@ traits =   { name: 'Absolute Direction',
   value: '3',
   desc: 'Postać szybko wyrabia sobie opinie i nie potrafi ich zachować dla siebie. Podczas rozmów lub zwykłych debat, postać ciągle się wtrąca i chce innym narzucić swoje zdanie. Żeby powstrzymać się od tego postać musi zdać test Siły Woli o PT (5-25), w zależności od tego jak bardzo postać chce się zaangażować. Wada ta jest warta 4 Punkty dla postaci klasy Dworzanin lub członków rodzin Cesarskich.' },
       
-  name: 'Coursed by the Realm', 
+  { name: 'Coursed by the Realm', 
   name_pl: 'Przeklęty przez Zaświaty' ,
   value: '4',
   desc: 'Wpływ innych światów, często jest odczuwalny w Rokuganie. Z niewyjaśnionych przyczyn postać posiada w sobie coś co sprawia że dany wymiar jest mu wrogi. Wada ta jest warta 5 Punktów dla postaci klasy Shugenja.
@@ -2982,8 +2983,8 @@ traits =   { name: 'Absolute Direction',
   value: '5',
   desc: 'Honor postaci został tak splamiony że, jej imię zostało wymazane z zapisów rodziny. Postać dostała jednak drugą szansę zamiast popełnić seppuku, ma zmyć swoją hańbę na polu bitwy. Zwyczaj ten został zapoczątkowany przez klan Lwa i znany jest jako tradycja Poszukiwaczy Śmierci. Status postaci wynosi 1 i nigdy nie może wzrosnąć póki postać nie odkupi swoich win.' },
       
-  name: 'Disbeliver', 
-  { name_pl: 'Wiarołomca' ,
+  { name: 'Disbeliver', 
+  name_pl: 'Wiarołomca' ,
   value: '3',
   desc: ' W ciągu swojego życia, postać straciła wiarę w jakiś aspekt teologiczny Rokugańskiej religii. Być może uznała że Fortuny przestały interesować się ludźmi lub stwierdziła że Tao Shinsei jest tylko stekiem obietnic bez pokrycia. Jeśli Twoje przekonania wyjdą na jaw, wszyscy sojusznicy postaci związani z zakonami lub świątyniami, szybko przemyślą swoje nastawienie do postaci. Dodatkowo postać ma trudność rozmawiając z mnichami lub shugenja, otrzymując modyfikator +5 do PT do wszystkich testów społecznych.
   ' },
@@ -3010,7 +3011,7 @@ traits =   { name: 'Absolute Direction',
       
   { name: 'Enlightened Madness', 
   name_pl: 'Oświecone Szaleństwo' ,
-  value: '4', '6',
+  value: '4, 6',
   desc: 'Postać podczas swojej ścieżki ku oświeceniu zatracił się w pewnym aspekcie. Wybierając tę wadę należy wybrać umiejętność lub Krąg Żywiołu. Za każdym razem gdy postać chce wykorzystać daną umiejętność lub wykonać akcję powiązaną z danym żywiołem musi ona wykonać test Siły Woli o PT 20 lub 30 w zależności o stopnia wady. W przypadku niepowodzenia postać przechodzi pod kontrolę MG na następne 8 godzin.' },
       
   { name: 'Epilepsy', 
@@ -3023,7 +3024,7 @@ traits =   { name: 'Absolute Direction',
   value: '1',
   desc: 'W życiu postaci pojawiło się coś co ją kompletnie zafascynowało. Tradycyjnymi obiektami fascynacji samurajów mogą być muzyka, konie, poezja lub historia. Wybrana fascynacja ma wpływ na ocenę i zachowanie postaci. Żeby dowiedzieć się więcej lub doświadczyć czegoś związanego z tą fascynacją, postać posunie się nawet do czynów niehonorowych, co może prowadzić do zhańbienia postaci.' },
       
-  name: 'Failure of Bushido', 
+  { name: 'Failure of Bushido', 
   name_pl: 'Upadek Bushido' ,
   value: 'Różna',
   desc: 'Pewien aspekt Bushido jest postaci obcy. A przestrzeganie go po prostu nie przychodzi postaci do głowy. Wada ta jest warta punkt więcej dla postaci klasy Ninja.</p>
@@ -3032,7 +3033,7 @@ traits =   { name: 'Absolute Direction',
         <li><strong>Odwaga: </strong> (4 Punkty) Gdy postać walczy z kimś o wyższym poziomie Chwały, Statusu lub przeciw stworom z Krain Cienia, PT wszystkich testów rośnie o 5.</li>
         <li><strong>Uprzejmość: </strong> (4 Punkty) Za każdym razem gdy postać próbuje przeprosić lub uniknąć obrażenia kogoś, wykonując test musi wykonać podbicie bez żadnego efektu lub test zakończy się porażką.</li>
         <li><strong>Obowiązek: </strong>  (6 Punktów) Postać nie może wydawać Punktów Pustki by zmniejszyć obrażenia.</li>
-  {       <li><strong>Prawdomówność: </strong>  (3 Punkty) Postać nie może wydawać Punktów Pustki do testów Szczerości, kiedy w grę wchodzi mówienie prawdy.</li>
+        <li><strong>Prawdomówność: </strong>  (3 Punkty) Postać nie może wydawać Punktów Pustki do testów Szczerości, kiedy w grę wchodzi mówienie prawdy.</li>
         <li><strong>Honor:  </strong>  (3 Punkty) Postać nie może dodawać swojego poziomu honoru do testów przesłuchiwania lub kuszenia.</li>
         <li><strong>Szczerość: </strong>  (4 Punkty) Za każdym razem gdy postać wykonuje test Szczerości by przekonać kogoś do swoich słów, postać musi wykonać podbicie bez żadnego efektu lub test zakończy się porażką.</li>
       </ul> ' },
@@ -3050,7 +3051,7 @@ traits =   { name: 'Absolute Direction',
   { name: 'Gaijin Name', 
   name_pl: 'Gajińskie Imię' ,
   value: '1',
-  desc: 'Dzięki urodzeniu lub upodobaniom rodziców, postać posiada nie Rokugańskie imię. Choć nie jest to nic nie honorowego, w społeczeństwie Rokugańskim jest wystarczające by powątpiewać w czyny postaci. Podczas wykonywania testów Społecznych tylko jedna kość może 'eksplodować' a jej wynik nie może przekroczyć 20. Wada ta jest warta 2 Punkty dla postaci z Klanu Jednorożca.' },
+  desc: 'Dzięki urodzeniu lub upodobaniom rodziców, postać posiada nie Rokugańskie imię. Choć nie jest to nic nie honorowego, w społeczeństwie Rokugańskim jest wystarczające by powątpiewać w czyny postaci. Podczas wykonywania testów Społecznych tylko jedna kość może "eksplodować" a jej wynik nie może przekroczyć 20. Wada ta jest warta 2 Punkty dla postaci z Klanu Jednorożca.' },
 
   { name: 'Greedy', 
   name_pl: 'Chciwość' ,
@@ -3070,7 +3071,7 @@ traits =   { name: 'Absolute Direction',
   { name: 'Hostage', 
   name_pl: 'Zakładnik' ,
   value: '3',
-  desc: 'W skutek kłótni między klanami, normą jest wymiana 'gości'. Taki układ pieczętuje podpisane układy. Choć postać jest traktowana z szacunkiem jako gość na ziemiach innego klanu, to nie może opuszczać swojego miejsca pobytu bez eskorty lub w przypadku wybuchu wojny między klanem gospodarza a klanem postaci, życie postaci może być poważnie zagrożone.' },
+  desc: 'W skutek kłótni między klanami, normą jest wymiana "gości". Taki układ pieczętuje podpisane układy. Choć postać jest traktowana z szacunkiem jako gość na ziemiach innego klanu, to nie może opuszczać swojego miejsca pobytu bez eskorty lub w przypadku wybuchu wojny między klanem gospodarza a klanem postaci, życie postaci może być poważnie zagrożone.' },
 
   { name: 'Idealistic', 
   name_pl: 'Idealista' ,
@@ -3152,7 +3153,7 @@ traits =   { name: 'Absolute Direction',
   value: '4',
   desc: 'Postać nie potrafi opanować się przed rozprowadzaniem plotek i pomówień, bez względu na to jak bezsensowne miały by one być. W sytuacji gdy postaci nadarzy się okazja by rozprowadzić nowe plotki, może ona wykonać test Siły Woli o PT równym najwyższemu poziomowi Chwały, osoby której mogą dotyczyć plotki. Ta wada jest warta 5 punktów dla postaci klasy Dworzanin.' },
 
-  name: 'Seven Fortune`s Curse', 
+  { name: 'Seven Fortune`s Curse', 
   name_pl: 'Klątwa Siedmiu Fortun' ,
   value: '3',
   desc: 'Jedna z siedmiu Fortun nie spodobało się zachowanie postaci i postanowiły okazać to postaci. Klątwa manifestuje się realnie i mało kto potrafi się jej przeciwstawić.
@@ -3214,8 +3215,7 @@ traits =   { name: 'Absolute Direction',
   { name: 'Wrath of the Kami', 
   name_pl: 'Gniew Kami' ,
   value: '3',
-  desc: 'Kami pewnego żywiołu odwróciły się przeciw postaci, w skutek przekleństwa lub klątwy jakiejś Fortuny. Wszelkie czary z określonego żywiołu rzucane przeciw postaci, zyskują dodatkowe podbicie. Ta wada jest warta 4 punkty dla postaci klasy Shugenja. ' }
-]
+  desc: 'Kami pewnego żywiołu odwróciły się przeciw postaci, w skutek przekleństwa lub klątwy jakiejś Fortuny. Wszelkie czary z określonego żywiołu rzucane przeciw postaci, zyskują dodatkowe podbicie. Ta wada jest warta 4 punkty dla postaci klasy Shugenja. ' } }
 
 traits_kinds = %w( Wada Zaleta )
 
@@ -3596,7 +3596,7 @@ basic_monk_school_skill_lists = {
                                     { name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki' },
                                     { name: 'any one'}, { name: 'any one'} ] }
 
-traits_kinds_and_sphares = ["Absolute Direction" => { kind: "Zaleta", sphere: "Umysłowa" }, 
+traits_kinds_and_sphares = {"Absolute Direction" => { kind: "Zaleta", sphere: "Umysłowa" }, 
                             "Allies" => { kind: "Zaleta", sphere: "Umysłowa" }, 
                             "Balance" => { kind: "Zaleta", sphere: "Umysłowa" }, 
                             "Blackmail" => { kind: "Zaleta", sphere: "Społeczna" }, 
@@ -3730,7 +3730,7 @@ traits_kinds_and_sphares = ["Absolute Direction" => { kind: "Zaleta", sphere: "U
                             "True Love" => { kind: "Wada", sphere: "Umysłowa" }, 
                             "Unlucky" => { kind: "Wada", sphere: "Duchowa" }, 
                             "Weakness" => { kind: "Wada", sphere: "Fizyczna" }, 
-                            "Wrath of the Kami" => { kind: "Wada", sphere: "Duchowa" }]                                    
+                            "Wrath of the Kami" => { kind: "Wada", sphere: "Duchowa" } }                                 
 # ---------------------------- Support functions --------------------------
 
 def not_valid_names(model_name, objects)
@@ -3878,4 +3878,36 @@ BasicMonkSchool.all.each do |school|
     puts school.name
   end
 end
+puts 'Generate Traits'
+Trail.destroy_all
+not_valid_names(Trait, traits)
+traits.each do |trait|
+  Trait.create(trait)
+end
+
+puts 'Generate Trait kinds'
+TraitKind.destroy_all
+traits_kinds.each do |trait_kind|
+  TraitKind.create(trait_kind)
+end
+
+puts 'Generate Trait spheres'
+TraitSphere.destroy_all
+traits_spheres.each do |trait_sphere|
+  TraitSphere.create(trait_sphere)
+end
+
+puts 'Generating relations between traits and kind and spheres'
+traits_list = Trait.all
+traits_list.each do |trait|
+  if trait
+    trait_kind = TraitKind.find_by( name: traits_kinds_and_sphares[trait.name][:kind] )
+    trait_sphere = TraitSphere.find_by( name: traits_kinds_and_sphares[trait.name][:sphere])
+    trait.kind_of_traits.create( trait_kind: trait_kind.id)
+    trait.sphare_of_traits.create( trait_sphere: trait_sphere.id)
+  else
+    p trait
+  end
+end
+
 puts 'Data Base Seeded'
