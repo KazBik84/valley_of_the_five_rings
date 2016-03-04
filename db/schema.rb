@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160229205640) do
+ActiveRecord::Schema.define(version: 20160303200937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -130,6 +130,16 @@ ActiveRecord::Schema.define(version: 20160229205640) do
 
   add_index "families", ["clan_id"], name: "index_families_on_clan_id", using: :btree
 
+  create_table "kind_of_traits", force: :cascade do |t|
+    t.integer  "trait_id"
+    t.integer  "trait_kind_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "kind_of_traits", ["trait_id"], name: "index_kind_of_traits_on_trait_id", using: :btree
+  add_index "kind_of_traits", ["trait_kind_id"], name: "index_kind_of_traits_on_trait_kind_id", using: :btree
+
   create_table "monk_school_classes", force: :cascade do |t|
     t.integer  "school_class_id"
     t.integer  "basic_monk_school_id"
@@ -229,6 +239,37 @@ ActiveRecord::Schema.define(version: 20160229205640) do
     t.datetime "updated_at",    null: false
   end
 
+  create_table "sphere_of_traits", force: :cascade do |t|
+    t.integer  "trait_id"
+    t.integer  "trait_sphere_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "sphere_of_traits", ["trait_id"], name: "index_sphere_of_traits_on_trait_id", using: :btree
+  add_index "sphere_of_traits", ["trait_sphere_id"], name: "index_sphere_of_traits_on_trait_sphere_id", using: :btree
+
+  create_table "trait_kinds", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trait_spheres", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "traits", force: :cascade do |t|
+    t.string   "name"
+    t.string   "name_pl"
+    t.string   "value"
+    t.string   "desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -263,6 +304,8 @@ ActiveRecord::Schema.define(version: 20160229205640) do
   add_foreign_key "basic_primary_schools", "clans"
   add_foreign_key "basic_shugenja_schools", "clans"
   add_foreign_key "families", "clans"
+  add_foreign_key "kind_of_traits", "trait_kinds"
+  add_foreign_key "kind_of_traits", "traits"
   add_foreign_key "monk_school_classes", "basic_monk_schools"
   add_foreign_key "monk_school_classes", "school_classes"
   add_foreign_key "monk_school_skills", "basic_monk_schools"
@@ -277,4 +320,6 @@ ActiveRecord::Schema.define(version: 20160229205640) do
   add_foreign_key "shugenja_school_classes", "school_classes"
   add_foreign_key "shugenja_school_skills", "basic_shugenja_schools"
   add_foreign_key "shugenja_school_skills", "skills"
+  add_foreign_key "sphere_of_traits", "trait_spheres"
+  add_foreign_key "sphere_of_traits", "traits"
 end
