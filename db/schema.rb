@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160303200937) do
+ActiveRecord::Schema.define(version: 20160307220427) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -114,6 +114,16 @@ ActiveRecord::Schema.define(version: 20160303200937) do
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
+
+  create_table "element_of_spells", force: :cascade do |t|
+    t.integer  "spell_id"
+    t.integer  "spell_element_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "element_of_spells", ["spell_element_id"], name: "index_element_of_spells_on_spell_element_id", using: :btree
+  add_index "element_of_spells", ["spell_id"], name: "index_element_of_spells_on_spell_id", using: :btree
 
   create_table "families", force: :cascade do |t|
     t.string   "name"
@@ -239,6 +249,43 @@ ActiveRecord::Schema.define(version: 20160303200937) do
     t.datetime "updated_at",    null: false
   end
 
+  create_table "spell_elements", force: :cascade do |t|
+    t.string   "name"
+    t.string   "name_pl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spell_rings", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spell_tags", force: :cascade do |t|
+    t.string   "name"
+    t.string   "name_pl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spells", force: :cascade do |t|
+    t.string   "name"
+    t.string   "name_pl"
+    t.string   "area"
+    t.string   "range"
+    t.string   "desc"
+    t.string   "duration"
+    t.string   "rises"
+    t.string   "special"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "img_name"
+    t.integer  "spell_ring_id"
+  end
+
+  add_index "spells", ["spell_ring_id"], name: "index_spells_on_spell_ring_id", using: :btree
+
   create_table "sphere_of_traits", force: :cascade do |t|
     t.integer  "trait_id"
     t.integer  "trait_sphere_id"
@@ -248,6 +295,16 @@ ActiveRecord::Schema.define(version: 20160303200937) do
 
   add_index "sphere_of_traits", ["trait_id"], name: "index_sphere_of_traits_on_trait_id", using: :btree
   add_index "sphere_of_traits", ["trait_sphere_id"], name: "index_sphere_of_traits_on_trait_sphere_id", using: :btree
+
+  create_table "tag_of_spells", force: :cascade do |t|
+    t.integer  "spell_id"
+    t.integer  "spell_tag_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "tag_of_spells", ["spell_id"], name: "index_tag_of_spells_on_spell_id", using: :btree
+  add_index "tag_of_spells", ["spell_tag_id"], name: "index_tag_of_spells_on_spell_tag_id", using: :btree
 
   create_table "trait_kinds", force: :cascade do |t|
     t.string   "name"
@@ -303,6 +360,8 @@ ActiveRecord::Schema.define(version: 20160303200937) do
   add_foreign_key "basic_monk_schools", "clans"
   add_foreign_key "basic_primary_schools", "clans"
   add_foreign_key "basic_shugenja_schools", "clans"
+  add_foreign_key "element_of_spells", "spell_elements"
+  add_foreign_key "element_of_spells", "spells"
   add_foreign_key "families", "clans"
   add_foreign_key "kind_of_traits", "trait_kinds"
   add_foreign_key "kind_of_traits", "traits"
@@ -320,6 +379,9 @@ ActiveRecord::Schema.define(version: 20160303200937) do
   add_foreign_key "shugenja_school_classes", "school_classes"
   add_foreign_key "shugenja_school_skills", "basic_shugenja_schools"
   add_foreign_key "shugenja_school_skills", "skills"
+  add_foreign_key "spells", "spell_rings"
   add_foreign_key "sphere_of_traits", "trait_spheres"
   add_foreign_key "sphere_of_traits", "traits"
+  add_foreign_key "tag_of_spells", "spell_tags"
+  add_foreign_key "tag_of_spells", "spells"
 end
