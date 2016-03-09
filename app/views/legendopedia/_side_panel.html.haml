@@ -75,18 +75,27 @@
     %li.side_panel_li{ id: 'close_spells_panel'}
       Zamknij Czary
   %ul.no_dot
-    %li.side_panel_li{ id: 'fire_spells_panel_button' }
-      Czary Ognia
-    %li.side_panel_li{ id: 'water_spells_panel_button' }
-      Czary Wody
-  To jest spells_panel
-.side_panel{ id: 'fire_spells_panel' }
-  %ul.no_dot
-    %li.side_panel_li{ id: 'close_fire_spells_panel' }
-      Zamknij Czary Ognia
-  To są czary Ognia
-.side_panel{ id: 'water_spells_panel' }
-  %ul.no_dot
-    %li.side_panel_li{ id: 'close_water_spells_panel' }
-      Zamknij Czary Wody
-  To są czary Wody  
+    =link_to legendopedia_show_spells_path( element: 'fire') do
+      %li
+        %span
+          Czary Ognia
+    =link_to legendopedia_show_spells_path( element: 'water') do        
+      %li
+        %span
+          Czary Wody
+    =link_to legendopedia_show_spells_path( element: 'air') do        
+      %li
+        %span
+          Czary Powietrza
+    =link_to legendopedia_show_spells_path( element: 'earth') do        
+      %li
+        %span
+          Czary Ziemi
+    =link_to legendopedia_show_spells_path( element: 'void') do        
+      %li
+        %span
+          Czary Pustki
+    =link_to legendopedia_show_spells_path( element: 'maho') do        
+      %li
+        %span
+          Czary Maho               

@@ -12,6 +12,12 @@ class LegendopediaController < ApplicationController
     @schools = @clan.basic_primary_schools + @clan.basic_shugenja_schools + @clan.basic_monk_schools
   end
 
+  def show_spells
+    @show_legendopedia_panel = true
+    element = SpellElement.find_by( name: params[:element])
+    @spells = element.spells
+  end
+
   def list_school_classes(obj)
     obj.school_classes.map { |x| x[:name]}.join(', ')
   end
