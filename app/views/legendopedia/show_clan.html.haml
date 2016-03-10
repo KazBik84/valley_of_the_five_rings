@@ -29,40 +29,69 @@
           %strong
             Umiejętności:
         - school.primary_school_skills.each do |primary_school_skill|
-          = primary_school_skill.skill.name_pl 
+          %span{"data-target" => "#skill_modal_#{primary_school_skill.skill.id}", "data-toggle" => "modal", :type => "button"}
+            = primary_school_skill.skill.name_pl
+          .modal.fade{id: "skill_modal_#{primary_school_skill.skill.id}", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+            .modal-dialog{:role => "document"}
+              .modal-content
+                .modal-header
+                  %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                    %span{"aria-hidden" => "true"} &times;
+                  %h4#myModalLabel.modal-title 
+                    = primary_school_skill.skill.name_pl
+                .modal-body
+                  = primary_school_skill.skill.desc            
           - if primary_school_skill.school_emphasis.present?
             (
             = primary_school_skill.school_emphasis
             )
           - if primary_school_skill.value != 1
-            = primary_school_skill.value.to_s
-          ,
+            = primary_school_skill.value.to_s            
 
       -  elsif school.class == BasicShugenjaSchool
         %h3
           %strong
             Umiejętności:
         - school.shugenja_school_skills.each do |shugenja_school_skill|
-          = shugenja_school_skill.skill.name_pl 
+          %span{"data-target" => "#skill_modal_#{shugenja_school_skill.skill.id}", "data-toggle" => "modal", :type => "button"}
+            = shugenja_school_skill.skill.name_pl
+          .modal.fade{id: "skill_modal_#{shugenja_school_skill.skill.id}", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+            .modal-dialog{:role => "document"}
+              .modal-content
+                .modal-header
+                  %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                    %span{"aria-hidden" => "true"} &times;
+                  %h4#myModalLabel.modal-title 
+                    = shugenja_school_skill.skill.name_pl
+                .modal-body
+                  = shugenja_school_skill.skill.desc 
           - if shugenja_school_skill.school_emphasis.present?
             (
             = shugenja_school_skill.school_emphasis
             )
           - if shugenja_school_skill.value != 1
             = shugenja_school_skill.value.to_s
-          ,
       -  elsif school.class == BasicMonkSchool
-        %h3
         %h3
           %strong
             Umiejętności:
         - school.monk_school_skills.each do |monk_school_skill|
-          = monk_school_skill.skill.name_pl 
+          %span{"data-target" => "#skill_modal_#{monk_school_skill.skill.id}", "data-toggle" => "modal", :type => "button"}
+            = monk_school_skill.skill.name_pl
+          .modal.fade{id: "skill_modal_#{monk_school_skill.skill.id}", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+            .modal-dialog{:role => "document"}
+              .modal-content
+                .modal-header
+                  %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                    %span{"aria-hidden" => "true"} &times;
+                  %h4#myModalLabel.modal-title 
+                    = monk_school_skill.skill.name_pl
+                .modal-body
+                  = monk_school_skill.skill.desc 
           - if monk_school_skill.school_emphasis.present?
             (
             = monk_school_skill.school_emphasis
             )
           - if monk_school_skill.value != 1
             = monk_school_skill.value.to_s
-          ,
 
