@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :kind_of_trait do
-    trait nil
-trait_kind nil
+    trait_id  1
+    trait_kind_id  1
   end
 
 end
