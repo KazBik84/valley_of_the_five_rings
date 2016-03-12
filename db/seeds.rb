@@ -6406,6 +6406,52 @@ spell_tags = [ { name: 'thunder', name_pl: 'Grom' }, { name: 'battle', name_pl: 
                { name: 'jade', name_pl: 'Jadeit' }, { name: 'seal', name_pl: 'Pieczęć' },
                { name: 'travel', name_pl: 'Podróż' } ]
 
+skill_spheres_names = %w( Godna Niegodna Bugei Kupiecka)
+
+skill_spheres = [
+  {name: 'Acting', sphare: ['Godna']},
+  {name: 'Artisan', sphare: ['Godna']},
+  {name: 'Calligraphy', sphare: ['Godna']},
+  {name: 'Courtier', sphare: ['Godna']},
+  {name: 'Divination', sphare: ['Godna']},
+  {name: 'Etiquette', sphare: ['Godna']},
+  {name: 'Games', sphare: ['Godna']},
+  {name: 'Investigation', sphare: ['Godna']},
+  {name: 'Lore', sphare: ['Godna','Niegodna']},
+  {name: 'Medicine', sphare: ['Godna']},
+  {name: 'Meditation', sphare: ['Godna']},
+  {name: 'Perform', sphare: ['Godna']},
+  {name: 'Sincerity', sphare: ['Godna','Niegodna']},
+  {name: 'Spellcraft', sphare: ['Godna']},
+  {name: 'Tea Ceremony', sphare: ['Godna']},
+  {name: 'Athletics', sphare: ['Bugei']},
+  {name: 'Battle', sphare: ['Bugei']},
+  {name: 'Defense', sphare: ['Bugei']},
+  {name: 'Horsemanship', sphare: ['Bugei']},
+  {name: 'Hunting', sphare: ['Bugei']},
+  {name: 'Iaijutsu', sphare: ['Bugei']},
+  {name: 'Jiujutsu', sphare: ['Bugei']},
+  {name: 'Chain Weapons', sphare: ['Bugei']},
+  {name: 'Heavy Weapons', sphare: ['Bugei']},
+  {name: 'Kenjutsu', sphare: ['Bugei']},
+  {name: 'Knives', sphare: ['Bugei']},
+  {name: 'Kyujutsu', sphare: ['Bugei']},
+  {name: 'Ninjutsu', sphare: ['Bugei', 'Niegodna']},
+  {name: 'Polearms', sphare: ['Bugei']},
+  {name: 'Spears', sphare: ['Bugei']},
+  {name: 'Staves', sphare: ['Bugei']},
+  {name: 'War Fans', sphare: ['Bugei']},
+  {name: 'Animal Handling', sphare: ['Kupiecka']},
+  {name: 'Commerce', sphare: ['Kupiecka']},
+  {name: 'Craft', sphare: ['Godna', 'Kupiecka', 'Niegodna']},
+  {name: 'Engineering', sphare: ['Kupiecka']},
+  {name: 'Sailing', sphare: ['Kupiecka']},
+  {name: 'Forgery', sphare: ['Niegodna']},
+  {name: 'Intimidation', sphare: ['Niegodna']},
+  {name: 'Sleight of Hand', sphare: ['Niegodna']},
+  {name: 'Stealth', sphare: ['Niegodna']},
+  {name: 'Temptation', sphare: ['Niegodna']}]
+
 # ---------------------------- Support functions --------------------------
 
 def not_valid_names(model_name, objects)
@@ -6436,11 +6482,26 @@ clans.each do |clan|
   end
 end
 
+puts 'Skill Sphares Generation'
+SkillSphere.destroy_all
+skill_spheres_names.each do |sphare|
+  SkillSphere.create(name: sphare)
+end
+
 puts 'Skills Generation'
 Skill.destroy_all
 not_valid_names(Skill, skills)
 skills.each do |skill|
   Skill.create(skill)
+end
+
+puts 'Generating joins between Skill and Skill Spheres'
+skill_spheres.each do |skill|
+  skill_obj = Skill.find_by( name: skill[:name])
+  skill[:sphare].each do |sphere|
+    sphere_obj = SkillSphere.find_by( name: sphere)
+    skill_obj.sphere_of_skills.create( skill_sphere_id: sphere_obj.id)
+  end
 end
 
 puts 'School Classes generation'
@@ -6579,8 +6640,8 @@ traits_list.each do |trait|
     trait_kind = TraitKind.find_by( name: traits_kinds_and_sphares[trait.name][:kind] )
     trait_sphere = TraitSphere.find_by( name: traits_kinds_and_sphares[trait.name][:sphere])
     if trait_kind && trait_sphere
-      trait.kind_of_traits.create( trait_kind_id: trait_kind.id)
-      trait.sphere_of_traits.create( trait_sphere_id: trait_sphere.id)
+      trait.update_attribute( :trait_kind_id, trait_kind.id)
+      trait.update_attribute( :trait_sphere_id, trait_sphere.id)
     else
       p traits_kinds_and_sphares[trait.name]
     end

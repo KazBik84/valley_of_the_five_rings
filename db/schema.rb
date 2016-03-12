@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307220427) do
+ActiveRecord::Schema.define(version: 20160312052203) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -140,16 +140,6 @@ ActiveRecord::Schema.define(version: 20160307220427) do
 
   add_index "families", ["clan_id"], name: "index_families_on_clan_id", using: :btree
 
-  create_table "kind_of_traits", force: :cascade do |t|
-    t.integer  "trait_id"
-    t.integer  "trait_kind_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
-  add_index "kind_of_traits", ["trait_id"], name: "index_kind_of_traits_on_trait_id", using: :btree
-  add_index "kind_of_traits", ["trait_kind_id"], name: "index_kind_of_traits_on_trait_kind_id", using: :btree
-
   create_table "monk_school_classes", force: :cascade do |t|
     t.integer  "school_class_id"
     t.integer  "basic_monk_school_id"
@@ -171,18 +161,6 @@ ActiveRecord::Schema.define(version: 20160307220427) do
 
   add_index "monk_school_skills", ["basic_monk_school_id"], name: "index_monk_school_skills_on_basic_monk_school_id", using: :btree
   add_index "monk_school_skills", ["skill_id"], name: "index_monk_school_skills_on_skill_id", using: :btree
-
-  create_table "priary_school_skills", force: :cascade do |t|
-    t.integer  "basic_primary_school_id"
-    t.integer  "skill_id"
-    t.string   "school_emphasis"
-    t.integer  "skill_value",             default: 1
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-  end
-
-  add_index "priary_school_skills", ["basic_primary_school_id"], name: "index_priary_school_skills_on_basic_primary_school_id", using: :btree
-  add_index "priary_school_skills", ["skill_id"], name: "index_priary_school_skills_on_skill_id", using: :btree
 
   create_table "primary_school_classes", force: :cascade do |t|
     t.integer  "school_class_id"
@@ -233,6 +211,12 @@ ActiveRecord::Schema.define(version: 20160307220427) do
 
   add_index "shugenja_school_skills", ["basic_shugenja_school_id"], name: "index_shugenja_school_skills_on_basic_shugenja_school_id", using: :btree
   add_index "shugenja_school_skills", ["skill_id"], name: "index_shugenja_school_skills_on_skill_id", using: :btree
+
+  create_table "skill_spheres", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "skills", force: :cascade do |t|
     t.string   "name"
@@ -286,15 +270,15 @@ ActiveRecord::Schema.define(version: 20160307220427) do
 
   add_index "spells", ["spell_ring_id"], name: "index_spells_on_spell_ring_id", using: :btree
 
-  create_table "sphere_of_traits", force: :cascade do |t|
-    t.integer  "trait_id"
-    t.integer  "trait_sphere_id"
+  create_table "sphere_of_skills", force: :cascade do |t|
+    t.integer  "skill_id"
+    t.integer  "skill_sphere_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
 
-  add_index "sphere_of_traits", ["trait_id"], name: "index_sphere_of_traits_on_trait_id", using: :btree
-  add_index "sphere_of_traits", ["trait_sphere_id"], name: "index_sphere_of_traits_on_trait_sphere_id", using: :btree
+  add_index "sphere_of_skills", ["skill_id"], name: "index_sphere_of_skills_on_skill_id", using: :btree
+  add_index "sphere_of_skills", ["skill_sphere_id"], name: "index_sphere_of_skills_on_skill_sphere_id", using: :btree
 
   create_table "tag_of_spells", force: :cascade do |t|
     t.integer  "spell_id"
@@ -323,9 +307,14 @@ ActiveRecord::Schema.define(version: 20160307220427) do
     t.string   "name_pl"
     t.string   "value"
     t.string   "desc"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "trait_kind_id"
+    t.integer  "trait_sphere_id"
   end
+
+  add_index "traits", ["trait_kind_id"], name: "index_traits_on_trait_kind_id", using: :btree
+  add_index "traits", ["trait_sphere_id"], name: "index_traits_on_trait_sphere_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -363,14 +352,10 @@ ActiveRecord::Schema.define(version: 20160307220427) do
   add_foreign_key "element_of_spells", "spell_elements"
   add_foreign_key "element_of_spells", "spells"
   add_foreign_key "families", "clans"
-  add_foreign_key "kind_of_traits", "trait_kinds"
-  add_foreign_key "kind_of_traits", "traits"
   add_foreign_key "monk_school_classes", "basic_monk_schools"
   add_foreign_key "monk_school_classes", "school_classes"
   add_foreign_key "monk_school_skills", "basic_monk_schools"
   add_foreign_key "monk_school_skills", "skills"
-  add_foreign_key "priary_school_skills", "basic_primary_schools"
-  add_foreign_key "priary_school_skills", "skills"
   add_foreign_key "primary_school_classes", "basic_primary_schools"
   add_foreign_key "primary_school_classes", "school_classes"
   add_foreign_key "primary_school_skills", "basic_primary_schools"
@@ -380,8 +365,10 @@ ActiveRecord::Schema.define(version: 20160307220427) do
   add_foreign_key "shugenja_school_skills", "basic_shugenja_schools"
   add_foreign_key "shugenja_school_skills", "skills"
   add_foreign_key "spells", "spell_rings"
-  add_foreign_key "sphere_of_traits", "trait_spheres"
-  add_foreign_key "sphere_of_traits", "traits"
+  add_foreign_key "sphere_of_skills", "skill_spheres"
+  add_foreign_key "sphere_of_skills", "skills"
   add_foreign_key "tag_of_spells", "spell_tags"
   add_foreign_key "tag_of_spells", "spells"
+  add_foreign_key "traits", "trait_kinds"
+  add_foreign_key "traits", "trait_spheres"
 end

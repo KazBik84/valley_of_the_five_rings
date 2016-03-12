@@ -7,4 +7,7 @@ class Skill < ActiveRecord::Base
 
   has_many :monk_school_skills, dependent: :destroy
   has_many :basic_monk_schools, through: :monk_school_skills
+
+  has_many :sphere_of_skills, dependent: :destroy
+  has_many :skill_spheres, through: :sphere_of_skills
 end
