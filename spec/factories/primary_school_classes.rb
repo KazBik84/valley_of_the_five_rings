@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :primary_school_class do
-    school_classes nil
-basic_primary_schools nil
+    school_class_id 1
+    basic_primary_school_id 1
   end
 
 end
