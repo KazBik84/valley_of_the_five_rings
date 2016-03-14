@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :trait_kind do
-    name "MyString"
+    name TRAIT_KINDS.sample
   end
 
 end

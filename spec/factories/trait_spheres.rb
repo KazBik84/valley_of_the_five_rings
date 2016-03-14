@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :trait_sphere do
-    name "MyString"
+    name TRAIT_SPHERES.sample
   end
 
 end

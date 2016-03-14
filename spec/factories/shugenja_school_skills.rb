@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :shugenja_school_skill do
-    skill nil
-basic_shugenja_school nil
-school_emphasis "MyString"
-value 1
+    skill_id 1
+    basic_shugenja_school_id 1
+    school_emphasis "MyString"
+    value 1
   end
 
 end

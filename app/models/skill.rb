@@ -10,4 +10,6 @@ class Skill < ActiveRecord::Base
 
   has_many :sphere_of_skills, dependent: :destroy
   has_many :skill_spheres, through: :sphere_of_skills
+
+  validates_presence_of :name, :name_pl, :skill_attr, :skill_attr_pl, :desc
 end

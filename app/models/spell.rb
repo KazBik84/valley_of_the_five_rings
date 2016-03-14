@@ -8,5 +8,6 @@ class Spell < ActiveRecord::Base
   has_many :tag_of_spells, dependent: :destroy
   has_many :spell_tags, through: :tag_of_spells
 
-  validates_presence_of :name
+  validates_presence_of :name, :name_pl, :area, :range,
+                        :desc,  :duration
 end

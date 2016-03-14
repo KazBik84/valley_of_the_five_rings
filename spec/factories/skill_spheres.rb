@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :skill_sphere do
-    name "MyString"
+    name SKILL_SPHERES.sample
   end
-
 end

@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :sphere_of_skill do
-    skill nil
-skill_sphere nil
+    skill_id 1
+    skill_sphere_id 1
   end
 
 end

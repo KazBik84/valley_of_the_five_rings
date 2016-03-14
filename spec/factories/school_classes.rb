@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :school_class do
-    name "MyString"
+    name "Bushi"
   end
-
 end

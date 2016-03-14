@@ -19,3 +19,13 @@ ATTRIBUTES = %w(  stamina willpower strength
 ATTRIBUTES_PL = [ 'Wytrzymałość', 'Siła Woli', 'Siła',
                   'Spostrzegawczość', 'Zręczność', 'Inteligencja',
                   'Refleks', 'Intuicja', 'Pustka', 'Różny']
+
+SCHOOL_CLASSES = [ 'Bushi', 'Dworzanin', 'Ninja', 'Mnich', 'Artysta', 'Shugenja']
+
+SKILL_SPHERES = %w(Godna Niegodna Kupiecka Bugei)
+
+SPELL_ELEMENTS = %w(fire water air earth maho void)
+
+TRAIT_KINDS = %w( Zaleta Wada)
+
+TRAIT_SPHERES = %w( Fizyczna Umysłowa Duchowa Społeczna Materialna)

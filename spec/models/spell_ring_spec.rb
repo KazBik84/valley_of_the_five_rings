@@ -1,5 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe SpellRing, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'has valid factory' do
+    expect(build(:spell_ring)).to be_valid
+  end
+
+  it 'is not valid with name nil' do
+    expect(build(:spell_ring, name: nil)).to_not be_valid
+  end
+
+  it 'has many spells' do
+    should have_many(:spells)
+  end
 end
