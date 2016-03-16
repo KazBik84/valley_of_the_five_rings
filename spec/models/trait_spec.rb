@@ -12,7 +12,7 @@ RSpec.describe Trait, type: :model do
     end
   end
 
-  may_not_be_nil = [:name, :name_pl, :desc, :trait_sphere_id, :trait_kind_id]
+  may_not_be_nil = [:name, :name_pl, :desc]
   may_not_be_nil.each do |object_name|
     it "is not valid with #{object_name.to_s} nil" do
       expect(build(:trait, object_name => nil)).to_not be_valid

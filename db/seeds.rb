@@ -2378,7 +2378,7 @@ skills = [
   {name: 'Temptation',
   name_pl: 'Przekonywanie',
   sub_typ: 'Społeczna',
-  skill_attr: '',
+  skill_attr: 'awareness',
   skill_attr_pl: 'Intuicja',
   emphases: 'Łapówki, Uwodzenie',
   desc: 'Sztuka oferowania innym tego,czego pragną, by osiągnąć własne korzyści, jest tak stara jak stary jest rodzaj ludzki, a od tamtego czasu niewiele w tej kwestii się zmieniło. Dwa największe, pragnienia czyli pieniądze i przyjemność fizyczna, często są częścią umów zawieranych na dworach, celem osiągnięcia celów Wielkich klanów. Najłatwiej nakłonić osoby o określonych wadach, takich jak Chciwość, czy Lubieżność. Zazwyczaj wykonuje się test  Przekonywanie / Intuicja przeciw Etykieta(Grzeczność) / Siła Woli. W przypadku, mniej znaczących postaci, MG może określi po prostu PT test Przekonywania.',
