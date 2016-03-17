@@ -13,7 +13,7 @@
     %li.side_panel_li{ id: 'spells_panel_button' }
       %span
         Czary
-    %li.side_panel_li
+    %li.side_panel_li{ id: 'skills_panel_button' }
       %span
         Umiejętności
     %li.side_panel_li
@@ -76,26 +76,48 @@
       Zamknij Czary
   %ul.no_dot
     =link_to legendopedia_show_spells_path( element: 'fire') do
-      %li
+      %li.side_panel_li
         %span
           Czary Ognia
     =link_to legendopedia_show_spells_path( element: 'water') do        
-      %li
+      %li.side_panel_li
         %span
           Czary Wody
     =link_to legendopedia_show_spells_path( element: 'air') do        
-      %li
+      %li.side_panel_li
         %span
           Czary Powietrza
     =link_to legendopedia_show_spells_path( element: 'earth') do        
-      %li
+      %li.side_panel_li
         %span
           Czary Ziemi
     =link_to legendopedia_show_spells_path( element: 'void') do        
-      %li
+      %li.side_panel_li
         %span
           Czary Pustki
     =link_to legendopedia_show_spells_path( element: 'maho') do        
-      %li
+      %li.side_panel_li
         %span
           Czary Maho               
+
+.side_panel{id: 'skills_panel'}
+  %ul.no_dot
+    %li.siede_panel_li{ id: 'close_skills_panel'}
+      Zamknij Umiejętności
+  %ul.no_dot
+    =link_to legendopedia_show_skills_path( sphere: 'Godna') do
+      %li.side_panel_li
+        %span
+          Umiejętności Godne
+    =link_to legendopedia_show_skills_path( sphere: 'Bugei') do
+      %li.side_panel_li
+        %span
+          Umiejętności Bugei
+    =link_to legendopedia_show_skills_path( sphere: 'Kupiecka') do
+      %li.side_panel_li
+        %span
+          Umiejętności Kupieckie
+    =link_to legendopedia_show_skills_path( sphere: 'Niegodna') do
+      %li.side_panel_li
+        %span
+          Umiejętności Niegodne

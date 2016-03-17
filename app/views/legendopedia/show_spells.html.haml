@@ -1,6 +1,47 @@
 - @spells.each do |spell|
   %h2.middle_text
     %strong
-      = spell.name
-  %p
+      = spell.name_pl
+    = "(#{spell.name})"
+  %h4
+    %strong
+      Krąg:
+    = spell.spell_ring.name
+
+  %h4
+    %strong
+      Żywioł:
+    = spell.spell_elements[0].name_pl
+  %h4
+    %strong
+      Zasięg: 
+    = spell.range
+  %h4
+    %strong
+      Obszar:
+    = spell.area
+  %h4
+    %strong
+      Czas trwania:
+    = spell.duration
+  %h4
+    %strong
+      Podbicia:
+    = spell.rises
+  - if spell.special.present?
+    %h4
+      %strong
+        Specjalne:
+      = spell.special
+  - if spell.spell_tags.present?
+    %h4
+      %strong
+        Tagi:
+      - spell.spell_tags.each do |tag|
+        - if tag ==spell.spell_tags.last
+          = tag.name_pl
+        - else
+          = "#{tag.name_pl},"
+
+  %p.justify.indent
     = spell.desc

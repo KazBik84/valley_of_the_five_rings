@@ -59,3 +59,11 @@ $(document).on 'click', '#water_spells_panel_button', ->
 $(document).on 'click', '#close_water_spells_panel', ->
   $('#water_spells_panel').toggle( { direction: 'right'}, 1000)
   $('#spells_panel').toggle( { direction: 'left'}, 500 )
+
+$(document).on 'click', '#skills_panel_button', ->
+  $('#skills_panel').toggle( { direction: 'right'}, 1000)
+  $('#root_panel').toggle( { direction: 'left'}, 500 )
+
+$(document).on 'click', '#close_skills_panel', ->
+  $('#skills_panel').toggle( { direction: 'right'}, 1000)
+  $('#spells_panel').toggle( { direction: 'left'}, 500 )  

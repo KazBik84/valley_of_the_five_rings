@@ -1,0 +1,48 @@
+- @skills.each do |skill|
+  %h2.middle_text
+    %strong
+      = skill.name_pl
+    = "(#{skill.name})"
+  %h4
+    %strong
+      Rodzaj Umiejętności:
+    = skill.sub_typ
+  %h4
+    %strong
+      Cecha:
+    = skill.skill_attr_pl
+  %h4
+    %strong
+      Specjalizacje:
+    = skill.emphases
+  - if skill.master5.present?
+    - if skill.master3.present?  
+      %h4
+        %strong
+          Mistrzostwa:
+      %ul.not_dot
+        %li
+          %strong
+            Ranga 3:
+          = skill.master3
+        %li
+          %strong
+            Ranga 5:
+          = skill.master5
+        %li
+          %strong
+            Ranga 7:
+          = skill.master7 
+    - else
+      %h4
+        %strong
+          Mistrzostwo:
+      %ul.no_dot
+        %li
+          %strong
+            Ranga 5:
+          = skill.master5
+
+
+
+

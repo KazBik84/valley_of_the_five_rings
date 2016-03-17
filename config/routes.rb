@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get 'main'
     get 'show_clan'
     get 'show_spells'
+    get 'show_skills'
   end
 
   get 'contact', to: 'static_pages#contact'

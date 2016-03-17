@@ -18,6 +18,12 @@ class LegendopediaController < ApplicationController
     @spells = element.spells
   end
 
+  def show_skills
+    @show_legendopedia_panel = true
+    sphere = SkillSphere.find_by( name: params[:sphere])
+    @skills = sphere.skills
+  end
+
   def list_school_classes(obj)
     obj.school_classes.map { |x| x[:name]}.join(', ')
   end
