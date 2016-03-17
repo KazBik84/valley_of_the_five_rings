@@ -114,6 +114,14 @@
     -  elsif school.class == BasicShugenjaSchool
       %h4
         %strong
+          Przychylność/Ułomność:
+        = school.affinity_deficiency
+      %h4
+        %strong
+          Czary:
+        = school.spells
+      %h4
+        %strong
           Umiejętności:
       - school.shugenja_school_skills.each do |shugenja_school_skill|
         - if shugenja_school_skill == school.shugenja_school_skills.last
@@ -138,6 +146,10 @@
           )
         - if shugenja_school_skill.value != 1
           = shugenja_school_skill.value.to_s
+      %p.justify.indent
+        %strong
+          = school.shugenja_tech_name
+        = school.shugenja_tech_desc
     -  elsif school.class == BasicMonkSchool
       %h4
         %strong
@@ -165,4 +177,8 @@
           )
         - if monk_school_skill.value != 1
           = monk_school_skill.value.to_s
+      %p.justify.indent
+        %strong
+          = school.monk_tech_name
+        = school.monk_tech_desc
 
