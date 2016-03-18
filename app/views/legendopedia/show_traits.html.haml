@@ -1,0 +1,14 @@
+- @traits.each do |trait|
+  %h4.middle_text
+    %strong
+      = trait.name_pl
+  %h5
+    %strong
+      Wartość:
+    = trait.value
+  %h5
+    %strong
+      Sfera:
+    = trait.trait_sphere.name
+  %p.justify.indent
+    = trait.desc

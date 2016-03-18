@@ -16,9 +16,10 @@
     %li.side_panel_li{ id: 'skills_panel_button' }
       %span
         Umiejętności
-    %li.side_panel_li
+    %li.side_panel_li{ id: 'traits_panel_button' }
       %span
         Zalety/Wady
+
 .side_panel{ id: 'clans_panel' }
   %ul.no_dot
     %li.side_panel_li{ id: 'close_clans_panel'}
@@ -121,3 +122,17 @@
       %li.side_panel_li
         %span
           Umiejętności Niegodne
+
+.side_panel{id: 'traits_panel'}
+  %ul.no_dot
+    %li.siede_panel_li{ id: 'close_traits_panel'}
+      Zamknij Zalety i Wady
+  %ul.no_dot
+    =link_to legendopedia_show_traits_path( trait_kind: 'Zaleta') do
+      %li.side_panel_li
+        %span
+        Zalety
+    =link_to legendopedia_show_traits_path( trait_kind: 'Wada') do
+      %li.side_panel_li
+        %span
+          Wady          

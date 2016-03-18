@@ -1,0 +1,7 @@
+- families.each do |family|
+  %h4.middle_text
+    %strong
+      = family.name 
+    = "( +1 #{family.bonus_attr_pl} )" 
+  %p.justify.indent
+    = family.desc

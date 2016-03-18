@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get 'show_clan'
     get 'show_spells'
     get 'show_skills'
+    get 'show_traits'
   end
 
   get 'contact', to: 'static_pages#contact'
