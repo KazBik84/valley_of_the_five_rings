@@ -1,0 +1,25 @@
+- skills.each do |primary_skill|
+  %span.help_cursor{"data-target" => "#skill_modal_#{primary_skill.skill.id}", "data-toggle" => "modal", :type => "button"}
+    - if primary_skill == skills.last
+      - if primary_skill.school_emphasis.present?  
+        = "#{primary_skill.skill.name_pl} (#{primary_skill.school_emphasis})"
+      - else
+        = "#{primary_skill.skill.name_pl}"
+    - else
+      - if primary_skill.school_emphasis.present?  
+        = "#{primary_skill.skill.name_pl} (#{primary_skill.school_emphasis}),"
+      - else
+        = "#{primary_skill.skill.name_pl},"
+  - if primary_skill.value != 1
+    = primary_skill.value.to_s       
+  .modal.fade{id: "skill_modal_#{primary_skill.skill.id}", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+    .modal-dialog{:role => "document"}
+      .modal-content
+        .modal-header
+          %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+            %span{"aria-hidden" => "true"} &times;
+          %h4#myModalLabel.modal-title
+            = primary_skill.skill.name_pl
+        .modal-body
+          = primary_skill.skill.desc            
+
