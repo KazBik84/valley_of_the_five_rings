@@ -37,11 +37,7 @@
     %h4
       %strong
         Tagi:
-      - spell.spell_tags.each do |tag|
-        - if tag ==spell.spell_tags.last
-          = tag.name_pl
-        - else
-          = "#{tag.name_pl},"
-
+      / join_names_attr_with_comma is defined in legendopedia_helper        
+      = join_names_attr_with_comma(spell.spell_tags, :name_pl)
   %p.justify.indent
     = spell.desc

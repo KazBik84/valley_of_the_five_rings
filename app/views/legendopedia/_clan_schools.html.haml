@@ -21,7 +21,7 @@
     %strong
       Klasa szkoły:
     / join_names_attr_with_comma is defined in legendopedia_helper
-    = join_names_attr_with_comma(school.school_classes)
+    = join_names_attr_with_comma(school.school_classes, :name)
   - if school.special.present?
     %h4
       %strong
