@@ -6,7 +6,10 @@
     = @clan.desc
   %h4
     %strong
-      Główne rody to:
+      Główne rody klanu:
   = render partial: 'clan_families', locals: { families: @families }
+  %h4
+    %strong
+      Główne szkoły:
   = render partial: 'clan_schools', locals: { schools: @schools}
 

@@ -1,0 +1,17 @@
+%h4
+  %strong
+    Przychylność/Ułomność:
+  = school.affinity_deficiency
+%h4
+  %strong
+    Czary:
+  = school.spells
+%p
+  %h4
+    %strong
+      Umiejętności:
+  = render partial: 'school_skills', locals: { skills: school.shugenja_school_skills }
+%p.justify
+  %strong
+    = school.shugenja_tech_name
+  = school.shugenja_tech_desc
