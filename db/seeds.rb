@@ -451,6 +451,7 @@ families = [
     bonus_attr_pl: 'Siła'}]
 
 basic_primary_schools = [
+basic_primary_schools = [
   #1 --------------------------------------- Feniks ------------------------------------------------
   {name: 'Szkoła Bushi Shiba',
   img_name: 'Shiba_Bushi_by_Jason_Engle.jpg',
@@ -1095,7 +1096,7 @@ basic_primary_schools = [
   rank5_name: 'Nieustępliwe Dążenie do Celu: ',
   rank5_desc: 'Zarządcy Soshi uczą się, wyczekiwania na odpowiedni moment by przegnieść przeciwnika mieszanką strachu i agresji, niszcząc przestępcę kilkoma celnymi ciosami. Raz na potyczkę, postać zyskuje dodatkowe kości których nie zatrzymuje, równe swojemu poziomowi Przesłuchiwania, do wszystkich ataków podczas tej rundy. Techniki tej nie można użyć Koncentrując się.'},
   #5(46)----------------------------------------------------------------------------------------------
-  { name: 'Szkoła Szpiegów Shosuro',
+  {name: 'Szkoła Szpiegów Shosuro',
   img_name: 'Shosuro_ninja_by_Conceptopolis.jpg',
   clan_name: 'scorpion',
   clan_name_pl: 'Skorpion',
@@ -1136,7 +1137,7 @@ basic_primary_schools = [
   rank5_name: 'Trzecia Twarz: ',
   rank5_desc: 'W pełni wyszkolony aktor Shosuro jest prawdziwym mistrzem infiltracji, zwodzenia i zabójstw. Postać zyskuje trzecią osobowość, dodatkowo jeśli wykonuje atak na osobę która nie jest świadoma jej obecności lub nie spodziewa się z jej strony ataku, podczas zadawania obrażeń, liczba podbić nie jest ograniczana kręgiem Pustki.'},
   #1(49)------------------------------------ Smok -----------------------------------------------
-  { name: 'Szkoła Bushi Mirumoto',
+  {name: 'Szkoła Bushi Mirumoto',
   img_name: 'Mirumoto_bushi_by_Michael_Phillippi.jpg',
   clan_name: 'dragon',
   clan_name_pl: 'Smok',

@@ -7,12 +7,11 @@ class BasicShugenjaSchool < ActiveRecord::Base
   has_many :shugenja_school_skills, dependent: :destroy
   has_many :skills, through: :shugenja_school_skills
 
-  validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl, 
+  validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl,
                         :desc, :honor, :outfit, :spells, :shugenja_tech_name,
                         :shugenja_tech_desc, :affinity_deficiency
-  validates_inclusion_of :clan_name, in: CLAN_NAMES                        
+  validates_inclusion_of :clan_name, in: CLAN_NAMES
   validates_inclusion_of :clan_name_pl, in: CLAN_NAMES_PL
   validates_inclusion_of :bonus_attr, in: ATTRIBUTES
-  validates_inclusion_of :bonus_attr_pl, in: ATTRIBUTES_PL  
-
+  validates_inclusion_of :bonus_attr_pl, in: ATTRIBUTES_PL
 end

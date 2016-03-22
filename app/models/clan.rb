@@ -1,5 +1,4 @@
 class Clan < ActiveRecord::Base
-
   validates_presence_of :desc, :name, :clan_name
   validates_inclusion_of :name, in: CLAN_NAMES
 
@@ -7,5 +6,4 @@ class Clan < ActiveRecord::Base
   has_many :basic_primary_schools, dependent: :destroy
   has_many :basic_shugenja_schools, dependent: :destroy
   has_many :basic_monk_schools, dependent: :destroy
-
 end
