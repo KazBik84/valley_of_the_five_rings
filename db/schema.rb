@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160312052203) do
+ActiveRecord::Schema.define(version: 20160322220510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -190,6 +190,21 @@ ActiveRecord::Schema.define(version: 20160312052203) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "school_ranks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "desc"
+    t.integer  "rank_lvl"
+    t.integer  "basic_primary_school_id"
+    t.integer  "basic_shugenja_school_id"
+    t.integer  "basic_monk_school_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "school_ranks", ["basic_monk_school_id"], name: "index_school_ranks_on_basic_monk_school_id", using: :btree
+  add_index "school_ranks", ["basic_primary_school_id"], name: "index_school_ranks_on_basic_primary_school_id", using: :btree
+  add_index "school_ranks", ["basic_shugenja_school_id"], name: "index_school_ranks_on_basic_shugenja_school_id", using: :btree
+
   create_table "shugenja_school_classes", force: :cascade do |t|
     t.integer  "school_class_id"
     t.integer  "basic_shugenja_school_id"
@@ -360,6 +375,9 @@ ActiveRecord::Schema.define(version: 20160312052203) do
   add_foreign_key "primary_school_classes", "school_classes"
   add_foreign_key "primary_school_skills", "basic_primary_schools"
   add_foreign_key "primary_school_skills", "skills"
+  add_foreign_key "school_ranks", "basic_monk_schools"
+  add_foreign_key "school_ranks", "basic_primary_schools"
+  add_foreign_key "school_ranks", "basic_shugenja_schools"
   add_foreign_key "shugenja_school_classes", "basic_shugenja_schools"
   add_foreign_key "shugenja_school_classes", "school_classes"
   add_foreign_key "shugenja_school_skills", "basic_shugenja_schools"
