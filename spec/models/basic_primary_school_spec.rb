@@ -2,9 +2,7 @@ require 'rails_helper'
 
 RSpec.describe BasicPrimarySchool, type: :model do
   not_empty_attr = [:name, :clan_name, :clan_name_pl, :bonus_attr, :bonus_attr_pl, 
-                    :desc, :honor, :outfit, :rank1_name, :rank1_desc,
-                    :rank2_name, :rank2_desc, :rank3_name, :rank3_desc, :rank4_name,
-                    :rank4_desc, :rank5_name, :rank5_desc]
+                    :desc, :honor, :outfit]
   it 'has valid factory' do
     expect(build(:basic_primary_school)).to be_valid
   end
