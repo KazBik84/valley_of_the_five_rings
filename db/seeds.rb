@@ -1290,6 +1290,23 @@ primary_school_ranks = [
                 {rank_name: 'Osłabić Opór', rank_desc: 'Daidoji uczy się precyzyjnych ataków, tak by maksymalnie wykorzystać odsłonięte części przeciwnika. Na tej randze postać może ignorować Wyparowania jakie daje pancerz lub techniki szkolne (nie może niwelować Wyparowań naturalnych, jak gruba skóra, czy wywołanych dzięki czarom). Jeśli postać atakuje przeciwnika który nie ma żadnych wyparowań, zyskuje +1x0 do obrażeń.', rank_lvl: 3 },
                 {rank_name: 'Cios i Uderzenie', rank_desc: 'Zwiadowcy Daidoji uczą się być zwinni niczym wiatr. Dzięki temu mogą atakować Kataną, Wakizashi, nożem lub łukiem, jako akcja prosta, zamiast pełnej. Dodatkowo pułapki zadają teraz +2z1 obrażeń.', rank_lvl: 4 },
                 {rank_name: 'Przebiegłość Daidoji', rank_desc: 'Prawdziwy mistrz Szkoły Zwiadowców Daidoji, potrzebuje tylko jednego ciosu, by zabić swojego przeciwnika. Podczas potyczki postać może jako akcja prosta wydać punkt Pustki, by wykonać Śmiertelny Cios, w najbliższym ataku, może to być zarówno atak wręcz, jak i strzelecki, ale nie może być wykonany więcej niż 1 na rundę. Podczas Śmiertelnego Ciosu, postać może wykonać dowolny manewr, a jego wymagania w podbiciach, są zmniejszane o 1 podbicie, aż do minimum 1 podbicia. Jeśli atak się powiedzie postać zyskuje modyfikator +1z1 do obrażeń, dodatkowo jeśli cel był nieświadomy zagrożenia, liczba podbić nie jest przez krąg Pustki.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Gwardzistów Seppun', school_ranks: [ {rank_name: 'Wolni od Ciemności', rank_desc: 'Gwardziści Seppun, uczeni są nie ulegać żadnym pokusom, które mogły by odciągnąć ich od powieżonego zadania. Gdy postać wykonuje test Społeczny, by oprzeć się działaniu które ma odciągnąć go od obowiązków, takich jak: "Kuszenie", "Przesłuchiwanie" lub "Dworskie", postać rzuca liczbą dodatkowych zatrzymywanych kostek, równą swojej randze w tej szkole. Dodatkowo postać otrzymuje, +1z1 do testów śledztwa, przeciw zasadzkom lub niespodziewanym atakom.', rank_lvl: 1},
+                {rank_name: 'Niebiańskie Cieńcie', rank_desc: 'Ataki gwardzistów Seppun, są kierowane ich oddaniem sprawie Cesarza. Na początku tury, postać może wydać Punkt Pustki, by dodać wartość swojego Honoru, do testów Ataku i Obrażeń.', rank_lvl: 2 },
+                {rank_name: 'Światło Słońca Ujawnia', rank_desc: 'Oddanie gwardzisty na tej randze, pozwala mu przejrzeć wszelkie oszustwa, nawet te natury magicznej. W dowolnym momencie jako Akcja Prosta, postać może wydać Punkt Pustki, by wykonać test "Śledztwo(Wzrok)/Spostrzegawczość" o PT 25. Jeśli postać zda test, może natychmiast przejrzeć wszelke przebrania i/lub iluzje w swoim pobliżu. Jeśli postać znajduje się w bezpośredniej otoczeniu Cesarza, kogoś z jego rodziny i/lub znaczącej postaci (np. Szkogun, Szmaragdowy Namistnik), postać nie musi wydawać Punktu Pustki by aktywować tę umiejętność. Raz przejrzana iluzja, traci na stałe efekt na postać.', rank_lvl: 3 },
+                {rank_name: 'Niebiańska Szybkość', rank_desc: 'Kontak z boskością, wpływa na szybkość ataków gwardzisty. Postać może wykonywać ataki bronią Samurajską, jako akcja prosta.', rank_lvl: 4 },
+                {rank_name: 'Niebo nie upadnie nigdy', rank_desc: 'Prawdziwy gwardzista Seppun, nigdy nie jest zaskoczony i potrafi wypełnić swoją powinność, nawet zaskoczony lub rozbrojony. W dowolnym momencie, gdy postać znajduje się w odległości do 6m od chronionej postaci, może wydać Punkt Pustki, by zasłonić chronioną postać, przed dowolnym ciosem lub zaklęciem. Obrażenia są zadawane gwardziście, jeśli postać nie jest Martwa lub Obalona, może natychmiast wykonać Akcję Prostą, która może zostać dowolnie wykorzystana, nawet do ataku. Technika ta może zostać wykorzystana, nawet gdy postać jest ślepa, chroma, ogłuzona, otumaniona, związana lub obalona, ale nie związana chwytem lub nieprzytomna.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Dworzan Otomo', school_ranks: [ {rank_name: 'Niebiański Głos', rank_desc: 'Otomo wierzą, że działając na rzecz Cesarza, niemożna działać niehonorowo, bez względu na to jaki czyn się popełnia. Głównym zadaniem dworzan Otomo jest rozpoczynanie konfliktów, pomiędzy Wielkimi Klanami, tak by nie zjednoczyły się przeciw władzy Cesarskiej. Postać nie traci honoru, za używanie Przesłuchiwania(Kontrola). W dowolnym momencie podczas rozmowy z samurajem należącym do jakiegoś klanu, postać może wykonać przeciwstawny rzut, "Dworskie(Manipulacja)/Intuicja", przeciw "Etykieta(Grzeczność)/Intuicja", by sprowokować różnicę zdań między rozmuwcą a wybranym przez postać innym klanem.', rank_lvl: 1},
+                {rank_name: 'Przeznaczenie nie Skrywa Tajemnic', rank_desc: 'Ród Otomo, ma siaci informacyjne porównywanlne z tymi, jakie posiada klan Skorpiona i w razie potrzeby, by w razie potrzeby, wykorzystać je do swoich celów. Jeśli postać ma możliwość skontaktować się z innymi członakmi swojego rodu, może wydać Punkt Pustki, by wykonać test "Dworskien/Intuicja" o PT 25, by uzysakć od MG jakiejś kluczowej wskazówki.', rank_lvl: 2 },
+                {rank_name: 'Głos Mojego Pana', rank_desc: 'Otomo często przemawia, w osobie Cesarza, a co wprawniejsi dworzanie Otomo opanowali sztukę powoływania się na najwyższy autorytet, do tego stopnia, że samym głosem są w stanie ogłuszyć na krótko swoich przeciwników. Wykorzystanie tej techniki jest Akcją Pełną, w której dworzanin, zbiera w sobie siłę, by w jednej chwili zdecydowanie zagłuszyć najbliższe otoczenie, (np słowami: "Stój w Imię Cesarza!"). Postać wykonuje przeciwstawny rzut "Przesłuchiwanie(Kontrola)/Intuicja", przeciw "Etykieta(Grzeczność)/Siła Woli", jeśli przeciwnik jest szczerze przekonany o słuszności swoich czynów, dostaje darmowe podbicie. Jeśli dworzanin wygra rzut, w następnej akcji nie może ruszyć się, atakować, rzucać czarów, ani podejmować żadnej akcji, która sprzeciwi się lub zagrozi postaci lub jej najbliżyszm sojusznikom. Oszołomiona postać może natomiast atakować postacie nie będące bliskim sojusznikiem postaci, lub wykonać manewr obrony. Technika ta działa tylko na samurajów, o poziomie honoru 1.0 lub wyższym, którzy uznają zwierzchnią władzę Cesarz.', rank_lvl: 3 },
+                {rank_name: 'Ochrona Cesarza', rank_desc: 'Ulubieńcy Cesarza, cieszą się specjalnym posłuchem i szacunkiem. Jeśli postać uczestniczy w debacie lub spotkała się z brakiem posłuchu, może wykonać test przeciwstawny "Dworskie(Manipulacja)/Intuicja", przeciw "Etykieta(Grzeczność)/Intuicja". Jeśli postać wygra, jej przeciwnik musi się z nią zgodzić lub straci natychmiast 5pt honoru.', rank_lvl: 4 },
+                {rank_name: 'Cnota Rozkazu', rank_desc: 'Na tej randze, dworzanin Otomo, jest w stanie w pełni użyć autorytetu Cesarza, do swoich celów. Jeśli postać wykonuje rzeciwstawny rzut społeczny, przeciw komuś kto uznaje zwierzchnictwo Cesarza, możę dodać +5z0 do testu.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Heraldów Miya', school_ranks: [ {rank_name: 'Głos Cesarza', rank_desc: 'Herald Miya uczy się ścierzek Cesarstwa, by móc rozgłaszać słowa Cesarza możliwie jak najdalej, tak by dotarły do wszystkich zakątków Cesarstwa. Podróżując w granicach Rokuganu, postać może wydać Punkt Pustki, by zyskać zaletę "Syn tej Ziemi" prowincji w której obecnie się znajduje. Efekt tej techniki będzie trwał do następnego odpoczynku postaci. Dodatkowo, każdy Rokugańczyk który uznaje zwierzchność Cesarza, który świadomie i dobrowolnie, Cię zaatakuje straci tyle punktów honoru ile wynosi ranga postaci w tej szkole.', rank_lvl: 1},
+                {rank_name: 'Oczy Cesarza', rank_desc: 'Heralidzi Miya, służą jako posłańcy, obsarwatorzy pokojowi oraz rozjemcy między zwaśnionymi stronami. Dlatego często są celem ataków innych dworzan i przechodzą specjalne szkolenie by oprzeć się wpływom innych i pozostać wiernym Cesarzowi. Postać dodaje poziom swojego honoru do wszystkich testów Etykiety(Grzeczność) by oprzeć się wpływom innym osób na siebie.', rank_lvl: 2 },
+                {rank_name: 'Ręka Cesarza', rank_desc: 'Pokojowa aura heralda Miya, oddziałowuje już na honorowych samurajów z taką mocą, że mają trudność zaatakować wysłannika Cesarza. Na początku potyczki lub pod koniec każdej rundy, postać może wydaćPunkt  Pustki jako akcja prosta, by uniemożliwić wybranemu rokugańczykowi, który uznaje władzę Cesarza, przed zaatakowaniem Cię, do końca następnej tury, wybrana postać, może jednak podjąć próbę pojmania lub unieruchomienia Cię. Technika ta działa tylko gdy postać nie bierze czynnego udziału w potyczce lub pojedynku.', rank_lvl: 3 },
+                {rank_name: 'Błogosławieństwo Cesarza', rank_desc: 'Na tej randze, herald Miya wyszkolił już na tyle silny charakter, że może narzucić innym żądanie zaprzestania przemocy. Technikę tę można użyć tyle razy w ciągu sesji, ile wynosi ranga postaci  w tej szkole. Podobnie jak w przypadku techniki dworzan Otomo, technika ta działa tylko na honorowych samurajów, o poziomie honoru conajmniej 1,0, którzy uznają zwierzchnictwo Cesarza. By wykorzystać tę technikę, postać postać musi wykonać Pełną Akcję i głośno domagać się zaprzestania walk ("Ta walka, skończy się w tej chwili, w imię Cesarza!") i wykonania testu przeciwstawnego "Dworskie(Retoryka)/Intuicja", przeciw "Etykieta(Grzecność)/Siła Woli" wszystkich zgromadzonych, którzy usłyszą głos heralda. Każda postać która przegra rzut, musi natychmiast zaprzestać walki i nie podejmie jej dopuki nie otrzyma obrażeń lub nie otrzyma pozwolenia od heralda. Technika trwa jedną minutę i może zostać użyta ponownie na te same cele, jeśli wygaśnie lub cel oprze się jej działaniu. Technika ta działa na wszystkich wrogów i sojuszników.', rank_lvl: 4 },
+                {rank_name: 'Chwała Cesarza', rank_desc: 'Herald na tej randze, jest ostoją spokoju i dyplomacji. Wykonując test umiejętności Dworski lub Etykieta, przeciw postaci o poziomie honoru conajmniej 1.0,  może dodać premię +5z0 do rzutu.', rank_lvl: 5} ] } ]
+
+minor_clan_ranks = [
   {school_name: 'Szkoła Bushi Ichiro', school_ranks: [ {rank_name: 'Zrozumieć Góry', rank_desc: 'Bushi musi nauczyć się walczyć na ciężkim terenie, jakim jest północny mur oraz nauczyć się, że siła jest receptą na wszelkie zło. Bushi może przerzucić dowolny test siły, jednak musi zaakceptować wynik drugiego rzutu. Walcząc w niekorzystnym terenie, postać nie otrzymuje żadnych negatywnych modyfikatorów, natomiast walcząc, w terenie trudnym, otrzymuje tylko połowę normalnej kary do rzutów.', rank_lvl: 1},
                 {rank_name: 'Siła Borsuka', rank_desc: 'Borsuk nauczył się jak uderzyć z pełną macą jaką fizycznie jest w stanie wytworzyć jego ciało i zniszczyć swoich wrogów. Tyle razy w ciągu sesji ile wynosi twoja siła możesz przerzucić dowolny rzut na obrażenia i wybrać lepszy wynik.', rank_lvl: 2 },
                 {rank_name: 'Miażdżący Cios', rank_desc: 'Doświadczony Borsuk wie jak wzbudzić strach siłą swoich rąk. Bushi zawsze zignoruje pancerz przeciwnika zaś walcząc gołymi dłońmi dodatkowo ignoruje 1 punkt jego redukcji.', rank_lvl: 3 },
@@ -1334,22 +1351,7 @@ primary_school_ranks = [
                 {rank_name: 'Siła Przeciwnieństwa', rank_desc: 'Klan Dzika wyspecjalizował się w używaniu włóczni, zwłaszcza Mai Chong, dzięki temu są w stanie pochwycić fragmenty ubrań lub pancerzy swoich przeciwników czyniąc ich bezbronnymi. Możesz wykonać 2 podbicia by pochwycić wroga przy pomocy Mai Chong lub 3 by zrobić to każdą inną', rank_lvl: 2 },
                 {rank_name: 'Szybkość Dzika', rank_desc: 'Bushi uczy się jak uderzać z szybkością godną zwierzęcia z monu jego klanu. Kiedy używasz włóczni możesz atakować jako akcja prosta zamiast akcja pełna.', rank_lvl: 3 },
                 {rank_name: 'Gniew Dzika', rank_desc: 'Tak jak prawdziwy dzik, bushi z klanu Dzika, nie przestaje walczyć nawet jeśli jest śmiertelnie ranny. W czasie walki możesz wydać punkt pustki, by zredukować karę wynikającą z odniesionych ran o jeden poziom. Efekt trwa do końca walki.', rank_lvl: 4 },
-                {rank_name: 'Po Drugiej Stronie Gór', rank_desc: 'Ostatnią lekcją w szkole Heichi jest kontrola własnej furii i wyzwolenie jej w najmniej spodziewanym momencie. W trakcie pełnej obrony, możesz wykonać normalny atak jako darmową akcję używając włóczni lub broni samurajskiej. Dodatkowo zyskujesz +2z0 do rzutu na atak.', rank_lvl: 5} ] },
-  {school_name: 'Szkoła Gwardzistów Seppun', school_ranks: [ {rank_name: 'Wolni od Ciemności', rank_desc: 'Gwardziści Seppun, uczeni są nie ulegać żadnym pokusom, które mogły by odciągnąć ich od powieżonego zadania. Gdy postać wykonuje test Społeczny, by oprzeć się działaniu które ma odciągnąć go od obowiązków, takich jak: "Kuszenie", "Przesłuchiwanie" lub "Dworskie", postać rzuca liczbą dodatkowych zatrzymywanych kostek, równą swojej randze w tej szkole. Dodatkowo postać otrzymuje, +1z1 do testów śledztwa, przeciw zasadzkom lub niespodziewanym atakom.', rank_lvl: 1},
-                {rank_name: 'Niebiańskie Cieńcie', rank_desc: 'Ataki gwardzistów Seppun, są kierowane ich oddaniem sprawie Cesarza. Na początku tury, postać może wydać Punkt Pustki, by dodać wartość swojego Honoru, do testów Ataku i Obrażeń.', rank_lvl: 2 },
-                {rank_name: 'Światło Słońca Ujawnia', rank_desc: 'Oddanie gwardzisty na tej randze, pozwala mu przejrzeć wszelkie oszustwa, nawet te natury magicznej. W dowolnym momencie jako Akcja Prosta, postać może wydać Punkt Pustki, by wykonać test "Śledztwo(Wzrok)/Spostrzegawczość" o PT 25. Jeśli postać zda test, może natychmiast przejrzeć wszelke przebrania i/lub iluzje w swoim pobliżu. Jeśli postać znajduje się w bezpośredniej otoczeniu Cesarza, kogoś z jego rodziny i/lub znaczącej postaci (np. Szkogun, Szmaragdowy Namistnik), postać nie musi wydawać Punktu Pustki by aktywować tę umiejętność. Raz przejrzana iluzja, traci na stałe efekt na postać.', rank_lvl: 3 },
-                {rank_name: 'Niebiańska Szybkość', rank_desc: 'Kontak z boskością, wpływa na szybkość ataków gwardzisty. Postać może wykonywać ataki bronią Samurajską, jako akcja prosta.', rank_lvl: 4 },
-                {rank_name: 'Niebo nie upadnie nigdy', rank_desc: 'Prawdziwy gwardzista Seppun, nigdy nie jest zaskoczony i potrafi wypełnić swoją powinność, nawet zaskoczony lub rozbrojony. W dowolnym momencie, gdy postać znajduje się w odległości do 6m od chronionej postaci, może wydać Punkt Pustki, by zasłonić chronioną postać, przed dowolnym ciosem lub zaklęciem. Obrażenia są zadawane gwardziście, jeśli postać nie jest Martwa lub Obalona, może natychmiast wykonać Akcję Prostą, która może zostać dowolnie wykorzystana, nawet do ataku. Technika ta może zostać wykorzystana, nawet gdy postać jest ślepa, chroma, ogłuzona, otumaniona, związana lub obalona, ale nie związana chwytem lub nieprzytomna.', rank_lvl: 5} ] },
-  {school_name: 'Szkoła Dworzan Otomo', school_ranks: [ {rank_name: 'Niebiański Głos', rank_desc: 'Otomo wierzą, że działając na rzecz Cesarza, niemożna działać niehonorowo, bez względu na to jaki czyn się popełnia. Głównym zadaniem dworzan Otomo jest rozpoczynanie konfliktów, pomiędzy Wielkimi Klanami, tak by nie zjednoczyły się przeciw władzy Cesarskiej. Postać nie traci honoru, za używanie Przesłuchiwania(Kontrola). W dowolnym momencie podczas rozmowy z samurajem należącym do jakiegoś klanu, postać może wykonać przeciwstawny rzut, "Dworskie(Manipulacja)/Intuicja", przeciw "Etykieta(Grzeczność)/Intuicja", by sprowokować różnicę zdań między rozmuwcą a wybranym przez postać innym klanem.', rank_lvl: 1},
-                {rank_name: 'Przeznaczenie nie Skrywa Tajemnic', rank_desc: 'Ród Otomo, ma siaci informacyjne porównywanlne z tymi, jakie posiada klan Skorpiona i w razie potrzeby, by w razie potrzeby, wykorzystać je do swoich celów. Jeśli postać ma możliwość skontaktować się z innymi członakmi swojego rodu, może wydać Punkt Pustki, by wykonać test "Dworskien/Intuicja" o PT 25, by uzysakć od MG jakiejś kluczowej wskazówki.', rank_lvl: 2 },
-                {rank_name: 'Głos Mojego Pana', rank_desc: 'Otomo często przemawia, w osobie Cesarza, a co wprawniejsi dworzanie Otomo opanowali sztukę powoływania się na najwyższy autorytet, do tego stopnia, że samym głosem są w stanie ogłuszyć na krótko swoich przeciwników. Wykorzystanie tej techniki jest Akcją Pełną, w której dworzanin, zbiera w sobie siłę, by w jednej chwili zdecydowanie zagłuszyć najbliższe otoczenie, (np słowami: "Stój w Imię Cesarza!"). Postać wykonuje przeciwstawny rzut "Przesłuchiwanie(Kontrola)/Intuicja", przeciw "Etykieta(Grzeczność)/Siła Woli", jeśli przeciwnik jest szczerze przekonany o słuszności swoich czynów, dostaje darmowe podbicie. Jeśli dworzanin wygra rzut, w następnej akcji nie może ruszyć się, atakować, rzucać czarów, ani podejmować żadnej akcji, która sprzeciwi się lub zagrozi postaci lub jej najbliżyszm sojusznikom. Oszołomiona postać może natomiast atakować postacie nie będące bliskim sojusznikiem postaci, lub wykonać manewr obrony. Technika ta działa tylko na samurajów, o poziomie honoru 1.0 lub wyższym, którzy uznają zwierzchnią władzę Cesarz.', rank_lvl: 3 },
-                {rank_name: 'Ochrona Cesarza', rank_desc: 'Ulubieńcy Cesarza, cieszą się specjalnym posłuchem i szacunkiem. Jeśli postać uczestniczy w debacie lub spotkała się z brakiem posłuchu, może wykonać test przeciwstawny "Dworskie(Manipulacja)/Intuicja", przeciw "Etykieta(Grzeczność)/Intuicja". Jeśli postać wygra, jej przeciwnik musi się z nią zgodzić lub straci natychmiast 5pt honoru.', rank_lvl: 4 },
-                {rank_name: 'Cnota Rozkazu', rank_desc: 'Na tej randze, dworzanin Otomo, jest w stanie w pełni użyć autorytetu Cesarza, do swoich celów. Jeśli postać wykonuje rzeciwstawny rzut społeczny, przeciw komuś kto uznaje zwierzchnictwo Cesarza, możę dodać +5z0 do testu.', rank_lvl: 5} ] },
-  {school_name: 'Szkoła Heraldów Miya', school_ranks: [ {rank_name: 'Głos Cesarza', rank_desc: 'Herald Miya uczy się ścierzek Cesarstwa, by móc rozgłaszać słowa Cesarza możliwie jak najdalej, tak by dotarły do wszystkich zakątków Cesarstwa. Podróżując w granicach Rokuganu, postać może wydać Punkt Pustki, by zyskać zaletę "Syn tej Ziemi" prowincji w której obecnie się znajduje. Efekt tej techniki będzie trwał do następnego odpoczynku postaci. Dodatkowo, każdy Rokugańczyk który uznaje zwierzchność Cesarza, który świadomie i dobrowolnie, Cię zaatakuje straci tyle punktów honoru ile wynosi ranga postaci w tej szkole.', rank_lvl: 1},
-                {rank_name: 'Oczy Cesarza', rank_desc: 'Heralidzi Miya, służą jako posłańcy, obsarwatorzy pokojowi oraz rozjemcy między zwaśnionymi stronami. Dlatego często są celem ataków innych dworzan i przechodzą specjalne szkolenie by oprzeć się wpływom innych i pozostać wiernym Cesarzowi. Postać dodaje poziom swojego honoru do wszystkich testów Etykiety(Grzeczność) by oprzeć się wpływom innym osób na siebie.', rank_lvl: 2 },
-                {rank_name: 'Ręka Cesarza', rank_desc: 'Pokojowa aura heralda Miya, oddziałowuje już na honorowych samurajów z taką mocą, że mają trudność zaatakować wysłannika Cesarza. Na początku potyczki lub pod koniec każdej rundy, postać może wydaćPunkt  Pustki jako akcja prosta, by uniemożliwić wybranemu rokugańczykowi, który uznaje władzę Cesarza, przed zaatakowaniem Cię, do końca następnej tury, wybrana postać, może jednak podjąć próbę pojmania lub unieruchomienia Cię. Technika ta działa tylko gdy postać nie bierze czynnego udziału w potyczce lub pojedynku.', rank_lvl: 3 },
-                {rank_name: 'Błogosławieństwo Cesarza', rank_desc: 'Na tej randze, herald Miya wyszkolił już na tyle silny charakter, że może narzucić innym żądanie zaprzestania przemocy. Technikę tę można użyć tyle razy w ciągu sesji, ile wynosi ranga postaci  w tej szkole. Podobnie jak w przypadku techniki dworzan Otomo, technika ta działa tylko na honorowych samurajów, o poziomie honoru conajmniej 1,0, którzy uznają zwierzchnictwo Cesarza. By wykorzystać tę technikę, postać postać musi wykonać Pełną Akcję i głośno domagać się zaprzestania walk ("Ta walka, skończy się w tej chwili, w imię Cesarza!") i wykonania testu przeciwstawnego "Dworskie(Retoryka)/Intuicja", przeciw "Etykieta(Grzecność)/Siła Woli" wszystkich zgromadzonych, którzy usłyszą głos heralda. Każda postać która przegra rzut, musi natychmiast zaprzestać walki i nie podejmie jej dopuki nie otrzyma obrażeń lub nie otrzyma pozwolenia od heralda. Technika trwa jedną minutę i może zostać użyta ponownie na te same cele, jeśli wygaśnie lub cel oprze się jej działaniu. Technika ta działa na wszystkich wrogów i sojuszników.', rank_lvl: 4 },
-                {rank_name: 'Chwała Cesarza', rank_desc: 'Herald na tej randze, jest ostoją spokoju i dyplomacji. Wykonując test umiejętności Dworski lub Etykieta, przeciw postaci o poziomie honoru conajmniej 1.0,  może dodać premię +5z0 do rzutu.', rank_lvl: 5} ] } ]
+                {rank_name: 'Po Drugiej Stronie Gór', rank_desc: 'Ostatnią lekcją w szkole Heichi jest kontrola własnej furii i wyzwolenie jej w najmniej spodziewanym momencie. W trakcie pełnej obrony, możesz wykonać normalny atak jako darmową akcję używając włóczni lub broni samurajskiej. Dodatkowo zyskujesz +2z0 do rzutu na atak.', rank_lvl: 5} ] } ]
 
 basic_shugenja_schools = [
   {name: 'Szkoła Shugenja Isawa',
@@ -5399,7 +5401,7 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
 
 @basic_monk_names = { 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'] }
 
-basic_primary_school_skill_lists = {
+@basic_primary_school_skill_lists = {
   'Szkoła Bushi Shiba' => [ {name: 'Defense'}, {name: 'Kenjutsu'}, {name: 'Kyujutsu'}, 
                             {name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki'}, 
                             {name:'Spears'}, { name: 'Lore', school_emphasis: 'Teologia' },
@@ -5645,7 +5647,7 @@ basic_primary_school_skill_lists = {
                               { name: 'Lore', school_emphasis: 'Heraldyka'}, { name: 'Sincerity'},
                               { name: 'any one', school_emphasis: 'Bugei lub Godna'} ] }
 
-basic_shugenja_school_skill_lists = {
+@basic_shugenja_school_skill_lists = {
 
   'Szkoła Shugenja Isawa' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry'},
                                { name: 'Lore', school_emphasis: 'Teologia'}, 
@@ -5727,7 +5729,7 @@ basic_shugenja_school_skill_lists = {
                                 { name: 'Meditation'}, { name: 'Lore', school_emphasis: 'Teologia'},
                                 { name: 'any one', school_emphasis: 'Godna lub Bugei'} ] }
 
-basic_monk_school_skill_lists = { 
+@basic_monk_school_skill_lists = { 
 
   'Zakon Mnichów Tsurumi Zumi' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Etiquette'},
                                     { name: 'Jiujutsu'},
@@ -6200,6 +6202,35 @@ def join_schools_with_classes(school_object_name, school_classes_array)
   end
 end
 
+def join_school_with_skills(school_object_name, skills_list_name)
+  school_object_name.all.each do |school|
+  school_skills = skills_list_name[school.name]    
+  if school_skills
+      school_skills.each do |skill|
+        skill_object = Skill.find_by(name: skill[:name])
+        if skill_object
+          if school.class == BasicPrimarySchool
+            school.primary_school_skills.create( skill_id: skill_object.id, 
+                                               school_emphasis: skill[:school_emphasis],
+                                               value: skill[:value] || 1 )
+          elsif school.class == BasicShugenjaSchool
+            school.shugenja_school_skills.create( skill_id: skill_object.id, 
+                                               school_emphasis: skill[:school_emphasis],
+                                               value: skill[:value] || 1 )
+          else
+            school.monk_school_skills.create( skill_id: skill_object.id, 
+                                               school_emphasis: skill[:school_emphasis],
+                                               value: skill[:value] || 1 )
+          end                   
+        else
+          p skill
+        end
+      end
+    else
+      puts school.name
+    end    
+  end
+end
 # ------------------------------------------- Main functions -------------------------------
 
 puts 'Clans Generation'
@@ -6266,63 +6297,30 @@ end
 
 
 puts 'Joining School Classes with Schools'
-join_schools_with_classes(BasicPrimarySchool.all, @basic_primary_names)
-join_schools_with_classes(BasicShugenjaSchool.all, @basic_shugenja_names)
-join_schools_with_classes(BasicMonkSchool.all, @basic_monk_names)
 
+join_schools_with_classes(BasicPrimarySchool, @basic_primary_names)
+join_schools_with_classes(BasicShugenjaSchool, @basic_shugenja_names)
+join_schools_with_classes(BasicMonkSchool, @basic_monk_names)
 
 puts 'Joining Schools with skills'
-BasicPrimarySchool.all.each do |school|
-  school_skills = basic_primary_school_skill_lists[school.name]
-  if school_skills
-    school_skills.each do |skill|
-      skill_object = Skill.find_by(name: skill[:name])
-      if skill_object
-        school.primary_school_skills.create( skill_id: skill_object.id, 
-                                             school_emphasis: skill[:school_emphasis],
-                                             value: skill[:value] || 1 )
-      else
-        p skill
-      end
+
+join_school_with_skills(BasicPrimarySchool, @basic_primary_school_skill_lists)
+join_school_with_skills(BasicShugenjaSchool, @basic_shugenja_school_skill_lists)
+join_school_with_skills(BasicMonkSchool, @basic_monk_school_skill_lists)
+
+puts 'Creating school ranks'
+primary_school_ranks.each do |school|
+  school_object = BasicPrimarySchool.find_by( name: school[:school_name] )
+  if school_object
+    school[:school_ranks].each do |rank|
+      school_object.school_ranks.create(name: rank[:rank_name], desc: rank[:rank_desc],
+                                        rank_lvl: rank[:value] || 1 )
     end
   else
-    puts school.name
+    p school
   end
 end
-BasicShugenjaSchool.all.each do |school|
-  school_skills = basic_shugenja_school_skill_lists[school.name]
-  if school_skills
-    school_skills.each do |skill|
-      skill_object = Skill.find_by(name: skill[:name])
-      if skill_object
-        school.shugenja_school_skills.create( skill_id: skill_object.id, 
-                                             school_emphasis: skill[:school_emphasis],
-                                             value: skill[:value] || 1 )
-      else
-        p skill
-      end
-    end
-  else
-    puts school.name
-  end
-end
-BasicMonkSchool.all.each do |school|
-  school_skills = basic_monk_school_skill_lists[school.name]
-  if school_skills
-    school_skills.each do |skill|
-      skill_object = Skill.find_by(name: skill[:name])
-      if skill_object
-        school.monk_school_skills.create( skill_id: skill_object.id, 
-                                             school_emphasis: skill[:school_emphasis],
-                                             value: skill[:value] || 1 )
-      else
-        p skill
-      end
-    end
-  else
-    puts school.name
-  end
-end
+
 puts 'Generate Traits'
 Trait.destroy_all
 not_valid_names(Trait, traits)
