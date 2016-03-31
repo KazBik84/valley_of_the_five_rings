@@ -3,7 +3,7 @@ class CreateSchoolRanks < ActiveRecord::Migration
     create_table :school_ranks do |t|
       t.string :name
       t.string :desc
-      t.integer :rank_lvl
+      t.integer :rank_lvl, default: 1
       t.references :basic_primary_school, index: true, foreign_key: true
       t.references :basic_shugenja_school, index: true, foreign_key: true
       t.references :basic_monk_school, index: true, foreign_key: true

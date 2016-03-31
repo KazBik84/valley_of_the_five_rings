@@ -193,12 +193,12 @@ ActiveRecord::Schema.define(version: 20160322220510) do
   create_table "school_ranks", force: :cascade do |t|
     t.string   "name"
     t.string   "desc"
-    t.integer  "rank_lvl"
+    t.integer  "rank_lvl",                 default: 1
     t.integer  "basic_primary_school_id"
     t.integer  "basic_shugenja_school_id"
     t.integer  "basic_monk_school_id"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
   end
 
   add_index "school_ranks", ["basic_monk_school_id"], name: "index_school_ranks_on_basic_monk_school_id", using: :btree

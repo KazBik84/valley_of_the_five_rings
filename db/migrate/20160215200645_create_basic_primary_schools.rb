@@ -22,7 +22,7 @@ class CreateBasicPrimarySchools < ActiveRecord::Migration
       t.string :rank5_name
       t.string :rank5_desc
       t.string :special
-      t.references :clan, index: true, foreign_key: true      
+      t.references :clan, index: true, foreign_key: true
 
       t.timestamps null: false
     end
