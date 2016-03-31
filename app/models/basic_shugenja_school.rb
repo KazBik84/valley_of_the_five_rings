@@ -1,7 +1,7 @@
 class BasicShugenjaSchool < ActiveRecord::Base
   belongs_to :clan
 
-  has_one :school_rank, dependent: :destroy
+  has_one :school_rank, as: :school_technic, dependent: :destroy
 
   has_many :shugenja_school_classes, dependent: :destroy
   has_many :school_classes, through: :shugenja_school_classes

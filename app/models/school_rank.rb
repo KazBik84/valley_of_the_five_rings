@@ -1,5 +1,3 @@
 class SchoolRank < ActiveRecord::Base
-  belongs_to :basic_primary_school
-  belongs_to :basic_shugenja_school
-  belongs_to :basic_monk_school
+  belongs_to :school_technic, polymorphic: true
 end

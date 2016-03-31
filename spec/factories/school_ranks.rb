@@ -3,9 +3,8 @@ FactoryGirl.define do
     name "MyString"
 desc "MyString"
 rank_lvl 1
-basic_primary_school nil
-basic_shugenja_school nil
-basic_monk_school nil
+owning_school_id 1
+owning_school_type "MyString"
   end
 
 end
