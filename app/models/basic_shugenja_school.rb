@@ -3,8 +3,8 @@ class BasicShugenjaSchool < ActiveRecord::Base
 
   has_one :school_rank, as: :school_technic, dependent: :destroy
 
-  has_many :shugenja_school_classes, dependent: :destroy
-  has_many :school_classes, through: :shugenja_school_classes
+  has_many :class_of_schools, as: :school_model, dependent: :destroy
+  has_many :school_classes, through: :class_of_schools
 
   has_many :shugenja_school_skills, dependent: :destroy
   has_many :skills, through: :shugenja_school_skills

@@ -1,8 +1,10 @@
 class BasicMonkSchool < ActiveRecord::Base
   belongs_to :clan
 
-  has_many :monk_school_classes, dependent: :destroy
-  has_many :school_classes, through: :monk_school_classes
+  has_many :class_of_schools, as: :school_model, dependent: :destroy
+  has_many :school_classes, through: :class_of_schools
+
+  has_many :school_ranks, as: :school_technic, dependent: :destroy
 
   has_many :monk_school_skills, dependent: :destroy
   has_many :skills, through: :monk_school_skills

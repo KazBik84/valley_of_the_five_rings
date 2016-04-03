@@ -6171,13 +6171,7 @@ def join_schools_with_classes(school_object_name, school_classes_array)
     if school_classes
       school_classes.each do |class_name|
         school_class = SchoolClass.find_by(name: class_name)
-        if school.class == BasicPrimarySchool
-          school.primary_school_classes.create( school_class_id: school_class.id )
-        elsif school.class == BasicShugenjaSchool
-          school.shugenja_school_classes.create( school_class_id: school_class.id )
-        else
-          school.monk_school_classes.create( school_class_id: school_class.id )
-        end
+        school.class_of_schools.create( school_class_id: school_class.id)
       end
     else
       puts school.name
