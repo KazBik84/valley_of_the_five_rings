@@ -1,3 +1,4 @@
+# Model that joins school_class and schools models via polymorphic association
 class CreateClassOfSchools < ActiveRecord::Migration
   def change
     create_table :class_of_schools do |t|

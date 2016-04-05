@@ -1,3 +1,4 @@
+# Model that represent schools from monk class
 class BasicMonkSchool < ActiveRecord::Base
   belongs_to :clan
 
@@ -6,8 +7,8 @@ class BasicMonkSchool < ActiveRecord::Base
 
   has_many :school_ranks, as: :school_technic, dependent: :destroy
 
-  has_many :monk_school_skills, dependent: :destroy
-  has_many :skills, through: :monk_school_skills
+  has_many :skill_of_objects, dependent: :destroy, as: :owner_model
+  has_many :skills, through: :skill_of_objects
 
   validates_presence_of :name, :clan_name, :bonus_attr, :bonus_attr_pl, 
                         :desc, :honor, :outfit, :monk_tech_name, :monk_tech_desc

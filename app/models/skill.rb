@@ -1,15 +1,17 @@
+# Model represent skills that school or character can chave
 class Skill < ActiveRecord::Base
-  has_many :primary_school_skills, dependent: :destroy
-  has_many :basic_primary_schools, through: :primary_school_skills
 
-  has_many :shugenja_school_skills, dependent: :destroy
-  has_many :basic_shugenja_schools, through: :shugenja_school_skills
-
-  has_many :monk_school_skills, dependent: :destroy
-  has_many :basic_monk_schools, through: :monk_school_skills
-
-  has_many :sphere_of_skills, dependent: :destroy
-  has_many :skill_spheres, through: :sphere_of_skills
+  has_many :skill_of_objects
+  has_many :basic_primary_schools, through: :skill_of_objects,
+                                   source: :owner_model,
+                                   source_type: 'BasicPrimarySchool'
+  has_many :basic_shugenja_schools, through: :skill_of_objects,
+                                    source: :owner_model,
+                                    source_type: 'BasicShugenjaSchool'
+  has_many :basic_monk_schools, through: :skill_of_objects,
+                                source: :owner_model,
+                                source_type: 'BasicMonkSchool'
+  has_many :sphere_of_skills
 
   validates_presence_of :name, :name_pl, :skill_attr, :skill_attr_pl, :desc
 end

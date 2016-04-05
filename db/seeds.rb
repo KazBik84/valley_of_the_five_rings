@@ -6186,19 +6186,9 @@ def join_school_with_skills(school_object_name, skills_list_name)
       school_skills.each do |skill|
         skill_object = Skill.find_by(name: skill[:name])
         if skill_object
-          if school.class == BasicPrimarySchool
-            school.primary_school_skills.create( skill_id: skill_object.id, 
-                                               school_emphasis: skill[:school_emphasis],
-                                               value: skill[:value] || 1 )
-          elsif school.class == BasicShugenjaSchool
-            school.shugenja_school_skills.create( skill_id: skill_object.id, 
-                                               school_emphasis: skill[:school_emphasis],
-                                               value: skill[:value] || 1 )
-          else
-            school.monk_school_skills.create( skill_id: skill_object.id, 
-                                               school_emphasis: skill[:school_emphasis],
-                                               value: skill[:value] || 1 )
-          end
+          school.skill_of_objects.create( skill_id: skill_object.id,
+                                          skill_emphasis: skill[:school_emphasis],
+                                          value: skill[:value] || 1 )
         else
           p skill
         end
@@ -6212,7 +6202,6 @@ end
 def join_school_with_ranks(object, rank_array)
   rank_array.each do |school|
     school_object = object.find_by( name: school[:school_name] )
-    # Check if school_object was found, return school name
     if school_object
       if school_object.class == BasicPrimarySchool
         school[:school_ranks].each do |rank|
