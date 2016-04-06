@@ -53,7 +53,72 @@ clans = [
   {name: 'ronin',
   clan_name: 'Ronini',
   mon_img: '',
-  desc: 'Będąc na granicy kasty samurajskiej, ronini są samurajami bez pana, co w oczach wielu członków Wielkich Klanów, czyni nich nic niewartymi. Jednak mocno myli się ten kto wrzuca ich wszystkich do jednego worka. Podstawowy podział roninów dzieli ich na roninów klanowych i prawdziwych roninów. Pierwsi to samurajowie którzy urodzili się w klanie, lecz na skutek zbiegów wydarzeń zostali wygnani z klanu, z zakazem używania nazwiska rodowego i mon klanu, a ich szkoła zamknęła się na nich. Prawdziwi ronini, są dziećmi ze związków w których choć jeden rodzic był samurajem i którzy nie przysięgli wierności żadnemu klanowi.'}]
+  desc: 'Będąc na granicy kasty samurajskiej, ronini są samurajami bez pana, co w oczach wielu członków Wielkich Klanów, czyni nich nic niewartymi. Jednak mocno myli się ten kto wrzuca ich wszystkich do jednego worka. Podstawowy podział roninów dzieli ich na roninów klanowych i prawdziwych roninów. Pierwsi to samurajowie którzy urodzili się w klanie, lecz na skutek zbiegów wydarzeń zostali wygnani z klanu, z zakazem używania nazwiska rodowego i mon klanu, a ich szkoła zamknęła się na nich. Prawdziwi ronini, są dziećmi ze związków w których choć jeden rodzic był samurajem i którzy nie przysięgli wierności żadnemu klanowi.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Borsuka',
+   mon_img: '',
+   desc: 'Założycielem Klanu Borsuka był potężny wojownik z Klanu Kraba, który udowodnił swoją wartość przed Cesarzem w konkursie siły. Potomkowie pierwszego Borsuka nadal żyją na północnej granicy Rokuganu a ich zadaniem jest obrona Cesarstwa przed obcą inwazją. Borsuki wzorują się na swych kuzynach z Wielkiego Klanu stawiając na siłę kosztem finezji oraz nie akceptując porażki nawet w obliczu przeciwności nie do pokonania.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Nietoperza',
+   mon_img: '',
+   desc: 'W żyłach Komori - założyciela Klanu Nietoperza płynęła krew nietoperzych duchów z Chikishudo. Klan Nietoperza jest bardzo młodym klanem założonym podczas krótkich rządów cesarza Toturiego III i jeszczen nie określił swej tożsamości. Shugenja Klanu Nietoperza doskonalą swoje umiejętności przywoływania by zapewnić nowe zasoby Cesarstwu.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Dzika',
+   mon_img: '',
+   desc: 'Klan Dzika otrzymał we władanie Góry Zmierzchu (Twilight Mountains) na północnej granicy ziem Klanu Kraba. Góry te bogate są zarówno w rudy żelaza oraz jadeitu. Znaczenie pomniejszego klanu szybko rosło gdy samurajowie wydobywali cenne minerały. Góry Zmierzchu okazały się jednak niebezpiecznym domem - trzęsienia ziemi, oszalałe duchy, obłąkani maho-tsukai i wrogi duch Shakoki Dogu nieustannie nękali Klan Dzika.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Ważki',
+   mon_img: '',
+   desc: 'Od początku założyciele Klanu Ważki odczuwali gniew Klanu Lwa. Pomniejszy Klan wiele wycierpiał dla tego dziedzictwa (Koziu: to brzmi dziwnie - nie bardzo wiem jak to ugryźć). Wielkość ziem klanu zdaje się przeczyć jego znaczeniu; jednak ktokolwiek chcący udać się na ziemie Klanu Smoka musi zatrzymać się uprzednio w domu Ważki by uzyskać stosowne pozwolenie. Ich silne więzi z Klanem Smoka oraz ich tragiczna historia sprawiła, że Klan Ważki rodzi spokojnych i wytrzymałych samurajów gotowych stawić czoła niebezpieczeństwom jakie niesie przyszłość.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Sokoła',
+   mon_img: '',
+   desc: 'Podczas gdy Klan Kraba mężnie stawia czoła hordom Krain Cienia, widmo innego zagrożenia spowija Rokugan. Wojownicy Klanu Sokoła stają ramię w ramię ze swoimi kuzynami Krabami by stawić czoła wrogim duchom, które przenikają do królestwa żywych. Ich wrogami nie są potwory Krain Cienia gromadzące się pod Murem Kaiu (Koziu: nie pamiętam po polsku jak było...) lecz podstępne upiory, które terroryzują serce ziemi.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Lisa',
+   mon_img: '',
+   desc: 'Klan Lisa jest pierwszym i być może najstarszym pomniejszym klanem (co w wątpliwość poddaje Klan Modliszki), którego korzenie sięgają Klanu Ki-Rin nim rozpoczął on swoj wielką wędrówkę poza granice Rokuganu. Klan Lisa został wygnany z ziem Ki-Rin i ostatecznie osiedlił się w pokojowym Kitsune Mori, gdzie zaprzyjaźnił się z duchami lisów i zakochał się w pięknie natury. Pomimo, iż Pomniejszy Klan jest mały i dysponuje ograniczonymi zasobami, dzielni samurajowie Lisa nigdy nie wahają się stanąć do walki w słusznej sprawie.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Zająca',
+   mon_img: '',
+   desc: 'Bloodspeaker Iuchiban był maho-tsukai dysponującym epicką mocą. Przerażający szaleniec, który nieustannie zagrażał bezpiezpieczeństwu Cesarstwa. Ronin Reichin heroicznie zaryzykował swe życie by stawić czoła Iuchibanowi. Za swoją służbę został nagrodzony otrzymaniem zgody na założenie Klanu Zająca. Jego potomkowie nadal podążają tą samą ścieżką walcząc z Bloodspeakerami. Stawiają również czoła tajnej organizacji nazywanej Kolat. Klan kilkukrotnie znalazł się na granicy wymarcia - przetrwał jednak dzięki wielkiemu oddaniu sprawie.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Małpy',
+   mon_img: '',
+   desc: 'Toku był radosnym człowiekiem, zdeterminowanym by ocalić Cesarstwo w czasie wielkiego kryzysu. Służył w Armi Toturiego wraz z samurajami, którzy zostali odrzuceni przez Wielkie Klany. Lojalnie służył przez dekady Dynastii Toturi, zawsze walcząc o przywrócenie pokoju oraz w boronie Rokuganu przez wszelkim złem. Jego Pomniejszy Klan kontynuje jego wizję wykonując zadania zarządców w poszukiwaniu pokoju w Rokuganie.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Wilgi',
+   mon_img: '',
+   desc: 'Cesarze często tworzyli pomniejsze klany gdy imponowały im zdolności jednego wojownika. Klan Wilga został utworzony ponieważ rodzina ronina Tsi nieustannie wykonywała swoją pracę bez należytego uznania. Daimyo rodziny Tsi w końcu otrzymał zezwolenie na utworzenie Pomniejszego Klanu gdy stworzył Miecz Prawego Cesarza dla Dynastii Toturi, ostrze będące rezultatem pracy niezrównanego rzemieślnika.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Wołu',
+   mon_img: '',
+   desc: 'Samuraj Morito, zostali wyrzuceni z klanu Jednorożca, za zranienie cennego wierzchowca Utaku. Zgromadził on grupę towarzyszyszy, wokół swojej osoby i uczył ich technik, które poznał dzięki dziesięcioleciom spędzonym na tułaczce po Rokuganie. Ta banda obdartusów, okazała się bardzo przydatna podczas Wojny Duchów i w ramach uznania, mogła założyć pomniejszy klan Wołu. Organizacja Kolat, głęboko przeniknęła do klanu Wołu, na tyle że wojownicy tego klanu często spotykani są jako ochroniarze agentów tj oragniazcji.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Węża',
+   mon_img: '',
+   desc: 'Opowieść o klanie Węża, zaczyna się heroicznie, a kończy tragicznie. Isawa Chuda zyskał prawo do założenia własnego klanu, gdy przewidział i powstrzymał, atak maho tsukai wymierzony na życie cesarza. Niestety, podstępny stwór Shuten Doji, z czasem przejął kontrolę nad całym klanem Węża i uczynił z nich swoje marionetki. Klan Fenika unicestwił go podczas Pięciu Nocy Chańby w roku 402. Pozostali przy życiu członkowie klanu ukryli się i założycli tajny związek maho tsukai, pod nazwą Chuda i w ten sposób istnieją pod dziś dzień.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Wróbla',
+   mon_img: '',
+   desc: 'Klan Wróbla wywodzi się z ubustwa i zajmuje jałowe ziemie, pomiędzy klanami Żurawia i Kraba. Założycielem klanu był żuraw, który wiódł wytawne życie, nim został zesłany, na obcne ziemie klanu Wróbla. Niedola i trud przetrwania, uczyniły z niego nowego człowieka, dały lekcję jaką musi poznać każdy Suzume. I choć klan Wróbla, zawsze był mały i nieznaczący, jego włodaże robią co mogą by zapewnić swoim poddanym, spokój i bezpieceństwo. Czego dowodem było wstąpienie do Sojuszu Trzech, celem uchronienia mieszkańców przezd spostoszeniem wojennym.'},
+
+  {name: 'minor',
+   clan_name: 'Klan Żółwia',
+   mon_img: '',
+   desc: 'Założony po pierwszym gwałtownym, spotkaniu z gajinami, klan Żółwia jest prawie na równi z rodzinami Cesarskimi, jednocześni pozostaje oddzielony od pozostałych rodów. Ród Kasuga, wykonywał dla cesarza, najróżniejsze zlecenia i jest gotów wykonać najbardziej pokrętny rozkaz, by utrzymać pozycję cesarza. Samurajowie klanu Żułwia, to swoisty łącznik między tronem, a światem przestępczym. Będąc jednocześnie głosem pomniejszych klanów na dworze Cesarskim.'} ]
 
 families = [
   { name: 'Agasha',
@@ -348,104 +413,105 @@ families = [
 
   { name: 'Heichi',
     clan_name: 'minor',
-    small_clan_name: 'Dzik',
+    small_clan_name: 'Klan Dzika',
     desc: 'Niewielu ludzi może przetrwać zagrożenia Gór Zmierzchu bez szkód, dla swojej psychiki jednak samurajowie Klanu Dzika, byli w stanie utrzymać je przez stulecia. Są twardymi i gorzkimi ludźmi, gotowymi stawić czoła każdemu, byle tylko chronić to co dla nich ważne. Kiedy Heichi raz coś postanowi, nic nie będzie w stanie go powstrzymać.',
     bonus_attr: 'willpower',
     bonus_attr_pl: 'Siła Woli'},
 
   { name: 'Komori',
     clan_name: 'minor',
-    small_clan_name: 'Nietoperz',
+    small_clan_name: 'Klan Nietoperza',
     desc: 'Komori są rodziną Shugenja, zebrani pod flagą Klanu Nietoperza przez samego założyciela. Łączą w sobie wiele unikalnych cech, które sprawiają, że trudno jednoznacznie określić jaki jest samuraj z klanu Nietoperza. Jedyne cechy które łączą tę grupę indywialistów to, chęć do nauki i inteligencja pozwalająca przyjąć nowo zdobytą wiedzę.',
     bonus_attr: 'intelligence',
     bonus_attr_pl: 'Inteligencja'},
 
   { name: 'Toku',
     clan_name: 'minor',
-    small_clan_name: 'Małpa',
+    small_clan_name: 'Klan Małpy',
     desc: 'Założyciel rodziny Toku, przeciętny ronin, stał się Kapitanem Cesarskiej Gwardii, bohaterem Cesarstwa i ostatecznie trafił do Tengoku jako Fortuna Cnoty. Jego potomkom udzielił się charakter tego wielkiego człowieka, żyją więc ze współczuciem dla wszystkich mieszkańców Rokuganu. Członkowie rodu Toku często stają się namiestnikami by szerzyć sprawiedliwość i pokój na wszystkich ziemiech. Znani są ze swego wesołego usposobienia i dziwnego poczucia humoru, obie te cechy rzucają się w oczy już po kilku chwilach przebywania z nimi.',
     bonus_attr: 'stamina',
     bonus_attr_pl: 'Wytrzymałość'},
 
   { name: 'Fuzake',
     clan_name: 'minor',
-    small_clan_name: 'Małpa',
+    small_clan_name: 'Klan Małpy',
     desc: 'Nazwisko Fuzake zostało nadane tej rodzinie jako nagroda za wieloletnią słóżbę wobec Cesarskiego Rodu. Fuzake to Shugenja o wielkiej inteligencji, zaciekawieni życiem. Ludzie z zewnątrz uważają, że członkowie tego małego rodu są lekkomyślni i kapryśni, jednak Fuzake, nieraz udowodnili, że są odważni i wiarygodni.',
     bonus_attr: 'perception',
     bonus_attr_pl: 'Spostrzegawczość'},
 
   { name: 'Usagi',
     clan_name: 'minor',
-    small_clan_name: 'Zając',
+    small_clan_name: 'Klan Zająca',
     desc: 'Przez prawie całą swoją historię rodzina Usagi związana była z walką, znali bowiem zagrożenie, jakie niosła, ze sobą wiedza o istnieniu tajnych organizacji, takich jak Kolat czy Piewcy Krwi. Członkowie rodu Usagi, są zawsze czujni i gotowi by rozpoznać najdrobniejsze oznaki skazy i zepsucia. Niestety bardzo wielu spośród starszych członków klanu popadło w paranoję i nie ufa nikomu, zwłaszcza obcym. Młodsi członkowie są zwykle bardziej otwarci.',
     bonus_attr: 'awareness',
     bonus_attr_pl: 'Intuicja'},
 
   { name: 'Ujina',
     clan_name: 'minor',
-    small_clan_name: 'Zając',
+    small_clan_name: 'Klan Zająca',
     desc: 'Powstał w bardzo niespokojnych czasach niedługo po Drugim Dniu Gromów. Rodzina Ujina jest malutka, liczy zwykle mniej niż dwa tuziny ludzi naraz. Mimo swej niewielkiej liczebności Ujina z dumą noszą nazwisko nadane im przez Cesarza. Są wyjątkowo pragmatyczni i nie zawahają się przed najpodstępniejszymi czynami by osiągnąć to, czego klan Zająca potrzebuje.',
     bonus_attr: 'agility',
     bonus_attr_pl: 'Zręczność'},
 
   { name: 'Kasuga',
     clan_name: 'minor',
-    small_clan_name: 'Żółw',
+    small_clan_name: 'Klan Żółwia',
     desc: 'Kasuga nie są zbyt ambitni, cesarskie uznanie przewyższa wszystkie ichnie potrzeby, w tym własną sławę. Są pragmatyczni i gożcy, od lat walcząc dla sprawy jako szumowiny Cesarstwa. Są szmuglerami i złodziejami często są też bardzo brutalni, jednakże potrafią też być zdolnymi dyplomatami, kiedy klan tego potrzebuje. ',
     bonus_attr: 'perception',
     bonus_attr_pl: 'Spostrzegawczość'},
 
   { name: 'Chuda',
     clan_name: 'minor',
-    small_clan_name: 'Wąż',
+    small_clan_name: 'Klan Węża',
     desc: 'Isawa Chuda był człowiekiem o wielkim przekonaniu i mądrości a jego rodzina rozpamiętywała o jego prawości przez pokolenia. Chuda byli całkowicie lojalni wobec Cesarstwa i zwalczali zło, które zagraża jego granicom. Ich nienawiść wobec maho-tsukaj była bardzo dobrze znana a sam Klan Węża niszczył mroczne kulty z wielkim zapałem.',
     bonus_attr: 'strength',
     bonus_attr_pl: 'Siła'},
 
   { name: 'Kitsune',
     clan_name: 'minor',
-    small_clan_name: 'Lis',
+    small_clan_name: 'Klan Lisa',
     desc: ' Kitsune preferują ciszę lasu ponad zgiełk cywilizowanych miast czy nawet wsi. Są rodziną bardzo związaną ze światem duchów i będą walczyć z całą zaciekłością by bronić mieszkańców Chikushudo, Świata Zwierząt. Kitsune są bardzo niezależni, ale też bardzo pragmatyczni. Bohaterowie Kitsune zrobią wszystko co będzie trzeba by osiągnąć swoje cele, z wyjątkiem poddania swojej duszy złu.',
     bonus_attr: 'willpower',
     bonus_attr_pl: 'Siła Woli'},
 
   { name: 'Tonbo',
     clan_name: 'minor',
-    small_clan_name: 'Ważka',
+    small_clan_name: 'Klan Ważki',
     desc: ' Tonbo są prości i pokorni pomimo swojego znaczenia w Cesarstwie. Większość pracowitych członków rodziny to Shugenja, choć klan posiada też niewielką armię Bushi szkolącą się, zazwyczaj dzięki wyrobionym już koneksjom politycznym w Szkole Mirumoto. Świetnie radzą sobie w górach i często służą jako przewodnicy na ziemie Smoka.',
     bonus_attr: 'awareness',
     bonus_attr_pl: 'Intuicja'},
 
   { name: 'Morito',
     clan_name: 'minor',
-    small_clan_name: 'Wół',
+    small_clan_name: 'Klan Wołu',
     desc: 'Samurajowie z Klanu Wołu są zdeterminowani rozsławić swoje imię. Pragną zdobyć przychylność Kolatu i miejsce w jego strukturach jako żołnierze i egzekutorzy. Ich zdolności walki z siodła przewyższają wszystkich poza Jednorożcami a nawet część z nich. Morito mają uszy otwarte na szmery z półświatka i wypatrują wszystkich okazji by zwiększyć swoją potęgę.',
     bonus_attr: 'stamina',
     bonus_attr_pl: 'Wytrzymałość'},
+
   { name: 'Tsi',
     clan_name: 'minor',
-    small_clan_name: 'Wilga',
+    small_clan_name: 'Klan Wilgi',
     desc: 'Rodzina Tsi jest dość mała a jej przeznaczeniem jest sztuka kowalstwa. Ich nieprzyjemna postawa i niekiedy brak społecznej akceptacji często czynią Tsi nieprzyjaznymi, jednak ich kunszt pozostaje bezdyskusyjny. Rzadko opuszczają rodzinne strony a jeżeli już to robią to najczęściej odwiedzają ziemię rodziny Kaiu by obserwować kunszt tamtejszych mistrzów kowalstwa i inżynierii.',
     bonus_attr: 'strength',
     bonus_attr_pl: 'Siła'},
 
   { name: 'Toritaka',
     clan_name: 'minor',
-    small_clan_name: 'Sokół',
+    small_clan_name: 'Klan Sokoła',
     desc: 'Toritaka zawsze byli małą, zamkniętą wspólnotą żyjącą w pobliżu ziem klanu Kraba. Jego stereotypowi członkowie zawsze byli wysocy i niezręczni i nieustannie szlifujący swoją muskulaturę w kolejnych bitwach. Pomimo swego brutalnego wyglądu Toritaka są cisi, spokojni i zdystansowani wobec reszty rokugańskiego społeczeństwa.',
     bonus_attr: 'perception',
     bonus_attr_pl: 'Spostrzegawczość'},
 
   { name: 'Suzume',
     clan_name: 'minor',
-    small_clan_name: 'Wróbel',
+    small_clan_name: 'Klan Wróbla',
     desc: ' Suzume są pokorni, wytrwali i wyluzowani. Ich zainteresowania czynią ich jednak wyobcowanymi wśród innych mniejszych klanów. Są bardzo związani z heiminami i wuażają, że samurajowie powinni im pomagać kiedy jest taka potrzeba.',
     bonus_attr: 'awareness',
     bonus_attr_pl: 'Intuicja'},
 
   { name: 'Ichiro',
     clan_name: 'minor',
-    small_clan_name: 'Borsuk',
+    small_clan_name: 'Klan Borsuka',
     desc: 'Członkowie rodziny Ichiro są niegrzeczni i szorstcy w obyciu z innymi mieszkańcami Cesarstwa, uważają, że czyny znaczą więcej niż słowa, ponadto bardziej niż normy społeczne cenią zwykłą pragmatyczność. Członkowie rodziny zawsze są krępi i dobrze umięśnieni.',
     bonus_attr: 'strength',
     bonus_attr_pl: 'Siła'}]
@@ -938,7 +1004,7 @@ basic_primary_schools = [
   img_name: 'Ichiro_Kaagi_by_Patrick_McEvoy.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Borsuk',
+  minor_clan_name: 'Klan Borsuka',
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Założyciel klanu pochodził z rodziny Hida, nie powinno zatem być zaskoczenia, że owa szkoła wyznaje te same lub bardzo podobne zasady. Filozofia szkoły jest prosta uderz swojego przeciwnika tak mocno, by nie był w stanie skorzystać ze swoich zręcznych sztuczek. Bushi Ichiro uwielbiają zapasy oraz walkę bez broni, takie starcie świetnie podkreśla znaczenie czystej siły w pokonaniu przeciwnika. Ponadto w czystej mocy ramion widzą rozwiązanie bardzo wielu różnych problemów. Inni są szybsi lub bardziej precyzyjni, nikt jednak nie atakuje z taką siłą jak Bushi Ichiro.',
@@ -949,7 +1015,7 @@ basic_primary_schools = [
   img_name: 'Suzume_Shindo_by_Alayna_Lemme.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Wróbel',
+  minor_clan_name: 'Klan Wróbla',
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Klan Wróbla nigdy nie stanowił realnej militarnej siły jednak jego samurajowie zawsze szli do walki kiedy była taka potrzeba. Pierwsi mistrzowie miecza Klanu Wróbla byli Żurawiami pozostałości ich kunsztu pozostały w szkole do dnia dzisiejszego. Styl walki Wróbla dużo mówi o jego filozofii życia. Poświęcą tyle czasu ile tylko potrzeba by oddać perfekcyjny cios. Bushi Suzume kocha opowieści dodające mu odwagi i siły przed bitwą, używa wiedzy by dostrzec przypływy i odpływy dobrej passy w czasie bitew, wie kiedy uderzyć wolniej, a kiedy szybciej.',
@@ -960,7 +1026,7 @@ basic_primary_schools = [
   img_name: 'Toritaka_Genzo_by_Anthony_Grabski.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Sokół',
+  minor_clan_name: 'Klan Sokoła',
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Bushi ze szkoły Toritaka doskonalą się w sztuce niszczenia potworów przybyłych do Rokuganu ze Światów Duchowych. Ich styl walki został stworzony tak by przygotować adepta na każdą niespodziankę ze strony nowego potwora jaką ten mógłby im zgotować. Niestety czyni to ich wyjątkowo wyspecjalizowanymi wojownikami którzy znacznie gorzej radzą sobie ze zwykłymi ludźmi. Bushi Toritaka są szkolenia do skutecznego uderzania potworów i omijania ich obrony, używają mieczy i włóczni by odnaleźć ich słabe punkty i bić w nie tak długo jak będzie trzeba. Przez lata treningów Toritaka nauczyli się różnych tricków pomagających im w wypełnianiu zadania.',
@@ -972,7 +1038,7 @@ basic_primary_schools = [
   img_name: 'Tsi_Hayamizu_by_Andy_Hepworth.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Wilga',
+  minor_clan_name: 'Klan Wilgi',
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc: 'Tsi było imieniem starożytnego gaijińskiego kowala który zaimponował Drugiemu Cesarzowi, Hantei Genji swoimi dziełami. Cesarz ogłosił, że człowiek ten musi być błogosławionym przez fortuny i rozkazał wszystkim by traktować go tak jakby pochodził z Rokuganu. Stulecia później młody ronin i początkujący kowal przyjąwszy zapomniane już przez historię imię zaimponował swym kunsztem Cesarzowi Hantei XXX.Nauki które odbierają uczniowie szkoły Tsi są unikatowe pod każdym względem i podyktowane zawsze zwiększeniu ich zdolności w tworzeniu broni i pancerzy. Uczą się walczyć tylko po to by wiedzieć jak mistrzowie będą obchodzić się z bronią którą tworzą i dopasowac ją możliwie jak najlepiej. Mają mały wpływ na życie społeczne i polityczne Cesarstwa i najchętniej omijają te sprawy szerokim łukiem.',
@@ -983,7 +1049,7 @@ basic_primary_schools = [
   img_name: 'Morito_Inoue_by_John_Donahue.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Wół',
+  minor_clan_name: 'Klan Wołu',
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Klan Wołu zdobył swoje zdolności podczas walki z armią pełnych mądrości duchów przodków. Krótko potem zdobyli dobrą reputację wśród Bushi z całego Cesarstwa. Ogrom wśród wojsk Wołu stanowi ciężka kawaleria stworzona do szybkiego niszczenia szyków wroga. Bushi Morito dążą do zmaksymalizowania korzyści wynikających z przewagi walki w siodle. Uczą się skutecznie tratować przeciwników i błyskawicznie poruszać po polu bitwy. Najczęściej posługują się bronią drzewcową jednak są w stanie dostosować się do każdej sytuacji na polu bitwy.',
@@ -994,7 +1060,7 @@ basic_primary_schools = [
   img_name: 'kasuga_aizawa_by_jake_murray.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Żółw',
+  minor_clan_name: 'Klan Żółwia',
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Ród Kasuga jest tak samo wierny rozkazą cesarskim jak każdy inny klan w Rokuganie, choć przyglądając się technikom klanu Żółwia, można odnieść inne wrażenie. Klan wykorzystuje wszelkie okazje zdobycia przewagi, wliczając w to morderstwa i kradzieże, blisko związani są również, z wieloma organizacjami przestępczymi w całym Rokuganie. Jednym z zadań klau Żółwia, jest monitorowanie tych organizacji, w celu wykrycia ewentualnego zagrożenia dla Cesarstwa. Drugą ważną funkcją jest utrzymywanie kontaktów oraz handel z obcokrajowcami, tak by z wyprzedzeniem wykryć zagrożenie z ich strony. By sprawnie wykonywać swoje obowiązki, szkoła Szmuglerów Kasuga, szkoli ludzi bezwzględnych, posiadających rozległą wiedzę o tym, jak poruszać się w świecie przestępców. Dzięki specyficznej roli, adepci tej szkoły, posiadają bardzo różnych sojuszników, którzy mogą okazać się pomocni w różnych sytuacjach.',
@@ -1005,7 +1071,7 @@ basic_primary_schools = [
   img_name: 'Usagi_Kashira_by_Malcolm_McClinton.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Zając',
+  minor_clan_name: 'Klan Zająca',
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Jak na pomniejszy klan, klan Zająca, przetrwał wiele bitew. Klan brał udział w wojnie przeciw wrogom Cesarstwa, która szalała przed wiekami i nikt nie widział jej końca. Konsekwencją tego, Szkoła Bushi Usagi, jest jedną z lepszych akademii spośród Mniejszych Klanów. Styl Zająca udoskonalał się w ogniu walki, oddzielając przydatne umiejętności, od tych tylko przydatnych na pozór. Szkoła Bushi Usagi stawia na wysportowanie samurajów i przekucie tej cechy w zaletę na polu bitwy. Styl Zająca uczy, jak poruszać się szybciej niż przeciętny samuraj oraz jak, rzucić się do zadania silnego ciosu i zaraz potem uciec z zasięgu jego kontrataku. A nieprzygotowany przeciwnik, bardzo szybko staje się przytłoczony atakami z każdej strony.',
@@ -1016,7 +1082,7 @@ basic_primary_schools = [
   img_name: 'Toku_Butaka_by_Glen_Osterberger.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Małpa',
+  minor_clan_name: 'Klan Małpy',
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Klan Małpy nosi błogosławieństwo Cesarskiego Rodu, ma też dostęp do doświadczonych mistrzów pola bitwy. Setki roninów - nauczycieli przekroczyły drzwi dojo gotowi, by przekazać wiedzę ochotnikom. Te różnorodne umiejętności zostały połączone w jeden, spójny styl walki, łączący najlepsze aspekty wszystkich nauk udzielonych w dojo klanu. Szkoła Bushi Toku uczy technik pomagających w walce z wieloma przeciwnikami. Toku uczą się jak trzymać zimną krew, stając naprzeciw przytłaczającej przewadze wroga. Bushi Toku, ćwiczy swoją koncentrację i atakuje z nadludzką precyzją i spokojem, co na polu bitwy jest ich najsilniejszą bronią.',
@@ -1027,7 +1093,7 @@ basic_primary_schools = [
   img_name: 'Heichi_Tochiko_by_Sergio_Camarena.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Dzik',
+  minor_clan_name: 'Klan Dzika',
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Mroczne niebezpieczeństwa zawsze zagrażały Klanowi Dzika, dlatego Heichi musieli nauczyć się stawiać im czoła. Klan Dzika musiał być gotowy by się bronić i stworzył techniki które dawały mu przewagę w walce. Nauczyli się jak przyjmować najgorsze ciosy swoich wrogów i walczyć dalej. Bushi Heichi zawsze słynęli ze świetnej obrony i szalonych szarż mrożących krew w żyłach. Szkoła Bushi Heichi kładzie nacisk na broń rzadko spotykaną w sercu Rokuganu, jest nią Mai Chong. To włócznia o charakterystycznym kształcie przypominającym trójząb o zaokrąglonych bokach, kompletnie różną od innych broni drzewcowych. Bushi Heichi potrafią przy jej pomocy niszczyć swoich wrogów, jednocześnie trzymając właściwy dystans. Ta broń idealnie pasuje do defensywnego stylu walki Bushi Dzika który polega na wyczuciu, odpowiedniego momentu by wybić przeciwnika z rytmu.',
@@ -5698,7 +5764,52 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                 {rank_name: 'Oczy Cesarza', rank_desc: 'Heralidzi Miya, służą jako posłańcy, obsarwatorzy pokojowi oraz rozjemcy między zwaśnionymi stronami. Dlatego często są celem ataków innych dworzan i przechodzą specjalne szkolenie by oprzeć się wpływom innych i pozostać wiernym Cesarzowi. Postać dodaje poziom swojego honoru do wszystkich testów Etykiety(Grzeczność) by oprzeć się wpływom innym osób na siebie.', rank_lvl: 2 },
                 {rank_name: 'Ręka Cesarza', rank_desc: 'Pokojowa aura heralda Miya, oddziałowuje już na honorowych samurajów z taką mocą, że mają trudność zaatakować wysłannika Cesarza. Na początku potyczki lub pod koniec każdej rundy, postać może wydaćPunkt  Pustki jako akcja prosta, by uniemożliwić wybranemu rokugańczykowi, który uznaje władzę Cesarza, przed zaatakowaniem Cię, do końca następnej tury, wybrana postać, może jednak podjąć próbę pojmania lub unieruchomienia Cię. Technika ta działa tylko gdy postać nie bierze czynnego udziału w potyczce lub pojedynku.', rank_lvl: 3 },
                 {rank_name: 'Błogosławieństwo Cesarza', rank_desc: 'Na tej randze, herald Miya wyszkolił już na tyle silny charakter, że może narzucić innym żądanie zaprzestania przemocy. Technikę tę można użyć tyle razy w ciągu sesji, ile wynosi ranga postaci  w tej szkole. Podobnie jak w przypadku techniki dworzan Otomo, technika ta działa tylko na honorowych samurajów, o poziomie honoru conajmniej 1,0, którzy uznają zwierzchnictwo Cesarza. By wykorzystać tę technikę, postać postać musi wykonać Pełną Akcję i głośno domagać się zaprzestania walk ("Ta walka, skończy się w tej chwili, w imię Cesarza!") i wykonania testu przeciwstawnego "Dworskie(Retoryka)/Intuicja", przeciw "Etykieta(Grzecność)/Siła Woli" wszystkich zgromadzonych, którzy usłyszą głos heralda. Każda postać która przegra rzut, musi natychmiast zaprzestać walki i nie podejmie jej dopuki nie otrzyma obrażeń lub nie otrzyma pozwolenia od heralda. Technika trwa jedną minutę i może zostać użyta ponownie na te same cele, jeśli wygaśnie lub cel oprze się jej działaniu. Technika ta działa na wszystkich wrogów i sojuszników.', rank_lvl: 4 },
-                {rank_name: 'Chwała Cesarza', rank_desc: 'Herald na tej randze, jest ostoją spokoju i dyplomacji. Wykonując test umiejętności Dworski lub Etykieta, przeciw postaci o poziomie honoru conajmniej 1.0,  może dodać premię +5z0 do rzutu.', rank_lvl: 5} ] } ]
+                {rank_name: 'Chwała Cesarza', rank_desc: 'Herald na tej randze, jest ostoją spokoju i dyplomacji. Wykonując test umiejętności Dworski lub Etykieta, przeciw postaci o poziomie honoru conajmniej 1.0,  może dodać premię +5z0 do rzutu.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Ichiro', school_ranks: [ {rank_name: 'Zrozumieć Góry', rank_desc: 'Bushi musi nauczyć się walczyć na ciężkim terenie, jakim jest północny mur oraz nauczyć się, że siła jest receptą na wszelkie zło. Bushi może przerzucić dowolny test siły, jednak musi zaakceptować wynik drugiego rzutu. Walcząc w niekorzystnym terenie, postać nie otrzymuje żadnych negatywnych modyfikatorów, natomiast walcząc, w terenie trudnym, otrzymuje tylko połowę normalnej kary do rzutów.', rank_lvl: 1},
+                {rank_name: 'Siła Borsuka', rank_desc: 'Borsuk nauczył się jak uderzyć z pełną macą jaką fizycznie jest w stanie wytworzyć jego ciało i zniszczyć swoich wrogów. Tyle razy w ciągu sesji ile wynosi twoja siła możesz przerzucić dowolny rzut na obrażenia i wybrać lepszy wynik.', rank_lvl: 2 },
+                {rank_name: 'Miażdżący Cios', rank_desc: 'Doświadczony Borsuk wie jak wzbudzić strach siłą swoich rąk. Bushi zawsze zignoruje pancerz przeciwnika zaś walcząc gołymi dłońmi dodatkowo ignoruje 1 punkt jego redukcji.', rank_lvl: 3 },
+                {rank_name: 'Upadające Głazy', rank_desc: 'Bushi uczy się jak uderzać przeciwników śmiertelną lawiną ciosów. Używając broni samurajskiej lub gołych pięści Bushi może atakować jako akcja prosta zamiast złożonej.', rank_lvl: 4 },
+                {rank_name: 'Powracający cios', rank_desc: 'Ostatnią lekcją Borsuka jest to, że najefektywniejszym ciosem jest nie najszybszy lecz najsilniejszy. Podczas walki bushi może zredukować wynik swojego rzutu na inicjatywę maksymalnie o 20, w zamian za co dostaje dodatkowe niezatrzymywane kości do rzutów na atak i obrażenia w czasie pierwszych dwóch rund walki.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Suzume', school_ranks: [ {rank_name: 'Wszystko w Swoim Czasie', rank_desc: 'Suzume obserwują rytm walki by wybrać odpowiedni moment by uderzyć, na początku walki, zanim ktokolwiek się zdeklaruje Bushi może zredukować swoją inicjatywę o 5 by uzyskać dodatkowe 1z0 do każdego rzutu na atak i obrażenia. Bonus działa tylko przez jedną rundę po czym Inicjatywa powraca do poprzedniego stanu zaś Bushi w każdej rundzie będzie mógł ją zredukować ponownie.', rank_lvl: 1},
+                {rank_name: 'Czystość Chi', rank_desc: 'Ciało Bushi wypełnione jest pogardą wobec pokus wchodzących w konflikt z Bushido. Poziom trudności trafienia cię rośnie o 5 dla nieludzi oraz ludzi których honor jest niższy od twojego.', rank_lvl: 2 },
+                {rank_name: 'Mądrość jest Najlepszą Bronią', rank_desc: 'Bushi Suzume jest doskonałym bajarzem. Może wydać punkt pustki by dodać swój honor do dowolnego rzutu na występ lub wiedzę.', rank_lvl: 3 },
+                {rank_name: 'Cichy Duch, Pewny Cios', rank_desc: 'Spokój wróbla jest dla niego powodem do samozadowolenia. Mogą wykonywać atak jako ację prostą zamiast akcji złożonej o ile jest to zwykły atak.', rank_lvl: 4 },
+                {rank_name: 'Powoli ale Zabójczo', rank_desc: 'Bushi Suzume uderza kiedy przeciwnik najmniej się tego spodziewa nawet, jeżeli w tym celu musi przyjąć jego cios. W czasie pierwszej rundy po obraniu pozycji pojedynkowej dodajesz 10 do rzutów na atak i obrażenia. Ten bonus nie działa podczas pojedynku Iaijutsu.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Toritaka', school_ranks: [ {rank_name: 'Sokole Oko', rank_desc: 'Bushi Toritaka musi być w pełni świadom swojego otoczenia by skutecznie walczyć z wrogiem który pojawić się może zewsząd. Dodaj 1z0 do wszystkich rzutów na spostrzegawczość i umiejętności na niej oparte. Dodatkowo walcząc z potworami z Królestw Duchów (Z Oni i Gaki włącznie) dodaj 1z0 do wszystkich rzutów na obrażenia.', rank_lvl: 1},
+                {rank_name: ',Podczas Lotu Sokoł', rank_desc: 'Dzięki swojemu treningowi Toritaka są w stanie wyczuć emanacje pobliskich duchów tak jakby były częścią świata śmiertelników. Możesz spróbować wykryć obecność pobliskich duchów dzięki testowi Spostrzegawczości o PT równym Powietrzu Ducha razy 5.', rank_lvl: 2 },
+                {rank_name: 'Skrzydła Sokoła', rank_desc: 'Toritaka uderzają precyzyjnie jednocześnie trzymając dystans do swych przeciwników. Możesz atakować jako akcja prosta zamiast akcji złożonej przy użyciu broni samurajskiej lub włóczni.', rank_lvl: 3 },
+                {rank_name: 'Czujny i Silny', rank_desc: 'Duchy mogą używać różnych sztuczek by zdezorientować swoich przeciwników jednak Toritaka widzą to co jest ukryte. Możesz wydać punkt pustki by zanegować wszystkie mroczne lub wzrokowe modyfikatory. Ten bonus trwa przez kolejne dwie rundy.', rank_lvl: 4 },
+                {rank_name: 'Pazury Sokoła', rank_desc: 'Nic nie powstrzyma Sokoła przed trafieniem w cel który sobie obrał. Twój atak może ominąć do 5 punktów redukcji celu (jeśli jakieś ma) a dodatkowo walcząc z duchami możesz wydać punkt pustki jako akcję darmową by na czas 1 rundy obniżyć redukcję celu o 10.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Kowali Tsi', school_ranks: [ {rank_name: 'Narzędzia Fortun', rank_desc: 'Tsi poświęcają życie dążąc do perfekcji w sztuce młota i kowadła. Wszystkie umiejętności rzemieślnicze są mechanicznie traktowane jakby były umiejętnościami szkolnymi. Kiedy używasz jednej z nich dostajesz 1pkt chwały za każdy pomyślnie wykonany przedmiot i 1 za każde 5pkt które przebiło bazowy PT. Efekt działa tylko kiedy PT wynosi przynajmniej 10+twoja ranga razy 5.', rank_lvl: 1},
+                {rank_name: 'Błogosławieństwo Tsi Xing Guo', rank_desc: 'Kowale Tsi pragną naśladować fortunę stali, kiedy nosisz lub używasz zgodnie z przeznaczeniem przedmiotu który sam stworzyłeś dostajesz bonus +2z1 przy wydaniu pkt pustki. Dodatkowo jeżeli przedmiot który stworzyłeś postanawiasz ofiarować w prezencie zarówno ty jak i odbiorca dostajecie ilość pkt. Chwały równą twojej randze.', rank_lvl: 2 },
+                {rank_name: 'Z Dedykacją Twórcy', rank_desc: 'Tsi znają wartość wszystkieg, co stworzą na lata, zanim owa rzecz opuści ich kuźnie. Kiedy pracujesz, poziom trudności rozeznania ile czasu potrzeba na stworzenie owego przedmiotu zmniejsza się o połowę. Kiedy ktoś w twojej obecności używa przedmiotu który stworzyłeś możesz wykonać akcję pełną by zapewnić owemu człowiekowi bonus do rzutu równy Xz1 gdzie X jest twoją rangą w szkole Tsi. Przedmiot musi być używany zgodnie z przeznaczeniem i w połączeniu z jakąś umiejętnością.', rank_lvl: 3 },
+                {rank_name: 'Wyczerpująca Odpowiedź', rank_desc: 'Od każdego kowala Tsi oczekuje się, że będzie potrafił przetestować jakość swoich wyrobów. Możesz wydać pkt. Pustki jako akcję prostą by móc wykonać atak jako akcję prostą zamiast akcji złożonej. Ten bonus trwa tyle rund ile wynosi twoja ranga.', rank_lvl: 4 },
+                {rank_name: 'Niebiańska Stal', rank_desc: 'Przedmioty tworzone przez mistrzów klanu Wilgi znajdują rywali tylko w potężnych arcydziełach kowali Kaiu. Raz dziennie na zakończenie procesu tworzenia dowolnej broni możesz wydać wszystkie punkty pustki by stworzyć świętą broń (patrz zaleta) znaną jako ,,Broń Tsi i może posiadać jedną z wymienionych możliwości: wyważona (+1z0 do ataku),  szybka (+5 do inicjatywy), niezniszczalna, za zgodą MG utalentowani kowale Tsi mogą zrobić broń z elementami jadeitu pozwalającą ranić potężne Oni.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Morito', school_ranks: [ {rank_name: 'Dziedzictwo Czterech Wiatrów', rank_desc: 'Żołnierze Wołu walczą w jedności ze swym wierzchowcem, na początku walki możesz dodać 1z0 do inicjatywy jeżeli jesteś konno, dodatkowo przez całą walkę przysługuje ci bonus 1z0 do ataku o ile jesteś konno.', rank_lvl: 1},
+                {rank_name: 'Wiatr Uderza z Wielu Stron', rank_desc: 'Bushi Morito widział już każde oblicze wojny, wybierz umiejętności Bugei w ilości równej twojej randze, do każdej z nich dostajesz bonus +1z0.', rank_lvl: 2 },
+                {rank_name: 'Furia Gromów', rank_desc: 'Bushi Morito uderza z prędkością szarżującego konia, Walcząc konno możesz atakować jako akcję prostą zamiast akcji złożonej.', rank_lvl: 3 },
+                {rank_name: 'Ostrze Wiatru', rank_desc: 'Bushi Morito jest szybszy niż jego wrogowie mogą przewidzieć. Raz w czasie walki możesz wydać punkt pustki jako akcję darmową by zrównać swoją inicjatywę z innym uczestnikiem potyczki. To może być sojusznik lub wróg. Po użyciu tej techniki twoja inicjatywa spada o 5 z każdą kolejną rundą walki, aż do zakończenia zdarzenia.', rank_lvl: 4 },
+                {rank_name: 'Szybcy i Wściekli', rank_desc: 'Bushi Morito wjeżdżając na pole bitwy tratują każdego kto nie zdąży uciec. Przeciwko przeciwnikom z mniejszą inicjatywą otrzymujesz bonus równy 2z2 do wszystkich ataków i rzutów na obrażenia.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Szmuglerów Kasuga', school_ranks: [ {rank_name: 'Droga Żółwia', rank_desc: 'Żółwie rutynowo zadają się z niższymi klasami rokugańskiego społeczeństwa. Często zapuszczają się też do obcych portów, gdzie załatwiają interesy z Gaijinami, piratami i innym szumowinami. Wykonują też prace które większośc samurajów uznałaby za odrażające. Ponadto są umiejętnymi kupcami, co jest nieuniknioną konsekwencją bycia szmuglerem. Tworząc postać możesz wybrać jeden gaijiński język jako dodatek do każdej nabytej zalety , "Inny Język". Nie tracisz honoru za używanie umiejętności niegodnych ()ani chwały za umiejętności kupieckie) w miejscu publicznym tak długo, jak jest to częścią zadania dla klanu. W kontaktach z heiminami i hininami dostajesz bonus 2z0 do umiejętności społecznych.', rank_lvl: 1},
+                {rank_name: 'Skorupa Żółwia', rank_desc: 'Większość samurajów Rokuganu łży z Żółwi, za ich niesmaczne zachowania i związki ze zwykłymi ludźmi i gaijinami. Każdy z nich wie jednak, że mają oni specjalne pozwolenia, środki i patronat Cesarza. Każdy klan lub samuraj który fizycznie cię zaatakuje lub otwarcie znieważy bez twojej prowokacji (decyzja MG) natychmiast traci ilość punktów honoru równą dwukrotności twojej rangi.', rank_lvl: 2 },
+                {rank_name: 'Oczy Cesarza', rank_desc: 'Żółwie słóżą jako szpiedzy i agenci Cesarza, są praktykami najgorszych taktyk i metod. Kiedy działasz w imieniu klanu możesz rzucić dodatkową ilością niezatrzymywanych kości równą swojej randze w dowolnym teście umiejętności niegodnej w której posiadasz przynajmniej jeden poziom. Tyczy się to równiesz szkolnych umiejętności które są traktowane jak niegodne (np. Szczerość (Oszustwo)). Bonus ten nie współdziała z zaletami i technikami imitującymi umiejętności niegodne (np. zaleta Sprytny).', rank_lvl: 3 },
+                {rank_name: 'Ręka w rękę', rank_desc: 'Żółwie działają w bliskiej współpracy ze zwykłymi mieszkańcami cesarstwa, ludźmi których inni samurajowie ignorują tak bardzo jak to możliwe. Daje im to dostęp do informacji których inni samurajowie nie są w stanie pozyskać. Raz na sesję jeśli posiadasz dostęp do lokalnych Heiminów lub Hininów po udanym teście Intuicji / Wiedzy: Półświatek możesz uzyskać dostęp do odrobiny przydatnych informacji których nie byłbyś w stanie pozyskać w inny sposób.', rank_lvl: 4 },
+                {rank_name: 'Uśmiech Żółwia', rank_desc: 'Kończąc trening szmugler Żółwia jest w stanie przekraczać własne limity w dążeniu do przebiegłych, celów swojego klanu, słóżąc Cesarzowi bez rozkazu. Wykonując rzut na jedną z sześciu sprecyzowanych umiejętności szkolnych ilość podbić które możesz wykonać nie jest limitowana przez twoją pustkę. Tyle razy na sesję ile wynosi twoja pustka możesz otrzymać bonus równy 5z0 do dowolnego testu umiejętności szkolnej. Ta własność współpracuje z techniką rangi trzeciej.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Usagi', school_ranks: [ {rank_name: 'Szybkość Zająca', rank_desc: 'Zające są znane dzięki walce z szybkością i zręcznością zwierzęcia, od którego pochodzi nazwa klanu. W każdej sytuacji, w której masz przestrzeń do uniku, skoku lub innego manewru (Decyzja MG), możesz dodać swoje wysportowanie do poziomu trudności trafienia cię, chyba że wykonujesz pełny atak lub przyjmujesz pozycję do pojedynku. Kiedy ustalasz jak daleko możesz się przemieścić w czasie tury, twoja woda, jest traktowana jakby była o 1 większa.', rank_lvl: 1},
+                {rank_name: 'Skok Zająca', rank_desc: 'Bushi Zająca nauczył się, jak wykonać potężny atak z wyskoku, którym może zagrozić każdemu przeciwnikowi. Podczas pełnego ataku możesz skoczyć i uderzyć przeciwnika w odległości, do 4,5 metrów nie deklarując akcji ruchu. Wszystkie twoje ataki w tej turze muszą być skierowane w tego właśnie przeciwnika.', rank_lvl: 2 },
+                {rank_name: 'Szybki jak Błyskawica', rank_desc: 'Szybkość i i zręczność Zająca, pozwala mu uderzać błyskawicznie i zaciekle. Uderzając bez broni, nożem lub bronią samurajską, możesz atakować jako akcja prosta, zamiast akcji złożonej.', rank_lvl: 3 },
+                {rank_name: 'Kopniak Zająca', rank_desc: 'Bushi ze szkoły Usagi, nauczył się nie tylko jak szybko uderzać, lecz także jak unikać, zbliżając się przy tym do innych przeciwników. Możesz teraz używać techniki z drugiej rangi wykonując zwykły atak zamiast pełnego. Jeżeli jednak zdecydujesz się wykorzystać pełny atak możesz wykorzystać swój drugi cios przeciwko innemu wrogowi w zasięgu 4,5 metra.', rank_lvl: 4 },
+                {rank_name: 'Styl Reichina', rank_desc: 'Ostatnią lekcją Szkoły Zająca jest uwolnienie furii skoków, fint i ataków z każdej ze stron, które dezorientują przeciwnika. Możesz wykonać manewr Finty, wykonując tylko 1 podbicie, zaś dodatkowe obrażenia nie są ograniczone przez iloczyn twojej rangi i 5.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Toku', school_ranks: [ {rank_name: 'Lekcja Toku', rank_desc: 'Bushi klanu Małpy przetrwają, nawet gdy przeciwnik ma dużą przewagę. Dodajesz 1z0 do wszystkich rzutów o PT 25 lub wyższym, także rzutów na trafienie. Dodatkowo twoja kara wynikająca z ran na każdym poziomie jest zmniejszona o twoją siłę woli i podwojoną rangę.', rank_lvl: 1},
+                {rank_name: 'Siła Jednego Człowieka', rank_desc: 'Jako członkowie bardzo nielicznego klanu, bushi Toku jest zmuszony walczyć, z przewarzającym liczebnie przeciwnikiem. Stając na przeciw wielu wrogom lub przeciwnikowi o wyższej randze dodajesz 1z1 do wszystkich rzutów na obrażenia.', rank_lvl: 2 },
+                {rank_name: 'Odwaga Ponad Wszystko', rank_desc: 'Bushi Toku zaklina się na odwagę założyciela klanu, by przyspieszyć swój atak, walcząc w zwarciu możesz atakować jako akcja prosta zamiast akcji złożonej.', rank_lvl: 3 },
+                {rank_name: 'Twój Własny Los', rank_desc: 'Bushi Toku uczy się jak unikać najgorszych ciosów, kiedy otrzymujesz obrażenia możesz wydać punkt pustki by odrzucić dwa najwyższe wyniki z rzutu na obrażenia nawet, jeżeli spowoduje to zmniejszenie zatrzymywanych kości. Nie można zejść poniżej 1z1.', rank_lvl: 4 },
+                {rank_name: 'Fortuny Sprzyjają Śmiertelnikom', rank_desc: 'Bushi Toku zbiera teraz żniwo swojej wielkiej wytrwałości. Raz na rundę możesz wydać punkt pustki by przerzucić dowolny rzut. Ponadto do nowego rzutu dostajesz bonus 2z1. Możesz wybrać czy chcesz zachować stary wynik czy przyjąć nowy.', rank_lvl: 5} ] },
+  {school_name: 'Szkoła Bushi Heichi', school_ranks: [ {rank_name: 'Szarża Dzika', rank_desc: 'Atak bushi z klanu Dzika może paść z każdej strony i bez ostrzeżenia. Jeżeli jesteś w postawie pełnego ataku możesz przygotować broń średniego rozmiaru lub włócznię jako akcję darmową. Kiedy walczysz włócznią twoje ataki zadają dodatkowe 0z1 obrażeń.', rank_lvl: 1},
+                {rank_name: 'Siła Przeciwnieństwa', rank_desc: 'Klan Dzika wyspecjalizował się w używaniu włóczni, zwłaszcza Mai Chong, dzięki temu są w stanie pochwycić fragmenty ubrań lub pancerzy swoich przeciwników czyniąc ich bezbronnymi. Możesz wykonać 2 podbicia by pochwycić wroga przy pomocy Mai Chong lub 3 by zrobić to każdą inną', rank_lvl: 2 },
+                {rank_name: 'Szybkość Dzika', rank_desc: 'Bushi uczy się jak uderzać z szybkością godną zwierzęcia z monu jego klanu. Kiedy używasz włóczni możesz atakować jako akcja prosta zamiast akcja pełna.', rank_lvl: 3 },
+                {rank_name: 'Gniew Dzika', rank_desc: 'Tak jak prawdziwy dzik, bushi z klanu Dzika, nie przestaje walczyć nawet jeśli jest śmiertelnie ranny. W czasie walki możesz wydać punkt pustki, by zredukować karę wynikającą z odniesionych ran o jeden poziom. Efekt trwa do końca walki.', rank_lvl: 4 },
+                {rank_name: 'Po Drugiej Stronie Gór', rank_desc: 'Ostatnią lekcją w szkole Heichi jest kontrola własnej furii i wyzwolenie jej w najmniej spodziewanym momencie. W trakcie pełnej obrony, możesz wykonać normalny atak jako darmową akcję używając włóczni lub broni samurajskiej. Dodatkowo zyskujesz +2z0 do rzutu na atak.', rank_lvl: 5} ] } ]                
 
 @shugenja_school_ranks = [
   { school_name: 'Szkoła Shugenja Isawa', school_rank: { rank_name: 'Dar Isawy: ', rank_desc: 'Postać uzyskuje darmowe podbicie do wszystkich czarów ze swojej specjalizacji.'} },
@@ -6206,7 +6317,7 @@ def join_school_with_ranks(object, rank_array)
       if school_object.class == BasicPrimarySchool
         school[:school_ranks].each do |rank|
           school_object.school_ranks.create(name: rank[:rank_name], desc: rank[:rank_desc],
-                                            rank_lvl: rank[:value] || 1 )
+                                            rank_lvl: rank[:rank_lvl] || 1 )
         end
       else
         school_object.create_school_rank(name: school[:school_rank][:rank_name], desc: school[:school_rank][:rank_desc])
@@ -6231,7 +6342,11 @@ Family.destroy_all
 not_valid_names(Family, families)
 clans.each do |clan|
   families.each do |family|
-    clan.families.create(family) if family[:clan_name] == clan.name
+    if family[:clan_name] == 'minor'
+      clan.families.create(family) if family[:small_clan_name] == clan.clan_name
+    else
+      clan.families.create(family) if family[:clan_name] == clan.name
+    end
   end
 end
 
@@ -6270,13 +6385,25 @@ not_valid_names(BasicShugenjaSchool, basic_shugenja_schools)
 not_valid_names(BasicMonkSchool, basic_monk_schools)
 clans.each do |clan|
   basic_primary_schools.each do |school|
-    clan.basic_primary_schools.create(school) if school[:clan_name] == clan.name
+    if school[:clan_name] == 'minor'
+      clan.basic_primary_schools.create(school) if school[:minor_clan_name] == clan.clan_name
+    else
+      clan.basic_primary_schools.create(school) if school[:clan_name] == clan.name
+    end
   end
   basic_shugenja_schools.each do |school|
-    clan.basic_shugenja_schools.create(school) if school[:clan_name] == clan.name    
+    if school[:clan_name] == 'minor'
+      clan.basic_shugenja_schools.create(school) if school[:minor_clan_name] == clan.clan_name
+    else
+      clan.basic_shugenja_schools.create(school) if school[:clan_name] == clan.name    
+    end
   end
   basic_monk_schools.each do |school|
-    clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
+    if school[:clan_name] == 'minor'
+      clan.basic_monk_schools.create(school) if school[:minor_clan_name] == clan.clan_name
+    else
+      clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
+    end
   end
 end
 
