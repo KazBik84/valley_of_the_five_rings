@@ -4,9 +4,7 @@
   %ul.no_dot
     %li.side_panel_li{ id: 'close_panel' }
       %span
-        Zamknij mnie
-
-  %ul.no_dot
+        Zamknij mnie  
     %li.side_panel_li{ id: 'clans_panel_button' }
       %span
         Klany
@@ -24,8 +22,7 @@
   %ul.no_dot
     %li.side_panel_li{ id: 'close_clans_panel'}
       %span
-        Zamknij klany
-  %ul.no_dot
+        Zamknij klany  
     = link_to legendopedia_show_clan_path( clan_name: 'imperial') do
       %li.side_panel_li{ id: 'imperial' }
         %span
@@ -74,8 +71,8 @@
 .side_panel{ id: 'spells_panel'}
   %ul.no_dot
     %li.side_panel_li{ id: 'close_spells_panel'}
-      Zamknij Czary
-  %ul.no_dot
+      %span
+        Zamknij Czary  
     =link_to legendopedia_show_spells_path( element: 'fire') do
       %li.side_panel_li
         %span
@@ -103,9 +100,9 @@
 
 .side_panel{id: 'skills_panel'}
   %ul.no_dot
-    %li.siede_panel_li{ id: 'close_skills_panel'}
-      Zamknij Umiejętności
-  %ul.no_dot
+    %li.side_panel_li{ id: 'close_skills_panel'}
+      %span
+        Zamknij Umiejętności  
     =link_to legendopedia_show_skills_path( sphere: 'Godna') do
       %li.side_panel_li
         %span
@@ -125,13 +122,13 @@
 
 .side_panel{id: 'traits_panel'}
   %ul.no_dot
-    %li.siede_panel_li{ id: 'close_traits_panel'}
-      Zamknij Zalety i Wady
-  %ul.no_dot
+    %li.side_panel_li{ id: 'close_traits_panel'}
+      %span
+        Zamknij Zalety i Wady  
     =link_to legendopedia_show_traits_path( trait_kind: 'Zaleta') do
       %li.side_panel_li
         %span
-        Zalety
+          Zalety
     =link_to legendopedia_show_traits_path( trait_kind: 'Wada') do
       %li.side_panel_li
         %span
