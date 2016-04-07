@@ -1288,6 +1288,7 @@ basic_shugenja_schools = [
   outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, 3 koku.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Wody, 1 Ognia'},
+  
   {name: 'Szkoła Shugenja Chuda',
   img_name: 'Chuda_shugenja_by_Jaime_Jones.jpg',
   clan_name: 'spider',
@@ -1299,6 +1300,7 @@ basic_shugenja_schools = [
   outfit: 'Szaty, Nóż, Tuba na zwoje, Zestaw podróżny, 3 koku.',
   affinity_deficiency: 'Shugenja Chuda posiadają przychylność rzucając wszystkie czary Maho nie opierające się na Pustce, jako ułomność gracz wybiera jeden żywioł nie będący Pustką i w nim ma ułomność, rzucając czary nie będące maho.',
   spells: '3 czary Maho z wybranego żywioło , 2 czary Maho żywiołu w którym postać nie posiada ułomności, 1 czar Maho żywiołu w którym postać nie posiada ułomności.'},
+  
   {name: 'Szkoła Shugenja Soshi',
   img_name: 'Soshi_shugenja_by_Matt_Zeilinger.jpg',
   clan_name: 'scorpion',
@@ -1310,6 +1312,7 @@ basic_shugenja_schools = [
   outfit: 'Szaty, Wakizashi, Nóż, Tuba na zwoje, Zestaw podróżny, 5 koku.',
   affinity_deficiency: 'Powietrze/Ziemia',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 2 Ognia, 1 Wody'},
+  
   {name: 'Szkoła Shugenja Yogo',
   img_name: 'Yogo_shugenja_by_Jorge_Matar.jpg',
   clan_name: 'scorpion',
@@ -1326,6 +1329,7 @@ basic_shugenja_schools = [
           Ziemia: Pancerz Ziemi, Odwaga Siedmiu Gromów, Siła Duszy, Całość Świata
           Ogień: Zgaszenie, Ogień Czystości, Bitewny Zgiełk, Sfera Wiecznego Słońca
           Woda: Odwrócenie Fortuny, Oczyszczające Opary, Mądrość i Jasność, Kojący Chłód'},
+  
   {name: 'Szkoła Shugenja Tamori',
   img_name: 'Tamori_shugenja_by_Isuardi_Therianto.jpg',
   clan_name: 'dragon',
@@ -1337,6 +1341,7 @@ basic_shugenja_schools = [
   outfit: 'Szaty, Wakizashi, Dowolna inna broń, Tuba na zwoje, Zestaw podróżny, 5 koku.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody.'},
+  
   {name: 'Szkoła Shugenja Asahina',
   img_name: 'Asahina_Michiru_by_Jorge_Matar.jpg',
   clan_name: 'crane',
@@ -1348,11 +1353,12 @@ basic_shugenja_schools = [
   outfit: 'Szaty, Bo, Wakizashi, Tuba na zwoje, Zestaw podróżny, 10 koku.',
   affinity_deficiency: 'Wiatr/Ogień',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 2 Wody, 1 Ziemi.'},
+  
   {name: 'Szkoła Shugenja Tonbo',
   img_name: 'Tonbo_Jairyu_by_David_Horne.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Ważka',
+  minor_clan_name: 'Klan Ważki',
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Tonbo są głęboko związani ze światem duchowym. Stworzyli bardzo silną więź z górami i pozostaną na swych ziemiach choćby nawet problem za problemem spadał na nich niczym lawina. Chociaż Shugenja Tonbo są takimi samymi kapłanami jak ci z innych klanów to świetnie zdają sobie sprawę z politycznych obowiązków spoczywających na ich barkach. Jako pośrednicy między Klanem Smoka a resztą Rokuganu Tonbo muszą być gotowi na wyzwania dworów Rokuganu.',
@@ -1360,11 +1366,12 @@ basic_shugenja_schools = [
   outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
   affinity_deficiency: 'Woda/Ogień',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Powietrza, 1 Ziemi.'},
-  {name: 'Szkoła Shugenja Kitsune',
+  
+  {name: 'Pierwsza Szkoła Shugenja Kitsune',
   img_name: 'Kitsune_Gina_by_Veronica_V_Jones.jpg',
   clan_name: 'minor',
   clan_name_pl: 'Pomniejsze',
-  minor_clan_name: 'Lis',
+  minor_clan_name: 'Klan Lisa',
   bonus_attr: 'stamina',
   bonus_attr_pl: 'Wytrzymałość',
   desc: 'Ziemie Klanu Lisa leżą tuż obok jednej z największych puszczy Cesarstwa, ten fakt ukształtował kierunek ich lekcji. Każdy Shugenja Kitsune nabywa miłość do Duchów i tradycyjnie do głębin lasów, i tradycyjnie do głębin lasów, dzięki niekończącym się godzinom medytacji wewnątrz nich. Więź między ludźmi i zwierzętami jest ciągle odnawiana i wzmacniana dzięki wyczerpującym zajęciom. Miłość Kitsune do natury jest ewidentna i niepodważalnie to ona kształtuje umiejętności adeptów tej szkoły. Kitsune mogą połączyć się z dziczą i zamieszkującymi ją zwierzętami. Jest to uniwersalna technika która może okazać się niezwykle istotna i obowiązkach Shugenja Kitsune. Są też grupki członków innych klanów próbujących skopiować zdolności Kitsune.',
@@ -1373,10 +1380,11 @@ basic_shugenja_schools = [
   special: 'W roku 1169 w skutek ataków na Kitsune Mori, poprosił Ród Tsuruchi o pomoc. Tsuruchi którzy w tym czasie byli już członkami klanu Modliszki, pozytywnie odpowiedzieli na wezwanie i wspólnymi siłami odparli ataki na Kitsune Mori. Później okazało się że stał za nimi Smok Cieni, który dzięki mocy lasu chciał komunikować się z wszystimi zwierzętami Rokuganu i pozyskiwać dzięki nim informacje. Ataki poważnie osłabiły tyn niewielki klan, co skłoniło ówczesnego Czempion klanu Kitsune Ryukena do przystąpienia do klanu Modliszki.',   
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Wody, 1 Ognia'},
-  {name: 'Szkoła Shugenja Chuda',
+  
+  {name: 'Pierwsza Szkoła Shugenja Chuda',
   img_name: 'Chuda_Jinsei_by_Anthony_Francisco.jpg',
   clan_name: 'minor',
-  minor_clan_name: 'Wąż',
+  minor_clan_name: 'Klan Węża',
   clan_name_pl: 'Pomniejsze',
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
@@ -1386,10 +1394,11 @@ basic_shugenja_schools = [
   special: 'Klan stał się ofiarą własnej ofiary i oficjalnie został zniszczony, przez klan Feniksa. Jednak wiele szczątków zodbytej wiedzy przetrwało i obecnie ród Chuda, potajemnie powstaje na nowo, w ramach klanu Pająka.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody'},
+  
   {name: 'Szkoła Shugenja Komori',
   img_name: 'Komori_Taruko_by_Drew_Baker.jpg',
   clan_name: 'minor',
-  minor_clan_name: 'Nietoperz',
+  minor_clan_name: 'Klan Nietoperza',
   clan_name_pl: 'Pomniejsze',
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
@@ -1398,6 +1407,7 @@ basic_shugenja_schools = [
   outfit: 'ubrania, Wakizashi, dowolna broń, torba na zwoje, plecak podróżny, 3 koku',
   affinity_deficiency: 'Powietrze/Ziemia',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 powietrza, 2 wody, 1 ognia'},
+  
   {name: 'Szkoła Shugenja Seppun',
   img_name: 'Seppun_Shugenja_by_Hai_An.jpg',
   clan_name: 'imperial',
@@ -1411,8 +1421,8 @@ basic_shugenja_schools = [
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Oginia, 2 Ziemii, 1 Powietrza'}]
 
 minor_clan_shugenja_ranks = [{ school_name: 'Szkoła Shugenja Tonbo', school_rank: { rank_name: 'Prowadzeni przez los: ', rank_desc: 'Tonbo zgłębiają arkana sztuki dyplomatycznej tak samo, jak magicznej, służą jako pośrednicy z klanem Smokia od samego zarania Klanu. Wsparcie Kami może okazać się potężnym narzędziem na dworze. Możesz wydać gniazdo zaklęcia by otrzymać bonus +1z0 do dowolnego testu umiejętności społecznej. Na pojedynczy rzut nie możesz wydać więcej gniazd niż twoja aktualna ranga, ponadto dostajesz darmowe podbicie do każdego rzutu na zaklęcia będącego wróżbą.'} },
-                             { school_name: 'Szkoła Shugenja Chuda', school_rank: { rank_name: 'By Uderzyć Grzesznika: ', rank_desc: 'Chuda był bezwzględnym prześladowcą Krain Cienia a jego techniki żyją do dziś w ludziach, którzy noszą jego imię. Jako akcję darmowa możesz wydać punkt pustki by zanegować ilość punktów redukcji równą twojej randze przeciw jednemu przeciwnikowi. Możesz także dodać swoją rangę w szkole do obrażeń zadanych przy pomocy zaklęć każdemu przeciwnikowi który nosi skazę Krain Cienia.'} },
-                             { school_name: 'Szkoła Shugenja Komori', school_rank: { rank_name: 'Szepty Kami: ', rank_desc: 'Komori praktykują nie tylko rytuały duchów koumori, których potomkiem był założyciel klanu, lecz także sztukę przekazywania wiadomości przy pomocy kami. Możesz wydać jedno gniazdo zaklęcia, by wysłać magiczną wiadomość do dowolnej znanej ci osoby. Nie może być dłuższa, niż pół minuty na rangę, ponadto może przebyć dystans, równy twojej randze razy 161 km. (100 mil)'} },]
+                             { school_name: 'Pierwsza Szkoła Shugenja Chuda', school_rank: { rank_name: 'By Uderzyć Grzesznika: ', rank_desc: 'Chuda był bezwzględnym prześladowcą Krain Cienia a jego techniki żyją do dziś w ludziach, którzy noszą jego imię. Jako akcję darmowa możesz wydać punkt pustki by zanegować ilość punktów redukcji równą twojej randze przeciw jednemu przeciwnikowi. Możesz także dodać swoją rangę w szkole do obrażeń zadanych przy pomocy zaklęć każdemu przeciwnikowi który nosi skazę Krain Cienia.'} },
+                             { school_name: 'Pierwsza Szkoła Shugenja Komori', school_rank: { rank_name: 'Szepty Kami: ', rank_desc: 'Komori praktykują nie tylko rytuały duchów koumori, których potomkiem był założyciel klanu, lecz także sztukę przekazywania wiadomości przy pomocy kami. Możesz wydać jedno gniazdo zaklęcia, by wysłać magiczną wiadomość do dowolnej znanej ci osoby. Nie może być dłuższa, niż pół minuty na rangę, ponadto może przebyć dystans, równy twojej randze razy 161 km. (100 mil)'} },]
 
 basic_monk_schools = [
   {name: 'Zakon Mnichów Tsurumi Zumi',
@@ -5176,7 +5186,11 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                  'Szkoła Inżyierów Kaiu' => ['Bushi', 'Artysta'], 'Szkoła Łowców Czarownic Kuni' => ['Mnich'],
                  'Szkoła Bushi Toritaka' => ['Bushi'], 'Szkoła Dworzan Yasuki' => ['Dworzanin'],
                  'Szkoła Gwardzistów Seppun' => ['Bushi'], 'Szkoła Dworzan Otomo' => ['Dworzanin'],
-                 'Szkoła Heraldów Miya' => ['Dworzanin']}
+                 'Szkoła Heraldów Miya' => ['Dworzanin'], 'Szkoła Bushi Ichiro' => ['Bushi'],
+                 'Szkoła Bushi Suzume' => ['Bushi'], 'Szkoła Kowali Tsi' => ['Artysta'],
+                 'Szkoła Bushi Morito' => ['Bushi'], 'Szkoła Szmuglerów Kasuga' => ['Dworzanin'],
+                 'Szkoła Bushi Usagi' => ['Bushi'], 'Szkoła Bushi Toku' => ['Bushi'],
+                 'Szkoła Bushi Heichi' => ['Bushi'] }
 
 @basic_shugenja_names = { 'Szkoła Shugenja Isawa' => ['Shugenja'], 'Szkoła Shugenja Agasha' => ['Shugenja'],
                          'Szkoła Kapłanów Śmierci Moto' => ['Shugenja'], 'Szkoła Shugenja Horiuchi' => ['Shugenja'],
@@ -5185,7 +5199,9 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                          'Szkoła Shugenja Kitsune' => ['Shugenja'], 'Szkoła Shugenja Chuda' => ['Shugenja'],
                          'Szkoła Shugenja Soshi' => ['Shugenja'], 'Szkoła Shugenja Yogo' => ['Shugenja'],
                          'Szkoła Shugenja Tamori' => ['Shugenja'], 'Szkoła Shugenja Asahina' => ['Shugenja'],
-                         'Szkoła Shugenja Kuni' => ['Shugenja'], 'Szkoła Shugenja Seppun' => ['Shugenja']}
+                         'Szkoła Shugenja Kuni' => ['Shugenja'], 'Szkoła Shugenja Seppun' => ['Shugenja'],
+                         'Pierwsza Szkoła Shugenja Kitsune' => ['Shugenja'], 'Szkoła Shugenja Tonbo' => ['Shugenja'],
+                         'Pierwsza Szkoła Shugenja Chuda' => ['Shugenja'], 'Szkoła Shugenja Komori' => ['Shugenja'] }
 
 @basic_monk_names = { 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'] }
 
@@ -5433,7 +5449,58 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
   'Szkoła Heraldów Miya' => [ { name: 'Courtier', school_emphasis: 'Retoryka'}, { name: 'Defense'},
                               { name: 'Etiquette', school_emphasis: 'Grzeczność'}, { name: 'Horsemanship'}, 
                               { name: 'Lore', school_emphasis: 'Heraldyka'}, { name: 'Sincerity'},
-                              { name: 'any one', school_emphasis: 'Bugei lub Godna'} ] }
+                              { name: 'any one', school_emphasis: 'Bugei lub Godna'} ],
+  
+  'Szkoła Bushi Ichiro' => [ {name: 'Athletics'}, {name: 'Commerce'}, {name: 'Defense'}, 
+                             {name: 'Heavy Weapons'}, {name: 'Jiujutsu'}, {name: 'Kenjutsu', school_emphasis: 'Katana'}, 
+                             {name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+  
+  'Szkoła Bushi Suzume' => [ { name: 'Calligraphy' }, { name: 'Kenjutsu', school_emphasis: 'Katana' },
+                             { name: 'Lore', school_emphasis: 'Historia' },
+                             { name: 'Lore', school_emphasis: 'Teologia' }, 
+                             { name: 'Perform', school_emphasis: 'Gawędziarstwo' },
+                             { name: 'any one', school_emphasis: 'Wiedza' },
+                             { name: 'any one' } ],
+
+  'Szkoła Bushi Toritaka' => [ { name: 'Animal Handling', school_emphasis: 'Sokoły' },
+                               { name: 'Hunting', value: 2 }, { name: 'Kenjutsu' },
+                               { name: 'Lore', school_emphasis: 'Krainy Duchów'},
+                               { name: 'Spears' }, { name: 'any one'}  ],
+
+  'Szkoła Kowali Tsi' => [ { name: 'any one', school_emphasis: 'Artystyczna' },
+                           { name: 'Commerce' }, { name: 'any one', school_emphasis: 'Rzemieślnicza', value: 2 },
+                           { name: 'Defense' }, { name: 'any one', school_emphasis: 'Walka bronią' },
+                           { name: 'any one', school_emphasis: 'Godna, Bugei lub Kupiecka' } ],
+
+  'Szkoła Bushi Morito' => [ { name: 'Defense' }, { name: 'Horsemanship' },
+                             { name: 'Hunting', school_emphasis: 'Tropienie' }, 
+                             { name: 'Kenjutsu' }, { name: 'Lore', school_emphasis: 'Kolat' },
+                             { name: 'Lore', school_emphasis: 'Półświatek' }, 
+                             { name: 'any one' } ],
+
+
+
+  'Szkoła Szmuglerów Kasuga' => [ { name: 'Commerce' }, { name: 'Etiquette' },
+                                  { name: 'Investigation', school_emphasis: 'Zauważanie' },
+                                  { name: 'Lore', school_emphasis: 'Półświatek' },
+                                  { name: 'Sincerity', school_emphasis: 'Oszukiwanie' },
+                                  { name: 'Stealth' }, { name: 'any one', school_emphasis: 'Godna, Niegodna lub Kupiecka' } ],
+
+  'Szkoła Bushi Usagi' => [ { name: 'Athletics', school_emphasis: 'Bieganie' }, 
+                            { name: 'Defense' }, { name: 'Hunting' }, { name: 'Jiujutsu' },
+                            { name: 'Kenjutsu' }, 
+                            { name: 'Lore', school_emphasis: 'Maho lub Kolat, po okresie Wojny Klanów' },
+                            { name: 'any one', school_emphasis: 'Godna lub Bugei' } ],
+
+  'Szkoła Bushi Toku' => [ { name: 'Athletics' }, { name: 'Defense' }, { name: 'Hunting' },
+                           { name: 'Investigation', school_emphasis: 'Przeszukiwanie' },
+                           { name: 'Kenjutsu' }, { name: 'Lore', school_emphasis: 'Historia' },
+                           { name: 'any one', school_emphasis: 'Godna lub Bugei' } ],
+
+  'Szkoła Bushi Heichi' => [ { name: 'Athletics' }, { name: 'Defense' }, { name: 'Hunting' },
+                                      { name: 'Intimidation' }, { name: 'Kenjutsu' }, 
+                                      { name: 'Spears', school_emphasis: 'Mail Chong' },
+                                      { name: 'any one', school_emphasis: 'Bugei' } ] }
 
 @basic_shugenja_school_skill_lists = {
 
@@ -5515,7 +5582,27 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
   'Szkoła Shugenja Seppun' => [ { name: 'Calligraphy'}, { name: 'Defense'}, { name: 'Etiquette'}, 
                                 { name: 'Investigation', school_emphasis: 'Zauważanie' },
                                 { name: 'Meditation'}, { name: 'Lore', school_emphasis: 'Teologia'},
-                                { name: 'any one', school_emphasis: 'Godna lub Bugei'} ] }
+                                { name: 'any one', school_emphasis: 'Godna lub Bugei'} ],
+  
+  'Szkoła Shugenja Komori' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry' }, { name: 'Lore', school_emphasis: 'Przodkowie' },
+                                { name: 'Lore', school_emphasis: 'Teologia' }, { name: 'Meditation' }, 
+                                { name: 'Spellcraft' }, { name: 'Tea Ceremony' },
+                                { name: 'any one', school_emphasis: 'Godna' } ],
+
+  'Szkoła Shugenja Tonbo' => [ { name: 'Calligraphy' }, { name: 'Courtier' }, { name: 'Etiquette' }, 
+                               { name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki' },
+                               { name: 'Sincerity' }, { name: 'Spellcraft' }, 
+                               { name: 'any one', school_emphasis: 'Godna' } ],
+
+  'Pierwsza Szkoła Shugenja Kitsune' => [ { name: 'Calligraphy' }, { name: 'Defense' }, 
+                                 { name: 'Hunting' }, { name: 'Medicine', school_emphasis: 'Zioła' },
+                                 { name: 'Meditation' }, { name: 'Spellcraft' },
+                                 { name: 'any one', school_emphasis: 'Godna lub Bugei' } ],
+
+  'Pierwsza Szkoła Shugenja Chuda' => [ { name: 'Calligraphy', school_emphasis: 'Szyfry' },
+                               { name: 'Etiquette'},  { name: 'Lore', school_emphasis: 'Maho'},
+                               { name: 'Lore', school_emphasis: 'Shadowland'}, { name: 'Spellcraft'},
+                               { name: 'any one'}, { name: 'any one'} ] }
 
 @basic_monk_school_skill_lists = { 
 
@@ -5827,7 +5914,10 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
   { school_name: 'Szkoła Shugenja Yogo', school_rank: { rank_name: 'Ścieżka Mistrza Pieczęci: ', rank_desc: 'Shugenja Yogo, opanowali technikę która pozwala im wykonać czar na papierze by wykorzystać go później. Shugenja rzucający czar może wykonać tyle podbić ile wynosi poziom Mistrzostwa czaru, by zespolić go z papierową kartką. Gdy czar zostanie wykonany shugenja może uwolnić czar poprzez przyłożenie kartki do wybranego celu. Tylko shugenja który wykonał pieczęć na papierze może go uaktywnić, gdy to uczyni i w tym momencie liczy się czas trwania zaklęcia. W przypadku czarów obszarowych gdy zostaną uwolnione na żywą istotę, tylko ona zostanie objęta czarem. Przyłożenie kartki papieru do celu który tego nie chce wymaga udanego testu ataku, używają Czarostwa/Zręczności. Papierowa pieczęć może być podarta lub w inny sposób zniszczona, co zakończy czas działania czaru.'} },
   { school_name: 'Szkoła Shugenja Tamori', school_rank: { rank_name: 'Esencja Żywiołu: ', rank_desc: 'Tamori nauczyli się destylować esencję żywiołów i zawierać ją w miksturach lub przedmiotach, w celu późniejszego wykorzystania. Postać może wydać jedno gniazdo zaklęć by przechować zaklęcie które zna i które posiada obszar czaru "1 cel", "1 postać" lub "1 stwór", w miksturze. Czar może być uwolniony przez dowolny sposób, jako akcja prosta (wypicie) lub jako akcja pełna jako atak, wykonuje się wtedy test Atletyka(Rzucanie)/Zręczność. Czary przechowywane w ten sposób, wliczają się do limitu czarów jakie shugenja może rzucić i zajmują gniazdo czarów do momentu uaktywnienia. Tworzenie eliksirów w ten sposób, wymaga liczby godzin równą poziomowi mistrzostwa przechowywanego zaklęcia. Dodatkowo postać zyskuje dodatkowe podbicie do wszystkich czarów Rzemiosła.'} },
   { school_name: 'Szkoła Shugenja Asahina', school_rank: { rank_name: 'Gracja Duszy: ', rank_desc: 'Asahina wykorzystują potęgę kami dla sztuki, a nie wojny. Postać może wydać punkt Pustki, by zmniejszyć liczbę zadawanych obrażeń wszystkich przeciwników w 6m od siebie o 0z1, na czas równy swojej randze w szkole (Użycie ponowne tej techniki nie zwiększa liczby zatrzymywanych obrażeń, lecz resetuje czas trwania techniki). Dodatkowo postać zyskuje darmowe podbicie, do czarów Obrony.'} },  
-  { school_name: 'Szkoła Shugenja Kitsune', school_rank: { rank_name: 'Esencja Chikushudo: ', rank_desc: 'Nikt w Cesarstwie nie jest bliżej natury niż prości Kitsune którzy uczynili dzicz swoim domem. Możesz używać Wyczucia, Zespolenia i Przywołania do kontaktowania się ze zwierzętami tak samo jak z Kami. (Dzięki przywołaniu możesz sprowadzić pojedyncze zwierzę zamiast kawałka materii). Zwierzęta zwykle są bardziej bezpośrednie i rozumują inaczej niż Kami, mają więcej wyczucia co do ludzkich intencji. Dostajesz dodatkowe podbicie do wszystkich czarów rzucanych na zwierzęta o ile nie zadają im obrażeń.'} },    
+  { school_name: 'Pierwsza Szkoła Shugenja Kitsune', school_rank: { rank_name: 'Esencja Chikushudo: ', rank_desc: 'Nikt w Cesarstwie nie jest bliżej natury niż prości Kitsune którzy uczynili dzicz swoim domem. Możesz używać Wyczucia, Zespolenia i Przywołania do kontaktowania się ze zwierzętami tak samo jak z Kami. (Dzięki przywołaniu możesz sprowadzić pojedyncze zwierzę zamiast kawałka materii). Zwierzęta zwykle są bardziej bezpośrednie i rozumują inaczej niż Kami, mają więcej wyczucia co do ludzkich intencji. Dostajesz dodatkowe podbicie do wszystkich czarów rzucanych na zwierzęta o ile nie zadają im obrażeń.'} },
+  { school_name: 'Szkoła Shugenja Tonbo', school_rank: { rank_name: 'Prowadzeni przez los: ', rank_desc: 'Tonbo zgłębiają arkana sztuki dyplomatycznej tak samo, jak magicznej, służą jako pośrednicy z klanem Smokia od samego zarania Klanu. Wsparcie Kami może okazać się potężnym narzędziem na dworze. Możesz wydać gniazdo zaklęcia by otrzymać bonus +1z0 do dowolnego testu umiejętności społecznej. Na pojedynczy rzut nie możesz wydać więcej gniazd niż twoja aktualna ranga, ponadto dostajesz darmowe podbicie do każdego rzutu na zaklęcia będącego wróżbą.'} },
+  { school_name: 'Pierwsza Szkoła Shugenja Chuda', school_rank: { rank_name: 'By Uderzyć Grzesznika: ', rank_desc: 'Chuda był bezwzględnym prześladowcą Krain Cienia a jego techniki żyją do dziś w ludziach, którzy noszą jego imię. Jako akcję darmowa możesz wydać punkt pustki by zanegować ilość punktów redukcji równą twojej randze przeciw jednemu przeciwnikowi. Możesz także dodać swoją rangę w szkole do obrażeń zadanych przy pomocy zaklęć każdemu przeciwnikowi który nosi skazę Krain Cienia.'} },
+  { school_name: 'Szkoła Shugenja Komori', school_rank: { rank_name: 'Szepty Kami: ', rank_desc: 'Komori praktykują nie tylko rytuały duchów koumori, których potomkiem był założyciel klanu, lecz także sztukę przekazywania wiadomości przy pomocy kami. Możesz wydać jedno gniazdo zaklęcia, by wysłać magiczną wiadomość do dowolnej znanej ci osoby. Nie może być dłuższa, niż pół minuty na rangę, ponadto może przebyć dystans, równy twojej randze razy 161 km. (100 mil)'} },  
   { school_name: 'Szkoła Shugenja Seppun', school_rank: { rank_name: 'W Obornie Tronu: ', rank_desc: 'Ukryta Straż, istnieje tylko by chronić Cesarza, i stanowi poważne wyzwanie dla każdego kto, zechce zagrozić Synowi Niebios. Postać zystkuje dodatkowe podbicie, do każdego czaru który ma chronić życie, własność, rodzinę ilub reputację Cesarza, póki czar nie przyniesie shugenji, utraty honoru. Technika ta tyczy się także członków rodzin Cesarskich(poza postacią). Postać zyskuje dodatkowe podbicie do czarów znanych tylko rodzinom Cesarskim' } } ]
 
 traits_kinds_and_sphares = {
@@ -6323,7 +6413,7 @@ def join_school_with_ranks(object, rank_array)
         school_object.create_school_rank(name: school[:school_rank][:rank_name], desc: school[:school_rank][:rank_desc])
       end
     else
-      p school
+      p school[:school_name]
     end
   end
 end
