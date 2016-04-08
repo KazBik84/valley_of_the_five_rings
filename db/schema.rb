@@ -23,27 +23,6 @@ ActiveRecord::Schema.define(version: 20160404041702) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "basic_monk_schools", force: :cascade do |t|
-    t.string   "name"
-    t.string   "img_name"
-    t.string   "clan_name"
-    t.string   "clan_name_pl"
-    t.string   "minor_clan_name"
-    t.string   "bonus_attr"
-    t.string   "bonus_attr_pl"
-    t.string   "desc"
-    t.string   "honor"
-    t.string   "outfit"
-    t.string   "monk_tech_name"
-    t.string   "monk_tech_desc"
-    t.string   "special"
-    t.integer  "clan_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
-  add_index "basic_monk_schools", ["clan_id"], name: "index_basic_monk_schools_on_clan_id", using: :btree
-
   create_table "basic_primary_schools", force: :cascade do |t|
     t.string   "name"
     t.string   "img_name"
@@ -55,16 +34,6 @@ ActiveRecord::Schema.define(version: 20160404041702) do
     t.string   "desc"
     t.string   "honor"
     t.string   "outfit"
-    t.string   "rank1_name"
-    t.string   "rank1_desc"
-    t.string   "rank2_name"
-    t.string   "rank2_desc"
-    t.string   "rank3_name"
-    t.string   "rank3_desc"
-    t.string   "rank4_name"
-    t.string   "rank4_desc"
-    t.string   "rank5_name"
-    t.string   "rank5_desc"
     t.string   "special"
     t.integer  "clan_id"
     t.datetime "created_at",      null: false
@@ -320,7 +289,6 @@ ActiveRecord::Schema.define(version: 20160404041702) do
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
-  add_foreign_key "basic_monk_schools", "clans"
   add_foreign_key "basic_primary_schools", "clans"
   add_foreign_key "basic_shugenja_schools", "clans"
   add_foreign_key "element_of_spells", "spell_elements"

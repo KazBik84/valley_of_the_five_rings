@@ -882,7 +882,19 @@ basic_primary_schools = [
   honor: '5,5',
   outfit: 'Wytrzymałe ubranie, Daisho, Tanto, Zestaw podróżny, 1 koku.',
   special: 'Wszyscy Szermierz Tao są Ascetami, nie otrzymują za tę wadę Punktów postaci oraz nie wlicza się ona do limitu 10 punktów na wady postaci.'},
-  #4(52)----------------------------------------------------------------------------------------------------
+
+  {name: 'Zakon Mnichów Tsurumi Zumi',
+  img_name: 'Tsurumi_monk_by_Edwin_David.jpg',
+  clan_name: 'dragon',
+  clan_name_pl: 'Smok',
+  minor_clan_name: '',
+  bonus_attr: 'void',
+  bonus_attr_pl: 'Pustka',
+  desc: 'Mnisi z zakonu stanowią pomniejszy zakon działający w ramach Zakonu Togashi, a został on założony podczas Wieku Ukrytego Cesarza, gdy Togashi Hoshi zbuntował się przeciw Hitomi i zaczął samemu tatuować swoich podopiecznych. W odróżnieniu od Togashi Ise Zumi i Hitomi Kikage Zumi, zakon Tsurui Zumi nie skupia się tak mocno na kształtowaniu ciała i sprawności fizycznej, uznając w to miejsce poznanie własnej duszy. Choć sztuki walki nadal wykorzystywane są w zakonie, to główny nacisk kładziony jest na użycie własnego Chi i innych mistycznych technikach walk. Wielu z mnichów zakonu Hoshi całkowicie porzuciło drogę walki, na rzecz medytacji, kontemplacji, czy innych czynności które mają doprowadzić ich do oświecenia. Jednakże w chwili próby, gdy dobro zakonu lub klanu Smoka, jest zagrożone, zakon staje do walki.',
+  honor: '4,5',
+  outfit: 'Szaty, Bo, Zestaw podróżny, 2 koku.',
+  special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'},
+
   {name: 'Szkoła Śledczych Kitsuki',
   img_name: 'Kitsuki_dworzanin_by_Stu_Barnes.jpg',
   clan_name: 'dragon',
@@ -5178,6 +5190,7 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                  'Szkoła Szpiegów Shosuro' => ['Ninja'], 'Akademia Aktorów Shosuro' => ['Ninja'],
                  'Szkoła Bushi Mirumoto' => ['Bushi'], 'Szkoła Szermierzy Tao Mirumoto' => ['Bushi'],
                  'Szkoła Śledczych Kitsuki' => ['Dworzanin'], 'Zakon Mnichów Kikage Zumi' => ['Mnich'],
+                 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'],
                  'Akademia Pojedynku Kakita' => ['Bushi'], 'Akademia Artystów Kakita' => ['Artysta'],
                  'Szkoła Dworzan Doji' => ['Dworzanin'], 'Szkoła Zarządców Doji' => ['Bushi'],
                  'Szkoła Żelaznych Wojowników Daidoji' => ['Bushi'], 'Szkoła Zwiadowców Daidoji' => ['Bushi'],
@@ -5368,6 +5381,11 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                                    { name: 'Lore', school_emphasis: 'Dowilna'}, { name: 'Meditation'},
                                    { name: 'any one', school_emphasis: 'Inna jak Niegodna'},
                                    { name: 'any one', school_emphasis: 'Inna jak Niegodna'} ],
+
+ 'Zakon Mnichów Tsurumi Zumi' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Etiquette'},
+                                    { name: 'Jiujutsu'},
+                                    { name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki' },
+                                    { name: 'any one'}, { name: 'any one'} ],                                   
 
   'Akademia Pojedynku Kakita' => [ { name: 'Iaijutsu', school_emphasis: 'Skupienie'}, { name: 'Kenjutsu'},
                                    { name: 'Kyujutsu'}, { name: 'Sincerity'}, { name: 'Tea Ceremony'},
@@ -5807,6 +5825,7 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                 {rank_name: 'Walcząc Niczym Wiatr', rank_desc: 'Kikage Zumi osiągnąwszy ten poziom doskonałości, jest zwinny niczym wiatr. Postać może wykonywać ataki wręcz, jako akcje Proste, dodatkowo zyskuje jeden tatuaż.', rank_lvl: 3 },
                 {rank_name: 'Uderzenie w Centrum', rank_desc: 'Szybkość i siła ataków Kikage Zumi, jest nadludzko silna i szybka. Postać może wykonać manewr Powalenia o jedno Podbicie mniej, dodatkowo zyskuje +1z1 do wszystkich testów obrażeń walcząc wręcz, premia dolicza się również do testów Chwytów.', rank_lvl: 4 },
                 {rank_name: 'Uderzenie w Szczyt', rank_desc: 'Mistrzowie Kikage Zumi, są również mistrzami Kaze-Do, i potrafią uderzać tak by kami Powietrza opuściła ciało ofiary. Gdy postać wykonuje manewr Powalenia, może wykonać dwa dodatkowe podbicia. Jeśli atak się powiedzie przeciwnik jest automatycznie ogłuszony. Jeśli test miał miejsce podczas Chwytu przeciwnik musi wykonać test kręgu Ziemi o PT 20 lub zostanie ogłuszony. Postać otrzymuje również dodatkowy Tatuaż.', rank_lvl: 5} ] },
+  {school_name: 'Zakon Mnichów Tsurumi Zumi', school_ranks: [ { rank_name: 'Zwinne Pięści, Delikatne Serce', rank_desc: 'Tsurui Zuni szukają oświecenia, na wielu różnych ścieżkach, lecz nie wstydzą się fizycznej agresji gdy zajdzie taka potrzeba. Postać może wydać punkt Pustki by uaktywnić tę technikę, na liczbę rund równą randze w szkole. Gdy ta technika jest aktywna, postać dodaje +1z1 do swoich ataków oraz +1z0 do obrażeń, gdy walczy wręcz. Postać dokonuje wyboru na początku swojej rundy. Dodatkowo postać zaczyna grę posiadając jeden wybrany tatuaż oraz zna dwa wybrane Kiho, by użyć Kiho postać musi spełniać wszystkie wymagania. Gdy postać osiągnie czwartą rangę, otrzyma dodatkowy tatuaż.' } ] },
   {school_name: 'Akademia Pojedynku Kakita', school_ranks: [ {rank_name: 'Droga Żurawia', rank_desc: 'Badanie miecza wskazuje na wiele sposobów, w którym sztuka jest Kakita techniki można zastosować. Postać może dodać dwa razy wartość swojej umiejętności Iaijutsu do wszystkich rzutów inicjatywy. Postać dodaje +1z1 plus swoją rangę w szkole, do wszystkich ataków i Skupienia, wykonując manewr Koncentracji. Premia ta działa w rundzie następującej po manewrze Koncentracji.', rank_lvl: 1},
                 {rank_name: 'Szybkość Pioruna', rank_desc: 'Wrogowie którzy są wolni, są słabi i skazani na porażkę. Postać zyskuje +2z0 do wszystkich ataków wykonanych przeciw postaciom o niższej inicjatywnie od niej samej.', rank_lvl: 2 },
                 {rank_name: 'Pierwsze Uderzenie Będzie Ostatnim', rank_desc: 'Bushi z akademii Kakita sieją strach w całym Cesarstwie, jako uczniowie najstarszej tradycji pojedynków. Postać zyskuje prawo do pierwszego uderzenia, jeśli wygra przeciwstawny test Iaijutsu/Pustka o 3 lub więcej. Dodatkowo otrzymuje darmowe podbicie do uderzenia, za każde pełne 3 punkty przewagi.', rank_lvl: 3 },
@@ -6472,7 +6491,7 @@ puts 'Schools Generation'
 BasicPrimarySchool.destroy_all
 not_valid_names(BasicPrimarySchool, basic_primary_schools)
 not_valid_names(BasicShugenjaSchool, basic_shugenja_schools)
-not_valid_names(BasicMonkSchool, basic_monk_schools)
+#not_valid_names(BasicMonkSchool, basic_monk_schools)
 clans.each do |clan|
   basic_primary_schools.each do |school|
     if school[:clan_name] == 'minor'
@@ -6488,13 +6507,13 @@ clans.each do |clan|
       clan.basic_shugenja_schools.create(school) if school[:clan_name] == clan.name    
     end
   end
-  basic_monk_schools.each do |school|
-    if school[:clan_name] == 'minor'
-      clan.basic_monk_schools.create(school) if school[:minor_clan_name] == clan.clan_name
-    else
-      clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
-    end
-  end
+  #basic_monk_schools.each do |school|
+  #  if school[:clan_name] == 'minor'
+  #    clan.basic_monk_schools.create(school) if school[:minor_clan_name] == clan.clan_name
+  #  else
+  #    clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
+  #  end
+  #end
 end
 
 
@@ -6502,13 +6521,13 @@ puts 'Joining School Classes with Schools'
 
 join_schools_with_classes(BasicPrimarySchool, @basic_primary_names)
 join_schools_with_classes(BasicShugenjaSchool, @basic_shugenja_names)
-join_schools_with_classes(BasicMonkSchool, @basic_monk_names)
+#join_schools_with_classes(BasicMonkSchool, @basic_monk_names)
 
 puts 'Joining Schools with skills'
 
 join_school_with_skills(BasicPrimarySchool, @basic_primary_school_skill_lists)
 join_school_with_skills(BasicShugenjaSchool, @basic_shugenja_school_skill_lists)
-join_school_with_skills(BasicMonkSchool, @basic_monk_school_skill_lists)
+#join_school_with_skills(BasicMonkSchool, @basic_monk_school_skill_lists)
 
 puts 'Creating school ranks'
 join_school_with_ranks(BasicPrimarySchool, @primary_school_ranks)

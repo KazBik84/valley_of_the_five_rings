@@ -11,16 +11,6 @@ class CreateBasicPrimarySchools < ActiveRecord::Migration
       t.string :desc
       t.string :honor
       t.string :outfit
-      t.string :rank1_name
-      t.string :rank1_desc
-      t.string :rank2_name
-      t.string :rank2_desc
-      t.string :rank3_name
-      t.string :rank3_desc
-      t.string :rank4_name
-      t.string :rank4_desc
-      t.string :rank5_name
-      t.string :rank5_desc
       t.string :special
       t.references :clan, index: true, foreign_key: true
 
