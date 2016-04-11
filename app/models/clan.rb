@@ -5,5 +5,4 @@ class Clan < ActiveRecord::Base
   has_many :families, dependent: :destroy
   has_many :basic_primary_schools, dependent: :destroy
   has_many :basic_shugenja_schools, dependent: :destroy
-  has_many :basic_monk_schools, dependent: :destroy
 end

@@ -1436,21 +1436,6 @@ minor_clan_shugenja_ranks = [{ school_name: 'Szkoła Shugenja Tonbo', school_ran
                              { school_name: 'Pierwsza Szkoła Shugenja Chuda', school_rank: { rank_name: 'By Uderzyć Grzesznika: ', rank_desc: 'Chuda był bezwzględnym prześladowcą Krain Cienia a jego techniki żyją do dziś w ludziach, którzy noszą jego imię. Jako akcję darmowa możesz wydać punkt pustki by zanegować ilość punktów redukcji równą twojej randze przeciw jednemu przeciwnikowi. Możesz także dodać swoją rangę w szkole do obrażeń zadanych przy pomocy zaklęć każdemu przeciwnikowi który nosi skazę Krain Cienia.'} },
                              { school_name: 'Pierwsza Szkoła Shugenja Komori', school_rank: { rank_name: 'Szepty Kami: ', rank_desc: 'Komori praktykują nie tylko rytuały duchów koumori, których potomkiem był założyciel klanu, lecz także sztukę przekazywania wiadomości przy pomocy kami. Możesz wydać jedno gniazdo zaklęcia, by wysłać magiczną wiadomość do dowolnej znanej ci osoby. Nie może być dłuższa, niż pół minuty na rangę, ponadto może przebyć dystans, równy twojej randze razy 161 km. (100 mil)'} },]
 
-basic_monk_schools = [
-  {name: 'Zakon Mnichów Tsurumi Zumi',
-  img_name: 'Tsurumi_monk_by_Edwin_David.jpg',
-  clan_name: 'dragon',
-  clan_name_pl: 'Smok',
-  minor_clan_name: '',
-  bonus_attr: 'void',
-  bonus_attr_pl: 'Pustka',
-  desc: 'Mnisi z zakonu stanowią pomniejszy zakon działający w ramach Zakonu Togashi, a został on założony podczas Wieku Ukrytego Cesarza, gdy Togashi Hoshi zbuntował się przeciw Hitomi i zaczął samemu tatuować swoich podopiecznych. W odróżnieniu od Togashi Ise Zumi i Hitomi Kikage Zumi, zakon Tsurui Zumi nie skupia się tak mocno na kształtowaniu ciała i sprawności fizycznej, uznając w to miejsce poznanie własnej duszy. Choć sztuki walki nadal wykorzystywane są w zakonie, to główny nacisk kładziony jest na użycie własnego Chi i innych mistycznych technikach walk. Wielu z mnichów zakonu Hoshi całkowicie porzuciło drogę walki, na rzecz medytacji, kontemplacji, czy innych czynności które mają doprowadzić ich do oświecenia. Jednakże w chwili próby, gdy dobro zakonu lub klanu Smoka, jest zagrożone, zakon staje do walki.',
-  honor: '4,5',
-  outfit: 'Szaty, Bo, Zestaw podróżny, 2 koku.',
-  monk_tech_name: 'Zwinne Pięści, Delikatne Serce: ',
-  monk_tech_desc: 'Tsurui Zuni szukają oświecenia, na wielu różnych ścieżkach, lecz nie wstydzą się fizycznej agresji gdy zajdzie taka potrzeba. Postać może wydać punkt Pustki by uaktywnić tę technikę, na liczbę rund równą randze w szkole. Gdy ta technika jest aktywna, postać dodaje +1z1 do swoich ataków oraz +1z0 do obrażeń, gdy walczy wręcz. Postać dokonuje wyboru na początku swojej rundy. Dodatkowo postać zaczyna grę posiadając jeden wybrany tatuaż oraz zna dwa wybrane Kiho, by użyć Kiho postać musi spełniać wszystkie wymagania. Gdy postać osiągnie czwartą rangę, otrzyma dodatkowy tatuaż.',
-  special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'}]
-
 skills = [
   {name: 'Acting',
   name_pl: 'Aktorstwo',
@@ -5216,8 +5201,6 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                          'Pierwsza Szkoła Shugenja Kitsune' => ['Shugenja'], 'Szkoła Shugenja Tonbo' => ['Shugenja'],
                          'Pierwsza Szkoła Shugenja Chuda' => ['Shugenja'], 'Szkoła Shugenja Komori' => ['Shugenja'] }
 
-@basic_monk_names = { 'Zakon Mnichów Tsurumi Zumi' => ['Mnich'] }
-
 @basic_primary_school_skill_lists = {
   'Szkoła Bushi Shiba' => [ {name: 'Defense'}, {name: 'Kenjutsu'}, {name: 'Kyujutsu'}, 
                             {name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki'}, 
@@ -5621,13 +5604,6 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                                { name: 'Etiquette'},  { name: 'Lore', school_emphasis: 'Maho'},
                                { name: 'Lore', school_emphasis: 'Shadowland'}, { name: 'Spellcraft'},
                                { name: 'any one'}, { name: 'any one'} ] }
-
-@basic_monk_school_skill_lists = { 
-
-  'Zakon Mnichów Tsurumi Zumi' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Etiquette'},
-                                    { name: 'Jiujutsu'},
-                                    { name: 'Meditation', school_emphasis: 'Odzyskiwanie Pustki' },
-                                    { name: 'any one'}, { name: 'any one'} ] }
 
 @primary_school_ranks = [
   {school_name: 'Szkoła Bushi Shiba', school_ranks: [ {rank_name: 'Droga Feniksa', rank_desc: 'Bushi Shiba porusza się po polu bitwy niczym pustka przez żywioły. Posta wydając punkt pustki by uzyskać bonus +1z1 może wydać dwa punkty by zyskać bonus +2z2. Postać może wykonać manewr ochrony jako akcję darmową, jednak osoba chroniona dostanie modyfikator +5 do swojego PT zamiast +10.', rank_lvl: 1},
@@ -6507,13 +6483,6 @@ clans.each do |clan|
       clan.basic_shugenja_schools.create(school) if school[:clan_name] == clan.name    
     end
   end
-  #basic_monk_schools.each do |school|
-  #  if school[:clan_name] == 'minor'
-  #    clan.basic_monk_schools.create(school) if school[:minor_clan_name] == clan.clan_name
-  #  else
-  #    clan.basic_monk_schools.create(school) if school[:clan_name] == clan.name    
-  #  end
-  #end
 end
 
 
@@ -6521,13 +6490,11 @@ puts 'Joining School Classes with Schools'
 
 join_schools_with_classes(BasicPrimarySchool, @basic_primary_names)
 join_schools_with_classes(BasicShugenjaSchool, @basic_shugenja_names)
-#join_schools_with_classes(BasicMonkSchool, @basic_monk_names)
 
 puts 'Joining Schools with skills'
 
 join_school_with_skills(BasicPrimarySchool, @basic_primary_school_skill_lists)
 join_school_with_skills(BasicShugenjaSchool, @basic_shugenja_school_skill_lists)
-#join_school_with_skills(BasicMonkSchool, @basic_monk_school_skill_lists)
 
 puts 'Creating school ranks'
 join_school_with_ranks(BasicPrimarySchool, @primary_school_ranks)

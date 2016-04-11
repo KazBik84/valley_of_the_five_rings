@@ -9,10 +9,6 @@ class SchoolClass < ActiveRecord::Base
                                     source: :school_model,
                                     source_type: 'BasicShugenjaSchool'
 
-  has_many :basic_monk_schools, through: :class_of_schools,
-                                source: :school_model,
-                                source_type: 'BasicMonkSchool'
-
   validates_inclusion_of :name, in: SCHOOL_CLASSES
   validates_presence_of :name
 
