@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160404041702) do
+ActiveRecord::Schema.define(version: 20160412192401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,6 +64,35 @@ ActiveRecord::Schema.define(version: 20160404041702) do
   end
 
   add_index "basic_shugenja_schools", ["clan_id"], name: "index_basic_shugenja_schools_on_clan_id", using: :btree
+
+  create_table "characters", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "clan_id"
+    t.integer  "family_id"
+    t.string   "name"
+    t.string   "class"
+    t.string   "honour"
+    t.string   "outfit"
+    t.string   "char_look"
+    t.string   "char_desc"
+    t.string   "char_character"
+    t.boolean  "public"
+    t.integer  "stamina"
+    t.integer  "willpower"
+    t.integer  "strength"
+    t.integer  "perception"
+    t.integer  "agility"
+    t.integer  "intelligence"
+    t.integer  "reflexes"
+    t.integer  "awareness"
+    t.integer  "void"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "characters", ["clan_id"], name: "index_characters_on_clan_id", using: :btree
+  add_index "characters", ["family_id"], name: "index_characters_on_family_id", using: :btree
+  add_index "characters", ["user_id"], name: "index_characters_on_user_id", using: :btree
 
   create_table "clans", force: :cascade do |t|
     t.string   "desc"
@@ -291,6 +320,9 @@ ActiveRecord::Schema.define(version: 20160404041702) do
 
   add_foreign_key "basic_primary_schools", "clans"
   add_foreign_key "basic_shugenja_schools", "clans"
+  add_foreign_key "characters", "clans"
+  add_foreign_key "characters", "families"
+  add_foreign_key "characters", "users"
   add_foreign_key "element_of_spells", "spell_elements"
   add_foreign_key "element_of_spells", "spells"
   add_foreign_key "families", "clans"
