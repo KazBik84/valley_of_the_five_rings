@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-
   root 'announcements#index'
   devise_for :users
   resources :users, only: [:show, :index]
   resources :announcements do
     resources :comments
   end
-  
+  resources :characters
   namespace :legendopedia do
     get 'main'
     get 'show_clan'

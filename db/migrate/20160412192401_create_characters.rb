@@ -5,7 +5,7 @@ class CreateCharacters < ActiveRecord::Migration
       t.references :clan, index: true, foreign_key: true
       t.references :family, index: true, foreign_key: true
       t.string     :name
-      t.string     :class
+      t.string     :school_class
       t.string     :honour
       t.string     :outfit
       t.string     :char_look

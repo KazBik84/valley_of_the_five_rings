@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20160412192401) do
     t.integer  "clan_id"
     t.integer  "family_id"
     t.string   "name"
-    t.string   "class"
+    t.string   "school_class"
     t.string   "honour"
     t.string   "outfit"
     t.string   "char_look"

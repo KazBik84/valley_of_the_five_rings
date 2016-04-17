@@ -1,0 +1,16 @@
+= "To jest param >> #{params[:clan_id]}"
+= form_for @character, remote: true do |f|
+  %ul.no_dot
+    %li
+      = f.label(:name, 'Imię Postaci:')
+      = f.text_field(:name)
+    %li
+      = f.label(:clan_id, 'Klan')
+      = f.select(:clan_id, Clan.all.collect { |c| [ c.clan_name, c.id ]})
+    %li
+      = f.label(:family_id, 'Rodzina')
+      = f.select(:family_id, @clan.families.collect { |f| [f.name, f.id ]})
+    %li
+      = f.hidden_field(:user_id, value: current_user.id)
+    %li
+      = f.submit "Dodaj Postać"
