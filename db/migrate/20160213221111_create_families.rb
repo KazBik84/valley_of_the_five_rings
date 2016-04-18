@@ -7,7 +7,7 @@ class CreateFamilies < ActiveRecord::Migration
       t.string :clan_name
       # optional if family belongs to minor clan then this
       #  attr describes to which
-      t.string :small_clan_name
+      t.string :full_clan_name
       # describe the family
       t.string :desc
       # Specify to which attr this family provide bonus

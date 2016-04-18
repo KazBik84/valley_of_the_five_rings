@@ -6,10 +6,12 @@
       = f.text_field(:name)
     %li
       = f.label(:clan_id, 'Klan')
-      = f.select(:clan_id, Clan.all.collect { |c| [ c.clan_name, c.id ]})
+      / I skip object val :character because
+      / this is form for character and it will be provided
+      = f.collection_select(:clan_id, Clan.all, :id, :clan_name)
     %li
       = f.label(:family_id, 'Rodzina')
-      = f.select(:family_id, @clan.families.collect { |f| [f.name, f.id ]})
+      = f.grouped_collection_select(:family_id, Clan.all, :families, :clan_name ,:id, :name)
     %li
       = f.hidden_field(:user_id, value: current_user.id)
     %li

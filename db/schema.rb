@@ -134,14 +134,14 @@ ActiveRecord::Schema.define(version: 20160412192401) do
   create_table "families", force: :cascade do |t|
     t.string   "name"
     t.string   "clan_name"
-    t.string   "small_clan_name"
+    t.string   "full_clan_name"
     t.string   "desc"
     t.string   "bonus_attr"
     t.string   "bonus_attr_pl"
     t.string   "mon_img"
     t.integer  "clan_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   add_index "families", ["clan_id"], name: "index_families_on_clan_id", using: :btree
