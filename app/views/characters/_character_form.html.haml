@@ -1,4 +1,3 @@
-= "To jest param >> #{params[:clan_id]}"
 = form_for @character, remote: true do |f|
   %ul.no_dot
     %li
@@ -12,6 +11,9 @@
     %li
       = f.label(:family_id, 'Rodzina')
       = f.grouped_collection_select(:family_id, Clan.all, :families, :clan_name ,:id, :name)
+    %li
+      = f.label(:basic_school, 'Szkoła')
+      = f.grouped_collection_select( :basic_school_ids, Clan.all, :basic_schools, :clan_name, :id, :name)
     %li
       = f.hidden_field(:user_id, value: current_user.id)
     %li

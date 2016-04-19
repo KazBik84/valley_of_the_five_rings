@@ -7,15 +7,7 @@ class CharactersController < ApplicationController
 
   def new
     @character = Character.new
-    if params[:clan_id]
-      @clan = Clan.find(params[:clan_id])
-    else
-      @clan = Clan.first
-    end
-    respond_to do |format|
-      format.js
-      format.html
-    end
+    @schools = BasicPrimarySchool.all + BasicShugenjaSchool.all
   end
 
   def create
