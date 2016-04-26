@@ -1,0 +1,6 @@
+= label_tag :character_clan_id, 'Klan:'
+/ I skip object val :character because
+/ this is form for character and it will be provided
+= collection_select(:character, :clan_id, Clan.all, :id, :clan_name, { selected: @clan.id})
+%span.glyphicon.glyphicon-question-sign{"data-toggle"=> "modal", "data-target"=> "#clan_desc", :type => "button"}
+= render partial: 'shared/pop_up_window', locals: {head_object: @clan.clan_name, desc_object: @clan.desc, id_name: 'clan_desc'}

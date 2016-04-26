@@ -1,20 +1,13 @@
-= form_for @character, remote: true do |f|
+= form_for [ current_user, @character], remote: true do |f|
   %ul.no_dot
     %li
       = f.label(:name, 'Imię Postaci:')
       = f.text_field(:name)
-    %li
-      = f.label(:clan_id, 'Klan')
-      / I skip object val :character because
-      / this is form for character and it will be provided
-      = f.collection_select(:clan_id, Clan.all, :id, :clan_name)
-    %li
-      = f.label(:family_id, 'Rodzina')
-      = f.grouped_collection_select(:family_id, Clan.all, :families, :clan_name ,:id, :name)
-    %li
-      = f.label(:basic_school, 'Szkoła')
-      = f.grouped_collection_select( :basic_school_ids, Clan.all, :basic_schools, :clan_name, :id, :name)
-    %li
-      = f.hidden_field(:user_id, value: current_user.id)
+    %li{id: 'clan_select'}
+      = render 'character_form_clan'
+    %li{id: 'family_select'}
+      = render 'character_form_families'
+    %li{id: 'school_select'}
+      = render 'character_form_schools'
     %li
       = f.submit "Dodaj Postać"
