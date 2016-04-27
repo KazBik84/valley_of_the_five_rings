@@ -1,3 +1,9 @@
 $('#clan_select').html("<%= j render 'character_form_clan' %>");
 $('#family_select').html("<%= j render 'character_form_families' %>");
 $('#school_select').html("<%= j render 'character_form_schools' %>");
+$('#character_<%= @old_school_bonus %>').val('2');
+$('#character_school_bonus').val('<%= @selected_school.bonus_attr %>');
+$('#character_<%= @old_family_bonus %>').val('2');
+$('#character_family_bonus').val('<%= @selected_family.bonus_attr %>');
+$('#character_<%= @selected_family.bonus_attr %>').val('<%= @increase_val %>');
+$('#character_<%= @selected_school.bonus_attr %>').val('<%= @increase_val %>');

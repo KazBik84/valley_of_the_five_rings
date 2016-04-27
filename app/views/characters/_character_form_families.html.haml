@@ -1,6 +1,6 @@
 / name_with_attribute is defined in family model
 = label_tag :character_family_id, 'Rodzina:'
-= collection_select( :character, :family_id, @families.each, :id, :name_with_attribute)
-%span.glyphicon.glyphicon-question-sign{"data-toggle"=> "modal", "data-target"=> "#family_desc", :type => "button"}
+= collection_select( :character, :family_id, @families.each, :id, :name_with_attribute, {selected: @selected_family.id})
+%span.glyphicon.glyphicon-question-sign.pointer_cursor{"data-toggle"=> "modal", "data-target"=> "#family_desc", :type => "button"}
 
 = render partial: 'shared/pop_up_window', locals: {head_object: "Ród #{@selected_family.name}", desc_object: @selected_family.desc, id_name: 'family_desc'}

@@ -10,4 +10,10 @@
     %li{id: 'school_select'}
       = render 'character_form_schools'
     %li
+      = render 'character_attributes', f: f
+    %li
+      = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
+    %li
+      = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)
+    %li
       = f.submit "Dodaj Postać"

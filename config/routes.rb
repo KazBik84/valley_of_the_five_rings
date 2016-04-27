@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :characters do
       collection do
         get 'on_clan_change'
+        get 'on_family_change'
+        get 'on_school_change'
       end
     end
   end

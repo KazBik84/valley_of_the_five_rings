@@ -1,0 +1,56 @@
+%ul.no_dot
+  %li
+    %ul.list-inline.no_dot
+      %li
+        %ul.no_dot
+          %li
+            %strong
+              Ogień:
+          %li
+            = f.label(:agility, 'Zręczność:')
+            = f.number_field( :agility, value: attr_value(:agility))
+          %li
+            = f.label(:intelligence, 'Inteligencja:')
+            = f.number_field( :intelligence, value: attr_value(:intelligence))
+      %li
+        %ul.no_dot
+          %li
+            %strong
+              Powietrze:
+          %li
+            = f.label(:reflexes, 'Refleks:')
+            = f.number_field( :reflexes, value: attr_value(:reflexes))
+          %li
+            = f.label(:awareness, 'Intuicja:')
+            = f.number_field( :awareness, value: attr_value(:awareness))
+  %li
+    %ul.list-inline.no_dot
+      %li
+        %ul.no_dot
+          %li
+            %strong
+              Ziemia:
+          %li
+            = f.label(:stamina, 'Wytrzymałość:')
+            = f.number_field( :stamina, value: attr_value(:stamina))
+          %li
+            = f.label(:willpower, 'Siła Woli:')
+            = f.number_field( :willpower, value: attr_value(:willpower))
+      %li
+        %ul.no_dot
+          %li
+            %strong
+              Woda:
+          %li
+            = f.label(:strength, 'Siła:')
+            = f.number_field( :strength, value: attr_value(:strength))
+          %li
+            = f.label(:perception, 'Percepcja:')
+            = f.number_field( :perception, value: attr_value(:perception))
+  %li
+    %ul.no_dot
+      %li
+        %ul.list-inline.no_dot
+          %li
+            = f.label(:void, 'Pustka:')
+            = f.number_field( :void, value: attr_value(:void))
