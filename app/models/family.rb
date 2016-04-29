@@ -1,6 +1,6 @@
 class Family < ActiveRecord::Base
   belongs_to :clan
-  has_many :characters
+  has_many :characters, dependent: :destroy
 
   validates_presence_of :name, :clan_name, :full_clan_name, :desc, :bonus_attr, :bonus_attr_pl
   validates_inclusion_of :clan_name, in: CLAN_NAMES

@@ -586,7 +586,7 @@ basic_schools = [
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc: 'Ród Asako wiedzie klasztorne życie, pełne poznawania nauki, a nigdzie nie jest to bardziej widoczne niż w tradycji dworzan z tego rodu. Szkolenie składa się z szeroko zakrojonych badań na dużej liczbie tematów, z których część może być wybrana przez samych studentów. Szeroka baza wiedzy daje Asako punkt odniesienia do zbadania nowych informacji lub sytuacji i daje im wspaniały wgląd w sytuację społeczną na dworze.  Mędrcy specjalizują się w naukowych poszukiwaniach i wykorzystują je jako środek do sukcesu w sytuacjach społecznych.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Delikatne ubranie, wakizashi, zestaw do kaligrafi, zestaw podróżny, 5 koku'},
   #5 -----------------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Henshin Asako',
@@ -596,7 +596,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Istnieje kilka grup w Szmaragdowym Cesarstwie tak enigmatycznych i słabo poznanych jako sekty zakonnej Asako zwanej Henshin. Nawet wśród Feniksa, niewielu poza rodziną Asako posiada jakieś zrozumienie o tej grupie. Większość Rokugańczyków uwierza że Henshin są jedynie klasztorny grupą dworzan i historyków w ramach rodu Asako, choć ich dziwne zachowanie odróżnia je od innych członków rodu Asako, sugerując że posiadają jakiś sposób talent mistyczny lub nadprzyrodzone moce. Niestety, wrażenie to niewiele pomaga w zrozumieniu tego tajemniczego zakonu. Henshini podążają Ścieżką Człowieka jako objawioną przez Shibę do Asako. Poprzez rozwijanie jedności ze wszechświatem, oszukiwanie żywiołów i uczenie ich tajemnice, Henshin może osiągnąć absolutną doskonałość duszy, co z kolei otwiera drogę do boskości. Henshini to głównie mnisi, a ich uczniowie znani są jako michibuku. Po poznaniu tajników Ścieżki Człowieka, są wprowadzeni w szeregi fushihai, prawdziwych mistrzów Henshin. Fushihai posiadają głęboką wiedzę na temat wszechświata, a przede nieśmiertelności, zdolni żyć znacznie dłużej niż normalni śmiertelnicy. Niektóre fushihai wstąpili do Niebios na progu ich śmierci, stając się pomniejszymi fortunami.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Mnisie Szaty, Bo, Sakwa na zwoje, zestaw podróżny, 5 koku'},
   #1 (7)------------------------------------- Jednorożec --------------------------------------------
   {name: 'Szkoła Bushi Moto',
@@ -606,7 +606,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Bushi ze szkoły Moto, to żywe przykłady, zasadności wszelkich stereotypów, na temat klanu Jednorożca. Zdecydowana większość członków tej rodziny, jest pokłosiem unii zawartej między Rokugańczykami i gajinami, którzy dołączyli do klanu Jednorożca, podczas wędrówki Shinjo. Będąc spadkobiercami odludnych, dzikich, barbarzyńskich plemion z północnych stepów, ród Moto praktykuje, nieskrępowany style walki, który czyni ich wprawnymi wojownikami, którzy pomimo negatywnych stereotypów, zyskał uznanie nie jednego dowódcy. Kawaleria Moto, to formacja ciężkiej jazdy, a techniki których uczą, podopiecznych w dojo tej szkoły, skupiają się na pierwszej szarży w pełnym pędzie, usprawniając manewr Pełnego Ataku oraz zwiększenie obrażeń.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Pancerz konny lub ciężki, Ubranie podróżne, Daisho, Broń ciężka lub drzewcowa, Zestaw podróżny, Koń (Koń Jednorożców), 10 koku, dowolna inna broń.'},
   #3 (9)------------------------------------------------------------------------------------------------
   {name: 'Szkoła Obrońców Moto',
@@ -616,7 +616,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'W dziewiątym wieku, rodzina Moto, poniosła wielką stratę, zarówno na swoim morale, jak i na swoim honorze, gdy panujący wtedy daimyo Moto Tsume, ogarnięty dumą i arogancja, wjechał w głąb Krain Cienia, z większą częścią swoich wojsk. W końcu zarówno on sam, jak i wszyscy jego wojownicy, ulegli potędze ciemności i stali się jednym z najpotężniejszych oręży, sił Jigoku w walce z Rokuganem. Moto którzy ocaleli lub zostali w tyle i wrócili, byli głęboko zhańbieni i poprzysięgli zniszczyć wszelkie ślady Skazy Cienia. Przysięga ta stała się podwalina elitarnej Białej Straży, jak i Obrońców Moto. Choć szkoła Obrońców Moto istniał przed upadkiem Moto, szkoła nie była nakierowana głównie na walkę ze stworami Krain Cienia, a techniki których uczono, nie były jeszcze w pełni rozwinięte. Lecz hańba Tsume, zmieniła wszystko. Mroczni Moto, to okropne stworzenia, poruszają się na monstrualnych koniach, które nigdy się nie męczą, napełnieni nadludzką siłą i mroczną mocą, by zniszczyć każdego przeciwnika sił Krain Cienia. I to właśnie zagrożenie tchnęło szkołę Obrońców Moto, by stali się jeszcze silniejsi, na tyle silni, by w pojedynkę mogli wygrać ze swymi mrocznymi krewnymi. Szkoleni by zauważać najmniejsze nawet oznaki Krain Cienia i by neutralizować ich przewagi. Władze rodu dołożyły wszelkich starań, by Obrońcy Moto posiadali możliwie najpełniejszą wiedzę, a klan Kraba chętnie pomógł w tym zakresie, zwłaszcza po pomocy jaką klan Jednorożca okazał rodzinie Hiruma, podczas odbudowy ich własnej szkoły. Gdy Obrońca Moto trafi na trop, Krain Cienia nie spocznie póki on lub przeciwnik nie będzie martwy.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Ciężki pancerz, Ubranie podróżne, Daisho, Dowolna inna broń, Zestaw podróżny, Koń juczny, 5 koku.',
   special: 'By dołączyć do tej szkoły, postać musi posiadać Zaletę Wyższy Cel (Pokonać Krainy Cienia)lub Wadę Szalony Cel (Zniszczyć Krainy Cienia).'},
   #6 (12)------------------------------------------------------------------------------------------------
@@ -627,7 +627,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Szkoła Emisariuszy Ide, skupia się na spokojnym umyśle, jasności we wszystkim i mediacji. Szkoła ta jest najbardziej pacyfistyczną z pośród wszystkich szkół dworskich, w całym Rokuganie, może z wyłączeniem szkoły Asako z klanu Feniksa. Silne przekonanie do pacyfizmu, topniało i chwiało się na przestrzeni wieków, jednak pozostali oni wierni zasadzie, że lepiej jest oddalać konflikty, niż je wywoływać. Dzięki temu są mile widzianymi sojusznikami, niektórych klanów i złem koniecznym innych. Ide akceptuje te komplementy i krytyki z równą radością. Techniki szkoły Ide, różnią się znacznie od technik, których uczą w innych klanach, gdyż są ona całkowicie nie agresywne. Ide specjalizują się w chronieniu siebie, od konsekwencji swoich działań i próbie załagodzenia konfliktów między innymi.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Ekstrawaganckie ubranie, Wakizashi, Dowolna inna broń, Zestaw do klaligrafii, Zestaw Podróżny, 10 koku.'},
   #7 (13)------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Shinjo',
@@ -637,7 +637,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Shinjo, do perfekcji opanowali taktykę walki konnej, popularnej w klanie Jednorożca. Styl walki którego uczą w szkole Shinjo, łączy szereg gajińskich stylów walki, z którymi ród ten spotkał się podczas swojej długiej wędrówki poza granicami Cesarstwa. W wyniku tych doświadczeń, rodzina uczy stylu walki opartego na różnych rodzajach obrony, wliczając w to techniki parowania, riposty i inne niecodzienne manewry, z którymi większość Rokugańczyków nie jest zaznajomiona.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Pancerz lekki lub ashigaru, Ubranie podróżne, Daisho, Łuk, Nóż, Zestaw podróżny, Koń, 10 koku.'},
   #8(14)------------------------------------------------------------------------------------------------
   {name: 'Szkoła Dziewic Wojny Utaku',
@@ -647,7 +647,7 @@ basic_schools = [
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Dziewice Wojny Utaku, znane są również jako Shiotome i stanowią najlepiej wyszkoloną jazdę w całym Rokuganie, których wrogowie obawiają się bardziej nawet, niż i krewnych ze szkół Moto, czy Shinjo. Choć większości koni klanu Jednorożca, to gajinskie konie, które są większe i silniejsze od Rokugańskich kuców. Tylko rodzina Utaku ma prawo hodować i wykorzystywać legendarne konie Utaku, które są najlepszymi wierzchowcami w znanym świecie. Podobnie jak większość szkół Bushi z klanu Jednorożca, szkoła Dziewic Wojny Utaku, kładzie duży nacisk na walkę konną, choć nie zaniedbuje również technik walki pieszej. Jednakże pełnię swoich możliwości Dziewica Wojny Utaku osiąga walcząc konno, stanowiąc wtedy zagrożenia dla praktycznie każdego ludzkiego przeciwnika. Honor jest również ważny dla Dziewic Wojny i w miarę jak postać staje się coraz bardziej honorowa, tym potężniejszą, staje się bronią dla Dziewicy Wojny.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Pancerz lekki lub konny, Ubranie podróżne, Dowolna inna broń, Zestaw podróżny, Koń Utaku, 10 koku.',
   special: 'Tylko kobieta, urodzona w rodzinie Utaku, może przystąpić do tej szkoły.'},
   #1(15)------------------------------------- Krab ------------------------------------------
@@ -729,7 +729,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Przez wieki, wiele podstawowych szkół Bushi, należących do wielkich klanów, opracowało własne specjalizacje, które zawężyły ich rozwój. Akodo uznawał taką postawę za błąd i starannie go unikał. Dlatego Akademia Akodo koncentruje się na Kenjutsu, jako podstawowej sztuce walki w Cesarstwie, a jej uczniowie uczeni są, że jeśli za każdym razem uderzysz dokładnie tam gdzie tego chcesz, niema potrzeby, aby uczyć czegokolwiek bardziej skomplikowanego w ramach nauki. Niektórzy uważają tę postawę za nazbyt prostą, nikt jednak nie kwestionuje umiejętności bushi z Akademii Akodo w walce. Badanie bitew z przeszłości, również jest ważnym elementem szkolenia każdego Akodo, dzięki temu niema bushi Akodo którzy nie znali by choćby podstaw taktyki i strategii. Techniki Akodo skupiają się na precyzji, przekształcając marginalne sukcesy na większe, zmieniając porażkę w sukces. Do pewnego stopnia Szkoła również pozwala negować przewagę, jaką przeciwnik może posiadać.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Lekki pancerz, Ubranie podróżne, Daisho, dowolna inna broń, Zestaw podróżny, 5 koku.'},
   #3(26)------------------------------------------------------------------------------------------
   {name: 'Szkoła Bardów Ikoma',
@@ -739,7 +739,7 @@ basic_schools = [
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc: 'Jeśli poszukać największych gawędziarzy każdego pokolenia, w całej historii Rokuganu wyjdzie wyraźnie, że Ikoma zdominował ten aspekt społeczny Cesarstwa. W przeciwieństwie do większości dworzan, którzy skupiają się na manipulacji i zwodzeniu innych, bardowie Ikoma starają się żyć przykładnie, powołując się na historyczne precedensy i mityczne opowieści o bohaterach, w celu wykazania pożądanych rezultatów, w dowolnej rozmowie. Choć może się to wydawać niecodzienną taktyką, istnieje wiele dworzan w innych klanach, którzy mają trudności, w przekonaniu bardów Ikoma, zwłaszcza gdy bard Ikoma może demonstracyjnie udowodnić, że przodkowie danej osoby mogliby nie zgodzić się z przyjętą przez nią postawą. W społeczeństwie tak bogatej historii i tradycji, argument w postaci przypowieści jest zaskakująco skuteczną techniką. Techniki Ikoma pozwalają inspirować innych, a także oprzeć się manipulacji jego przeciwników. Ponadto, porównując innych do postaci historycznych, Ikoma może zyskać chwałę nie tylko dla siebie, ale też dla innych, o wiele łatwiej, niż większości.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Tradycyjne ubranie, Wakizashi, Nóż, Zestaw do kaligrafii, Zestaw podróżny, 5 koku.'},
   #4(27)---------------------------------------------------------------------------------------------
   {name: 'Szkoła "Cieni" Ikoma',
@@ -749,7 +749,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Chociaż współcześnie, wielu członków rodu Ikoma nie pamięta lub zdecydowały się zapomnieć, założyciel rodu Ikoma nie był szczególnie honorowym człowiekiem. Choć służył Akodo z wielkim oddaniem i lojalnością, metody jakie stosował by wykonać powierzone mu zadania, często są pomijane, w historycznych zapiskach. Większość Ikoma nie uważają tego za problem, ale są wśród nich tacy, którzy rozumieją, że to pominięcie jest środkiem by chronić honor rodziny. Prawda jest taka że Ikoma był bezwzględnym, pragmatycznym indywidualistą, który nie widział nic złego, w niehonorowych metodach by osiągnąć założone cele. Szkoła "Cieni" Ikoma, to mała i bardzo tajemnicza grupa, działająca w rodzinie Ikoma, a jej członkowie podążają ścieżkę Ikomy, takiego jaki był naprawdę. Sprawia to że są bardzo pragmatycznymi ludźmi, którzy istnieją by działać jako przeciw waga dla niehonorowych działań klanu Skorpiona i innych grup nie wyznających honorowych taktyk. Choć czasami, wzywani są do poświęcenia swojego honoru dla dobra klanu, robią to chętnie i bez żalu i prawie zawsze, czynią to tak by klan Lwa jako całość pozostał nieświadomy ich czynów.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Tradycyjne ubranie, Daisho, Dowolna inna broń, Zestaw do kaligrafii, Zestaw podróżny, 5 koku.'},
   #5(28)-----------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Berserkerów Matsu',
@@ -759,7 +759,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Zdecydowana większość licznych legionów samurajów rodu Matsu, to wychowankowie Szkoły Berserkerów Matsu, nie z innego powodu niż, że większość Matsu wierzy, że inne style walki są zbyt konserwatywne i ograniczone. Prawdziwy Matsu nie zna strachu przed śmiercią, a uczeni są całkowitego oddania i pochłonięcia się w walce. Choć to czyni berserkera Matsu, wrażliwym na ataki innych, filozofia szkoły mówi, że przeciwnik pokonany nie jest w stanie oddać. To z tego powodu, legiony rodziny Matsu sieją taki postrach na polu bitwy, jak bowiem pokonać przeciwnika, który nie dba o to czy wróci z bitwy żywy lub martwy, póki tylko pierwszy pokona swojego wroga? Techniki Matsu skupiają się mocno na postawie Pełnego Ataku, co czyni je silnie ofensywne, lecz zmusza też do przemyślenia swojej taktyki, tak by pozostać jak najmniej odsłoniętym na ataki wroga. Szał w jaki wpada berserker jest tak wielki, że poprzez stulecia, szkoła wypracowała technikę wykorzystania go, przeciw wrogom Matsu.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Lekki lub ciężki pancerz, Ubranie podróżne, Broń ciężka lub drzewcowa, Daisho, Zestaw podróżny, 5 koku.'},
   #6(29)------------------------------------------------------------------------------------
   {name: 'Szkoła Władców Bestii Matsu',
@@ -769,7 +769,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Szkoła Władców Bestii rodziny Matsu, jest wyjątkowa w skali całego Rokuganu, jeśli chodzi o podejście do bitew i walki przy pomocy zwierząt. Wiele innych klanów szkolić zwierzęta do walki, lecz Władcy Bestii idą krok dalej i nawiązują osobistą więź ze swoimi bestiami. Lew to dzikie stworzenie, które walczy w stadach. Techniki szkoły Władców Bestii, uczą swoich podopiecznych jak przyjąć lwy do swojego stada, łącząc go emocjonalnie i duchowo z każdym lwem, który walczy razem z nim. Władcy Bestii traktują lwy jak równych sobie, tworząc z nimi, więź rodzinną. Komunikacja między Władcą Bestii, a jego stadem, graniczy z mistycyzmem, gdy Władca Bestii weźmie do stada lwa, potrafi instynktownie wyczuć potrzeby swoich podopiecznych, praktycznie bez słów czy gestów. Jednakże zbliżenie emocjonalne do zwierząt, często odbija się na relacjach z ludźmi. Większość Władców Bestii, trzyma się na uboczu, pośród innych Władców Bestii, niż pośród innych samurajów. Niektóry generałowie poddawali w wątpliwość ich stosunek do Bushido, jednak tylko Matsu potrafią, w tak nietypowej sytuacji utrzymać swój honor, właściwe podejście do Bushido i przywiązanie do tradycji.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Lekki pancerz, Ubranie podróżne, Daisho, Dowolna inna broń, Zestaw podróżny, 4 koku.'},
   #1(30) ------------------------------ Modliszka ---------------------------------
   {name: 'Szkoła Bushi Yoritomo',
@@ -779,7 +779,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Yoritomo są panami na morzu, w wyniku stuleci spędzonych walcząc ze statku na statek oraz na wybrzeżach, ich styl walki jest bardzo nietypowy. Uderzenia fal zostały włączone do ich stylu walki, który wykorzystuje więcej ruchu niż, inne Wielki szkoły. Yoritomo odkrył, że przedłużająca się walka jest szkodliwe dla bitwie morskiej i zaczął nauczać bezwzględnie wykorzystać każdą słabość obrony przeciwników. Korodujący wpływ wody morskiego powietrza na stal jest znany, w wyniku tego szkoła Yoritomo ma wielowiekowe doświadczenie walki bardzo niekonwencjonalna bronią, w szczególności rodzaj broni chłopskiej. Szkoła Yoritomo uczy uzyskiwanie przewagi na wielu polach, poprawiając atak oraz zmniejszając obroną przeciwnika, nie jest jednak uważana jako mistrz w żadnej specjalności.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Lekki pancerz, Wytrzymałe ubranie, Daisho, dowolna inna broń (lub para noży), Zestaw podróżny, 10 koku.'},
   #4(33)------------------------------------------------------------------------------------
   {name: 'Szkoła Dworzan Yoritomo',
@@ -789,7 +789,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Pozostawieni samym sobie przez Cesarstwo, które w dużej mierze marginalizowało ich, rodzin Yoritomo nie chciała zniknąć, zamiast tego poświęciła znaczne środki, na rozwój w każdym możliwym aspekcie, jaki powinien rozwijać normalny klan. Rozumiejąc jaki wpływ, mogą mieć wyszkoleni dworzanie na ich interesy kupieckie, Yoritomo opracowała szkołę dworską która ma wspomagać klan w tym zakresie. Początkowo choć odnosili sukces w przedsięwzięciach biznesowych, dworzanie Yoritomo rzadko pojawiali się na dworach, głównie ze względu na ich obcesowy sposób zachowania i skłonność do zastraszania. Od czasu wyniesienia klanu do statusu Wielkiego Klanu, jednak wzrosły priorytety szkoły dworskiej zmieniły się, a dworzanie Yoritomo zaczęli odnosić więcej sukcesów na dworach. Techniki których uczą w szkole dworskiej Yoritomo nadal specjalizują się w zastraszaniu. To sprawia że są one szczególnie skuteczne, gdy przeciwnicy są nie jest do takich taktyk przyzwyczajony lub ma słabą siłę woli. Niestety przeciw bardziej zdolnym przeciwnikom, takim jak Żurawie lub Skorpiony, technika ta może okazać się całkowicie nieskuteczna.',
-  honor: '2,5',
+  honor: '2.5',
   outfit: 'Ekstrawaganckie ubranie, Wakizashi, dowolna inna broń, Zestaw do kaligrafii, Zestaw podróżnym 10 koku.'},
   #5(34)--------------------------------------------------------------------------------
   {name: 'Szkoła Łuczników Tsuruchi',
@@ -809,7 +809,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'W czasach gdy rodzina Tsuruchi, znana była jako Klanu Osy, słynna była z dwóch rzeczy, niesamowitych umiejętności w łucznictwie i ich niezachwianej wytrwałości jako łowcy nagród. Klan został upoważniony przez Szmaragdowego Czempiona, by ścigać tych którzy uciekają przed wymiarem sprawiedliwości za opłatą, co przez wiele lat pozwalało klanowi Osy przetrwać. Chociaż wiele samurajów potępiła tę praktykę, nikt nie mógł zaprzeczyć waleczności Tsuruchi. Od czasu gdy rodzina Tsuruchi dołączył do klanu Modliszki, jej dwie główne ścieżki rozdzieliły się na tyle że powstały dwie oddzielne szkoły, między którymi młody Tsuruchi może wybrać, w zależności od swoich predyspozycji i preferencji. Większość wybiera karierę jako żołnierzy i łuczników w ramach wojsk klanu Modliszki, ale nieliczni kontynuują rodzinną tradycję, stając się członkami małej, ale słynny Szkoły Łowców Tsuruchi. Łowcy Tsuruchi są traktowane jako zarządczy na prowincji Tsuruchi i często na terytorium klanu Modliszki jako całości. Umowa pomiędzy Tsuruchi i Szmaragdowego Championa nadal istnieje, a więc rodzina może nadawać uprawnienia dla wybranej liczby studentów, która jest może działać w imieniu Szmaragdowego Zarządcy, w zakresie zdolności do zatrzymania znanych przestępców. Tsuruchi są wyjątkowo ostrożni, w wyborze osób którym dają taką władzę, ponieważ są w pełni świadomi, że umowa może być unieważniona, jeśli jest nadużywana lub niewłaściwie stosowana. Łowcy Tsuruchi przemierzają Cesarstwo w poszukiwaniu zbiegów, oskarżonych o zbrodnie przez naczelne organy, którzy uciekli sprawiedliwości, na jaką zasługują. Chociaż technicznie mogą ścigać tylko polują tylko na tych ściganych Cesarskim edyktem. Łowcy Tsuruchi również zaakceptują pojedyncze zlecenia z klanów i rodzin, które chcą ich pomocy. Zlecenia zazwyczaj warte są, ilość koku równą Randze celu. Opłata ta zostanie podwojona, jeśli cel jest okrutnym kryminalistą lub shugenjom i może zwiększyć się jeszcze bardziej, w szczególnych lub niecodziennych okolicznościach.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Pancerz lekki lub ashigaru, Wytrzymałe ubranie, Daisho, Łuk lub nóż, Zestaw podróżny, 10 koku'},
   #8(37)------------------------------------------------------------------------------------------
   {name: 'Pięściarz Modliszki',
@@ -819,7 +819,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Przez większość swojej historii klan Modliszki, w znacznym stopniu składał się z piratów i przemytników. Chociaż klan czasami, czynił starania w celu usunięcia tych przestępców z jej szeregów (zwłaszcza po osiągnięte statusu Wielkiego Klanu), nigdy nie zostali oni całkowicie wyeliminowani. Działania te sprawiły, że ich techniki walki można znaleźć wśród roninów, Gmin Wako (gangi piratów) oraz licznych karteli przemytu, a także w obrębie klanu Modliszki. Techniki w Pięściarzy Modliszki są bardziej niekonwencjonalne niż regularnego bushi Yoritomo. Zrodzone z przemocy brudnych walkach pokładowego i pijackich burd, przekazywane przez rodziców ich dzieciom poprzez bezpośrednie instrukcje (często o raczej niezwykłego rodzaju), a nie w formalnym otoczeniu dojo. Niektóre opowieści o tej formie walki twierdzą, że znajduje się w Bractwo Shinsei, pijanych mnichów i to od nich, ta technika walki przedostała się do klanu Modliszki. Bez względu na pochodzenie ten niekonwencjonalny styl walki, nadal rozwija się wewnątrz klanu Modliszki i przestępców.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Zniszczone ubranie, dwie dowolne bronie, Kama, Tanto, Zestaw podróżny, 4 koku.'},
   #1(38)----------------------------------- Pająk -------------------------------------------------
   {name: 'Szkoła Bushi Daigotsu',
@@ -829,7 +829,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Legiony wojowników wiernych Daigotsu uzywają stylu walki, będącego zlepkiem różnych technik, których uczyli się w poprzednich szkołach. W rezultacie powstała technika, brutalnie skuteczna, która może okaleczyć nie tylko ciało przeciwnika, ale i jego duszę, a następnie wykorzystać to dla własnej korzyści. Techniki Szkoły Bushi Daigotsu wyraźnie wskazują na ich związek, z ich bogiem i mistrzem, Fu - Lengiem. Zdolność do zwiększenia obrażeń i zaszczepiania strachu w przeciwnikach sprawia, że stanowią wyzwanie nawet dla najpotężniejszego wroga, a moc Bushi Daigotsu może wzrosnąć wielokrotnie jeśli sięgną po moc Krain Cienia, co wiąże się oczywiście z ryzykiem.',
-  honor: '1,5',
+  honor: '1.5',
   outfit: 'Lekki Pancerz, Wytrzymałe ubranie, Daisho, dowolna inna broń, Zestaw podróżny, 3 koku.'},
   #2(39)-------------------------------------------------------------------------------------------
   {name: 'Szkoła Dworzan Daigotsu',
@@ -839,7 +839,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Najprawdopodobniej największym zwycięstwem klanu Pająka, była powolna infiltracja wielu dworów należących do Wielkich Klanów. Przebrani za roninów i emistariuszy pomniejszych gałęzi innych rodów, dworzanie Daigotsu rozszerzali siatkę informacji klanu Pająka, szantażując swoje ofiary oraz namawiając łasych na władzę, by tylko wzmocnić pozycję klanu. Działając z pozycji siły, dworzanie Daigotsu starają się wmanipulować innych w konflikty, które będą na ręke klanowi Pająka, jednocześnie dbając o to by uwaga, zwrocona była jak najdalej od ich klanu. Największa siła uczniów tej szkoły nie leży w technikach jakiech ona uczy, choć są one bardzo uniwersalne, a w umiejętności wykorzystania Sazy Cienia. Technika ta skupia się na rozpraszaniu innych, tworząc w ktorym dworzanin Daigotsu może działać, tak by w razie konieczności odbić winę na kogoś innego. Pozwala to zarówno przetrwać, jak i osiągnąc korzyści dla klanu Pająka.',
-  honor: '1,0',
+  honor: '1.0',
   outfit: 'Delikatne ubranie, Wakizashi, Zestaw do kaligrafi, Zestaw podróżny, 3 koku.'},
   #4(41)--------------------------------------------------------------------------------------------
   {name: 'Szkoła Mnichów Pająka',
@@ -849,7 +849,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Pochodzenie tego enigmatycznego zakonu, jest owiane tajemnicą, nawet dla wysokopostawionych członków klanu. Zakon założył upadły mnich Roshungi, jendak dopiero jego uczeń Michio rozpoczął poszukiwanie nowej ścieżki, bez względu na konsekwencje jakie, niosła za sobą ta decyzja. Członkowie zakonu Pająka, są bezlitośni i mają zasłużona reputacje brutalnych. Styl ich walki opiera się na walce wręcz jak i przy użyciu różnego rodzaju broni. Choć zakon działa obecnie w pełni w ramach klanu Pająka, tylko niewielka część z jego członków posiada Skazę Cienia. Styl walki mnichów z zakonu Pająka, skupia się na okaleczaniu przeciwnika oraz odpieraniu wszelkiego rodzaju manipulacji, jak i magii.',
-  honor: '1,5',
+  honor: '1.5',
   outfit: 'Pancerz lakki lub ciężki, Wytrzymałe ubranie, Dowolna broń cieżka lub drzewcowa, Zestaw podróżny, 3 koku.'},
 
   #1(42)----------------------------------- Skorpion -----------------------------------------
@@ -860,7 +860,7 @@ basic_schools = [
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc: 'Najwięksi złoczyńcy w Rokuganie, w najbardziej udanych sztukach to zawsze Skorpiony, ze względu że dla większości samurajów jest w to najłatwiej uwierzyć. To działania studentów z Szkoły Bushi Bayushi, doprowadziły ten stereotyp do życia i wzmacniają go cały czas. Każdy uczeń w dojo Bayushi jest przeszkolony, aby być idealną bronią niezgody, mając możliwość zawracania Klanów przeciw sobie przy minimalnym wysiłku. Szkolenie walki jest tylko jednym z aspektów kształcenia, które często zawiera techniki społecznej manipulacji, Skradanie, a nawet użycie trucizny, w pewnych sytuacjach jest uznane za odpowiednie. Techniki Bayushi może być najlepiej opisana jako zbiór brudnych sztuczek. Koncentrują się one na zyskaniu przewagi, jak choćby poprzez zwiększenie inicjatywy lub bezlitosne okaleczenie przeciwnika by utrudnić mu dalszą walkę.',
-  honor: '2,5',
+  honor: '2.5',
   outfit: 'Lekki pancerz, Wytrzymałe ubranie, Daisho, dowolna inna broń, Zestaw podróżny, 5 koku.'},
   #2(43)----------------------------------------------------------------------------------------------------
   {name: 'Szkoła Dworzan Bayushi',
@@ -870,7 +870,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Reputacja Skorpiona na dworach jest prawie równa dworzanom z klanu Żurawia, a na pewno bardziej przerażający, co jest to bezpośrednim wynikiem wrogich machinacji dworzan Bayushi na przestrzeni wieków. Ogromna siatka informacyjna klanu Skorpiona to w znacznej mierze zasługa dworzan Bayushi, tropiących nawet najdrobniejsze części informacji, które jako całość mogą zostać wykorzystane by przynieść zagładę wybranym osobom, rodzinom lub nawet całym klanom. Dworzanin Bayushi jest mistrzem manipulacji i oszustwa, starającym się odkryć słabości i mroczne sekrety swoich przeciwników (lub sojuszników), by bezlitośnie wykorzystać je dla dobra klanu Skorpiona. Każdy wróg, nie ważne jak pozornie nietykalny, może być celem dworzan Bayushi, którzy potrafią otworzyć możliwości wcześniej zamknięte.',
-  honor: '2,5',
+  honor: '2.5',
   outfit: 'Ekstrawagandzkie ubrania, Wakizashi, dowolna 1 broń, Zestaw do kaligrafii, Zestaw podróżny, 5 koku.'},
   #4(45)-------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Zarządców Soshi',
@@ -880,7 +880,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Szkoła Zarządców Soshi pochodzi od zestawu technik, jakie Soshi Saibankan nauczał swoich yoriko, podczas wielu lat spędzonych jako Zarządca, niektóre plotki twierdzą, że pierwsze trzy techniki zostały wymyślone przez samego Saibankana. Bez względu na to czy jest to prawdą czy nie, szkoła pozostaje wyznacznikiem technik wykorzystywanych w klanie Skorpiona, dla samurajów którzy mają za zadanie utrzymywanie porządku na ziemiach klanu Skorpiona. Szkoła kształci zarządców, yoriko, strażników miejskich i strażników granicznych. Jak wiele takich szkół, Szkoła Zarządców Soshi, uczy mieszanki technik władania mieczem oraz walki wręcz, co pozwala jej uczniom, tłumić bójki i walczyć z bandytami jak równy z równym.',
-  honor: '2,5',
+  honor: '2.5',
   outfit: 'Lekki pancerz, Wytrzymałe ubranie, Daisho, dowolna inna broń, Zestaw podróżny, 5 koku.'},
   #5(46)----------------------------------------------------------------------------------------------
   {name: 'Szkoła Szpiegów Shosuro',
@@ -890,7 +890,7 @@ basic_schools = [
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Niewielu poza klanem Skorpiona jest świadomych, istnienia Szkoły Szpiegów Shosuro, a ci nieliczni którzy są, są albo tak nierozerwalnie związani z klanem Skorpiona że nie odważą się ujawnić swojej wiedzy lub zostali tak bardzo zdyskredytowani, że nikt nie bierze ich słów na poważnie. Shosuro są uosobieniem wszystkich plotek na temat klanu Skorpiona, lecz bez arogancji i okrucieństwa, zwykle im przypisywanego. W szpiedzy Shosuro to cisi, bezlitośni zabójcy, którzy nie biorą żadnej przyjemności lub zadowolenia ze swej roli. Ich jedynym celem jest wypełnienie zadania, bez jakichkolwiek uczuć własnych. Specjalizacja szpiegów Shosuro jest stosunkowo prosta: atakują nieświadome cele i zniszcz je całkowicie. Techniki szkoły, czynią ich praktycznie niemożliwymi do wykrycia, a będąc ukrytym przed przeciwnikiem, może uderzyć z cienia, by zabić niemalże każdego przeciwnika jednym ciosem.',
-  honor: '1,5',
+  honor: '1.5',
   outfit: 'Pancerz lekki lub ashigaru, Wytrzymałe czarne ubranie, Daisho, Łuk lub nóż, Zestaw podróżny, 5 koku.'},
   #6(47)-------------------------------------------------------------------------------------------------
   {name: 'Akademia Aktorów Shosuro',
@@ -900,7 +900,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Akademia Shosuro Butei jest znaną szkołą aktorską, rywalizującą z Akademią Artystów Kakita, z tą różnicą że zamiast samego zamiłowania do sztuki, uczniowie akademii uczeniu są metoda infiltracji i działania jako zabójcy. Najbardziej obiecujące uczniowie otrzymują nauki w zakresie trucizn, skradania i zabijania. Jednak najbardziej rozpoznawalną cechą aktorów Shosuro jest ich umiejętność wczucia się w wyuczoną rolę, dzięki tej umiejętności, potrafią niezauważeni przeniknąć w dowolne miejsce. Dla ogromnej większości swoich uczniów, Akademia Butei jest po prostu szkołą sztuki - uczniowie są oczywiście świadomi że szkoła uczy czegoś więcej, niż się wydaje, ale ignorują takie nieprzyjemności i skupiają się na realizacji ich rzemiosła. W pełni wyuczony adept Akademii Shosuro Butei, są zagadką dla znacznej części Rokugańczyków. Istnieją plotki mówiące że wywiadowcy klanu Skorpiona, są tak wprawni że potrafią przekonać matkę by po śmierci przepisała swoje dobra klanowi Skorpiona, zamiast własnym dzieciom. Choć to przesada, aktorzy Shosuro są z pewnością doskonale wykwalifikowani i biorą święty obowiązek ich klanu by chronić Cesarstwo, niezwykle poważnie. W ich opinii, niema oszustw zbyt niehonorowych, by wypełnić powierzone zadanie, a śmierć w imię klanu jest dla nich równie jasnym wyjściem jak dla każdego innego Skorpiona.',
-  honor: '1,5',
+  honor: '1.5',
   outfit: 'Dobre ubranie, Różne stroje i przebrania, Nóż, Zestaw podróżny, 10 koku.',
   special: '<em>Osobowość</em> - Najbardziej znaną sztuką jakiej uczą w Akademii Shosuro jest umiejętność swobodnego wcielania się w osobowości innych. Nie jest to tylko aktorstwo, ale pełne oddania przyjęcie czyjejś osobowości jako swojej, odgrywanie jej na wszystkich płaszczyznach, jak mowa ciała czy sposób mówienia. Niektórzy świadkowie twierdzili że nawet rysy twarzy, jak i sylwetka zmieniały się wraz z przyjętą osobowością. Kiedy aktor Shosuro poznaje nową osobowość, musi określić jej podstawowe cechy, takie jak klan, profesje czy charakterystyczne cechy, na przykład "Porywczy Bushi Matsu" lub "Czarująca gejsza". Raz wybrane podstawowe cechy osobowości nie mogą zostać zmienione, chociaż aktor może modyfikować pewne szczegóły, jak przyjmowane nazwiska, przeszłość postaci, potrzeby itp. Osobowość zna siedem podstawowych umiejętności na poziomie 1, w przypadku przyjmowania osobowości z określonych szkół, umiejętnościami które umie osobowość są podstawowe umiejętności z wybranej szkoły. Umiejętności osobowości nie wliczają się do poziomy Chwały postaci i mogą być wykorzystywane tylko podczas odgrywania osobowości. Wejście w osobowość, wymaga dziesięciu minut medytacji, zakończonej testem Medytacja/Intuicja o PT 25. Podczas odgrywania osobowości, aktor może używać dowolnie umiejętności osobowości, może także używać wyuczonych umiejętności, jednak jednoczesne odgrywanie osobowości i używanie własnych umiejętności jest bardzo trudne i testy te mają PT większe o 10. Wyjście z osobowości jest akcją darmową i zauważalną przez wszystkich, gdyż zmienia się ton głosu oraz mowa ciała postaci. Jednakże póki postać odgrywa osobowość, zdemaskowanie jej jest wyjątkowo trudne.'},
   #1(49)------------------------------------ Smok -----------------------------------------------
@@ -911,7 +911,7 @@ basic_schools = [
   bonus_attr: 'stamina',
   bonus_attr_pl: 'Wytrzymałość',
   desc: 'Znana w całym Cesarstwie unikalna Szkoła Bushi Mirumoto, jest jedyną szkołą w Rokuganie która uczy techniki Ninten, czyli efektywnego wykorzystania Wakizashi na równie z Kataną podczas walki. Technika ta rodzi wiele kontrowersji, jest on w sprzeczności z tradycyjną techniką walki tylko Kataną której uczą pozostałe szkoły w Rokuganie, pomimo faktu że oba style powstały w podobnym czasie. W praktyce rywalizacja między Szkołą Bushi Mirumoto, a Szkołą Bushi Kakita będących ich największymi przeciwnikami, nie traci nawet w czasach pokoju. Wielu samurajów stając naprzeciwko bushi ze szkoły Mirumoto, widząc jego lekką i swobodną postawę, zapłaciło wysoką cenę uważając ich styl walki za nieefektywny. Szkoła Bushi Mirumoto skupia się przede wszystkim na korzyściach jakie płyną z walki dwoma broniami, zarówno na zwiększonej ochronie jak i możliwości wyprowadzania większej ilości ataków.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Lekki pancerz, Wytrzymale ubranie, Daisho, dowolna inna broń, Zestaw podróżny. 5 koku.'},
   # 2(50)---------------------------------------------------------------------------------------------------
   {name: 'Szkoła Szermierzy Tao Mirumoto',
@@ -921,7 +921,7 @@ basic_schools = [
   bonus_attr: 'void',
   bonus_attr_pl: 'Pustka',
   desc: 'Chociaż rodzina Mirumoto znana jest przede wszystkim ze szkoły walki dwoma mieczami, która została zapoczątkowana przez założyciela rodziny, nie wszyscy członkowie rodziny podążają ścieżką wyznaczoną przez Mirumoto. Odwieczne dążenie klanu Smoka do oświecenia, nie wspominając o istnieniu zakonu mnichów Togashi, doprowadziła do powstania innych tradycji wśród wojowników Mirumoto. Najbardziej znaną z nich, jest technika Szermierzy Tao, ascetycznych wojowników, którzy utrzymują małe dojo głęboko w najbardziej niedostępnych górach krainy klanu Smoka. Tam adepci tej szkoły, podążają na równi drogą miecza i oświecenia. Adeptów tego dojo praktycznie nie spotyka się poza granicami klanu Smoka, jednak w rzadkich przypadkach, wybierają oni drogę wędrującego mnicha, by szukać oświecenia jak i doświadczenia w walce mieczem w całym Rokuganie.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Wytrzymałe ubranie, Daisho, Tanto, Zestaw podróżny, 1 koku.',
   special: 'Wszyscy Szermierz Tao są Ascetami, nie otrzymują za tę wadę Punktów postaci oraz nie wlicza się ona do limitu 10 punktów na wady postaci.'},
 
@@ -933,7 +933,7 @@ basic_schools = [
   bonus_attr: 'void',
   bonus_attr_pl: 'Pustka',
   desc: 'Mnisi z zakonu stanowią pomniejszy zakon działający w ramach Zakonu Togashi, a został on założony podczas Wieku Ukrytego Cesarza, gdy Togashi Hoshi zbuntował się przeciw Hitomi i zaczął samemu tatuować swoich podopiecznych. W odróżnieniu od Togashi Ise Zumi i Hitomi Kikage Zumi, zakon Tsurui Zumi nie skupia się tak mocno na kształtowaniu ciała i sprawności fizycznej, uznając w to miejsce poznanie własnej duszy. Choć sztuki walki nadal wykorzystywane są w zakonie, to główny nacisk kładziony jest na użycie własnego Chi i innych mistycznych technikach walk. Wielu z mnichów zakonu Hoshi całkowicie porzuciło drogę walki, na rzecz medytacji, kontemplacji, czy innych czynności które mają doprowadzić ich do oświecenia. Jednakże w chwili próby, gdy dobro zakonu lub klanu Smoka, jest zagrożone, zakon staje do walki.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Bo, Zestaw podróżny, 2 koku.',
   special: 'Choć zakon Tsurui Zuni należy do klanu Smoka, dla celów mechaniki jest traktowany jako Zakon Shinsei.'},
 
@@ -944,7 +944,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Nawet w klanie Smoka, metody i przekonania Szkoły Kitsuki są niezwykłe. Jako jedyni w Cesarstwie, Kitsuki wierzą w znaczenie dowodów, coś co inni nie mogą pojąć. Sensei w tej niezwykłej szkole, kładzie ogromny nacisk na rozwój technik obserwacji, szlifując je do punktu aż staną się przenikliwe niczym ostrze. Uczniowie tej szkoły posiadają fotograficzną pamięć, zdolną do zapamiętania na długo wszystkie szczegóły. Mimo, że ich głównym zadaniem jest reprezentacja klanu Smoka na dworach, Dworzanie Kitsuki równie doskonale sprawdzają się jako sędziowie, a ich siłą jest umiejętność zdobywania wiadomości zarówno od ludzi jak i z otoczenia.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Tradycyjne ubranie, Wakizashi, Nóż, Zestaw do kaligrafii, Zestaw podróżny, 5 koku.'},
   #5(53)-------------------------------------------------------------------------------------------------------------
   {name: 'Zakon Mnichów Togashi',
@@ -954,7 +954,7 @@ basic_schools = [
   bonus_attr: 'void',
   bonus_attr_pl: 'Pustka',
   desc: 'Mnisi z zakonu Togashi, zwanie są jako Ise Zumi, a ich najbardziej charakterystycznym znakiem, są tajemne tatuaże. Tatuowanie ciał, atramentem pomieszanym z krwią kami Togashi, stanowi podstawę drogi do oświecenia przyjętą przez mnichów z tego zakonu. Tatuaże te zawierają tajemną moc i dają osobie która je posiada nadludzkie zdolności, których nie potrafią wyjaśnić nawet najmądrzejszy shugenja. Z powodu swojego zachowania mnisi Ise Zumi, są jednocześnie szanowani i postrzegani jako niebezpieczni, przez Rokugańczyków, którzy nigdy do końca nie wiedzą jak dany mnich zachowa się w danej sytuacji. Walka wręcz jest podstawową techniką walki jakiej uczą się mnisi Togashi, która w połączeniu z wysokimi umiejętnościami atletyki sprawia że, potrafią stawić czoła każdej sytuacji.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Bo, Zestaw podróżny, 5 koku.',
   special: '  <p>Istnieje niezliczona liczba tatuaży występujących w ramach zakonu Togashi, niektóre z nich są unikatowe dla pojedynczych jednostek, inne występują bardziej powszechnie. Przedstawione poniżej tatuaże są tylko przykładami najczęściej występujących. By moc tatuażu móc uaktywnić, musi być on widoczny (przykryte ubraniem lub pancerzem nie mogą być uaktywnione). Jeśli w działaniu tatuażu nie jest zapisane inaczej, tatuaże uaktywniane są jako akcja Darmowa, jednak tylko jeden tatuaż może być aktywny w danym czasie, a premie z niego wynikające trwają liczbę rund równą szkole mnicha razy dwa.</p>
       <ul> 
@@ -990,7 +990,7 @@ basic_schools = [
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'W odróżnieniu od zakonu Tsurui, który zgłębia mistyczne moce Chi poprzez kontemplacje, zakon Kikage Zumi, odnajduje oświecenie poprzez przemoc i prace nad własny ciałem. Kikage Zumi byli najmocniejsi podczas panowania Hitomi i dalej aż do Wyścigu po Tron, jednak i w dalszym okresie ten odłam mnichów Togashi, nadal ma wielu członków.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Wytrzymałe ubranie, Zestaw podróżny, 4 koku.'},
   #1(55)------------------------------------------ Żuraw--------------------------------------------------------------
   {name: 'Akademia Pojedynku Kakita',
@@ -1000,7 +1000,7 @@ basic_schools = [
   bonus_attr:  'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Uświęcona Sztuka Iaijutsu jest praktykowane przez wszystkie klany, ale żaden z nich nie opanował jej taki sposób, jak Akademii Pojedynku Kakita. Szkoła skupia się niemal całkowicie na pojedynku. Inne umiejętności są częścią nauk podstawowych, ale są one uważane za przypadkowe, a w wielu przypadkach oferowane są tylko dlatego, że niektóre z ich aspektów, odnoszą się w jakiś sposób do Iaijutsu. Chociaż w Cesarstwie są tacy, którzy krytykowali tę szkołę za wąską specjalizację, niewielu może polemizować z wynikami. Wiele bitew zostało wygranych przez Żurawia, bo wróg został zabity w pojedynku, zanim bitwa się rozpoczęła. Podobnie potęga dworska Żurawia jest łatwiejsza do utrzymania, gdy wyzwanie może być odebrane przez jednego z uczniów akademii Kakita, który stanie w obronie dworzanina. Techniki Kakita kładą największy nacisk na Iaijutsu, ale niektóre z nich mogą być stosowane zarówno w pojedynku, jak i podczas zwykłej potyczki. Kakita są na ogół szybsi niż większość przeciwników, odzwierciedla to ich premia do inicjatywy i są w stanie wykorzystać manewr Skupienia dla większych korzyści niż normalnie, zarówno w pojedynku jak i poza nim.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Lekki Pancerz, Wytrzymałe ubranie, Daisho, dowolna inna broń, Zestaw podróżny, 10 koku.'},
   #2(56)----------------------------------------------------------------------------------------------------
   {name: 'Akademia Artystów Kakita',
@@ -1010,7 +1010,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'W przeciwieństwie do swoich adwersarzy z rodu Shiba, artyści Kakita, nie ograniczają się jedynie do tworzenia fizycznej sztuki, takiej jak, malarstwo i poematy. Akademia Artystów Kakita poświęca się badaniom każdego rodzaju sztuki, czy to opartej na występie czy na pracy rąk, tak by jak najlepiej mogła się ona przysłużyć klanowi Żurawia.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Szaty dworskie, Piękne ubranie, Wakizashi, Rzeczy potrzebne do uprawiania sztuki, Wachlarz, Rokugański kucyk, Zestaw podróżny, 10 koku.',
   special: 'Umiejętności artystyczne których uczą w Akademii Kakita: Aktorstwo, Artysta( Ogrodnik, Ikebana, Origami, Malarstwo, Poezja lub Rzeźbiarstwo'},
   #4(58)----------------------------------------------------------------------------------------------------
@@ -1021,7 +1021,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Dworzanie z Klanu Żurawia są uważani za niekwestionowanych mistrzów dworskich, a reputacja nie będąca ani trochę przesadzona, została osiągnięta tylko i wyłącznie dzięki, sekretnym technikom Dworskiej Szkoły Doji. Priorytetem szkoły jest tworzenie rozległych sieci sojuszników, do których klan Żurawia może się odwołać w razie dowolnej potrzeby, a w szczególności tych którzy mają u nich jakiś dług. Program nauczania w szkole Doji jest dość szeroki i obejmuje mnóstwo tematów, więcej niż może być opanowane przez jednego samuraja, nie ważne jak utalentowanego. Na szczęście sensei dbają by w danym czasie istniała wystarczająca liczba dworzan biegłych w każdym aspekcie. Szkoła Dworzan Doji zbudowana jest sztuce wymiany przysług. Nie jest to jednak cała prawda, dobrze wyszkolony dworzanin szkoły Doji, potrafi wyczuć potrzeby innych i zaproponować je w taki sposób by odmowa był trudna jeśli nie niemożliwa.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Ekstrawagancji Ubranie, Wakizashi, dowolna inna broń, Zestaw do kaligrafii, Zestaw podróżny, 10 koku.'},
   #5(59)------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Zarządców Doji',
@@ -1031,7 +1031,7 @@ basic_schools = [
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Rodzina Doji jest poświęcona ochronie swoich ziem i ludzi od wszystkich zagrożeń, co jest wyrazem oddania Klanu Żurawia cnocie współczucia. W związku z tym, utrzymuje szkołę zarządców, ucząc w niej technik organów ścigania i utrzymania porządku. Chociaż mniej znana ze swoich czynów, szkoła zarządców Doji, wyprzedza inne bardziej znane szkoły zarządców z innych klanów, a nawet Szmaragdowych Zarządców. Pomimo nazwy szkoły, w rzeczywistości tylko niewielka część jego uczniów jest w rzeczywiści mianowana na zarządców. Bardziej prawdopodobne jest że uczniowie zostaną mianowani jako yoriki, pomoc dla zarządców, jako straż pogranicza lub miasteczka. Mimo tego uczniowie tej szkoły często są pośród pierwszych, do uzyskania nominacji na zarządcę, gdy taka pozycje będzie dostępna, nie jest rzadkością również by uczniowie tej szkoły zostali Szmaragdowymi lub Jadeitowymi Zarządcami.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Lekki pancerz, Wytrzymałe ubranie, Daisho, dowolna inna broń (lub 2 noże), Zestaw podróżny, 10 koku.'},
   #6(60)-----------------------------------------------------------------------------------------------------
   {name: 'Szkoła Żelaznych Wojowników Daidoji',
@@ -1041,7 +1041,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Dzięki umiejętnością rodów Doji i Kakita klan Żurawia zdobył pozycję władców dworskich, lecz słowa czasami nie mogą przynieść zwycięstwa. Wtedy właśnie wkraczają Żelaźni Wojownicy ze szkoły Daidoji, dzierżąc siłę i odwagę, która potrzebna jest tam gdzie zawodzą słowa. Daidoji od zawsze uważali się za ciche ostrze klanu Żurawia, pełniąc funkcję zarówno ciężkiej piechoty armii klanu, stanowiąc pokaźny odsetek, pierwszej armii oraz zdecydowaną większość drugiej armii, klanu Żurawia. W czasie pokoju bushi Daidoji służą jako Yojimbo i ta role często jest powodem stereotypów na temat Żelaznych Wojowników. Ród Daidoji jest bardzo elastyczny, a techniki szkoły, pozwalają na zwiększenie wytrzymałości wojownika, jak i uczą jak skutecznie ochraniać innych podczas starć.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Lekki lub ciężki pancerz, Wytrzymałe ubranie, Broń ciężka lub drzewcowa, Zestaw podróżny, 10 koku.'},
   #7(61)-------------------------------------------------------------------------------------------
   {name: 'Szkoła Zwiadowców Daidoji',
@@ -1051,7 +1051,7 @@ basic_schools = [
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Chociaż Żelaźni Wojownicy stanowią najbardziej rozpoznawalną formację rodu Daidoji, ród ten specjalizuje się w szkoleniu zwiadowców, do przeprowadzania zasadzek i precyzyjnych ataków na wrażliwe pozycje armii przeciwnika. Zwiadowcy Daidoji są mistrzami w tworzeniu i zastawianiu pułapek, przeprowadzaniu ataków z zaskoczenia, akceptując przy tym ujmę na własnym honorze w imię dobra klanu, licząc na wsparcie polityczne które będzie przykrywką ich wątpliwych, pod względem honoru czynów.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Pancerz lekki lub ashigaru, Daisho, Łuk, Nóż, dowolna wybrana broń, sprzęt do zastawiania pułapek, Barwniki do kamuflażu, Zestaw podróżny, 5 koku.'},
   #1(62)----------------------------------------- Pomniejsze Klany ------------------------------------------
   {name: 'Szkoła Bushi Ichiro',
@@ -1062,7 +1062,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Założyciel klanu pochodził z rodziny Hida, nie powinno zatem być zaskoczenia, że owa szkoła wyznaje te same lub bardzo podobne zasady. Filozofia szkoły jest prosta uderz swojego przeciwnika tak mocno, by nie był w stanie skorzystać ze swoich zręcznych sztuczek. Bushi Ichiro uwielbiają zapasy oraz walkę bez broni, takie starcie świetnie podkreśla znaczenie czystej siły w pokonaniu przeciwnika. Ponadto w czystej mocy ramion widzą rozwiązanie bardzo wielu różnych problemów. Inni są szybsi lub bardziej precyzyjni, nikt jednak nie atakuje z taką siłą jak Bushi Ichiro.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'lekka lub ciężka zbroja, mocne ubrania, Daisho, dowolna broń ciężka lub drzewcowa, plecak podróżny, 3 koku.'},
   #2(63)-----------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Suzume',
@@ -1073,7 +1073,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Klan Wróbla nigdy nie stanowił realnej militarnej siły jednak jego samurajowie zawsze szli do walki kiedy była taka potrzeba. Pierwsi mistrzowie miecza Klanu Wróbla byli Żurawiami pozostałości ich kunsztu pozostały w szkole do dnia dzisiejszego. Styl walki Wróbla dużo mówi o jego filozofii życia. Poświęcą tyle czasu ile tylko potrzeba by oddać perfekcyjny cios. Bushi Suzume kocha opowieści dodające mu odwagi i siły przed bitwą, używa wiedzy by dostrzec przypływy i odpływy dobrej passy w czasie bitew, wie kiedy uderzyć wolniej, a kiedy szybciej.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Lekka zbroja, mocne ubrania, Daisho, dowolna broń, plecak podróżny, 3 koku.'},
   #3(64)--------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Toritaka',
@@ -1084,7 +1084,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Bushi ze szkoły Toritaka doskonalą się w sztuce niszczenia potworów przybyłych do Rokuganu ze Światów Duchowych. Ich styl walki został stworzony tak by przygotować adepta na każdą niespodziankę ze strony nowego potwora jaką ten mógłby im zgotować. Niestety czyni to ich wyjątkowo wyspecjalizowanymi wojownikami którzy znacznie gorzej radzą sobie ze zwykłymi ludźmi. Bushi Toritaka są szkolenia do skutecznego uderzania potworów i omijania ich obrony, używają mieczy i włóczni by odnaleźć ich słabe punkty i bić w nie tak długo jak będzie trzeba. Przez lata treningów Toritaka nauczyli się różnych tricków pomagających im w wypełnianiu zadania.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'lekka zbroja, mocne ubrania, Daishi, dowolna inna broń, plecak podróżny, 3 koku.',
   special: 'Klan przestał istnieć w 1125, po tym jak na skutek rytuału maho, przyzwany został Shuten Doji. Po odwruceniu rytuału i wygnaniu Shuten Doji, klan Sokoła był tak mocno wyniszczony, że Cesarz pozwolił klanowi Kraba, na jego wchłonięcie.'},
   #4(65)-------------------------------------------------------------------------------------------------------
@@ -1096,7 +1096,7 @@ basic_schools = [
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc: 'Tsi było imieniem starożytnego gaijińskiego kowala który zaimponował Drugiemu Cesarzowi, Hantei Genji swoimi dziełami. Cesarz ogłosił, że człowiek ten musi być błogosławionym przez fortuny i rozkazał wszystkim by traktować go tak jakby pochodził z Rokuganu. Stulecia później młody ronin i początkujący kowal przyjąwszy zapomniane już przez historię imię zaimponował swym kunsztem Cesarzowi Hantei XXX.Nauki które odbierają uczniowie szkoły Tsi są unikatowe pod każdym względem i podyktowane zawsze zwiększeniu ich zdolności w tworzeniu broni i pancerzy. Uczą się walczyć tylko po to by wiedzieć jak mistrzowie będą obchodzić się z bronią którą tworzą i dopasowac ją możliwie jak najlepiej. Mają mały wpływ na życie społeczne i polityczne Cesarstwa i najchętniej omijają te sprawy szerokim łukiem.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'ubrania, Wakizashi, torba na zwoje, plecak podróżny, 3 koku.'},
   #5(66)----------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Morito',
@@ -1107,7 +1107,7 @@ basic_schools = [
   bonus_attr: 'agility',
   bonus_attr_pl: 'Zręczność',
   desc: 'Klan Wołu zdobył swoje zdolności podczas walki z armią pełnych mądrości duchów przodków. Krótko potem zdobyli dobrą reputację wśród Bushi z całego Cesarstwa. Ogrom wśród wojsk Wołu stanowi ciężka kawaleria stworzona do szybkiego niszczenia szyków wroga. Bushi Morito dążą do zmaksymalizowania korzyści wynikających z przewagi walki w siodle. Uczą się skutecznie tratować przeciwników i błyskawicznie poruszać po polu bitwy. Najczęściej posługują się bronią drzewcową jednak są w stanie dostosować się do każdej sytuacji na polu bitwy.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'lekka lub ciężka zbroja, mocne ubrania, Daishi, dowolna broń ciężka lub drzewcowa, koń(rokugański kuc), plecak podróżny, 3 koku'},
   #9(70)-----------------------------------------------------------------------------------------------------
   {name: 'Szkoła Szmuglerów Kasuga',
@@ -1118,7 +1118,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Ród Kasuga jest tak samo wierny rozkazą cesarskim jak każdy inny klan w Rokuganie, choć przyglądając się technikom klanu Żółwia, można odnieść inne wrażenie. Klan wykorzystuje wszelkie okazje zdobycia przewagi, wliczając w to morderstwa i kradzieże, blisko związani są również, z wieloma organizacjami przestępczymi w całym Rokuganie. Jednym z zadań klau Żółwia, jest monitorowanie tych organizacji, w celu wykrycia ewentualnego zagrożenia dla Cesarstwa. Drugą ważną funkcją jest utrzymywanie kontaktów oraz handel z obcokrajowcami, tak by z wyprzedzeniem wykryć zagrożenie z ich strony. By sprawnie wykonywać swoje obowiązki, szkoła Szmuglerów Kasuga, szkoli ludzi bezwzględnych, posiadających rozległą wiedzę o tym, jak poruszać się w świecie przestępców. Dzięki specyficznej roli, adepci tej szkoły, posiadają bardzo różnych sojuszników, którzy mogą okazać się pomocni w różnych sytuacjach.',
-  honor: '2,0',
+  honor: '2.0',
   outfit: 'Ekstrawaganckie ubrania, Wakizashi, dowolna broń, zestaw do kaligrafii, 5 koku'},
   #10(71)----------------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Usagi',
@@ -1129,7 +1129,7 @@ basic_schools = [
   bonus_attr: 'reflexes',
   bonus_attr_pl: 'Refleks',
   desc: 'Jak na pomniejszy klan, klan Zająca, przetrwał wiele bitew. Klan brał udział w wojnie przeciw wrogom Cesarstwa, która szalała przed wiekami i nikt nie widział jej końca. Konsekwencją tego, Szkoła Bushi Usagi, jest jedną z lepszych akademii spośród Mniejszych Klanów. Styl Zająca udoskonalał się w ogniu walki, oddzielając przydatne umiejętności, od tych tylko przydatnych na pozór. Szkoła Bushi Usagi stawia na wysportowanie samurajów i przekucie tej cechy w zaletę na polu bitwy. Styl Zająca uczy, jak poruszać się szybciej niż przeciętny samuraj oraz jak, rzucić się do zadania silnego ciosu i zaraz potem uciec z zasięgu jego kontrataku. A nieprzygotowany przeciwnik, bardzo szybko staje się przytłoczony atakami z każdej strony.',
-  honor: '4,0',
+  honor: '4.0',
   outfit: 'zbroja lekka lub ashigaru, mocne ubrania, Daisho, łuk i 20 strzał lub nóż, plecak podróżny, 3 koku'},
   #11(72)----------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Toku',
@@ -1140,7 +1140,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Klan Małpy nosi błogosławieństwo Cesarskiego Rodu, ma też dostęp do doświadczonych mistrzów pola bitwy. Setki roninów - nauczycieli przekroczyły drzwi dojo gotowi, by przekazać wiedzę ochotnikom. Te różnorodne umiejętności zostały połączone w jeden, spójny styl walki, łączący najlepsze aspekty wszystkich nauk udzielonych w dojo klanu. Szkoła Bushi Toku uczy technik pomagających w walce z wieloma przeciwnikami. Toku uczą się jak trzymać zimną krew, stając naprzeciw przytłaczającej przewadze wroga. Bushi Toku, ćwiczy swoją koncentrację i atakuje z nadludzką precyzją i spokojem, co na polu bitwy jest ich najsilniejszą bronią.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'lekka zbroja, mocne ubrania, Daishi, dowolna broń, plecak podróżny, 3 koku'},
   #13(74)--------------------------------------------------------------------------------------------------------------
   {name: 'Szkoła Bushi Heichi',
@@ -1151,7 +1151,7 @@ basic_schools = [
   bonus_attr: 'strength',
   bonus_attr_pl: 'Siła',
   desc: 'Mroczne niebezpieczeństwa zawsze zagrażały Klanowi Dzika, dlatego Heichi musieli nauczyć się stawiać im czoła. Klan Dzika musiał być gotowy by się bronić i stworzył techniki które dawały mu przewagę w walce. Nauczyli się jak przyjmować najgorsze ciosy swoich wrogów i walczyć dalej. Bushi Heichi zawsze słynęli ze świetnej obrony i szalonych szarż mrożących krew w żyłach. Szkoła Bushi Heichi kładzie nacisk na broń rzadko spotykaną w sercu Rokuganu, jest nią Mai Chong. To włócznia o charakterystycznym kształcie przypominającym trójząb o zaokrąglonych bokach, kompletnie różną od innych broni drzewcowych. Bushi Heichi potrafią przy jej pomocy niszczyć swoich wrogów, jednocześnie trzymając właściwy dystans. Ta broń idealnie pasuje do defensywnego stylu walki Bushi Dzika który polega na wyczuciu, odpowiedniego momentu by wybić przeciwnika z rytmu.',
-  honor: '3,0',
+  honor: '3.0',
   outfit: 'lekka lub ciężka zbroja, mocne ubrania, Daisho, dowolna włócznia, plecak podróżny, 3 koku'},
   #1(75)---------------------------------------- Rody Cesarskie ---------------------------------------
   {name: 'Szkoła Gwardzistów Seppun',
@@ -1161,7 +1161,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Członkowie rodu Seppun, od urodzenia uczeni są, że żyją by zapewnić bezpieczeństwo Cesarzowi. Bezpieczny Cesarz oznacza silne Cesarstwo, a ród Seppun jest gwarantem tej świetlanej przyszłości. Dla gwardzistów ze szkoły Seppun, ochrona to najwyższy priorytet, a możliwość poświęcenia swojego życia w obronie Cesarza, to największy zaszczyt. Dlatego gwardziści, szkoleni są, w rozpoznawaniu wszelkich możliwych zagrożęń, jakie mogą spotkać chronioną osobę i reagować z wyprzedzeniem.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Lekki pancerz, ubranie podróżne, daisho, dowolna inna broń, zestaw podróżny, 10 koku.'},
 
   {name: 'Szkoła Dworzan Otomo',
@@ -1171,7 +1171,7 @@ basic_schools = [
   desc: 'Podobnie jak ród Seppun, ród Otomo, oddany jest zapewnieniu bezpieczeństwa władzy i autorytetowi Cesarzowa. Zadanie które można osiągnąć, jedynie w sytuacji gdy nikt inny, nie zdoła zgromadzić wystarczająco wiele władzy by rzucić wyzwanie Cesarzowi. Dlatego głównym zadaniem dworzan ze szkoły Otomo, jest prowokowanie kłótni i zdrad, pośród Wielkich Klanów, tak by żaden z nich nie zagroził przewodnictwu Cesarza. Dworzanie Otomo, wykorzystują swoją pozycję i szacunek, jaką mają wśród samurajów Wilekich Klanów, i wykorzystują je do granic możliwości, by przypomnieć wszystkim że są poddanymi Cesarza. Często uciekając się do nieuczciwych praktyk, wiedząc że jego nazwisko, ochroni go przed konsekwencjami.',
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Tradycyjne ubranie, wakizashi, nóż, zestaw do kaligrafii, 10 koku.'},
 
   {name: 'Szkoła Heraldów Miya',
@@ -1181,7 +1181,7 @@ basic_schools = [
   desc: 'Heraldzi Miya, służą jako posłańcy Cesarza, którzy rozgłaszają słowa Cesarza i Cesarskiego Dworu. Choć w większości, chronieni są przez Cesarskie edykty, wysłannicy, Miya muszą często przemierzać niebezpieczne tereny, ogarnięte wojną i dlatego przechodzą przeszkolenie, mocno różniące się od szkolenia innych dworzan w Rokuganie. Heraldzi Miya, specjalizuję się w budowaniu zaufania i serdecznych relacji z innymi. Potrafią przemawiać z wielką pewnością i spokojem. Heraldzi Miya, uczą się sztuki obrony i negocjacji, by urzeczywistnić sen, o silnym i zjednoczonym Cesarstwie.',
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Delikatne ubranie, wakizashi, zestaw do kaligrafii, koń(rokugański kucyk), 10koku.'},
   {name: 'Szkoła Shugenja Isawa',
     img_name: 'Isawa_Shugenja_by_Jason_Engle.jpg',
@@ -1202,7 +1202,7 @@ basic_schools = [
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc:  'Podczas wieków w służbie klanu Smoka, ród Agasha podążał wieloma niekonwencjonalnymi ścieżekami magii, które rozpoczeła Agasha i które były kontynuowane od tamtego czasu. Oprócz swoich alchemicznych zainteresowań, Agasha zawsze miała dar do tworzenia czarów, które odnosiły się do różnych kami jednocześnie. W klanie Feniksa, ród Agasha został dopuszczony do poszerzania tego obszaru badań i od tego czasu poczynił ogromne postępy w dziedzinie zaklęć wielu żwyiołów. Technika Szkoły Shugenja Agasha skupia się na łączeniu żywiołów i rzucaniu czarów multi-żywiołowych. Chociaż technika ta jest ciągle w fazie studiów, już teraz pozwala adeptom tej szkoły na rzucanie czarów z wykorzystaniem gniazd z innych żywiołów, dając niezwykłą swobodę w wykorzystywaniu potencjału magicznego.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Wakizashi, dowolna broń, Sakwa na zwoje, Zestaw Podróżny, 5 koku.',
   affinity_deficiency: 'Ogień/Woda',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ognia, 2 Ziemi i 1 Powietrza' },
@@ -1213,7 +1213,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Shugenja zwani Kapłanami Śmierci, są posłannikami Shi-Tien Yen-Wang, panteonu gniewnych bogów śmierci i sądu, których czcili przodkowie rodziny Moto, zanim spotkali panią Shinjo i przyłączyli się do klanu Jednorożca. Czyn ten przez wieki wprowadzał w gniew, dawnych bogów rodziny Moto, którzy szukali swoich dawnych wyznawców, by odnaleźć ich w Rokuganie i ukarać ich straszliwą klątwą, która przyniosła całemu rodowi, zły los i smutek, co później zostało nazwane klątwą Moto. Dopiero Moto Gaheris, skontaktował się bezpośrednio z dawnymi bogami, by dobić targu który ma trwać póki istnieje ród Moto. Bogowie Śmierci oddalą swoją klątwę i gniew, w zamian za powrót rodu Moto, do właściwej wiary. Po dobiciu targu, dawna wiara szybko rozprzestrzeniła się po całej rodzinie, a także poza nią w obrębie klanu Jednorożca. Niedługo później bogowie śmierci, zostali wyniesieni do godności pomniejszych fortun. Zakorzenieni w Świecie Oczekiwania, osądzają tych którzy czekają na reinkarnacje, a ich pozycja przyciągała od tego czasu nawet niewielkie grupy wyznawców, spoza klanu Jednorożca. Kapłani Shi-Tien Yen-wang, potrafią zachwiać karmiczną więź śmiertelników, a także specjalizują się w czarach Podróży.',
-  honor: '3,5',
+  honor: '3.5',
   outfit: 'Tradycyjne ubranie podróżne, Wakizashi, dowolna inna broń, Zestaw podróżny, Koń Jednorożców, 5 koku.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody' },
@@ -1225,7 +1225,7 @@ basic_schools = [
   bonus_attr: 'stamina',
   bonus_attr_pl: 'Wytrzymałość',
   desc: 'Rodzina Horiuchi, została założona w późnym okresie, klanu Jednorożca, ale korzenie tego rodu, sięgają głęboko, w czasy przed powstaniem Wielkich Klanów. Podczas podróży poza Szmaragdowe Cesarstwo, klan Jednorożca odkrył wiele dziwnych stylów rzucania czarów, zarówno od przyjaciół, jak i wrogów. Każdy nowy sposób rozmowy z kami, był badany i wplatany w jedną metodę. Gdy utworzono ród Horiuch, stał się on głównym kultywatorem, stylu Meishodo. Pradawni szamani, którzy stworzyli podwaliny tej techniki, nie potrafili rozmawiać z kami, ani nie mieli bezpośredniego dostępu do fortun. Zamiast tego tworzyli amulety, z zawartą mocą, którą w chwili potrzeby uwalniali z amuletu, poprzez nazwanie prawdziwym imieniem przyzywanych żywiołów. Gdy shugenja klanu Jednorożca przyjrzeli się tym amuletom, odkrył że zawierają oni zamknięte kami żywiołów. Klan Jednorożca zmienił i zaadaptował tę technikę, tak by był zgodny z ich wierzeniami. Obecnie amulety nie więzią już kami, ale odwołują się do żywiołów zawartych w pobliżu amuletu, w chwili aktywacji. Jednak podobnie jak w przypadku danych szamanów, amulety zawierają tylko jeden czar. Meishodo, jest sekretem zazdrośnie strzeżonym przez klan. Meishodo, przedkłada szybkość nad moc, a szybkość zawsze była ważnym aspektem klanu Jednorożca.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szata, Wakizashi, Tuba na zwoje i amulety, Zestaw podróżny, 4 koku.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemia, 2 Woda, 1 Ogień' },
@@ -1237,7 +1237,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Pomijając może rodzinę Tamori, Iuchi są najmniej konwencjonalną i konserwatywną rodziną shugenja w Rokuganie. Z natury dzicy i beztroscy, tak jak nauki przekazywane im przez nauczycieli na otwartych równinach, w pobliżu świątyni w której znajduje się szkoła. Natura ta wypływa z historii klanu, który długo wędrował, przez odlegle ziemie. Ten okres historii ma także wpływ na różnorodne style uprawiania magii, wliczając w to Meishodo, czyli sztukę tworzenia talizmanów które pozwalają kierować kami. Będąc główną szkołą shugenja w klanie Jednorożca, techniki których uczą w szkole, pozwalają zwiększyć mobilność i szybkość. A wzmocnienie czarów Podróży dodatkowo usprawnia ich na tym polu.',
-  honor: '5,5',
+  honor: '5.5',
   outfit: 'Ekstrawagandzkie ubranie, Wakizashi, Dowolna inna broń, Zestaw do kaligrafii, Zestaw podróżny, Koń juczny jednorożca, 10 koku.',
   affinity_deficiency: 'Woda/Ogień',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Ziemii, 1 Powietrza' },
@@ -1260,7 +1260,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Pradawne rytuały obowiązujące, w Szkole Shugenja Kitsu pozostały praktycznie niezmienione od stworzenia rodziny, a sama myśl o zmianie ich, nigdy nie pojawiła się u najbardziej otwartego członka tej rodziny. Z powodu swoich niezwykłych korzeni, ród ten zawsze posiadał wgląd, w zależności między światem śmiertelników, a tym co jest poza nim. Ich zdolność do postrzegania więzi, łączących żyjących z ich przodkami, została doprowadzona do takiej perfekcji, że shugenja Kitsu potrafią manipulować, więziami łączącymi ludzi z innymi światami. Choć pokojowo nastawieni, shugenja Kitsu szkoleni są jako shugenja, którzy w razie wojny wspomogą całe armie, co może mieć kluczowe znaczenie w chwili próby.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, 5 koku.',
   affinity_deficiency: 'Woda/Ogień',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Powietrza, 1 Ziemi'},
@@ -1272,7 +1272,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'W Cesarstwie istnieje kilka rodzin tak zróżnicowanych i ambitnych jak Yoritomo, więc nie jest zaskoczeniem że rodzina wspiera małą liczbę shugenja jaka rodzi się w tym rodzie. Tradycja szkoły wywodzi się z najwcześniejszych dni Klanu Modliszki. Kaimetsu-Uo, założyciel klanu, nie miał daru rozmowy z kami, ale jedna z jego córek tak i poślubiła ronina, który posiadał taką samą zdolność. Tak rozpoczęła gałąź rodziny Yoritomo, która posiada niespotykaną zdolność obcowania z duchami morza i burzy. Przez wieki mała liczba shugenja Yoritomo utrzymywała niewytłumaczalną silną więź z do duchami morza oraz w mniejszym stopniu z duchami wiatru i burzy. Z przyjęciem rodu Moshi do klanu Modliszki, okazał się on bieglejszy w rozmowi z duchami wiatrów i burzy, jednak nikt nie czuje się lepiej na pełnym morzu jak shugenja z rodziny Yoritomo. Szkoła prowadzi szereg małych świątyń na wszystkich wyspach Modliszki, a najsłynniejsza z nich jest Wyspa Nawałnic, która opiera się największym sztormom. Tam właśnie najpotężniejsi shugenja Yoritomo doskonalą swoje umiejętności i moc, by stać się siłą, z którą należy się liczyć w całym Rokguanie.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Wakizashi, dowolna inna broń, Tuba na zwoje, Zestaw podróżny, 10 koku.',
   affinity_deficiency: 'Woda/Ziemia',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Ognia, 1 Powietrza'},
@@ -1283,7 +1283,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Praktyki shugenja Moshi opracowywane były przez wiele lat, spędzonych w niezachwianej wierze Bogini Słońca. Mimo niebiańskich przewrotów, który wystąpiły w Niebiańskim Porządku, podczas burzliwej historii Rokuganu, rodowi Moshi udało się zachować ich oddanie, nawet jeśli charakter ich magicznych badań zmieniała się. Od momentu przystąpienia do klanu Modliszki, ich nacisk przesunął się z czystej teologii, na bardziej praktyczne problemy, specjalizując się w wywoływanie kami pogody. Moshi, będący znacznie liczniejsi, niż skromna gałąź rodu Yoritomo, która posiada dar rozmowy z kami, często stacjonują na pokładach statków Yoritomo w celu uspokojenia morza, na najważniejszych szlakach kupieckich. Podobnie jak Yoritomo, Moshi są bardzo elastyczni. Ich zdolność do uzyskania dodatkowego Przychylności w ciągu dnia, pozwala im na ogromną wszechstronność w ich wyborze czarów, którą mogą rywalizować nawet z rodem Isawa z klanu Feniksa.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Wakizashi, Nóż, Tuba na zwoje, Zestaw podróżny, 10 koku.',
   affinity_deficiency: 'Powietrze/Ziemia',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 3 Ognia'},
@@ -1295,7 +1295,7 @@ basic_schools = [
   bonus_attr: 'stamina',
   bonus_attr_pl: 'Wytrzymałość',
   desc: 'Klan Lisa zamieszkuje obok jednego z największych lasów w Rokuganie, co ukształtowało kierunek rozwoju tej szkoły. Każdy shugenja Kitsune, kocha duchy lasu i spokój w głębokim lesie, po niezliczonych godzinach medytacji w jego granicach. Ten związek między człowiekiem a zwierzęciem, dzięki wzajemnemu wsparciu i zrozumieniu cały czas się umacnia. Uwielbienie Kitsune do natury jest widoczne w technice jakiej uczą Kitsune w swojej szkole. Kitsune może połączyć się z dziczą oraz zwierząt, które ją zamieszkują. Jest to wszechstronna technika, która może być istotne dla obowiązków shugenja Kitsune i tylko nieliczni uczniowie z innych szkół potrafi ją powtórzyć.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, 3 koku.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Wody, 1 Ognia'},
@@ -1307,7 +1307,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Ród Chuda od wieków praktykuje Maho, a widza i techniki są przekazywane w sekrecie, od momentu jak ród zostal wyniszczony przez klan Feniksa. Po przyłączeniu do klanu Pająka, spadkobiercy klanu Węża wypełnili lukę jaka powstała w nowo powstałym klani Pająka. Chuda to najbardziej żarliwi badacze Maho, szukający granic tej mocy, tylko po to by móc je potem pokonać. Wieki specjalizacji w czarach Maho, sprawiły że choć formalnie członkowie tego rodu to shugenja, to jednak wieki spędzone nad czarami Maho, sprawiły że czary oparte na kami żywiołów są dla nich trudniejsze.',
-  honor: '0,5',
+  honor: '0.5',
   outfit: 'Szaty, Nóż, Tuba na zwoje, Zestaw podróżny, 3 koku.',
   affinity_deficiency: 'Shugenja Chuda posiadają przychylność rzucając wszystkie czary Maho nie opierające się na Pustce, jako ułomność gracz wybiera jeden żywioł nie będący Pustką i w nim ma ułomność, rzucając czary nie będące maho.',
   spells: '3 czary Maho z wybranego żywioło , 2 czary Maho żywiołu w którym postać nie posiada ułomności, 1 czar Maho żywiołu w którym postać nie posiada ułomności.'},
@@ -1319,7 +1319,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Choć rzadko, są chwile, kiedy olbrzymie zdolności fizyczne rodów Bayushi i Shosuro są niewystarczające do wykonania zadania wymagające skradania i subtelności. Kiedy to nastąpi, student Szkoły Shugenja Soshi pojawia się by doprowadzić zadanie do końca. Soshi lepiej niż większość rodzin shugenja, rozumie że kami to nie honorowe istoty jak wielu sobie wyobraża, ale raczej zupełnie obce istoty nie rozumiejące tego czym jest dobro czy zło. Kami mogą i zrobią niemal wszystko, czego się od nich żąda, jeśli właściwie się poprosi, dopóki prośba nie jest pogwałceniem naturalnego porządku, takich jak magii krwi. Soshi rozwinęli tę myśl, tak by nakłonić kami by pomogły im w sztuce skradania, ułudy i zwodzenia. Choć wszyscy shugenja potrafią rzucać czary dyskretnie, nikt nie potrafi tego robić tak jak shugenja Soshi. Dzięki praktycznie nie widocznemu rzucaniu czarów, które nie czynią innym ran, sprawia że są idealnymi wywiadowcami oraz pozwala na subtelne manipulacje na dworach.',
-  honor: '2,5',
+  honor: '2.5',
   outfit: 'Szaty, Wakizashi, Nóż, Tuba na zwoje, Zestaw podróżny, 5 koku.',
   affinity_deficiency: 'Powietrze/Ziemia',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 2 Ognia, 1 Wody'},
@@ -1331,7 +1331,7 @@ basic_schools = [
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
   desc: 'Szkoła założona przez Yogo znana jest z niezwykłego stylu magii rozmowy z kami, która koncentruje się na ochronnych symbolach zwanych pieczęciami. Są one podobne do egzorcyzmów wykorzystywanych przez ród Toritaka, ale są znacznie bardziej elastycznego w użyciu. Yogo strzeż swych technik zazdrośnie i rzadko dopuszcza kogoś z innej rodziny do nauk w swoim dojo, przez co nawet shugenja z rodu Soshi wiedzą mało na temat technik szkoły Yogo.',
-  honor: '1,5',
+  honor: '1.5',
   outfit: 'Szaty, Wakizashi, Tuba na zwoje, Zestaw podróżny, Paczka dwudziestu papierowych pieczęci, 3 koku.',
   affinity_deficiency: 'W odróżnieniu od innych szkół, shugenja Yogo nie zyskują przychylności żadnego żywiołu, w zamian za to otrzymują dodatkowe podbicie do wszystkich czarów Pieczęci, nie pochodzących z żywiołu Pustki. Shugenja z tej szkoły posiadają ułomność w czarach typu Podróż i Rzemiosło.',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 czary Pieczęci, 3 inne czary (nie Pustki)',
@@ -1348,7 +1348,7 @@ basic_schools = [
   bonus_attr: 'stamina',
   bonus_attr_pl: 'Wytrzymałość',
   desc: 'Utworzona z resztek rodziny Agasha po ich ucieczce do klanu Feniksa, rodzina Tamori odziedziczyła wieki badań i doświadczeń prowadzonych przez ich poprzedników, czyniąc kierunki badań poprzedników, swoimi priorytetami. Najbardziej znaną dyscypliną, jaką szczególnie upodobał sobie ród Tamori jest badanie alchemii. Tamori opanowali do mistrzostwa, jeden z sekretów Agashy, który pozwala zawrzeć esencję zaklęcia, jako rytualnie przygotowany płyn, dzięki czemu mogą wykorzystać go w późniejszym czasie. W połączeniu z technikami walki, których uczy się każdy shugenja Tamori, wystarczy to by szkoła była unikatowa w skali całego Rokuganu. Technika Tamori pozwalają w dużą wszechstronność w stosowaniu zaklęć, dając możliwość dramatycznego skrócenia czasu rzucenia zaklęcia, jeśli shugenja będzie miał czas wcześniej się przygotować.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'Szaty, Wakizashi, Dowolna inna broń, Tuba na zwoje, Zestaw podróżny, 5 koku.',
   affinity_deficiency: 'Ziemia/Powietrze',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Ziemi, 2 Ognia, 1 Wody.'},
@@ -1360,7 +1360,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Podobnie jak rodzina jako całości, Szkoła Shugenja Asahina, uczą przewagi cnoty ochrony życia, nad bezmyślną destrukcją. Szkoła Asahina koncentruje się na duchowych celach oraz medytacji, jako sposobowi do odnalezienia drogi w świecie. Shugenja Asahina pełnią tę samą funkcję dla klanu Żurawia, jaką pełnią inne rodziny shugenja dla swoich klanów, ale korzystają z okazji do szukania pytań, u uczestników lub obserwatorów ich rytuałów. Dla shugenjy Asahina wszystko co dzieje się wokół niego, jest możliwością do zadawania pytań. Podobnie szkoła kładzie duży nacisk na tworzenie dzieł sztuki, akt uważany za istotny dla poprawy świata wokół nich Przede wszystkim, Szkoła Asahina skupia się na obronie i ochronie, techniki nauczane w szkole zachęcają do poznawania zaklęć, które zmniejszają uszkodzenia i chronią innych przed atakiem. Inne czary posiadane przez shugenja Asahina skupiają się na tworzeniu i czarach Rzemieślniczych.',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Szaty, Bo, Wakizashi, Tuba na zwoje, Zestaw podróżny, 10 koku.',
   affinity_deficiency: 'Wiatr/Ogień',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Powietrza, 2 Wody, 1 Ziemi.'},
@@ -1373,7 +1373,7 @@ basic_schools = [
   bonus_attr: 'perception',
   bonus_attr_pl: 'Spostrzegawczość',
   desc: 'Tonbo są głęboko związani ze światem duchowym. Stworzyli bardzo silną więź z górami i pozostaną na swych ziemiach choćby nawet problem za problemem spadał na nich niczym lawina. Chociaż Shugenja Tonbo są takimi samymi kapłanami jak ci z innych klanów to świetnie zdają sobie sprawę z politycznych obowiązków spoczywających na ich barkach. Jako pośrednicy między Klanem Smoka a resztą Rokuganu Tonbo muszą być gotowi na wyzwania dworów Rokuganu.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
   affinity_deficiency: 'Woda/Ogień',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Wody, 2 Powietrza, 1 Ziemi.'},
@@ -1386,7 +1386,7 @@ basic_schools = [
   bonus_attr: 'stamina',
   bonus_attr_pl: 'Wytrzymałość',
   desc: 'Ziemie Klanu Lisa leżą tuż obok jednej z największych puszczy Cesarstwa, ten fakt ukształtował kierunek ich lekcji. Każdy Shugenja Kitsune nabywa miłość do Duchów i tradycyjnie do głębin lasów, i tradycyjnie do głębin lasów, dzięki niekończącym się godzinom medytacji wewnątrz nich. Więź między ludźmi i zwierzętami jest ciągle odnawiana i wzmacniana dzięki wyczerpującym zajęciom. Miłość Kitsune do natury jest ewidentna i niepodważalnie to ona kształtuje umiejętności adeptów tej szkoły. Kitsune mogą połączyć się z dziczą i zamieszkującymi ją zwierzętami. Jest to uniwersalna technika która może okazać się niezwykle istotna i obowiązkach Shugenja Kitsune. Są też grupki członków innych klanów próbujących skopiować zdolności Kitsune.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
   special: 'W roku 1169 w skutek ataków na Kitsune Mori, poprosił Ród Tsuruchi o pomoc. Tsuruchi którzy w tym czasie byli już członkami klanu Modliszki, pozytywnie odpowiedzieli na wezwanie i wspólnymi siłami odparli ataki na Kitsune Mori. Później okazało się że stał za nimi Smok Cieni, który dzięki mocy lasu chciał komunikować się z wszystimi zwierzętami Rokuganu i pozyskiwać dzięki nim informacje. Ataki poważnie osłabiły tyn niewielki klan, co skłoniło ówczesnego Czempion klanu Kitsune Ryukena do przystąpienia do klanu Modliszki.',   
   affinity_deficiency: 'Ziemia/Powietrze',
@@ -1400,7 +1400,7 @@ basic_schools = [
   bonus_attr: 'willpower',
   bonus_attr_pl: 'Siła Woli',
   desc: 'Szkoła Shugenja Chuda powstała w oparciu o te same techniki, których Inkwizytorzy Feniksa używają każdego dnia. Jej założyciel, Isawa Chuda był Cesarskim Namiestnikiem, zaprzysiągł, że zniszczy kulty maho-tsukai. Niestety potomkowie szlachetnego samuraja stali się tym, co on przysiągł wyplenić. Pierwsza Szkoła Shugenja Chuda powstała do jednego, do eksterminacji sił Krain Cienia. Chuda będą polować na skażonych maho-tsukai i zrzucać na nich siłę gniewu żywiołów. Chuda uczą się jak penetrowac obronę każdej zasłony jaką maho-tsukaj mogą przyzwać, dodatkowo dzięki skupieniu na magii ziemi stali się doskonałymi użytkownikami jadeitowych zaklęć mogących poważnie ranić grzeszników.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'ubrania, Wakizashi, nóż, torba na zwoje, plecak podróżny, 3 koku',
   special: 'Klan stał się ofiarą własnej ofiary i oficjalnie został zniszczony, przez klan Feniksa. Jednak wiele szczątków zodbytej wiedzy przetrwało i obecnie ród Chuda, potajemnie powstaje na nowo, w ramach klanu Pająka.',
   affinity_deficiency: 'Ziemia/Powietrze',
@@ -1414,7 +1414,7 @@ basic_schools = [
   bonus_attr: 'awareness',
   bonus_attr_pl: 'Intuicja',
   desc: 'Kiedy Yoritomo Komori został nagrodzony prawem do założenia własnego pomniejszego klanu natychmiast zebrał przy sobie najlepszych shugenja. Zdecydował się uhonorować swoje nietoperze dziedzictwo, które pozwalał mu na szybką komunikację i podzielić się nim, z resztę Rokuganu. Komori rozpoznał, że musi zachować balans między teorią, a praktyką i dążyć do udoskonalenia swoich umiejętności tak, by miały zastosowanie na polu bitwy. Szkoła Shugenja Komori jest unikalna w Cesarstwie. Koumori to życzliwe duchy nietoperzy, istot przybyłych z Chikushudo które pomogły ludziom wiele razy. Ich potężna magia nigdy nie została zrozumiana z powodu ich duchowej natury samotników. Shugenja Komori skorzystali z ich mocy, co pozwoliło, im opracować zaklęcia nieznane nigdy wcześniej w Rokuganie.',
-  honor: '4,5',
+  honor: '4.5',
   outfit: 'ubrania, Wakizashi, dowolna broń, torba na zwoje, plecak podróżny, 3 koku',
   affinity_deficiency: 'Powietrze/Ziemia',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 powietrza, 2 wody, 1 ognia'},
@@ -1426,7 +1426,7 @@ basic_schools = [
   desc: 'Najlepsi Bushi, Rokuganu mają zaszczyt chronić osobę Cesarza, jednak istnieją zagrożenia których niemożna, rozwiązać przy pomocą stali. Jako członkowie "Ukrytej Gwardii", shugenja Seppun są w ciągłej gotowości, dniem i nocą, szukając najmniejszych śladów zagrożenia. Iche pieczęcie ochronne, są najpotężniejsze w Rokuganie, a ród Seppun nieprzerwania je poprawia. Shugenja Seppun są ostatnią magiczną linią ochrony Cesarza i nigdy nie zawiodą. Technika shugenja ze szkoły Seppun, pozwala im na wykorzystywanie kami, w sposób przekraczający możliwości śmiertelników, ta technika jest bardzo uniwersalna, jednak działa tylko gdy shugenja, chroni życie i zdrowie Syna Niebios.',
   bonus_attr: 'intelligence',
   bonus_attr_pl: 'Inteligencja',
-  honor: '6,5',
+  honor: '6.5',
   outfit: 'Szaty, Wakizashi, bo, tuba na zwoje, zestaw podróżne 10 koku.',
   affinity_deficiency: 'Ogień/Woda',
   spells: 'Wyczucie, Zespolenie, Przywołanie, 3 Oginia, 2 Ziemii, 1 Powietrza'} ]
@@ -2543,7 +2543,7 @@ traits = [
         <li><strong>Uprzejmość: </strong> (4 Punkty) Za każdym razem gdy postać próbuje przeprosić lub uniknąć obrażenia kogoś, wykonując test musi wykonać podbicie bez żadnego efektu lub test zakończy się porażką.</li>
         <li><strong>Obowiązek: </strong>  (6 Punktów) Postać nie może wydawać Punktów Pustki by zmniejszyć obrażenia.</li>
         <li><strong>Prawdomówność: </strong>  (3 Punkty) Postać nie może wydawać Punktów Pustki do testów Szczerości, kiedy w grę wchodzi mówienie prawdy.</li>
-        <li><strong>Honor:  </strong>  (3 Punkty) Postać nie może dodawać swojego poziomu honoru do testów przesłuchiwania lub kuszenia.</li>
+        <li><strong>Honor:  </strong>  (3 Punkty) Postać nie może dodawać swojego poziomu honoru do testów przesłuchiwania lub kuszenia.<.li>
         <li><strong>Szczerość: </strong>  (4 Punkty) Za każdym razem gdy postać wykonuje test Szczerości by przekonać kogoś do swoich słów, postać musi wykonać podbicie bez żadnego efektu lub test zakończy się porażką.</li>
       </ul> ' },
       
@@ -6445,8 +6445,6 @@ school_classes.each do |class_name|
 end
 
 puts 'Schools Generation'
-BasicPrimarySchool.destroy_all
-BasicShugenjaSchool.destroy_all
 BasicSchool.destroy_all
 not_valid_names(BasicSchool, basic_schools)
 clans.each do |clan|

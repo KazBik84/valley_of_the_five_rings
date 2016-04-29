@@ -11,6 +11,10 @@
       = render 'character_form_schools'
     %li
       = render 'character_attributes', f: f
+    %li{id: 'character_honour'}
+      = render 'character_honour'
+    %li{id: 'character_outfit'}
+      = render 'character_outfit'
     %li
       = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
     %li
