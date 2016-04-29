@@ -66,7 +66,7 @@ class CharactersController < ApplicationController
     @schools = @clan.basic_schools.order(:name)
     @selected_school = @schools.find(params[:school_id])
     @old_school_bonus = params[:school_bonus]
-    @selected_school.bonus_attr == params[:family_bonus] ? @increase_val = 4 : @increase_val = 3        
+    @selected_school.bonus_attr == params[:family_bonus] ? @increase_val = 4 : @increase_val = 3       
     respond_to do |format|
       format.js
     end

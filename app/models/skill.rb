@@ -2,12 +2,7 @@
 class Skill < ActiveRecord::Base
 
   has_many :skill_of_objects
-  has_many :basic_primary_schools, through: :skill_of_objects,
-                                   source: :owner_model,
-                                   source_type: 'BasicPrimarySchool'
-  has_many :basic_shugenja_schools, through: :skill_of_objects,
-                                    source: :owner_model,
-                                    source_type: 'BasicShugenjaSchool'
+  # Has_many association to the polymorphic model
   has_many :basic_schools, through: :skill_of_objects,
                                    source: :owner_model,
                                    source_type: 'BasicSchool'                                    
