@@ -1,6 +1,7 @@
 $('#school_select').html("<%= j render 'character_form_schools' %>");
 $('#character_honour').html("<%= j render 'character_honour' %>");
 $('#character_outfit').html("<%= j render 'character_outfit' %>");
+$('#school_skills').html("<%= j render 'school_skills' %>");
 $('#character_<%= @old_school_bonus %>').val('2');
 $('#character_school_bonus').val('<%= @selected_school.bonus_attr %>');
 $('#character_<%= @selected_school.bonus_attr %>').val('<%= @increase_val %>');

@@ -1,0 +1,12 @@
+%ul.no_dot
+  - @selected_school.skill_of_objects.each do |school_skill|
+    %li
+      %strong
+        = school_skill.skill.name_pl 
+      = number_field(:character, :skill, value: school_skill.value) 
+      - if school_skill.skill_emphasis.present?
+        %strong
+          Specjalizacja:
+        = school_skill.skill_emphasis
+      %span.glyphicon.glyphicon-question-sign.pointer_cursor{"data-toggle"=> "modal", "data-target"=> "#skill_#{school_skill.id}", :type => "button"}
+      = render partial: 'shared/pop_up_window', locals: {head_object: school_skill.skill.name_pl, desc_object: school_skill.skill.desc, id_name: "skill_#{school_skill.id}"}

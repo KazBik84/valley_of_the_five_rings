@@ -16,6 +16,11 @@
     %li{id: 'character_outfit'}
       = render 'character_outfit'
     %li
+      %strong
+        Umiejętności:
+      %div{id: 'school_skills'}
+        = render 'school_skills'
+    %li
       = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
     %li
       = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)
