@@ -8,5 +8,5 @@
         %strong
           Specjalizacja:
         = school_skill.skill_emphasis
-      %span.glyphicon.glyphicon-question-sign.pointer_cursor{"data-toggle"=> "modal", "data-target"=> "#skill_#{school_skill.id}", :type => "button"}
+      = render partial: 'shared/pop_up_button', locals: {pop_up_target: "#skill_#{school_skill.id}"}      
       = render partial: 'shared/pop_up_window', locals: {head_object: school_skill.skill.name_pl, desc_object: school_skill.skill.desc, id_name: "skill_#{school_skill.id}"}

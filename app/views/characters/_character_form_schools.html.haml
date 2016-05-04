@@ -1,4 +1,4 @@
 = label_tag :character_basic_school_ids, 'Szkoła'
 = collection_select( :character, :basic_school_ids, @schools, :id, :name, {selected: @selected_school.id})
-%span.glyphicon.glyphicon-question-sign.pointer_cursor{"data-toggle"=> "modal", "data-target"=> "#school_desc", :type => "button"}
+= render partial: 'shared/pop_up_button', locals: {pop_up_target: "#school_desc"}
 = render partial: 'shared/pop_up_window', locals: {head_object: @selected_school.name, desc_object: @selected_school.desc, id_name: 'school_desc'}
