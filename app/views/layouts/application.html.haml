@@ -16,6 +16,7 @@
     .middle_box
       - flash_messages
       = render 'layouts/gretel'
+      = yield :form_errors      
       = yield
     = render 'layouts/footer'
 

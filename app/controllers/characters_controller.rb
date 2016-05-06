@@ -17,10 +17,16 @@ class CharactersController < ApplicationController
   def create
     @character = Character.new(character_params)
     if @character.save
-      redirect_to current_user
+      flash[:success] = 'Postać została dodana'
+      respond_to do |format|
+        format.js
+        format.html { redirect_to current_user }
+      end
     else
+      flash[:alert] = 'Postać nie została dodana'
       render new
     end
+
   end
 
   def update
@@ -77,8 +83,10 @@ class CharactersController < ApplicationController
     params.require(:character).permit(
       :name, :school_class, :honour, :outfit,
       :char_look, :char_desc, :char_character,
-      :public, :stamina, :willpower, :strenght,
-      :perception, :agility, :intelligence, :reflex,
-      :awareness, :void, :user_id, :clan_id, :family_id)
+      :public, :stamina, :willpower, 
+      :perception, :agility, :intelligence, 
+      :awareness, :void, :user_id, :clan_id, :family_id,
+      :basic_school_ids, :reflexes, :strength, 
+      skill_of_objects_attributes: [:value, :skill_emphasis, :skill_id])
   end
 end

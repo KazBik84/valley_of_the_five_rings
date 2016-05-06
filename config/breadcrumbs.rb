@@ -32,6 +32,19 @@ crumb :web_scrolls do
   parent :root
 end
 
+# User ----------------------------------------------------
+
+crumb :user_page do
+  link 'Twój Dział', current_user
+end
+
+# Characters ----------------------------------------------
+
+crumb :add_character do
+  link 'Dodaj Postać', new_user_character_path
+  parent :user_page
+end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end

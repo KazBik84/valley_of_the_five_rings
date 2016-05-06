@@ -1,4 +1,5 @@
 = form_for [ current_user, @character], remote: true do |f|
+  = form_errors_for @character
   %ul.no_dot
     %li
       = f.label(:name, 'Imię Postaci:')
@@ -20,6 +21,8 @@
         Umiejętności:
       %div{id: 'school_skills'}
         = render 'school_skills'
+    %li
+      = render 'poligon', f: f
     %li
       = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
     %li

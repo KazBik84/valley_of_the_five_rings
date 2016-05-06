@@ -1,0 +1,7 @@
+%p
+  Test dodawania obiektu
+= f.fields_for :skill_of_objects, @character.skill_of_objects.build do |ff|
+  = ff.label :value
+  = ff.number_field :value
+  = ff.label :skill_emphasis
+  = ff.text_field :skill_emphasis
