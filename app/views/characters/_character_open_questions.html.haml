@@ -1,0 +1,16 @@
+%ul.no_dot
+  %li
+    %strong
+      Wygląd Postaci:
+  %li
+    = f.text_area(:char_look, size: '60x5', placeholder: 'Wygląd postaci')    
+  %li
+    %strong
+      Opis Postaci:
+  %li
+    = f.text_area(:char_desc, size: '60x5', placeholder: 'Opis postaci')
+  %li
+    %strong
+      Charakter Postaci:
+  %li
+    = f.text_area(:char_character, size: '60x5', placeholder: 'Charakter postaci')

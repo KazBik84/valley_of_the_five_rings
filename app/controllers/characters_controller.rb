@@ -6,7 +6,7 @@ class CharactersController < ApplicationController
   end
 
   def new
-    @character = Character.new
+    @character = current_user.characters.new
     @clan = Clan.first
     @families = @clan.families.order(:clan_name)
     @selected_family = @families.first
@@ -15,7 +15,7 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = Character.new(character_params)
+    @character = @character = current_user.characters.new(character_params)
     if @character.save
       flash[:success] = 'Postać została dodana'
       respond_to do |format|
@@ -83,10 +83,13 @@ class CharactersController < ApplicationController
     params.require(:character).permit(
       :name, :school_class, :honour, :outfit,
       :char_look, :char_desc, :char_character,
-      :public, :stamina, :willpower, 
-      :perception, :agility, :intelligence, 
+      :public, :stamina, :willpower, :school_rank_ids,
+      :perception, :agility, :intelligence,
       :awareness, :void, :user_id, :clan_id, :family_id,
-      :basic_school_ids, :reflexes, :strength, 
+      :school_class, :char_look, :char_desc,
+      :char_character, :public, :outfit,
+      :basic_school_ids, :reflexes, :strength,
       skill_of_objects_attributes: [:value, :skill_emphasis, :skill_id])
+
   end
 end

@@ -10,4 +10,6 @@ class Character < ActiveRecord::Base
   has_many :skills, through: :skill_of_objects
   accepts_nested_attributes_for :skill_of_objects, allow_destroy: true
 
+  has_many :school_ranks, as: :school_technic, dependent: :destroy
+  accepts_nested_attributes_for :school_ranks, allow_destroy: true
 end

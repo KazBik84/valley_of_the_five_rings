@@ -1,3 +1,5 @@
+%strong
+  Umiejętności:
 %ul.no_dot
   - @selected_school.skill_of_objects.each do |school_skill|
     %li
@@ -5,7 +7,6 @@
         %strong
           = school_skill.skill.name_pl
         = ff.hidden_field :skill_id, value: school_skill.skill.id
-        = ff.label :value
         = ff.number_field :value, value: school_skill.value
         = school_skill.skill_emphasis
         = ff.hidden_field :skill_emphasis, value: school_skill.skill_emphasis

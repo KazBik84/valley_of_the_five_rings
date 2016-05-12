@@ -1,12 +1,15 @@
 $('#clan_select').html("<%= j render 'character_form_clan' %>");
 $('#family_select').html("<%= j render 'character_form_families' %>");
-$('#school_select').html("<%= j render 'character_form_schools' %>");
 $('#character_honour').html("<%= j render 'character_honour' %>");
 $('#character_outfit').html("<%= j render 'character_outfit' %>");
-$('#school_skills').html("<%= j render 'school_skills' %>");
+$('#school_class').html("<%= j render 'school_class' %>");
 $('#character_<%= @old_school_bonus %>').val('2');
 $('#character_school_bonus').val('<%= @selected_school.bonus_attr %>');
 $('#character_<%= @old_family_bonus %>').val('2');
 $('#character_family_bonus').val('<%= @selected_family.bonus_attr %>');
 $('#character_<%= @selected_family.bonus_attr %>').val('<%= @increase_val %>');
 $('#character_<%= @selected_school.bonus_attr %>').val('<%= @increase_val %>');
+'<%= form_for [current_user, @character] do |f| %>'
+  $('#school_select').html("<%= j render( partial: 'character_form_schools', locals: { f: f}) %>");
+  $('#school_skills').html("<%= j render( partial: 'school_skills', locals: {f: f}) %>");
+'<% end %>'

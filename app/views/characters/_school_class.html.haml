@@ -1,0 +1,4 @@
+%strong
+  Klasa:
+= @selected_school.school_classes.map(&:name).join(', ')
+= hidden_field(:character, :school_class, value: @selected_school.school_classes.map(&:name).join(', '))
