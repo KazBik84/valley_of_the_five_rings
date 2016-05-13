@@ -9,8 +9,7 @@ class LegendopediaController < ApplicationController
   def show_clan
     @clan = Clan.find_by(name: params[:clan_name])
     @families = @clan.families
-    @schools = @clan.basic_primary_schools +
-               @clan.basic_shugenja_schools
+    @schools = @clan.basic_schools
   end
 
   def show_spells
