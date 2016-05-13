@@ -29,10 +29,9 @@
     = school.special.html_safe
   %h4
     %strong
-      Umiejętności:    
-  - if school.class == BasicPrimarySchool
-    = render partial: 'primary_school_display', locals: { school: school }
-  -  elsif school.class == BasicShugenjaSchool
-    = render partial: 'shugenja_school_display', locals: { school: school}
-  -  elsif school.class == BasicMonkSchool
-    = render partial: 'monk_school_display', locals: { school: school }
+      Umiejętności: 
+    = render partial: 'school_skills', locals: { skills: school.skill_of_objects }         
+  /- if school.school_ranks.count > 1 
+  /  = render partial: 'primary_school_display', locals: { school: school }
+  /-  else
+  /  = render partial: 'one_rank_school_display', locals: { school: school.school_ranks }

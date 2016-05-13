@@ -5,9 +5,9 @@ module LegendopediaHelper
   end
 
   def write_skill(school_skill, skill_list)
-    skill = school_skill.skill.name_pl
-    school_skill.school_emphasis.present? ? skill += " (#{school_skill.school_emphasis})" : ""
-    school_skill.value != 1 ? skill += " #{school_skill.value}" : ""
-    school_skill == skill_list.last ? skill : skill += ","
+    this_skill = school_skill.skill.name_pl
+    school_skill.skill_emphasis.present? ? this_skill += " (#{school_skill.skill_emphasis})" : ""
+    school_skill.value != 1 ? this_skill += " #{school_skill.value}" : ""
+    school_skill == skill_list.last ? this_skill : this_skill += ","
   end
 end

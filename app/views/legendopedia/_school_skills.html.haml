@@ -1,6 +1,6 @@
-- skills.each do |primary_skill|
-  %span.help_cursor{"data-target" => "#skill_modal_#{primary_skill.skill.id}", "data-toggle" => "modal", :type => "button"}
+- skills.each do |skill|
+  %span.help_cursor{"data-target" => "#skill_modal_#{skill.skill.id}", "data-toggle" => "modal", :type => "button"}
     / write_skill is defined in legendopedia_helper
-    = write_skill(primary_skill, skills)
-  = render partial: 'skill_desc_popup', locals: { school_skill: primary_skill}            
+    = write_skill(skill, skills)
+  = render partial: 'skill_desc_popup', locals: { school_skill: skill}            
 
