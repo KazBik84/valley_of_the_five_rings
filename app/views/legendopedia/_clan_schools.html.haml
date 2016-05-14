@@ -30,8 +30,20 @@
   %h4
     %strong
       Umiejętności: 
-    = render partial: 'school_skills', locals: { skills: school.skill_of_objects }         
-  /- if school.school_ranks.count > 1 
+    = render partial: 'school_skills', locals: { skills: school.skill_of_objects }
+  - if school.school_classes.map(&:name).include? 'Shugenja'
+    %h4
+      %strong
+        Przychylność/Ułomność:
+      = school.affinity_deficiency  
+    %h4
+      %strong
+        Czary:
+      = school.spells
+  - if school.school_ranks.count > 1 
+    = render partial: 'primary_school_display', locals: { school: school }
+  - else
+    = render partial: 'one_rank_school_display', locals: { school: school}
   /  = render partial: 'primary_school_display', locals: { school: school }
   /-  else
   /  = render partial: 'one_rank_school_display', locals: { school: school.school_ranks }
