@@ -6,5 +6,5 @@ $('#character_school_bonus').val('<%= @selected_school.bonus_attr %>');
 $('#character_<%= @selected_school.bonus_attr %>').val('<%= @increase_val %>');
 '<%= form_for [current_user, @character] do |f| %>'
   $('#school_select').html("<%= j render( partial: 'character_form_schools', locals: { f: f}) %>");
-  $('#school_skills').html("<%= j render( partial: 'school_skills', locals: {f: f}) %>");
+  $('#character_skills').html("<%= j render( partial: 'character_skills', locals: {f: f}) %>");
 '<% end %>'

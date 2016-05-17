@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :clan
   belongs_to :family
 
-  has_many :basic_school_of_characters
+  has_many :basic_school_of_characters, dependent: :destroy
   has_many :basic_schools, through: :basic_school_of_characters
 
   has_many :skill_of_objects, dependent: :destroy, as: :owner_model

@@ -1,8 +1,8 @@
 %strong
   Umiejętności:
-%ul.no_dot
+%ul.no_dot{ id: 'skill_list' }
   - @selected_school.skill_of_objects.each do |school_skill|
-    %li
+    %li{ id: "skill_#{school_skill.skill.name_pl.squish.tr(' ','_')}"}
       = f.fields_for :skill_of_objects, @character.skill_of_objects.build do |ff|
         %strong
           = school_skill.skill.name_pl
@@ -11,6 +11,14 @@
         = school_skill.skill_emphasis
         = ff.hidden_field :skill_emphasis, value: school_skill.skill_emphasis
 
-
       = render partial: 'shared/pop_up_button', locals: {pop_up_target: "#skill_#{school_skill.id}"}      
       = render partial: 'shared/pop_up_window', locals: {head_object: school_skill.skill.name_pl, desc_object: school_skill.skill.desc, id_name: "skill_#{school_skill.id}"}
+
+%div{ id: 'add_skill_form'}
+  = f.label :skill_of_objects, 'Dodaj umiejętność:'
+  = f.grouped_collection_select :skill_of_objects, SkillSphere.order(:name), :skills, :name, :id, :name_pl
+%div.btn.btn-primary{ id: 'add_skill_button'}
+  Dodaj umiejętność
+
+
+

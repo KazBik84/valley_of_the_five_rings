@@ -77,6 +77,12 @@ class CharactersController < ApplicationController
       format.js
     end
   end
+
+  def on_add_skill
+    @character = Character.new    
+    @skill = Skill.find(params[:skill_id])
+  end
+
   private
 
   def character_params
