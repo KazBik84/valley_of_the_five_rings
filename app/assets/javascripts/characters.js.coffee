@@ -31,8 +31,9 @@ $(document).on 'change', '#character_basic_school_ids', ->
       clan_id: $("#character_clan_id option:selected").val() }
 
 $(document).on 'change', '#add_skill_form', ->
+  multi_skill = ['Wiedza','Rzemiosło','Artysta','Pokaz']
   skill_name = $('#character_skill_of_objects option:selected').text().replace(/ /g,"_")
-  if $(document).find('#skill_' + skill_name).length == 0 
+  if $(document).find('#skill_' + skill_name).length == 0 or skill_name in multi_skill
     $.ajax
       url: 'on_add_skill'
       type: 'GET'
@@ -40,7 +41,7 @@ $(document).on 'change', '#add_skill_form', ->
       data: {
         skill_id: $('#character_skill_of_objects option:selected').val()
       }
-  else 
+  else
     alert 'Umiejętność już istnieje'
 
 $(document).on 'click', '#add_skill_button', ->
