@@ -79,8 +79,10 @@ class CharactersController < ApplicationController
   end
 
   def on_add_skill
-    @character = Character.new    
+    @character = Character.new
     @skill = Skill.find(params[:skill_id])
+    @select_menu_id = params[:select_menu_id]
+    @close = params[:close_me]
   end
 
   private

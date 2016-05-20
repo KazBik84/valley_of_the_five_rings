@@ -1,3 +1,6 @@
 '<%= form_for [current_user, @character] do |f| %>'
   $('#skill_list').append("<%= j render partial: 'add_skill', locals: { character: @character, skill: @skill, f: f } %> ");
-'<% end %>'  
+'<% end %>'
+"<% if @close == 'true' %>"
+  $("#<%= @select_menu_id %>").parent().slideToggle();
+"<% end %>"

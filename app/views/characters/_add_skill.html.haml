@@ -3,7 +3,7 @@
     %strong
       = skill.name_pl
     = ff.hidden_field :skill_id, value: skill.id
-    = ff.number_field :value, value: '0'
+    = ff.number_field :value, value: '1'
     = ff.text_field :skill_emphasis
 
   = render partial: 'shared/pop_up_button', locals: {pop_up_target: "#skill_#{skill.id}"}      

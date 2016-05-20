@@ -5210,13 +5210,13 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                               { name: 'Lore', school_emphasis: 'Historia'}, 
                               { name: 'Lore', school_emphasis: 'Teologia (Fortuny)'},
                               { name: 'Meditation'}, { name: 'Sincerity'},
-                               { name: 'any one', school_emphasis: 'Wiedza'} ],
+                              { name: 'Lore'} ],
 
   'Szkoła Henshin Asako' => [ { name: 'Calligraphy' }, { name: 'Jiujutsu'},
                               { name: 'Lore', school_emphasis: 'Żywioły (wybierz żywioł'},
                               { name: 'Lore', school_emphasis: 'Teologia'}, 
                               { name: 'Meditation', value: 2 }, 
-                              { name: 'any one', school_emphasis: 'inna jak niegodna'} ],
+                              { name: 'any one', school_emphasis: 'Godna lub Bugei lub Kupiecka'} ],
 
   'Szkoła Bushi Moto' => [ { name: 'Athletics'}, { name: 'Defense'}, { name: 'Horsemanship'},
                            {name: 'Hunting'}, { name:'Kenjutsu', school_emphasis: 'Sejmitar'}, 
@@ -5232,7 +5232,7 @@ school_classes = %w( Bushi Shugenja Dworzanin Mnich Ninja Artysta )
                                 { name: 'Etiquette', school_emphasis: 'Konwersacja'},
                                 { name: 'Horsemanship'}, 
                                 { name: 'Sincerity', school_emphasis: 'Szczerość'},
-                                { name: 'any one', school_emphasis: 'Godna lub Pokaz'} ],
+                                { name: 'any one', school_emphasis: 'Godna'} ],
 
   'Szkoła Bushi Shinjo' => [ { name: 'Athletics'}, { name: 'Defense'},
                              { name: 'Horsemanship', value: 2}, { name: 'Kenjutsu'},
