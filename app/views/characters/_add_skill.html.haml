@@ -8,3 +8,5 @@
 
   = render partial: 'shared/pop_up_button', locals: {pop_up_target: "#skill_#{skill.id}"}      
   = render partial: 'shared/pop_up_window', locals: {head_object: skill.name_pl, desc_object: skill.desc, id_name: "skill_#{skill.id}"}
+  = f.hidden_field :_destroy
+  = link_to 'Usuń', '#', class: 'destroy_skill'

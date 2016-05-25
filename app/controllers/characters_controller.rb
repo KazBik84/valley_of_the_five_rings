@@ -15,7 +15,7 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = @character = current_user.characters.new(character_params)
+    @character = current_user.characters.new(character_params)
     if @character.save
       flash[:success] = 'Postać została dodana'
       respond_to do |format|
@@ -40,7 +40,7 @@ class CharactersController < ApplicationController
 
   # AJAX actions
   def on_clan_change
-    @character = Character.new
+    @character = current_user.characters.new
     @clan = Clan.find(params[:clan_id])
     @families = @clan.families.order(:clan_name)
     @selected_family = @families.first
@@ -55,7 +55,7 @@ class CharactersController < ApplicationController
   end
 
   def on_family_change
-    @character = Character.new
+    @character = current_user.characters.new
     @clan = Clan.find(params[:clan_id])    
     @families = @clan.families.order(:clan_name)
     @selected_family = @families.find(params[:family_id])
@@ -67,7 +67,7 @@ class CharactersController < ApplicationController
   end
 
   def on_school_change
-    @character = Character.new
+    @character = current_user.characters.new
     @clan = Clan.find(params[:clan_id])
     @schools = @clan.basic_schools.order(:name)
     @selected_school = @schools.find(params[:school_id])
@@ -79,7 +79,7 @@ class CharactersController < ApplicationController
   end
 
   def on_add_skill
-    @character = Character.new
+    @character = current_user.characters.new
     @skill = Skill.find(params[:skill_id])
     @select_menu_id = params[:select_menu_id]
     @close = params[:close_me]

@@ -23,25 +23,6 @@ ActiveRecord::Schema.define(version: 20160419035929) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "basic_primary_schools", force: :cascade do |t|
-    t.string   "name"
-    t.string   "img_name"
-    t.string   "clan_name"
-    t.string   "clan_name_pl"
-    t.string   "minor_clan_name"
-    t.string   "bonus_attr"
-    t.string   "bonus_attr_pl"
-    t.string   "desc"
-    t.string   "honor"
-    t.string   "outfit"
-    t.string   "special"
-    t.integer  "clan_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
-  add_index "basic_primary_schools", ["clan_id"], name: "index_basic_primary_schools_on_clan_id", using: :btree
-
   create_table "basic_school_of_characters", force: :cascade do |t|
     t.integer  "character_id"
     t.integer  "basic_school_id"
@@ -72,29 +53,6 @@ ActiveRecord::Schema.define(version: 20160419035929) do
   end
 
   add_index "basic_schools", ["clan_id"], name: "index_basic_schools_on_clan_id", using: :btree
-
-  create_table "basic_shugenja_schools", force: :cascade do |t|
-    t.string   "name"
-    t.string   "img_name"
-    t.string   "clan_name"
-    t.string   "clan_name_pl"
-    t.string   "minor_clan_name"
-    t.string   "bonus_attr"
-    t.string   "bonus_attr_pl"
-    t.string   "desc"
-    t.string   "honor"
-    t.string   "outfit"
-    t.string   "affinity_deficiency"
-    t.string   "spells"
-    t.string   "shugenja_tech_name"
-    t.string   "shugenja_tech_desc"
-    t.string   "special"
-    t.integer  "clan_id"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-  end
-
-  add_index "basic_shugenja_schools", ["clan_id"], name: "index_basic_shugenja_schools_on_clan_id", using: :btree
 
   create_table "characters", force: :cascade do |t|
     t.integer  "user_id"
@@ -192,18 +150,6 @@ ActiveRecord::Schema.define(version: 20160419035929) do
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
-
-  create_table "shugenja_school_skills", force: :cascade do |t|
-    t.integer  "skill_id"
-    t.integer  "basic_shugenja_school_id"
-    t.string   "school_emphasis"
-    t.integer  "value",                    default: 1
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
-  end
-
-  add_index "shugenja_school_skills", ["basic_shugenja_school_id"], name: "index_shugenja_school_skills_on_basic_shugenja_school_id", using: :btree
-  add_index "shugenja_school_skills", ["skill_id"], name: "index_shugenja_school_skills_on_skill_id", using: :btree
 
   create_table "skill_of_objects", force: :cascade do |t|
     t.integer  "owner_model_id"
@@ -349,19 +295,15 @@ ActiveRecord::Schema.define(version: 20160419035929) do
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
-  add_foreign_key "basic_primary_schools", "clans"
   add_foreign_key "basic_school_of_characters", "basic_schools"
   add_foreign_key "basic_school_of_characters", "characters"
   add_foreign_key "basic_schools", "clans"
-  add_foreign_key "basic_shugenja_schools", "clans"
   add_foreign_key "characters", "clans"
   add_foreign_key "characters", "families"
   add_foreign_key "characters", "users"
   add_foreign_key "element_of_spells", "spell_elements"
   add_foreign_key "element_of_spells", "spells"
   add_foreign_key "families", "clans"
-  add_foreign_key "shugenja_school_skills", "basic_shugenja_schools"
-  add_foreign_key "shugenja_school_skills", "skills"
   add_foreign_key "spells", "spell_rings"
   add_foreign_key "sphere_of_skills", "skill_spheres"
   add_foreign_key "sphere_of_skills", "skills"
