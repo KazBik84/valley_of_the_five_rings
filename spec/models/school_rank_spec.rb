@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe SchoolRank, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'has valid factory' do
+    expect(build(:school_rank)).to be_valid
+  end
 end
