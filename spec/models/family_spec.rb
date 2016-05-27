@@ -9,6 +9,10 @@ RSpec.describe Family, type: :model do
     should belong_to(:clan)
   end
 
+  it {
+    should have_many(:characters)
+  }
+
   it 'should not accept attr other then from ATTRIBUTES' do
     expect(build(:family, bonus_attr: "Cat")).to_not be_valid    
   end

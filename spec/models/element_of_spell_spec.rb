@@ -13,10 +13,4 @@ RSpec.describe ElementOfSpell, type: :model do
     should belong_to(:spell_element)
   end
 
-  should_not_be_empty = [ 'spell_id', 'spell_element_id']
-  should_not_be_empty.each do |name|
-    it "should not be valid with #{name} empty" do
-      expect(build(:element_of_spell, name.to_sym => nil)).to_not be_valid
-    end
-  end
 end

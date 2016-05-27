@@ -7,14 +7,13 @@ FactoryGirl.define do
     outfit { Faker::Lorem.sentence }
     stamina '2'
     willpower '2'
-	strength '2'
-	perception '2'
-	agility '2'
-	intelligence '2'
-	reflexes '2'
-	awareness '2'
-	void '2'
-
+    strength '2'
+    perception '2'
+    agility '2'
+    intelligence '2'
+    reflexes '2'
+    awareness '2'
+    void '2'
   end
 
 end

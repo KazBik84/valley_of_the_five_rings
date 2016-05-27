@@ -5,6 +5,10 @@ RSpec.describe Comment, type: :model do
     should belong_to(:comment_owner)
   end
 
+  it {
+    should belong_to(:user)
+  }
+
   it 'has a valid factory' do
     expect(build(:comment)).to be_valid
   end

@@ -12,11 +12,23 @@ RSpec.describe Skill, type: :model do
     end
   end
 
-  has_many_objects = [:primary_school_skills, :shugenja_school_skills, 
-                      :monk_school_skills, :sphere_of_skills]
-  has_many_objects.each do |object_name|
-    it "has many #{object_name.to_s}" do
-      should have_many(object_name)
-    end
-  end
+  it {
+    should have_many(:skill_of_objects)
+  }
+
+  it {
+    should have_many(:basic_schools).through(:skill_of_objects)
+  }
+
+  it {
+    should have_many(:characters).through(:skill_of_objects)
+  }
+
+  it {
+    should have_many(:sphere_of_skills)
+  }
+
+  it {
+    should have_many(:skill_spheres).through(:sphere_of_skills)
+  }
 end
