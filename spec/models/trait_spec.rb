@@ -5,12 +5,8 @@ RSpec.describe Trait, type: :model do
     expect(build(:trait)).to be_valid
   end
 
-  belongs_to_objects = [ :trait_kind, :trait_sphere]
-  belongs_to_objects.each do |object_name|
-    it "belongs to #{object_name.to_s}" do
-      should belong_to(object_name)
-    end
-  end
+  it { should belong_to :trait_kind }
+  it { should belong_to :trait_sphere }
 
   may_not_be_nil = [:name, :name_pl, :desc]
   may_not_be_nil.each do |object_name|

@@ -10,9 +10,8 @@ RSpec.describe SpellTag, type: :model do
     it "is not valid with #{attribute_name} nil" do
       expect(build(:spell, attribute_name => nil)).to_not be_valid
     end
-  end 
-
-  it 'should have many tag_of_spells' do
-    should have_many(:tag_of_spells)
   end
+
+  it { should have_many(:tag_of_spells) }
+  it { should have_many(:spells).through(:tag_of_spells) }
 end

@@ -12,23 +12,13 @@ RSpec.describe Skill, type: :model do
     end
   end
 
-  it {
-    should have_many(:skill_of_objects)
-  }
+  it { should have_many(:skill_of_objects) }
 
-  it {
-    should have_many(:basic_schools).through(:skill_of_objects)
-  }
+  it { should have_many(:basic_schools).through(:skill_of_objects) }
 
-  it {
-    should have_many(:characters).through(:skill_of_objects)
-  }
+  it { should have_many(:characters).through(:skill_of_objects) }
 
-  it {
-    should have_many(:sphere_of_skills)
-  }
+  it { should have_many(:sphere_of_skills) }
 
-  it {
-    should have_many(:skill_spheres).through(:sphere_of_skills)
-  }
+  it { should have_many(:skill_spheres).through(:sphere_of_skills) }
 end

@@ -9,7 +9,5 @@ RSpec.describe SpellRing, type: :model do
     expect(build(:spell_ring, name: nil)).to_not be_valid
   end
 
-  it 'has many spells' do
-    should have_many(:spells)
-  end
+  it { should have_many(:spells) }
 end

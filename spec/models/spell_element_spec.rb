@@ -16,7 +16,6 @@ RSpec.describe SpellElement, type: :model do
     expect(build(:spell_element, name: 'Alibaba')).to_not be_valid
   end
 
-  it 'has many element_of_spell' do
-    should have_many(:element_of_spells)
-  end
+  it { should have_many(:element_of_spells) }
+  it { should have_many(:spells).through(:element_of_spells) }
 end

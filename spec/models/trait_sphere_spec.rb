@@ -13,7 +13,5 @@ RSpec.describe TraitSphere, type: :model do
     expect(build(:trait_sphere, name: nil)).to_not be_valid
   end
 
-  it 'has many traits' do
-    should have_many(:traits)
-  end
+  it { should have_many(:traits) }
 end
