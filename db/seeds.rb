@@ -6391,13 +6391,13 @@ def join_school_with_ranks(object, rank_array)
         school[:school_ranks].each do |rank|
           school_object.school_ranks.create(name: rank[:rank_name], desc: rank[:rank_desc],
                                             rank_lvl: rank[:rank_lvl] || 1 )
-        end      
+        end
     else
       p school[:school_name]
     end
   end
 end
-# ------------------------------------------- Main functions -------------------------------
+# ---------------------------------- Main functions ---------------------------
 
 puts 'Clans Generation'
 Clan.destroy_all

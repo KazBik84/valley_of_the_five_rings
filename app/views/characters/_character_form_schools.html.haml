@@ -6,6 +6,9 @@
 %strong
   = "#{@selected_school.school_ranks[0].name}:"
 = @selected_school.school_ranks[0].desc
-
-= f.hidden_field( :school_rank_ids, value: @selected_school.school_ranks[0].id)
+%br
+= f.fields_for :school_ranks, @character.school_ranks.build do |ff|
+  = ff.hidden_field :name, value: @selected_school.school_ranks[0].name
+  = ff.hidden_field :desc, value: @selected_school.school_ranks[0].desc
+  = ff.hidden_field :rank_lvl, value: @selected_school.school_ranks[0].rank_lvl
 

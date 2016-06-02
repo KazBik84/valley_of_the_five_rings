@@ -24,7 +24,12 @@ class CharactersController < ApplicationController
       end
     else
       flash[:alert] = 'Postać nie została dodana'
-      render new
+      @clan = Clan.first
+      @families = @clan.families.order(:clan_name)
+      @selected_family = @families.first
+      @schools = @clan.basic_schools.order(:name)
+      @selected_school = @schools.first      
+      render :new
     end
 
   end
@@ -97,7 +102,8 @@ class CharactersController < ApplicationController
       :school_class, :char_look, :char_desc,
       :char_character, :public, :outfit,
       :basic_school_ids, :reflexes, :strength,
-      skill_of_objects_attributes: [:value, :skill_emphasis, :skill_id])
+      skill_of_objects_attributes: [:value, :skill_emphasis, :skill_id],
+      school_ranks_attributes: [:name, :desc, :rank_lvl])
 
   end
 end

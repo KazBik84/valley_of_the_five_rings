@@ -1,4 +1,4 @@
-%li{ id: "skill_#{skill.name_pl.squish.tr(' ','_')}"}
+%li.skill{ id: "skill_#{skill.name_pl.squish.tr(' ','_')}"}
   = f.fields_for :skill_of_objects, character.skill_of_objects.build do |ff|
     %strong
       = skill.name_pl

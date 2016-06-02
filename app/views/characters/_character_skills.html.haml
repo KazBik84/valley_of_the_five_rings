@@ -3,7 +3,7 @@
 %ul.no_dot{ id: 'skill_list' }
   - @selected_school.skill_of_objects.each do |school_skill|
     - unless school_skill.skill.name == 'any one' 
-      %li{ id: "skill_#{school_skill.skill.name_pl.squish.tr(' ','_')}"}
+      %li.skill{ id: "skill_#{school_skill.skill.name_pl.squish.tr(' ','_')}"}
         = f.fields_for :skill_of_objects, @character.skill_of_objects.build do |ff|
           %strong
             = school_skill.skill.name_pl
