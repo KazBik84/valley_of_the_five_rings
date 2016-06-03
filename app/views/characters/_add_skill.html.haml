@@ -2,9 +2,9 @@
   = f.fields_for :skill_of_objects, character.skill_of_objects.build do |ff|
     %strong
       = skill.name_pl
-    = ff.hidden_field :skill_id, value: skill.id
-    = ff.number_field :value, value: '1'
-    = ff.text_field :skill_emphasis
+    = ff.hidden_field :skill_id, value: skill.id, name: "character[skill_of_objects_attributes][#{index}][skill_id]", id: "character_skill_of_objects_attributes_#{index}_skill_id"
+    = ff.number_field :value, value: '1', name: "character[skill_of_objects_attributes][#{index}][value]" , id: "character_skill_of_objects_attributes_#{index}_value" 
+    = ff.text_field :skill_emphasis, name: "character[skill_of_objects_attributes][#{index}][skill_emphasis]", id: "character_skill_of_objects_attributes_#{index}_skill_emphasis"
 
   = render partial: 'shared/pop_up_button', locals: {pop_up_target: "#skill_#{skill.id}"}      
   = render partial: 'shared/pop_up_window', locals: {head_object: skill.name_pl, desc_object: skill.desc, id_name: "skill_#{skill.id}"}

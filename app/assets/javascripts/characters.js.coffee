@@ -31,8 +31,8 @@ $(document).on 'change', '#character_basic_school_ids', ->
       clan_id: $("#character_clan_id option:selected").val() }
 
 $(document).on 'change', '.add_skill_form', ->
-  name = $('#skill_list li.skill:last').attr('id')
-  alert name
+  name = $('#skill_list li.skill:last input').attr('name')
+  index = name.replace /[^0-9]/g, ''
   menu_id = $(this).attr('id')
   multi_skill = ['Wiedza','Rzemiosło','Artysta','Pokaz']
   skill_name = $('option:selected',this).text().replace(/ /g,"_")
@@ -49,6 +49,7 @@ $(document).on 'change', '.add_skill_form', ->
             select_menu_id: menu_id
             skill_id: $('option:selected',this).val(),
             close_me: close_status
+            index: index
           }
   else
     alert 'Umiejętność już istnieje'

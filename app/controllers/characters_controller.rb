@@ -88,6 +88,7 @@ class CharactersController < ApplicationController
     @skill = Skill.find(params[:skill_id])
     @select_menu_id = params[:select_menu_id]
     @close = params[:close_me]
+    @index = params[:index].to_i + 1
   end
 
   private
@@ -106,4 +107,5 @@ class CharactersController < ApplicationController
       school_ranks_attributes: [:name, :desc, :rank_lvl])
 
   end
+
 end
