@@ -1,0 +1,23 @@
+%h3
+  = full_name(@character)
+%h4
+  Klasa: 
+  = @character.school_class
+%h4
+  Szkoła:
+  = character_school_names(@character)
+%h4
+  Honor: 
+  = @character.honour
+%ul.no_dot
+  %li
+    Ogień: 
+    = ring_value(@character.intelligence, @character.agility)
+    %ul.no_dot
+      %li
+        Zręczność:
+        = @character.agility
+      %li
+        Inteligencja: 
+        = @character.intelligence
+

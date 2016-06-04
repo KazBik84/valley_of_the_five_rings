@@ -20,14 +20,14 @@
       = render 'school_class'
     %li{id: 'character_skills'}
       = render 'character_skills', f: f
-    /%li
-    /  = render 'character_open_questions', f: f
-    /%li
-    /  = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
-    /  = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)
-    /%li
-    /  %strong
-    /    Udostępnić postać innym?
-    /  = f.check_box(:public)
+    %li
+      = render 'character_open_questions', f: f
+    %li
+      = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
+      = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)
+    %li
+      %strong
+        Udostępnić postać innym?
+      = f.check_box(:public)
     %li
       = f.submit "Dodaj Postać"

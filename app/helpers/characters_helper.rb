@@ -11,4 +11,22 @@ module CharactersHelper
     new_skill_emphasis.delete('lub')
     new_skill_emphasis
   end
+
+  def full_name(character)
+    "#{character.family.name} #{character.name}"
+  end
+
+  def character_school_names(character)
+    names = []
+    character.basic_schools.each do |school|
+      names << school.name
+      names = names.join(' ')
+      return names
+    end
+  end
+
+  def ring_value(attr1, attr2)
+    attr1 < attr2 ? attr1:attr2
+  end
+
 end

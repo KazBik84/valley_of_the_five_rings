@@ -7,3 +7,8 @@
 
 %p
   = link_to 'Dodaj Postać', new_user_character_path(current_user)
+
+%ul.no_dot
+  - current_user.characters.each do |character|
+    %li
+      = link_to full_name(character), user_character_path( current_user, character.id)
