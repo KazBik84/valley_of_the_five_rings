@@ -4,6 +4,16 @@ class CharactersController < ApplicationController
 
   def show
     @character = Character.find(params[:id])
+    @rings_and_attributes = [
+      ['Ogień', @character.intelligence, @character.agility,
+       'Inteligencja', 'Zręczność'],
+      ['Powietrze', @character.awareness, @character.reflexes,
+       'Intuicja', 'Refleks'],
+      ['Ziemia', @character.willpower, @character.stamina,
+       'Siła Woli', 'Wytrzymałość'],
+      ['Woda', @character.perception, @character.strength,
+       'Spostrzegawczość', 'Siła'],
+      ['Pustka', @character.void]]
   end
 
   def new

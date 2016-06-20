@@ -5,19 +5,57 @@
   = @character.school_class
 %h4
   Szkoła:
+  / character_school_names is defined in Character_helper
   = character_school_names(@character)
 %h4
   Honor: 
   = @character.honour
-%ul.no_dot
-  %li
-    Ogień: 
-    = ring_value(@character.intelligence, @character.agility)
+%h4
+  Kręgi:
+- @rings_and_attributes.each do |ring|
+  - unless ring == @rings_and_attributes.last
     %ul.no_dot
       %li
-        Zręczność:
-        = @character.agility
+        / Ring name
+        = "#{ring[0]}:"
+        /ring_value is defined in characters_helper
+        = ring_value(ring[1], ring[2])
+        %ul.no_dot
+          %li
+            / Mental attr name
+            = ring[3]
+            / Mental attr value
+            = ring[1]
+          %li
+            / Phisical attr name
+            = ring[4]
+            / Phisical attr value
+            = ring[2]
+  - else
+    %ul.no_dot
       %li
-        Inteligencja: 
-        = @character.intelligence
+        / Void
+        = "Pustka:"
+        /Void value
+        = ring[0]
+%h4
+  Umiejętności:
+%ul.no_dot  
+  - @character.skill_of_objects.each do |character_skill|
+    %li
+      = "#{character_skill.skill.name_pl}: #{character_skill.value}"
+      - if character_skill.skill_emphasis.present?
+        = "#{character_skill.skill_emphasis}"
+%h4
+  Techniki szkół:
+%ul.no_dot
+  - @character.school_ranks.each do |school_rank|
+    %li
+      %strong
+        = "#{school_rank.name} -"
+      = school_rank.desc
+
+
+
+
 
