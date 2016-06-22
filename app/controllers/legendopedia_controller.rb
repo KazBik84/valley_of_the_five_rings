@@ -30,6 +30,8 @@ class LegendopediaController < ApplicationController
   private
 
   def show_legendopedia_panel
+    # If set to true it will see to visible legendopedia 
+    #  panel in main application.html.haml
     @show_legendopedia_panel = true
   end
 end

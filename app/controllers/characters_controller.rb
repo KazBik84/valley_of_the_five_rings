@@ -13,7 +13,7 @@ class CharactersController < ApplicationController
        'Siła Woli', 'Wytrzymałość'],
       ['Woda', @character.perception, @character.strength,
        'Spostrzegawczość', 'Siła'],
-      ['Pustka', @character.void]]
+      [@character.void]]
   end
 
   def new
@@ -23,6 +23,7 @@ class CharactersController < ApplicationController
     @selected_family = @families.first
     @schools = @clan.basic_schools.order(:name)
     @selected_school = @schools.first
+    @exp = 45
   end
 
   def create
