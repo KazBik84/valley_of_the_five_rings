@@ -13,6 +13,7 @@
   %body
     = render 'layouts/header'
     = render 'legendopedia/side_panel' if @show_legendopedia_panel
+    = render 'characters/exp_points' if @exp_points
     .middle_box
       - flash_messages
       = render 'layouts/gretel'

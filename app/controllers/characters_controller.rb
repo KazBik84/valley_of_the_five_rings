@@ -24,6 +24,8 @@ class CharactersController < ApplicationController
     @schools = @clan.basic_schools.order(:name)
     @selected_school = @schools.first
     @exp = 45
+    # If true it will show remaining exp points
+    @exp_points = true
   end
 
   def create

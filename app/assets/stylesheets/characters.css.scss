@@ -1,3 +1,24 @@
+#exp_points {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  margin-top: 40px;
+  margin-right: 40px;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  display: table;
+}
+
+#exp_val {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
 #add_skill_form {
   display: none;
 }
