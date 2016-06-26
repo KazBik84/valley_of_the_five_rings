@@ -1,7 +1,9 @@
-%ul.no_dot      
+%ul.no_dot.hide.form_partial  
   %li
     = render 'character_open_questions', f: f
   %li
     %strong
       Udostępnić postać innym?
     = f.check_box(:public)
+  %li
+    = f.submit "Dodaj Postać"

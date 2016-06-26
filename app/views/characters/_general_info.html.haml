@@ -1,4 +1,4 @@
-%ul.no_dot
+%ul.no_dot.form_partial.active_partial
   %li
     = f.label(:name, 'Imię Postaci:')
     = f.text_field(:name)
@@ -9,5 +9,5 @@
   %li{id: 'school_select'}
     = render 'character_form_schools', f: f
   %li
-    = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
+    = f.hidden_field( :family_bonus, value: @selected_family.bonus_attr)
     = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)    
