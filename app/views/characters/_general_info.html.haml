@@ -1,0 +1,13 @@
+%ul.no_dot
+  %li
+    = f.label(:name, 'Imię Postaci:')
+    = f.text_field(:name)
+  %li{id: 'clan_select'}
+    = render 'character_form_clan'
+  %li{id: 'family_select'}
+    = render 'character_form_families'
+  %li{id: 'school_select'}
+    = render 'character_form_schools', f: f
+  %li
+    = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
+    = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)    

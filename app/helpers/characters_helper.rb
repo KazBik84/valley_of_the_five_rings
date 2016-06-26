@@ -1,4 +1,6 @@
 module CharactersHelper
+
+  # Return basic value of the attribute after family or school modifications
   def attr_value(name)
     val = 2
     name == @selected_family.bonus_attr.to_sym ? val += 1 : nil
@@ -6,7 +8,9 @@ module CharactersHelper
     return val
   end
 
-  def any_skill_types(skill_emphasis = 'Godna lub Bugei lub Kupiecka lub Niegodna')
+  # Returna array of SkillSphere names, specified in any skill emphasis
+  def any_skill_types(skill_emphasis)
+    skill_emphasis = 'Godna lub Bugei lub Kupiecka lub Niegodna' if skill_emphasis == nil
     new_skill_emphasis = skill_emphasis.split
     new_skill_emphasis.delete('lub')
     new_skill_emphasis
@@ -28,5 +32,4 @@ module CharactersHelper
   def ring_value(attr1, attr2)
     attr1 < attr2 ? attr1:attr2
   end
-
 end

@@ -56,3 +56,6 @@ $(document).on 'change', '.add_skill_form', ->
 
 $(document).on 'click', '#add_skill_button', ->
   $('#add_skill_form').slideToggle('slow')
+
+$(document).on 'change', 'input#character_agility', ->
+  alert 'Zmiana'

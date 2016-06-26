@@ -1,33 +1,4 @@
 = form_for [ current_user, current_user.characters.build] do |f|
   = form_errors_for @character
-  %ul.no_dot
-    %li
-      = f.label(:name, 'Imię Postaci:')
-      = f.text_field(:name)
-    %li{id: 'clan_select'}
-      = render 'character_form_clan'
-    %li{id: 'family_select'}
-      = render 'character_form_families'
-    %li{id: 'school_select'}
-      = render 'character_form_schools', f: f
-    %li
-      = render 'character_attributes', f: f
-    %li{id: 'character_honour'}
-      = render 'character_honour'
-    %li{id: 'character_outfit'}
-      = render 'character_outfit'
-    %li{id: 'school_class'}
-      = render 'school_class'
-    %li{id: 'character_skills'}
-      = render 'character_skills', f: f
-    %li
-      = render 'character_open_questions', f: f
-    %li
-      = f.hidden_field(:family_bonus, value: @selected_family.bonus_attr)
-      = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)
-    %li
-      %strong
-        Udostępnić postać innym?
-      = f.check_box(:public)
-    %li
-      = f.submit "Dodaj Postać"
+  = render current_step, f: f
+  = f.submit 'Zapisz'

@@ -10,6 +10,7 @@
               Ogień:
           %li
             = f.label(:agility, 'Zręczność:')
+            / attr_value is defined in character_helper
             = f.number_field( :agility, value: attr_value(:agility))
           %li
             = f.label(:intelligence, 'Inteligencja:')

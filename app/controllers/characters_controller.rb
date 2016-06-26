@@ -30,21 +30,15 @@ class CharactersController < ApplicationController
 
   def create
     @character = current_user.characters.new(character_params)
-    if @character.save
-      flash[:success] = 'Postać została dodana'
-      respond_to do |format|
-        format.js
-        format.html { redirect_to current_user }
-      end
-    else
-      flash[:alert] = 'Postać nie została dodana'
-      @clan = Clan.first
-      @families = @clan.families.order(:clan_name)
-      @selected_family = @families.first
-      @schools = @clan.basic_schools.order(:name)
-      @selected_school = @schools.first      
-      render :new
-    end
+    @character.current_step = session[:order_step]
+    @clan = Clan.first
+    @families = @clan.families.order(:clan_name)
+    @selected_family = @families.first
+    @schools = @clan.basic_schools.order(:name)
+    @selected_school = @schools.first
+    @character.next_step
+    session[:order_step] = @character.current_step
+    render 'new'
 
   end
 

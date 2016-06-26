@@ -22,7 +22,7 @@ ATTRIBUTES_PL = [ 'Wytrzymałość', 'Siła Woli', 'Siła',
 
 SCHOOL_CLASSES = [ 'Bushi', 'Dworzanin', 'Ninja', 'Mnich', 'Artysta', 'Shugenja']
 
-SKILL_SPHERES = %w(Godna Niegodna Kupiecka Bugei)
+SKILL_SPHERES = [ 'Godna', 'Niegodna', 'Bugei', 'Kupiecka', 'Wiedza', 'Sztuki-Walki', 'Artystyczna' ]
 
 SPELL_ELEMENTS = %w(fire water air earth maho void)
 

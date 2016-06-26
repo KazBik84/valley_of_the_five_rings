@@ -1,0 +1,7 @@
+%ul.no_dot      
+  %li
+    = render 'character_open_questions', f: f
+  %li
+    %strong
+      Udostępnić postać innym?
+    = f.check_box(:public)

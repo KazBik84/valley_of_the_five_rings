@@ -16,4 +16,16 @@ class Character < ActiveRecord::Base
   validates_presence_of :name, :school_class, :honour, :outfit, :stamina,
                         :willpower, :strength, :perception, :agility,
                         :intelligence, :reflexes, :awareness, :void
+
+  def form_steps
+    %w( general_info attributes_and_skills open_questions_and_hidden_and_rest )
+  end
+
+  def current_step
+    @current_step || form_steps.first
+  end
+
+  def next_step
+    @current_step = form_steps[form_steps.index(current_step)+1]
+  end
 end

@@ -4,4 +4,6 @@ class SkillSphere < ActiveRecord::Base
 
   validates_presence_of :name
   validates_inclusion_of :name, in: SKILL_SPHERES
+
+  
 end
