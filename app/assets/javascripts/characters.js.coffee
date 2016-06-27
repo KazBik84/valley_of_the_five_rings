@@ -64,4 +64,4 @@ $(document).on 'click', '#next_form_button', ->
   active_partial = $('ul.active_partial')
   next_partial = $('ul.active_partial').next('ul')
   active_partial.removeClass('active_partial').fadeToggle()
-  next_partial.addClass('active_partial').show()
+  next_partial.addClass('active_partial').removeClass('hide')
