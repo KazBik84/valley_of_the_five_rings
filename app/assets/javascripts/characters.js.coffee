@@ -60,8 +60,27 @@ $(document).on 'click', '#add_skill_button', ->
 $(document).on 'change', 'input#character_agility', ->
   alert 'Zmiana'
 
+$(document).ready ->
+  $('ul.form_partial').hide()
+  $('ul.active_partial').show()
+  $('#prev_form_button').hide()
+
 $(document).on 'click', '#next_form_button', ->
   active_partial = $('ul.active_partial')
-  next_partial = $('ul.active_partial').next('ul')
-  active_partial.removeClass('active_partial').fadeToggle()
-  next_partial.addClass('active_partial').removeClass('hide')
+  next_partial = $('ul.active_partial').next('ul.form_partial')
+  active_partial.removeClass('active_partial').hide()
+  next_partial.addClass('active_partial').fadeToggle()
+  unless $('#prev_form_button').is(':visible')
+    $('#prev_form_button').fadeIn()  
+  if next_partial.hasClass('last_partial')
+    $('#next_form_button').toggle()
+
+$(document).on 'click', '#prev_form_button', ->
+  active_partial = $('ul.active_partial')
+  prev_partial = $('ul.active_partial').prev('ul.form_partial')
+  active_partial.removeClass('active_partial').hide()
+  prev_partial.addClass('active_partial').fadeToggle()
+  unless $('#next_form_buttonv').is(':visible')
+    $('#next_form_button').fadeIn()    
+  if prev_partial.hasClass('first_partial')
+    $('#prev_form_button').toggle()  
