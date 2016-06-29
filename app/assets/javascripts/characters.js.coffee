@@ -68,19 +68,28 @@ $(document).ready ->
 $(document).on 'click', '#next_form_button', ->
   active_partial = $('ul.active_partial')
   next_partial = $('ul.active_partial').next('ul.form_partial')
-  active_partial.removeClass('active_partial').hide()
-  next_partial.addClass('active_partial').fadeToggle()
-  unless $('#prev_form_button').is(':visible')
-    $('#prev_form_button').fadeIn()  
-  if next_partial.hasClass('last_partial')
-    $('#next_form_button').toggle()
+  if active_partial.hasClass('first_partial')
+    if confirm 'Nie będziesz mógł później zmienić tych ustawień bez resetu dokonanych później zmian. Kontunuować ?'  
+      active_partial.removeClass('active_partial').hide()
+      next_partial.addClass('active_partial').fadeToggle()
+      unless $('#prev_form_button').is(':visible')
+        $('#prev_form_button').fadeIn()  
+      if next_partial.hasClass('last_partial')
+        $('#next_form_button').toggle()
+    else
+      return false
+
 
 $(document).on 'click', '#prev_form_button', ->
   active_partial = $('ul.active_partial')
   prev_partial = $('ul.active_partial').prev('ul.form_partial')
-  active_partial.removeClass('active_partial').hide()
-  prev_partial.addClass('active_partial').fadeToggle()
-  unless $('#next_form_buttonv').is(':visible')
-    $('#next_form_button').fadeIn()    
   if prev_partial.hasClass('first_partial')
-    $('#prev_form_button').toggle()  
+    if confirm 'Powrót do poprzedniej części furmularza wykasuje obecne zmiany. Kontynuować ?'
+      active_partial.removeClass('active_partial').hide()
+      prev_partial.addClass('active_partial').fadeToggle()
+      unless $('#next_form_buttonv').is(':visible')
+        $('#next_form_button').fadeIn()
+      if prev_partial.hasClass('first_partial')
+        $('#prev_form_button').toggle()
+    else
+      return false
