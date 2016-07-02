@@ -65,33 +65,19 @@ class CharactersController < ApplicationController
     @selected_family = @families.first
     @schools = @clan.basic_schools.order(:name)
     @selected_school = @schools.first
-    @old_school_bonus = params[:school_bonus]
-    @old_family_bonus = params[:family_bonus]
     @selected_school.bonus_attr == @selected_family.bonus_attr ? @increase_val = 4 : @increase_val = 3
     respond_to do |format|
       format.js
     end
   end
 
-  def on_family_change
+  def on_family_or_school_change
     @character = current_user.characters.new
     @clan = Clan.find(params[:clan_id])    
     @families = @clan.families.order(:clan_name)
     @selected_family = @families.find(params[:family_id])
-    @old_family_bonus = params[:family_bonus]
-    params[:school_bonus] == @selected_family.bonus_attr ? @increase_val = 4 : @increase_val = 3
-    respond_to do |format|
-      format.js
-    end
-  end
-
-  def on_school_change
-    @character = current_user.characters.new
-    @clan = Clan.find(params[:clan_id])
     @schools = @clan.basic_schools.order(:name)
-    @selected_school = @schools.find(params[:school_id])
-    @old_school_bonus = params[:school_bonus]
-    @selected_school.bonus_attr == params[:family_bonus] ? @increase_val = 4 : @increase_val = 3       
+    @selected_school = @schools.find(params[:school_id])    
     respond_to do |format|
       format.js
     end
