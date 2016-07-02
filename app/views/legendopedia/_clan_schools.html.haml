@@ -30,7 +30,7 @@
   %h4
     %strong
       Umiejętności: 
-    = render partial: 'school_skills', locals: { skills: school.skill_of_objects }
+    = render partial: 'shared/skills_list_with_question_mark', locals: { skills_list: school.skill_of_objects }
   - if school.school_classes.map(&:name).include? 'Shugenja'
     %h4
       %strong

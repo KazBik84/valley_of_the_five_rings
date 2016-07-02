@@ -9,5 +9,9 @@
   %li{id: 'school_select'}
     = render 'character_form_schools', f: f
   %li
+    %strong
+      Umiejętności:
+    = render partial: 'shared/skills_list_with_question_mark', locals: { skills_list: @selected_school.skill_of_objects }    
+  %li
     = f.hidden_field( :family_bonus, value: @selected_family.bonus_attr)
     = f.hidden_field( :school_bonus, value: @selected_school.bonus_attr)    
