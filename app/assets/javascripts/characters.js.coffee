@@ -60,20 +60,35 @@ $(document).ready ->
   $('ul.form_partial').hide()
   $('ul.active_partial').show()
   $('#prev_form_button').hide()
+  family_name = $("#character_family_id option:selected").text()
+  family_name = family_name.split(' ')[0]
+  $('#chosen_family_name').html(family_name)
+  minus_attr_names = ['#agility_minus', '#intelligence_minus',
+                     '#reflexes_minus', '#awareness_minus',
+                     '#stamina_minus', '#willpower_minus',
+                     '#strength_minus', '#perception_minus',
+                     '#void_minus' ]
+  $.each minus_attr_names, (index, attr_name) ->
+    $(attr_name).hide()
 
 $(document).on 'click', '#next_form_button', ->
   active_partial = $('ul.active_partial')
   next_partial = $('ul.active_partial').next('ul.form_partial')
   if active_partial.hasClass('first_partial')
-    if confirm 'Nie będziesz mógł później zmienić tych ustawień bez resetu dokonanych później zmian. Kontunuować ?'  
-      active_partial.removeClass('active_partial').hide()
-      next_partial.addClass('active_partial').fadeToggle()
-      unless $('#prev_form_button').is(':visible')
-        $('#prev_form_button').fadeIn()  
-      if next_partial.hasClass('last_partial')
-        $('#next_form_button').toggle()
-    else
+    if !$('#character_name').val()
+      alert 'Proszę podać imię postaci.'
       return false
+    if confirm 'Nie będziesz mógł później zmienić tych ustawień bez resetu dokonanych później zmian. Kontunuować ?'  
+    else
+      return false    
+  name = $('#character_name').val()
+  $('#chosen_character_name').html(name)    
+  active_partial.removeClass('active_partial').hide()
+  next_partial.addClass('active_partial').fadeToggle()
+  unless $('#prev_form_button').is(':visible')
+    $('#prev_form_button').fadeIn()  
+  if next_partial.hasClass('last_partial')
+    $('#next_form_button').toggle()
 
 
 $(document).on 'click', '#prev_form_button', ->
@@ -81,11 +96,19 @@ $(document).on 'click', '#prev_form_button', ->
   prev_partial = $('ul.active_partial').prev('ul.form_partial')
   if prev_partial.hasClass('first_partial')
     if confirm 'Powrót do poprzedniej części furmularza wykasuje obecne zmiany. Kontynuować ?'
-      active_partial.removeClass('active_partial').hide()
-      prev_partial.addClass('active_partial').fadeToggle()
-      unless $('#next_form_buttonv').is(':visible')
-        $('#next_form_button').fadeIn()
-      if prev_partial.hasClass('first_partial')
-        $('#prev_form_button').toggle()
     else
       return false
+  active_partial.removeClass('active_partial').hide()
+  prev_partial.addClass('active_partial').fadeToggle()
+  unless $('#next_form_buttonv').is(':visible')
+    $('#next_form_button').fadeIn()
+  if prev_partial.hasClass('first_partial')
+    $('#character_name').val('')
+    $('#prev_form_button').toggle()
+
+$(document).on 'click', '.attr_plus_button', ->
+  id_name = $(this).attr('id')
+  id_val = $(this).text()
+  alert id_val
+
+

@@ -1,4 +1,13 @@
-%ul.no_dot.form_partial.test
+%ul.no_dot.form_partial
+  %li
+    %strong
+      %span{ id: 'chosen_family_name'}
+      %span{ id: 'chosen_character_name' }        
+  %li
+    %strong
+      Szkoła:
+    %span{ id: 'character_chosen_school' }
+      = @selected_school.name
   %li
     = render 'character_attributes', f: f
   %li{id: 'character_honour'}

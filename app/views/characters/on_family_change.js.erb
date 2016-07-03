@@ -2,3 +2,4 @@ $('#family_select').html("<%= j render 'character_form_families' %>");
 $('#character_<%= @old_family_bonus %>').val('2');
 $('#character_family_bonus').val('<%= @selected_family.bonus_attr %>');
 $('#character_<%= @selected_family.bonus_attr %>').val('<%= @increase_val %>');
+$('#chosen_family_name').html('<%= @selected_family.name %>');

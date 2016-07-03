@@ -1,0 +1,8 @@
+= f.label(attr_symbol, "#{name_pl}: ")
+/ attr_value is defined in character_helper
+%span{ id: "#{attr_symbol}_value" }
+  = attr_value(attr_symbol)
+%span.glyphicon.glyphicon-plus.pointer_cursor.attr_plus_button{ id: "#{attr_symbol.to_s}_plus"}
+%span.glyphicon.glyphicon-minus.pointer_cursor.attr_minus_button{ id: "#{attr_symbol.to_s}_minus"}
+= f.hidden_field( attr_symbol, value: attr_value(attr_symbol))
+= f.hidden_field( "base_#{attr_symbol}_value", value: attr_value(attr_symbol))

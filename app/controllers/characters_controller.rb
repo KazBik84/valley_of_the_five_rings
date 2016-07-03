@@ -73,11 +73,11 @@ class CharactersController < ApplicationController
 
   def on_family_or_school_change
     @character = current_user.characters.new
-    @clan = Clan.find(params[:clan_id])    
-    @families = @clan.families.order(:clan_name)
+    @clan = Clan.find(params[:clan_id])
+    @families = @clan.families.order(:name)
     @selected_family = @families.find(params[:family_id])
     @schools = @clan.basic_schools.order(:name)
-    @selected_school = @schools.find(params[:school_id])    
+    @selected_school = @schools.find(params[:school_id])
     respond_to do |format|
       format.js
     end

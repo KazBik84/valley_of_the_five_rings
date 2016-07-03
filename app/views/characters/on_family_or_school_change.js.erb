@@ -2,6 +2,7 @@ $('#character_honour').html("<%= j render 'character_honour' %>");
 $('#character_outfit').html("<%= j render 'character_outfit' %>");
 $('#school_class').html("<%= j render 'school_class' %>");
 $('#character_<%= @selected_school.bonus_attr %>').val('<%= @increase_val %>');
+$('#chosen_family_name').html("<%= @selected_family.name %>");
 '<%= form_for [current_user, @character] do |f| %>'
   $('#school_select').html("<%= j render( partial: 'character_form_schools', locals: { f: f}) %>");
   $('#character_skills').html("<%= j render( partial: 'character_skills', locals: {f: f}) %>");
