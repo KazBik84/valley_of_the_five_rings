@@ -107,8 +107,14 @@ $(document).on 'click', '#prev_form_button', ->
     $('#prev_form_button').toggle()
 
 $(document).on 'click', '.attr_plus_button', ->
-  id_name = $(this).attr('id')
-  id_val = $(this).text()
-  alert id_val
+  attr_name = $(this).attr('id').replace '_plus', ''
+  attr_val = '#'+attr_name + '_value'
+  base_value = '#character_base_'+ attr_name+'_value'
+  $(attr_val).html(parseInt($(attr_val).html(), 10)+1)
+  if parseInt($(attr_val).text(), 10) > parseInt($(base_value).val(), 10)
+    $('#'+ attr_name + '_minus').show()
+  if parseInt($(attr_val).text(), 10) == 10
+    $('#'+ attr_name + '_plus').hide
+
 
 
