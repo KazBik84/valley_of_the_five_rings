@@ -114,7 +114,16 @@ $(document).on 'click', '.attr_plus_button', ->
   if parseInt($(attr_val).text(), 10) > parseInt($(base_value).val(), 10)
     $('#'+ attr_name + '_minus').show()
   if parseInt($(attr_val).text(), 10) == 10
-    $('#'+ attr_name + '_plus').hide
+    $('#'+ attr_name + '_plus').hide()
+  $('#exp_val').html( parseInt($('#exp_val').text(), 10) -  parseInt($(attr_val).text(), 10) * 4 + 'PP')
 
-
-
+$(document).on 'click', '.attr_minus_button', ->
+  attr_name = $(this).attr('id').replace '_minus', ''
+  attr_val = '#'+attr_name + '_value'
+  base_value = '#character_base_'+ attr_name+'_value'
+  $(attr_val).html(parseInt($(attr_val).html(), 10)-1)
+  if parseInt($(attr_val).text(), 10) == parseInt($(base_value).val(), 10)
+    $('#'+ attr_name + '_minus').hide()
+  if parseInt($(attr_val).text(), 10) < 10
+    $('#'+ attr_name + '_plus').show()  
+  $('#exp_val').html( parseInt($('#exp_val').text(), 10) +  (parseInt($(attr_val).text(), 10)+1) * 4 + 'PP')

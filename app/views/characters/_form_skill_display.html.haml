@@ -1,0 +1,8 @@
+= f.label(skill_of_object, "#{skill_of_object.skill.name_pl}: ")
+/ attr_value is defined in character_helper
+%span{ id: "#{skill_of_object}_value" }
+  = skill_of_object.value
+%span.glyphicon.glyphicon-plus.pointer_cursor.skill_plus_button{ id: "#{skill_of_object.skill.name_pl}_plus"}
+%span.glyphicon.glyphicon-minus.pointer_cursor.skill_minus_button{ id: "#{skill_of_object.skill.name_pl}_minus"}
+= f.hidden_field( skill_of_object, value: skill_of_object.value
+= f.hidden_field( "base_#{skill_of_object}_value", value: skill_of_object.value
